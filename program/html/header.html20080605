@@ -1,0 +1,27 @@
+<table width="850" border="0" cellspacing="0" cellpadding="0" bgcolor='#FFFFFF'>
+  <tr> 
+    <td align='left' valign='bottom' class="black12"><h1>ステップメール、メール配信、クリックカウンターはitm-asp.comで！</h1></td>
+    <td align='right'><img src='/common/image/presented.jpg' ></td>
+  </tr>
+</table>
+<table width="850" height="0" border="0" cellspacing="1" cellpadding="0" bgcolor="#000040">
+  <tr> 
+    <td align='center' colspan="3"><a href='/index.html'><img src="/common/image/title04.jpg" border='0' alt='ステップメール、メール配信、クリックカウンターはitm-asp.comで！'></a></td>
+  </tr>
+  <tr> 
+    <td width="155" align="center" class='white12' bgcolor="#1F5C97"> 
+      <?PHP echo date('Y.m.d'); ?>の格言
+    </td>
+    <td width="550" align="left" bgcolor="#FFFFFF" class='black10' > 
+      <?PHP require_once "/www/html/cls/kakugen/kakugen.php"; ?>
+    </td>
+    <td width="145" align="center" bgcolor="#FFFFFF" class="black12"><a href="/tool/3232/">ミニミニURLはこちら</a></td>
+  </tr>
+</table>
+
+
+
+
+<table width="850" border="0" cellspacing="0" cellpadding="0" bgcolor='#FFFFFF'>
+  <tr><td height='10' bgcolor='#FFFFFF'><img src='/common/image/spacer.gif' width='1' height='10'></td></tr>
+</table>

@@ -1,0 +1,99 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="ja-JP">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=Shift-JIS">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title><?php echo $form_name; ?></title>
+<link href="/common/css/common.css" rel="stylesheet" type="text/css">
+<link href="./css/formStyle.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body  bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+				<form action="./m-confirmForm.php?u_id=<?php echo $user_id; ?>&f_id=<?php echo $f_id; ?>" method="post" name="fm" onSubmit="return checkVal()">
+        <table border="0" align="center" cellpadding="0" cellspacing="0" width="150">
+          <tr>
+            <td align="center"><font size="2"><?php echo $form_name; ?></font><br><br></td>
+          </tr>
+        </table>
+					<?php
+						if($errorm!=""){
+							echo "<p align=\"center\">";
+							foreach($errorm as $key=>$value){
+								echo "<font color=\"#FF0000\" size=\"2\">$value</font><br />";
+							}
+							echo "</p>";
+						}
+					?>
+        <table border="0" align="center" cellpadding="0" cellspacing="0" width="150">
+          <tr>
+            <td align="center"><font color="#FF0000" size="2">※は必須項目になります</font><br><br></td>
+          </tr>
+          <tr>
+            <td align="left"><font size="2"><?php echo $form_header; ?></font><br><br></td>
+          </tr>
+          <tr>
+            <td align="left"><font size="2">お名前(姓)</font></td>
+          </tr>
+          <tr>
+  					<td align="left"><input type="text" size="25" name="data[name_family]" value="<?php echo $name_family; ?>"/><br><br></td>
+          </tr>
+          <tr>
+            <td align="left"><font size="2">お名前(名)</font></td>
+          </tr>
+          <tr>
+  					<td align="left"><input type="text" size="25" name="data[name_first]" value="<?php echo $name_first; ?>"/><br><br></td>
+          </tr>
+          <tr>
+            <td align="left"><font size="2">メールアドレス<font color="#FF0000">※</font></font></td>
+          </tr>
+          <tr>
+  					<td align="left"><input type="text" size="25" istyle="3" name="data[user_mail_add]" value="<?php echo $user_mail_add; ?>"/><br><br></td>
+          </tr>
+				  <?php
+				  	if($param_name!=""){
+					  	foreach($param_name as $key2=>$value2){
+								$count++;
+							  	echo "<tr>";
+                  echo "<td align=\"left\"><font size=\"2\">$value2<font color=\"#FF0000\"></font>";
+                  echo "";
+								if($cnt1[$key2]=="on"){
+									echo "<font color=\"#FF0000\" size=\"2\">※</font><input type=\"hidden\" name=\"data[check$key2]\" value=\"on\"></td>";
+								}else{
+									echo "<input type=\"hidden\" name=\"data[check$key2]\" value=\"off\"></td>";
+								}
+                echo "<tr>";
+								echo "<td align=\"left\"><input type=\"text\" size=\"25\" name=\"data[param$key2]\" value=\"";
+								echo $param[$key2]."\"><br><br></td>";
+                echo "</tr>";
+								echo "<input type=\"hidden\" name=\"data[param_name$key2]\" value=\"$value2\">";
+								echo "<input type=\"hidden\" name=\"data[param_key$count]\" value=\"$key2\" />";
+							}
+						}
+				  ?>
+          <tr>
+  					<td align="center"><br><input type="submit" name="sub" value="確認" />　<input type="reset" name="reset" value="取消" /></td>
+          </tr>
+        </table>				
+				<input type="hidden" name="cnt" value="<?php echo $count; ?>">
+				<input type="hidden" name="mode" value="check" />
+				</form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

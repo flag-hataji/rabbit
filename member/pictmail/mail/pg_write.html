@@ -1,0 +1,318 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="ja-JP">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-JP"> 
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>www.rabbit-mail.jp | メール配信ＡＳＰ</title>
+<link href="../../../css/common.css" rel="stylesheet" type="text/css">
+</head>
+<body bgcolor="#FFFFFF" >
+
+<div align="center">
+
+<?PHP require_once(_DIR_MEMBER_HTML_._HTML_MEMBER_HEADER_PICTMAIL_); ?>
+
+
+
+<div id="pictmail-top-box">
+<table>
+  <tr>
+    <td class="title_l">
+      配信方法について
+    </td>
+  </tr>
+
+  <tr>
+    <td class="title_m">
+      使用方法
+    </td>
+  </tr>
+  <tr>
+    <td class="explain_m">
+      <b><span class="gray12">1.基本的な配信方法  </span></b><br>
+      　　└ <a href='/pictmail/mailsend/mailsend_help.html' target='_blank'>こちらをお読みください</a><br></td>
+  </tr>
+  <tr>
+    <td class="title_m">
+      メールアドレスに関して
+    </td>
+  </tr>
+  <tr>
+    <td class="explain_m">
+      <b><span class="gray12">1.メールアドレスに使用できる文字</span></b><br>
+      　可能文字以外の使用をいたしますと、リストアップロード時に不正なアドレスと判断されてアップロードできません。<br>
+      　　使用可能文字 ： <span class='mazenda16'> a 〜 z  A 〜 Z  0 〜 9 . - _ / # % &　（全て半角です）</span><br>
+      <br>
+      <b><span class="gray12">2.文字コードについて</span></b><br>
+      　メールリスト配信リストの文字コードはSJISでお願い致します。<br>
+      　ExcelやAccess等で作成したリストはSJISなので、特殊なソフトウェアを使用しない限りは問題ありません    
+      <br>
+      <br></td>
+  </tr>
+</table >
+</div>
+
+<div id="pictmail-input-box">
+<form name="form2" method="post" action="index.php" enctype="multipart/form-data" style="margin: 0px;">
+
+<table>
+  <tr>
+    <td colspan="2" class="title_l">
+      メール配信
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="explain_l">
+      HTMLメール本文以外、全て必須入力です。<br>
+      入力後、最下部にある[ 次にすすむ ]ボタンをクリックしてください。<br>
+    </td>
+  </tr>
+<?PHP
+    if($this->Manager->errorS!="" || $this->Fileup->errorS!=""){
+?>
+  <tr> 
+    <td colspan="2" class="title_error">
+      入力エラーがあります
+      <b>
+    </td> 
+  </tr> 
+  <tr> 
+    <td colspan="2" class="explain_error">
+      <?PHP $this->showErrorList($this->Manager->errorS); ?>
+      ※<a href="../help.html" target="_blank">「正常なメールアドレスが0件です」と表示される場合はこちらをご覧ください。</a>    </td> 
+  </tr> 
+<?PHP
+    }
+?>
+  <tr>
+    <td colspan="2" class="title_m">
+      各種メールアドレス
+    </td>
+  </tr>
+  <tr> 
+    <td class="input_title"><?PHP echo $this->Manager->nameS['mail_from']; ?></td>
+    <td class="input_field" <?PHP $this->showErrorBgcolor('mail_from',$this->Manager->errorS); ?>>
+      <a name="mail_from"></a>
+      <input type='text' name='inputS[mail_from]' value='<?PHP echo $this->Manager->writeS['mail_from']; ?>' size='50'>
+<?PHP $this->showErrorWord('mail_from',$this->Manager->errorS); ?>
+    </td>
+  </tr>
+  <tr> 
+    <td class="input_title"><?PHP echo $this->Manager->nameS['mail_confirm']; ?></td>
+    <td class="input_field"  <?PHP $this->showErrorBgcolor('mail_confirm',$this->Manager->errorS); ?>>
+      <a name="mail_confirm"></a>
+      <input type='text' name='inputS[mail_confirm]' value='<?PHP echo $this->Manager->writeS['mail_confirm']; ?>' size='50'>
+<?PHP $this->showErrorWord('mail_confirm',$this->Manager->errorS); ?>
+    </td>
+  </tr>
+  <tr> 
+    <td class="input_title"><?PHP echo $this->Manager->nameS['mail_error']; ?></td>
+    <td class="input_field"  <?PHP $this->showErrorBgcolor('mail_error',$this->Manager->errorS); ?>>
+      <a name="mail_error"></a>
+      <input type='radio' name='inputS[check_mail_error]' value='1' <?PHP $this->showChecked(1,$this->Manager->inputS['check_mail_error']); ?>> 
+      <input type='text' name='inputS[mail_error1]' value='<?PHP echo $this->Manager->writeS['mail_error1']; ?>' size='50'><br>
+      <input type='radio' name='inputS[check_mail_error]' value='2' <?PHP $this->showChecked(2,$this->Manager->inputS['check_mail_error']); ?>> 
+      <span class='indigo12'><?PHP echo $this->Manager->writeS['mail_error2']; ?></span>
+      <input type='hidden' name='inputS[mail_error2]' value='<?PHP echo $this->Manager->inputS['mail_error2']; ?>' size='50'><br>
+      <br>
+      <strong>
+      　※戻り先をどちらにするかチェックにて選択してください。 <br>
+      　※自動取得は　<?PHP echo $this->Manager->writeS['mail_error2']; ?>　を選択してください。<br>
+      　 <a href="../error/">戻ってきたアドレスはこちらから確認できます。<a><br>
+      </strong>
+<?PHP $this->showErrorWord('mail_error',$this->Manager->errorS); ?>
+
+    </td>
+  </tr>
+
+  <tr>
+    <td colspan="2" class="title_m">
+      送信日
+    </td>
+  </tr>
+
+  <tr> 
+    <td class="input_title"><?PHP echo $this->Manager->nameS['send_date']; ?></td>
+    <td class="input_field"  <?PHP $this->showErrorBgcolor('send_date',$this->Manager->errorS); ?>>
+      <a name="send_date"></a>
+  <?PHP $this->showSelect('inputS[send_date_y]',date('Y'),date('Y')+1,$this->Manager->writeS['send_date_y']); ?> 年 
+  <?PHP $this->showSelect('inputS[send_date_m]',1,12,$this->Manager->writeS['send_date_m']); ?> 月 
+  <?PHP $this->showSelect('inputS[send_date_d]',1,31,$this->Manager->writeS['send_date_d']); ?> 日 
+  <?PHP $this->showSelect('inputS[send_date_h]',0,23,$this->Manager->writeS['send_date_h']); ?> 時 
+  <?PHP $this->showSelect('inputS[send_date_i]',0,59,$this->Manager->writeS['send_date_i']); ?> 分 
+  <?PHP $this->showErrorWord('send_date',$this->Manager->errorS); ?>
+    </td>
+  </tr>
+  <tr> 
+    <td colspan="2" class='input_explain'>
+     <strong>
+     ※ 携帯メールアドレスへの送信は8：00〜21：00までとなります。<br>
+     ※ 送信予約日を指定しても、同じ時間帯に別なユーザーの予約が入っていると遅延することがあります。
+     </strong>
+     </td>
+  </tr>
+
+  <tr>
+    <td colspan="2" class="title_m">
+      送信内容入力
+    </td>
+  </tr>
+  <tr> 
+    <td class="input_title"><?PHP echo $this->Manager->nameS['subject']; ?></td>
+    <td class="input_field"  <?PHP $this->showErrorBgcolor('subject',$this->Manager->errorS); ?>>
+      <a name="subject"></a>
+      <input type='text' name='inputS[subject]' value='<?PHP echo $this->Manager->writeS['subject']; ?>' size='50'>
+<?PHP $this->showErrorWord('subject',$this->Manager->errorS); ?>
+    <br>
+    <span class="gray12">例）メルマガ○○号</span>
+    </td>
+  </tr>
+  <tr> 
+    <td class="input_title"><?PHP echo $this->Manager->nameS['name_from']; ?></td>
+    <td class="input_field"  <?PHP $this->showErrorBgcolor('name_from',$this->Manager->errorS); ?>>
+      <a name="name_from"></a>
+      <input type='text' name='inputS[name_from]' value='<?PHP echo $this->Manager->writeS['name_from']; ?>' size='50'>
+<?PHP $this->showErrorWord('name_from',$this->Manager->errorS); ?>
+    <br>
+    <span class="gray12">例）発行スタッフ</span>
+    </td>
+  </tr>
+  <tr> 
+    <td colspan="2" class="title_m">
+      <?PHP echo $this->Manager->nameS['message']; ?>
+    </td>
+  </tr>
+  <tr> 
+    <td colspan="2" class="input_field" <?PHP $this->showErrorBgcolor('message',$this->Manager->errorS); ?>>
+      <a name="message"></a>
+      <strong>※HTMLメールを送信する場合も必要です</strong>
+<?PHP $this->showErrorWord('message',$this->Manager->errorS); ?>
+      
+      <a href="../tag.html" target="_blank">※本文中に使用可能なタグの一覧はこちら</a><br>
+      <br>
+      <textarea type='text' name='inputS[message]' rows='40' cols='75'><?PHP echo $this->Manager->writeS['message']; ?></textarea>
+    </td>
+  </tr>
+  <tr> 
+    <td colspan="2" class="title_m">
+  <?PHP echo $this->Manager->nameS['message_html']; ?>
+    </td>
+  </tr>
+  <tr> 
+    <td colspan="2" class="input_field" <?PHP $this->showErrorBgcolor('message_html',$this->Manager->errorS); ?>>
+      <a name="message_html"></a>
+      HTMLメールを <?PHP $this->ViewerLib->showSelectLibrary( 'inputS[flag_html]', $this->Library->arySend(), $this->Manager->writeS['flag_html'] ); ?>
+
+  <?PHP $this->showErrorWord('message_html',$this->Manager->errorS); ?>
+      <strong>※HTMLメールを送信しない場合は入力は不要です</strong><br>
+      <textarea type='text' name='inputS[message_html]' rows='40' cols='75'><?PHP echo $this->Manager->writeS['message_html']; ?></textarea>
+    </td>
+  </tr>
+
+  <tr>
+    <td colspan="2" class="title_m">
+      メールのテスト送信
+    </td>
+  </tr>
+
+  <tr> 
+    <td class="input_title"><?PHP echo $this->Manager->nameS['mail_test']; ?></td>
+    <td class="input_field"  <?PHP $this->showErrorBgcolor('mail_test',$this->Manager->errorS); ?>>
+      <a name="mail_test"></a>
+      <input type='text' name='inputS[mail_test]' value='<?PHP echo $this->Manager->writeS['mail_test']; ?>' size='50'>
+<?PHP $this->showErrorWord('mail_test',$this->Manager->errorS); ?>
+    </td>
+  </tr>
+  <tr> 
+    <td colspan="2" class="input_button">
+      <input type='submit' name='post[test1]' value='　テスト送信[ TEXT ]　'>　
+      <input type='submit' name='post[test2]' value='　テスト送信[ HTML ]　'>
+    </td>
+  </tr>
+  <tr> 
+    <td colspan="2" class="input_explain">
+      <strong>
+      ※[ テスト送信 ]ボタンを押すと入力された[ テストメール送り先 ]に本番送信と同内容のメールを<br>
+      送信いたします。 <br>
+      %name% や %param1%・・・といったパラメーターは変換されずそのままで送信されます。    
+      </strong>
+    </td>
+  </tr>
+
+
+  <tr>
+    <td colspan="2" class="title_m">
+      メールリストのアップロード
+    </td>
+  </tr>
+
+  <tr> 
+    <td class="input_title"><?PHP echo $this->Manager->nameS['file_mail']; ?></td>
+    <td class="input_field"  <?PHP $this->showErrorBgcolor('fileUp',$this->Fileup->errorS); ?>>
+      <a name="fileUp"></a>
+      <input type="file" name='file_mail' size='45'>
+      <?PHP $this->showErrorWord('fileUp',$this->Fileup->errorS); ?>
+    </td>
+  </tr>
+  <tr> 
+    <td colspan="2" class="input_explain">
+    アップしたリストに不正アドレスが存在した場合　
+    <?PHP $this->ViewerLib->showSelectLibrary( 'inputS[flag_omit]', $this->Library->arySend2(), $this->Manager->writeS['flag_omit'] ); ?>
+    <br>
+    <br>
+    　「不正アドレスを省いて送信する」を選んだ場合・・・・・・不正なアドレスを無視して送信されます。<br>
+    　「送信せずに不正アドレスを確認する」を選んだ場合・・・「○○行目のメールアドレスがエラーです」と表示されます。<br>
+    <br>
+    <a href="../help.html" target="_blank">「正常なメールアドレスが0件です」と表示される場合はこちらをご覧ください。</a>    </td>
+  </tr>
+  <tr> 
+    <td colspan="2" class="input_explain">
+      <strong>
+      ※テスト送信実行後や、入力エラーが発生した場合はメールリスト再選択の必要があります。 
+      </strong>
+    </td>
+  </tr>
+  <tr> 
+    <td colspan="2" class="input_button">
+      以上の内容で宜しければ [　次へすすむ　] ボタンをクリックしてください<br>
+      <input type='submit' name='confirm'     value='　　次へすすむ　　'>　
+      <input type='submit' name='post[reset]' value='　　リセットする　　'>
+      <input type='hidden' name='charaCode' value="もじこーどはんていようへんすう">
+      <input type='hidden' name='hidden'    value="confirm">
+      <input type='hidden' name='mode'      value="<?PHP echo $this->pageS['mode']; ?>">
+      <input type='hidden' name='inputS[user_id]'     value="<?PHP echo $this->Manager->writeS['user_id']; ?>">
+  <?PHP $this->showHidden(); ?>
+    </td>
+  </tr>
+
+</table >
+
+
+</form>
+</div>
+
+
+
+
+
+
+
+
+
+<div id="footer-box">
+<table border="0" width="100%">
+  <tr>
+    <td align="center">
+      rabbit-mail
+    </td>
+  </tr>
+</table >
+</div>
+
+
+
+</div>
+
+</body>
+</html>

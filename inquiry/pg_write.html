@@ -1,0 +1,215 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="ja-JP">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-JP"> 
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>www.rabbit-mail.jp | メール配信ＡＳＰ</title>
+<link href="../css/common.css" rel="stylesheet" type="text/css">
+</head>
+<body bgcolor="#FFFFFF" >
+
+<div align="center">
+
+
+
+<div id="header-box">
+<table border="0" width="100%">
+  <tr>
+    <td align="left"><a href="/"><img src="../images/logo01.gif"></a></td>
+  </tr>
+  <tr>
+    <td align="right">
+      <hr size="1">
+      <A href="/forget/">ログインID・パスワードを忘れた方はこちら</A>
+    </td>
+  </tr>
+</table >
+</div>
+
+
+<div id="pictmail-input-box">
+<form action='index.php' method='POST' style="margin: 0px;">
+<table>
+  <tr>
+    <td colspan="2" class="title_l">
+      お問い合わせ
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="explain_l">
+      当サービスに関するお問い合わせはこちらで
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="title_l">
+      入力
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="explain_m">
+     お問い合わせ内容をご入力ください
+    </td>
+  </tr>
+
+<?PHP
+if($this->Manager->errorS!=""){
+?>
+
+  <tr> 
+    <td colspan="2" class="title_error">
+      入力エラーがあります
+      <b>
+    </td> 
+  </tr> 
+
+
+<?PHP
+}
+?>
+
+
+  <tr>
+    <td colspan="2" class="title_m">
+      お客様の情報
+    </td>
+  </tr>
+
+
+
+
+
+  <tr> 
+    <td class="input_title"><?PHP echo $this->Manager->nameS['name']; ?></td>
+    <td class="input_field" <?PHP $this->showErrorBgcolor('name',$this->Manager->errorS); ?>>
+      姓 <input type='text' name='inputS[name_family]' value='<?PHP echo $this->Manager->writeS['name_family']; ?>' size='20'><br />
+      名 <input type='text' name='inputS[name_first]'  value='<?PHP echo $this->Manager->writeS['name_first']; ?>' size='20'>
+<?PHP $this->showErrorWord('name',$this->Manager->errorS); ?>
+    </td>
+  </tr>
+  <tr> 
+    <td class="input_title"><?PHP echo $this->Manager->nameS['kana']; ?></td>
+    <td class="input_field" <?PHP $this->showErrorBgcolor('kana',$this->Manager->errorS); ?>>
+      姓 <input type='text' name='inputS[kana_family]' value='<?PHP echo $this->Manager->writeS['kana_family']; ?>' size='20'><br />
+      名 <input type='text' name='inputS[kana_first]'  value='<?PHP echo $this->Manager->writeS['kana_first']; ?>' size='20'>
+      <br> ※全角カタカナでご入力ください。 例) スズキ　イチロウ
+<?PHP $this->showErrorWord('kana',$this->Manager->errorS); ?>
+    </td>
+  </tr>
+  <tr> 
+    <td class="input_title"><?PHP echo $this->Manager->nameS['name_company']; ?></td>
+    <td class="input_field" <?PHP $this->showErrorBgcolor('name_company',$this->Manager->errorS); ?>>
+      <input type='text' name='inputS[name_company]' value='<?PHP echo $this->Manager->writeS['name_company']; ?>' size='35'>
+      <br> ※ 例) 株式会社○○
+<?PHP $this->showErrorWord('name_company',$this->Manager->errorS); ?>
+    </td>
+  </tr>
+  <tr> 
+    <td class="input_title"><?PHP echo $this->Manager->nameS['kana_company']; ?></td>
+    <td class="input_field" <?PHP $this->showErrorBgcolor('kana_company',$this->Manager->errorS); ?>>
+      <input type='text' name='inputS[kana_company]' value='<?PHP echo $this->Manager->writeS['kana_company']; ?>' size='35'>
+      <br> ※全角カタカナでご入力ください。 例) カブシキガイシャ　マルマル
+<?PHP $this->showErrorWord('kana_company',$this->Manager->errorS); ?>
+    </td>
+  </tr>
+
+
+
+
+  <tr>
+    <td colspan="2" class="title_m">
+      ご連絡先
+    </td>
+  </tr>
+
+
+  <tr> 
+    <td class="input_title"><?PHP echo $this->Manager->nameS['mail']; ?></td>
+    <td class="input_field" <?PHP $this->showErrorBgcolor('mail',$this->Manager->errorS); ?>>
+      <input type='text' name='inputS[mail]' value='<?PHP echo $this->Manager->writeS['mail']; ?>' size='35'>
+      <br> 例) info@rabbit-mail.jp
+<?PHP $this->showErrorWord('mail',$this->Manager->errorS); ?>
+    </td>
+  </tr>
+  <tr> 
+    <td class="input_title"><?PHP echo $this->Manager->nameS['tel']; ?></td>
+    <td class="input_field" <?PHP $this->showErrorBgcolor('tel',$this->Manager->errorS); ?>>
+      <input type='text' name='inputS[tel_1]' value='<?PHP echo $this->Manager->writeS['tel_1']; ?>' size='5'> -
+      <input type='text' name='inputS[tel_2]' value='<?PHP echo $this->Manager->writeS['tel_2']; ?>' size='5'> -
+      <input type='text' name='inputS[tel_3]' value='<?PHP echo $this->Manager->writeS['tel_3']; ?>' size='5'><br>
+      ※<?PHP echo $this->Manager->nameS['tel']; ?> か <?PHP echo $this->Manager->nameS['mobile']; ?>のどちらかをご入力ください。
+<?PHP $this->showErrorWord('tel',$this->Manager->errorS); ?>
+    </td>
+  </tr>
+
+  <tr> 
+    <td class="input_title"><?PHP echo $this->Manager->nameS['mobile']; ?></td>
+    <td class="input_field" <?PHP $this->showErrorBgcolor('mobile',$this->Manager->errorS); ?>>
+      <input type='text' name='inputS[mobile_1]' value='<?PHP echo $this->Manager->writeS['mobile_1']; ?>' size='5'> -
+      <input type='text' name='inputS[mobile_2]' value='<?PHP echo $this->Manager->writeS['mobile_2']; ?>' size='5'> -
+      <input type='text' name='inputS[mobile_3]' value='<?PHP echo $this->Manager->writeS['mobile_3']; ?>' size='5'><br>
+      ※<?PHP echo $this->Manager->nameS['tel']; ?> か <?PHP echo $this->Manager->nameS['mobile']; ?>のどちらかをご入力ください。
+      <?PHP $this->showErrorWord('mobile',$this->Manager->errorS); ?>
+    </td>
+  </tr>
+
+  <tr> 
+    <td class="input_title"><?PHP echo $this->Manager->nameS['fax']; ?></td>
+    <td class="input_field" <?PHP $this->showErrorBgcolor('fax',$this->Manager->errorS); ?>>
+      <input type='text' name='inputS[fax_1]' value='<?PHP echo $this->Manager->writeS['fax_1']; ?>' size='5'> -
+      <input type='text' name='inputS[fax_2]' value='<?PHP echo $this->Manager->writeS['fax_2']; ?>' size='5'> -
+      <input type='text' name='inputS[fax_3]' value='<?PHP echo $this->Manager->writeS['fax_3']; ?>' size='5'>
+<?PHP $this->showErrorWord('fax',$this->Manager->errorS); ?>
+    </td>
+  </tr>
+
+
+<tr>
+<td colspan="2" class="title_m">
+<?PHP echo $this->Manager->nameS['inquiry']; ?>
+</td>
+</tr>
+
+
+
+ <tr> 
+    <td colspan="2" class="input_field"<?PHP $this->showErrorBgcolor('inquiry',$this->Manager->errorS); ?>>
+      <textarea name='inputS[inquiry]' cols='75' rows='15'><?PHP echo $this->Manager->writeS['inquiry']; ?></textarea>
+<?PHP $this->showErrorWord('inquiry',$this->Manager->errorS); ?>
+    </td>
+  </tr>
+
+  <tr> 
+    <td colspan="2" class="input_button">
+      <input type='submit' name='confirm' value='　　確認画面へ　　'>
+      <input type='hidden' name='charaCode' value="もじこーどはんていようへんすう">
+      <input type='hidden' name='hidden'    value="confirm">
+      <input type='hidden' name='mode'      value="<?PHP echo $this->pageS['mode']; ?>">
+      <input type='hidden' name='inputS[user_id]'     value="<?PHP echo $this->Manager->writeS['user_id']; ?>">
+<?PHP $this->showHidden(); ?>
+    </td>
+  </tr>
+</table >
+</form>
+
+
+</div>
+
+
+<div id="footer-box">
+<table border="0" width="100%">
+  <tr>
+    <td align="center">
+      rabbit-mail
+    </td>
+  </tr>
+</table >
+</div>
+
+
+
+</div>
+
+</body>
+</html>

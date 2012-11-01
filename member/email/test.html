@@ -1,0 +1,116 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-JP">
+<title>DBメール配信</title>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-JP">
+<title>メールアドレス管理：メールアドレス登録 </title>
+<link href="../css/main.css" rel="stylesheet" type="text/css">
+<link href="../css/form.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../js/user.js"></script>
+</head>
+
+<body>
+
+<div class="frame">
+
+  <div class="frame_header">
+
+    <table width="100%" >
+      <tr class="header_dirA">
+        <td class="header_dirA_image" colspan="3"><img src="http://www.itm-asp.com/images/top0806/rogo.gif"></td>
+        <td class="header_dirB_menu2" rowspan="2">
+
+          <table width="100%" >
+            <tr>
+              <td class="user_title1">
+                ユーザー
+              </td>
+              <td class="user_field1">
+                <?php $isUserS['name']; ?>　
+              </td>
+              <td class="user_title1">
+                プラン
+              </td>
+              <td class="user_field1">
+                <?php $isUserS['plan']; ?>　
+              </td>
+            </tr>
+            <tr>
+              <td class="user_title1">
+                今月の残り配信可能数
+              </td>
+              <td class="user_field1">
+                <?php $isUserS['send_now']; ?>件 / <?php $isUserS['send_max']; ?>件　
+              </td>
+              <td class="user_title1">
+                登録メールアドレス件数
+              </td>
+              <td class="user_field1">
+                <?php $isUserS['count_regist']; ?>件　
+              </td>
+            </tr>
+            <tr>
+              <td class="user_title1">
+                現在のカート内容
+              </td>
+              <td class="user_field1" colspan="3">
+                <?php $isUserS['count_in_cart']; ?>件　
+              </td>
+            </tr>
+          </table>
+
+        </td>
+      </tr>
+      <tr class="header_dirB">
+        <td class="header_dirB_menu1"><a class="header_menu_link1" href="/member/email/regist_first/?clear=true">メールアドレス管理</a><a class="header_menu_link1" href="/member/email/group/?clear=true">グループ追加/修正/削除</a><a class="header_menu_link1" href="/member/email/in/?clear=true">メール配信</a></td>
+      </tr>
+    </table>
+
+  </div>
+
+  <div class="frame_main">
+
+    <div class="main_root">
+      <a href="/member/">TOP</a> >> DBメール配信
+    </div>
+    <div class="main_title_m">DBメール配信</div>
+
+    <table width="100%">
+      <tr>
+        <td class="main_explain2" width="33%">
+          メールアドレスを登録できます<br>
+          <a class="link_button1" href="/member/email/regist_first/?clear=true">メールアドレス登録</a>
+        </td>
+        <td class="main_explain2" width="34%">
+          登録したメールアドレスの検索、修正・変更、一括削除等ができます<br>
+          <a class="link_button1" href="/member/email/list/?clear=true">メールアドレス検索 / 一括削除</a>
+        </td>
+        <td class="main_explain2" width="33%">
+          メールアドレスをCSVアップロードにてまとめて大量登録ができます<br>
+          <a class="link_button1" href="/member/email/upload/?clear=true">CSVアップロードでまとめて登録</a>
+        </td>
+      </tr>
+    </table>
+
+
+
+  </div>
+
+  <div class="frame_footer">
+
+
+  <span class="copyright">Copyright (C) 2005-2009 ITManagement Co., Ltd. All Rights Reserved </span>
+
+  </div>
+
+
+</div>
+
+</body>
+</html>

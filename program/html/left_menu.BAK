@@ -1,0 +1,99 @@
+  <div id="outline">
+    <div class="contents-menu-left">
+
+<!--ここからログインメニュー-->
+<?PHP
+      if( isset($_SESSION['user']['id']) && isset($_SESSION['user']['password']) ){
+?>
+
+<table width="149" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td colspan="3"><img src="../../images/top0806/login/menu01.jpg" width="149" height="36" /></td>
+  </tr>
+  <tr>
+    <td width="9" background="../../images/top0806/login/menu-left.jpg">&nbsp;</td>
+    <td width="132"><table width="120" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="16"><img src="../../images/top0806/login/menu-home.jpg" alt="ホームに戻る" width="16" height="16" /></td>
+        <td width="98" class="black12"><a href="/member/">ホームに戻る</a></td>
+      </tr>
+      <tr>
+        <td><img src="../../images/top0806/login/menu-gotouroku.jpg" alt="ご登録内容変更" width="16" height="16" /></td>
+        <td class="black12"><a href="/member/user/index.php?get=write&amp;mode=renew">ご登録内容変更</a></td>
+      </tr>
+      <tr>
+        <td><img src="../../images/top0806/login/menu-logout.jpg" alt="ログアウト" width="16" height="16" /></td>
+        <td class="black12"><a href="/member/logout.php?get=logout">ログアウト</a></td>
+      </tr>
+    </table></td>
+    <td width="9" background="../../images/top0806/login/menu-right.jpg">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="3"><img src="../../images/top0806/login/menu02.jpg" width="149" height="18" /></td>
+  </tr>
+  <tr>
+    <td background="../../images/top0806/login/menu-left.jpg">&nbsp;</td>
+    <td><table width="120" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="16"><img src="../../images/top0806/login/menu-pictmail.jpg" alt="ピクトメール" width="16" height="16" /></td>
+        <td width="98" class="black12"><a href="/member/pictmail/">ピクトメール</a></td>
+      </tr>
+      <tr>
+        <td><img src="../../images/top0806/login/menu-cc.jpg" alt="クリックカウンター" width="16" height="16" /></td>
+        <td class="black12"><a href="/member/clickcounter/">クリックカウター</a></td>
+      </tr>
+      <tr>
+        <td><img src="../../images/top0806/login/menu-stepmail.jpg" alt="ステップメール" width="16" height="16" /></td>
+        <td class="black12"><a href="/member/stepmail/">ステップメール</a></td>
+      </tr>
+    </table></td>
+    <td background="../../images/top0806/login/menu-right.jpg">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="3"><img src="../../images/top0806/login/menu03.jpg" width="149" height="12" /></td>
+  </tr>
+  <tr>
+    <td colspan="3"><img src="../../images/top0806/sp.gif" width="1" height="5" /></td>
+  </tr>
+  <tr>
+    <td colspan="3"><a href="/stepmail/"><img src="../../images/top0806/login/menu-stepmail-2.jpg" alt="ステップメール　もう試しましたか？" width="149" height="146" border="0" /></a></td>
+  </tr>
+  <tr>
+    <td colspan="3"><img src="../../images/top0806/sp.gif" width="1" height="5" /></td>
+  </tr>
+</table>
+
+<?PHP
+  }
+?>
+<!--ここまでログインメニュー-->
+
+		<table width="151" border="0" cellspacing="1" cellpadding="0" align="left">
+        <tr>
+          <td><a href="/sign_up/sign_up.php"><img src="/images/top0806/left-menu/muryou-taiken.gif" alt="メール配信、ステップメール、クリックカウンター無料体験" width="151" height="61" border="0"></a></td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="/images/top0806/left-menu/ryoukin.gif" alt="メール配信、ステップメール、クリックカウンター料金プラン" width="151" height="61" border="0"></a></td>
+        </tr>
+        <tr>
+          <td><a href="#"><img src="/images/top0806/left-menu/kaihatusya.gif" alt="メール配信、開発者の声" width="151" height="94" border="0"></a></td>
+        </tr>
+        <tr>
+          <td><a href="/q-a.html"><img src="/images/top0806/left-menu/yokuaru.gif" alt="メール配信、ステップメール、クリックカウンターよくある質問" width="151" height="62" border="0"></a></td>
+        </tr>
+        <tr>
+          <td><a href="/riyousya.html"><img src="/images/top0806/left-menu/koe.gif" alt="メール配信、ステップメール、クリックカウンター利用者の声" width="151" height="61" border="0"></a></td>
+        </tr>
+        <tr>
+          <td><a href="/tool/"><img src="/images/top0806/left-menu/tool.gif" alt="itm-aspの無料ツール" width="151" height="63" border="0"></a></td>
+        </tr>
+        <tr>
+          <td><img src="/images/top0806/left-menu/otoiawase.gif" alt="メール配信、ステップメール、クリックカウンターのお問合せ" width="151" height="61"></td>
+        </tr>
+        <tr>
+          <td><a href="http://itm.ne.jp/web/hp.html" target="_blank"><img src="/images/top0806/left-menu/jisseki.jpg" alt="アイティマネジメント　実績" width="151" height="167" border="0"></a></td>
+        </tr>
+      </table>
+
+    </div>
+  </div>

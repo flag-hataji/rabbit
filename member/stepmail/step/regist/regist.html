@@ -1,0 +1,58 @@
+
+<table width="650" border="0" cellspacing="0" cellpadding="0">
+  <tr class="black12">
+    <td align="center"><a href="/member/stepmail/scenario/tag.html" target="_blank">本文に挿入できるお客様情報タグはこちらからご確認ください</a></td>
+  </tr>
+  <tr> 
+    <td>
+
+        <div align="center">
+          <font size ="2" color="#FF0000"><?PHP if(isset($errorMsg)){print_error($errorMsg);} ?></font>
+          <br>
+          <font size ="2" color="#FF0000">※は必須です。</font> </div>
+                
+        <table width="600" border="0" cellpadding="4" cellspacing="1" bgcolor="#999999" align="center">
+          <tr> 
+            <td width="177" bgcolor="#CFCFE2" class="black12">ステップ名<font color="#FF0000">※<br />
+            （表示するだけです）</font></td>
+            <td width="404" bgcolor="#FFFFFF" class="black12"><input name="aData[step_name]" type="text" value="<?PHP if(isset($aData['step_name'])){ print $aData['step_name']; } ?>" size="50"></td>
+          </tr>
+          <tr> 
+            <td bgcolor="#CFCFE2" class="black12">件名<font color="#FF0000">※</font></td>
+            <td bgcolor="#FFFFFF" class="black12"><input name="aData[subject]" type="text" value="<?PHP if(isset($aData['subject'])){ print $aData['subject']; } ?>" size="50"></td>
+          </tr>
+          <tr> 
+            <td bgcolor="#CFCFE2" class="black12">ＴＥＸＴメッセージ<font color="#FF0000">※</font></td>
+            <td bgcolor="#FFFFFF" class="black12">&nbsp;</td>
+          </tr>
+          <tr>
+            <td colspan="2" bgcolor="#FFFFFF" class="black12"><textarea name="aData[text_msg]" cols="72" rows="20" ><?PHP if(isset($aData['text_msg'])){ print $aData['text_msg'];  }?></textarea></td>
+          </tr>
+          <tr> 
+            <td bgcolor="#CFCFE2" class="black12">HTMLメール</td>
+            <td bgcolor="#FFFFFF" class="black12">
+             <input id="check1" name="aData[flag_html]" type="checkbox" value="t" onclick="dom_testX(this)" <?PHP if(isset($aData['flag_html'])){ bCheckd($aData['flag_html'],'t');} ?> >HTMLメールを送信する<br>            </td>
+          </tr>
+          <tr> 
+            <td bgcolor="#CFCFE2" class="black12">ＨＴＭＬメッセージ</td>
+            <td bgcolor="#FFFFFF" class="black12">&nbsp;</td>
+          </tr>
+
+          <tr>
+            <td colspan="2" bgcolor="#FFFFFF" class="black12">
+                <div ID="inputs1" STYLE="display:none">
+                    <textarea name="aData[html_msg]" cols="72" rows="20" ><?PHP if(isset($aData['html_msg'])){ print $aData['html_msg'];  }?></textarea>
+                </div>            </td>
+          </tr>
+          <tr> 
+            <td colspan="2" bgcolor="#FFFFFF"> <div align="center"> 
+                <input type="submit" name="confilm" value="確認する">
+                　 
+                <input type="reset" name="reset" value="リセット">
+              </div>           </td>
+          </tr>
+        </table>    </td>
+  </tr>
+</table>
+<input name="aData[step_id]" type="hidden" value="<?PHP if(isset($_GET['id'])){ print $_GET['id']; } ?>">
+ 

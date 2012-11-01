@@ -1,0 +1,20 @@
+<?php
+/*  */
+
+class ItmManager extends Web
+{
+
+  var $db   = null ;
+  var $bean = null ;
+
+  // __construct
+  function ItmManager(&$db, &$bean)
+//  public function __construct(&$db, &$bean)
+  {
+    $this->db   =& $db ;
+    $this->bean =& $bean ;
+  }
+
+}
+
+?>

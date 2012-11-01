@@ -1,0 +1,99 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="ja-JP">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-JP"> 
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>www.rabbit-mail.jp | メール配信ＡＳＰ</title>
+<link href="../../../css/common.css" rel="stylesheet" type="text/css">
+</head>
+<body bgcolor="#FFFFFF" >
+
+<div align="center">
+
+<?PHP require_once("../../program/html/master/header_user.html"); ?>
+
+
+<div id="pictmail-top-box">
+<table>
+  <tr>
+    <td class="title_l">
+      プラン変更
+    </td>
+  </tr>
+  <tr>
+    <td class="explain_l">
+      ユーザーのプランを変更することができます。
+    </td>
+  </tr>
+</table>
+</div>
+
+
+<div id="pictmail-input-box">
+<form name="form2" method="post" action="index.php" style="margin: 0px;">
+
+
+<table>
+  <tr>
+    <td colspan="2" class="title_l">
+      入力
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="title_m">
+      プラン選択
+    </td>
+  </tr>
+
+
+  <tr> 
+    <td class="input_title"><?PHP echo $this->Manager->nameS['plan_pictmail_id']; ?></td>
+    <td class="input_field">
+<?PHP $this->ViewerLib->showSelectPlanPictmail( 'inputS[plan_pictmail_id]', $this->Manager->writeS['plan_pictmail_id'] ); ?>
+
+    </td>
+  </tr>
+  
+  <tr> 
+    <td colspan="2" class="input_button">
+                    <input type='submit' name='confirm' value='　　確認画面へ　　'>
+                    <input type='hidden' name='charaCode' value="もじこーどはんていようへんすう">
+                    <input type='hidden' name='hidden'    value="confirm">
+                    <input type='hidden' name='mode'      value="<?PHP echo $this->pageS['mode']; ?>">
+                    <input type='hidden' name='inputS[pictmail_id]'   value="<?PHP echo $this->Manager->writeS['pictmail_id']; ?>">
+                    <input type='hidden' name='inputS[user_id]'       value="<?PHP echo $this->Manager->writeS['user_id']; ?>">
+<?PHP $this->showHidden(); ?>
+    </td>
+  </tr>
+</table>
+
+
+</form>
+
+</div>
+
+
+
+
+
+
+
+
+
+<div id="footer-box">
+<table border="0" width="100%">
+  <tr>
+    <td align="center">
+      rabbit-mail
+    </td>
+  </tr>
+</table >
+</div>
+
+
+
+</div>
+
+</body>
+</html>

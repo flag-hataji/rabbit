@@ -1,0 +1,909 @@
+2009-10-13 16:24:48 Warning: Warning (2): require_once(_DIR_USER_HTML__HTML_JS_) [<a href='http://php.net/function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in [APP/views/layouts/default.ctp, line 13]
+2009-10-13 16:25:47 Warning: Warning (2): require_once(_DIR_USER_HTML__HTML_JS_) [<a href='http://php.net/function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in [APP/views/layouts/default.ctp, line 13]
+2009-10-13 16:27:57 Warning: Warning (2): require_once(_DIR_USER_HTML__HTML_JS_) [<a href='http://php.net/function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in [APP/views/layouts/default.ctp, line 13]
+2009-10-13 16:28:01 Warning: Warning (2): require_once(_DIR_USER_HTML__HTML_JS_) [<a href='http://php.net/function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in [APP/views/layouts/default.ctp, line 13]
+2009-10-13 16:28:42 Warning: Warning (2): require_once(_DIR_USER_HTML__HTML_JS_) [<a href='http://php.net/function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in [APP/views/layouts/default.ctp, line 13]
+2009-10-13 16:29:11 Warning: Warning (2): require_once(_DIR_USER_HTML__HTML_JS_) [<a href='http://php.net/function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in [APP/views/layouts/default.ctp, line 13]
+2009-10-13 16:29:14 Warning: Warning (2): require_once(_DIR_USER_HTML__HTML_JS_) [<a href='http://php.net/function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in [APP/views/layouts/default.ctp, line 13]
+2009-10-13 16:36:43 Warning: Warning (2): require_once(_DIR_USER_HTML__HTML_JS_) [<a href='http://php.net/function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in [COREapp/views/layouts/default.ctp, line 13]
+2009-10-13 16:40:21 Warning: Warning (2): require_once(_DIR_USER_HTML__HTML_JS_) [<a href='http://php.net/function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in [COREapp/views/layouts/default.ctp, line 13]
+2009-10-13 16:45:38 Warning: Warning (2): require_once(_DIR_USER_HTML__HTML_JS_) [<a href='http://php.net/function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in [APP/views/layouts/default.ctp, line 13]
+2009-10-13 16:45:41 Warning: Warning (2): require_once(_DIR_USER_HTML__HTML_JS_) [<a href='http://php.net/function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in [APP/views/layouts/default.ctp, line 13]
+2009-10-13 16:45:43 Warning: Warning (2): require_once(_DIR_USER_HTML__HTML_JS_) [<a href='http://php.net/function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in [APP/views/layouts/default.ctp, line 13]
+2009-10-13 16:46:12 Warning: Warning (2): require_once(_DIR_USER_HTML__HTML_JS_) [<a href='http://php.net/function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in [COREapp/views/layouts/default.ctp, line 13]
+2009-10-13 16:54:14 Warning: Warning (2): require_once(_DIR_USER_HTML__HTML_JS_) [<a href='http://php.net/function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in [COREapp/views/layouts/default.ctp, line 13]
+2009-10-13 16:59:07 Warning: Warning (2): require_once(_DIR_USER_HTML__HTML_JS_) [<a href='http://php.net/function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in [COREapp/views/layouts/default.ctp, line 13]
+2009-10-13 16:59:33 Warning: Warning (2): require_once(_DIR_USER_HTML__HTML_JS_) [<a href='http://php.net/function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in [COREapp/views/layouts/default.ctp, line 13]
+2009-10-13 17:20:34 Warning: Warning (2): require_once(_DIR_USER_HTML__HTML_JS_) [<a href='http://php.net/function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in [COREapp/views/layouts/default.ctp, line 13]
+2009-10-13 17:24:22 Warning: Warning (2): require_once(_DIR_USER_HTML__HTML_JS_) [<a href='http://php.net/function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in [COREapp/views/layouts/default.ctp, line 13]
+2009-10-13 17:27:18 Warning: Warning (2): require_once(_DIR_USER_HTML__HTML_JS_) [<a href='http://php.net/function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in [COREapp/views/layouts/default.ctp, line 13]
+2009-10-13 17:27:26 Warning: Warning (2): require_once(_DIR_USER_HTML__HTML_JS_) [<a href='http://php.net/function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in [COREapp/views/layouts/default.ctp, line 13]
+2009-10-13 17:27:29 Warning: Warning (2): require_once(_DIR_USER_HTML__HTML_JS_) [<a href='http://php.net/function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in [COREapp/views/layouts/default.ctp, line 13]
+2009-10-13 17:27:34 Warning: Warning (2): require_once(_DIR_USER_HTML__HTML_JS_) [<a href='http://php.net/function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in [COREapp/views/layouts/default.ctp, line 13]
+2009-10-13 17:27:56 Warning: Warning (2): require_once(_DIR_USER_HTML__HTML_JS_) [<a href='http://php.net/function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in [COREapp/views/layouts/default.ctp, line 13]
+2009-10-13 17:28:45 Warning: Warning (2): require_once(_DIR_USER_HTML__HTML_JS_) [<a href='http://php.net/function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in [COREapp/views/layouts/default.ctp, line 13]
+2009-10-13 17:34:24 Warning: Warning (2): require_once(_DIR_USER_HTML__HTML_JS_) [<a href='http://php.net/function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in [COREapp/views/layouts/default.ctp, line 13]
+2009-10-13 17:34:34 Warning: Warning (2): require_once(_DIR_USER_HTML__HTML_JS_) [<a href='http://php.net/function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in [COREapp/views/layouts/default.ctp, line 13]
+2009-10-13 18:06:43 Warning: Warning (2): require_once(_DIR_USER_HTML__HTML_JS_) [<a href='http://php.net/function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in [COREapp/views/layouts/default.ctp, line 13]
+2009-10-13 18:11:19 Warning: Warning (2): require_once(_DIR_USER_HTML__HTML_JS_) [<a href='http://php.net/function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in [COREapp/views/layouts/default.ctp, line 13]
+2009-10-14 13:42:44 Warning: Warning (2): Wrong parameter count for mb_convert_encoding() in [COREapp/models/temp_parse_csv.php, line 64]
+2009-10-14 15:24:20 Warning: Warning (2): Wrong parameter count for array_push() in [COREapp/models/temp_parse_csv.php, line 65]
+2009-10-14 15:25:56 Warning: Warning (2): Wrong parameter count for array_push() in [COREapp/models/temp_parse_csv.php, line 64]
+2009-10-14 16:00:52 Warning: Warning (2): array_shift() [<a href='http://php.net/function.array-shift'>function.array-shift</a>]: The argument should be an array in [COREapp/models/temp_disused_parse_csv.php, line 108]
+2009-10-14 16:01:32 Warning: Warning (2): array_shift() [<a href='http://php.net/function.array-shift'>function.array-shift</a>]: The argument should be an array in [COREapp/models/temp_disused_parse_csv.php, line 108]
+2009-10-14 19:59:21 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/program/cake/cake/libs/debugger.php:512) in [COREapp/controllers/parse_csv_controller.php, line 243]
+2009-10-14 19:59:21 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/program/cake/cake/libs/debugger.php:512) in [COREapp/controllers/parse_csv_controller.php, line 244]
+2009-10-14 19:59:21 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/program/cake/cake/libs/debugger.php:512) in [COREapp/controllers/parse_csv_controller.php, line 245]
+2009-10-14 19:59:21 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/program/cake/cake/libs/debugger.php:512) in [COREapp/controllers/parse_csv_controller.php, line 246]
+2009-10-14 20:00:15 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/program/cake/app/models/parse_csv.php:120) in [COREapp/controllers/parse_csv_controller.php, line 243]
+2009-10-14 20:00:15 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/program/cake/app/models/parse_csv.php:120) in [COREapp/controllers/parse_csv_controller.php, line 244]
+2009-10-14 20:00:15 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/program/cake/app/models/parse_csv.php:120) in [COREapp/controllers/parse_csv_controller.php, line 245]
+2009-10-14 20:00:15 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/program/cake/app/models/parse_csv.php:120) in [COREapp/controllers/parse_csv_controller.php, line 246]
+2009-10-14 20:01:56 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/program/cake/app/models/parse_csv.php:120) in [COREapp/controllers/parse_csv_controller.php, line 243]
+2009-10-14 20:01:56 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/program/cake/app/models/parse_csv.php:120) in [COREapp/controllers/parse_csv_controller.php, line 244]
+2009-10-14 20:01:56 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/program/cake/app/models/parse_csv.php:120) in [COREapp/controllers/parse_csv_controller.php, line 245]
+2009-10-14 20:01:56 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/program/cake/app/models/parse_csv.php:120) in [COREapp/controllers/parse_csv_controller.php, line 246]
+2009-10-14 20:03:03 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/program/cake/app/models/parse_csv.php:120) in [COREapp/controllers/parse_csv_controller.php, line 243]
+2009-10-14 20:03:03 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/program/cake/app/models/parse_csv.php:120) in [COREapp/controllers/parse_csv_controller.php, line 244]
+2009-10-14 20:03:03 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/program/cake/app/models/parse_csv.php:120) in [COREapp/controllers/parse_csv_controller.php, line 245]
+2009-10-14 20:03:03 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/program/cake/app/models/parse_csv.php:120) in [COREapp/controllers/parse_csv_controller.php, line 246]
+2009-10-14 20:04:05 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/program/cake/app/models/parse_csv.php:125) in [COREapp/controllers/parse_csv_controller.php, line 243]
+2009-10-14 20:04:05 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/program/cake/app/models/parse_csv.php:125) in [COREapp/controllers/parse_csv_controller.php, line 244]
+2009-10-14 20:04:05 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/program/cake/app/models/parse_csv.php:125) in [COREapp/controllers/parse_csv_controller.php, line 245]
+2009-10-14 20:04:05 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/program/cake/app/models/parse_csv.php:125) in [COREapp/controllers/parse_csv_controller.php, line 246]
+2009-10-14 20:05:42 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/program/cake/cake/basics.php:313) in [COREapp/controllers/parse_csv_controller.php, line 243]
+2009-10-14 20:05:42 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/program/cake/cake/basics.php:313) in [COREapp/controllers/parse_csv_controller.php, line 244]
+2009-10-14 20:05:42 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/program/cake/cake/basics.php:313) in [COREapp/controllers/parse_csv_controller.php, line 245]
+2009-10-14 20:05:42 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/program/cake/cake/basics.php:313) in [COREapp/controllers/parse_csv_controller.php, line 246]
+2009-10-14 20:07:52 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/program/cake/app/models/parse_csv.php:120) in [COREapp/controllers/parse_csv_controller.php, line 243]
+2009-10-14 20:07:52 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/program/cake/app/models/parse_csv.php:120) in [COREapp/controllers/parse_csv_controller.php, line 244]
+2009-10-14 20:07:52 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/program/cake/app/models/parse_csv.php:120) in [COREapp/controllers/parse_csv_controller.php, line 245]
+2009-10-14 20:07:52 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/program/cake/app/models/parse_csv.php:120) in [COREapp/controllers/parse_csv_controller.php, line 246]
+2009-10-14 20:08:38 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/program/cake/app/models/parse_csv.php:120) in [COREapp/controllers/parse_csv_controller.php, line 243]
+2009-10-14 20:08:38 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/program/cake/app/models/parse_csv.php:120) in [COREapp/controllers/parse_csv_controller.php, line 244]
+2009-10-14 20:08:38 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/program/cake/app/models/parse_csv.php:120) in [COREapp/controllers/parse_csv_controller.php, line 245]
+2009-10-14 20:08:38 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/program/cake/app/models/parse_csv.php:120) in [COREapp/controllers/parse_csv_controller.php, line 246]
+2009-10-14 20:11:38 Warning: Warning (2): Invalid argument supplied for foreach() in [COREapp/models/parse_csv.php, line 122]
+2009-10-14 20:11:38 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/program/cake/cake/libs/debugger.php:499) in [COREapp/controllers/parse_csv_controller.php, line 243]
+2009-10-14 20:11:38 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/program/cake/cake/libs/debugger.php:499) in [COREapp/controllers/parse_csv_controller.php, line 244]
+2009-10-14 20:11:38 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/program/cake/cake/libs/debugger.php:499) in [COREapp/controllers/parse_csv_controller.php, line 245]
+2009-10-14 20:11:38 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/program/cake/cake/libs/debugger.php:499) in [COREapp/controllers/parse_csv_controller.php, line 246]
+2009-10-14 20:13:08 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/program/cake/cake/basics.php:313) in [COREapp/controllers/parse_csv_controller.php, line 243]
+2009-10-14 20:13:08 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/program/cake/cake/basics.php:313) in [COREapp/controllers/parse_csv_controller.php, line 244]
+2009-10-14 20:13:08 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/program/cake/cake/basics.php:313) in [COREapp/controllers/parse_csv_controller.php, line 245]
+2009-10-14 20:13:08 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/program/cake/cake/basics.php:313) in [COREapp/controllers/parse_csv_controller.php, line 246]
+2009-10-14 20:13:53 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/program/cake/app/models/parse_csv.php:120) in [COREapp/controllers/parse_csv_controller.php, line 243]
+2009-10-14 20:13:53 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/program/cake/app/models/parse_csv.php:120) in [COREapp/controllers/parse_csv_controller.php, line 244]
+2009-10-14 20:13:53 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/program/cake/app/models/parse_csv.php:120) in [COREapp/controllers/parse_csv_controller.php, line 245]
+2009-10-14 20:13:53 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/program/cake/app/models/parse_csv.php:120) in [COREapp/controllers/parse_csv_controller.php, line 246]
+2009-10-14 20:16:17 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/program/cake/app/models/parse_csv.php:122) in [COREapp/controllers/parse_csv_controller.php, line 243]
+2009-10-14 20:16:17 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/program/cake/app/models/parse_csv.php:122) in [COREapp/controllers/parse_csv_controller.php, line 244]
+2009-10-14 20:16:17 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/program/cake/app/models/parse_csv.php:122) in [COREapp/controllers/parse_csv_controller.php, line 245]
+2009-10-14 20:16:17 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/program/cake/app/models/parse_csv.php:122) in [COREapp/controllers/parse_csv_controller.php, line 246]
+2009-10-14 20:17:14 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/program/cake/app/models/parse_csv.php:121) in [COREapp/controllers/parse_csv_controller.php, line 243]
+2009-10-14 20:17:14 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/program/cake/app/models/parse_csv.php:121) in [COREapp/controllers/parse_csv_controller.php, line 244]
+2009-10-14 20:17:14 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/program/cake/app/models/parse_csv.php:121) in [COREapp/controllers/parse_csv_controller.php, line 245]
+2009-10-14 20:17:14 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/program/cake/app/models/parse_csv.php:121) in [COREapp/controllers/parse_csv_controller.php, line 246]
+2009-10-14 20:18:13 Warning: Warning (2): Invalid argument supplied for foreach() in [COREapp/models/parse_csv.php, line 122]
+2009-10-14 20:18:13 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/program/cake/cake/basics.php:117) in [COREapp/controllers/parse_csv_controller.php, line 243]
+2009-10-14 20:18:13 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/program/cake/cake/basics.php:117) in [COREapp/controllers/parse_csv_controller.php, line 244]
+2009-10-14 20:18:13 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/program/cake/cake/basics.php:117) in [COREapp/controllers/parse_csv_controller.php, line 245]
+2009-10-14 20:18:13 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/program/cake/cake/basics.php:117) in [COREapp/controllers/parse_csv_controller.php, line 246]
+2009-10-14 20:18:35 Warning: Warning (2): Invalid argument supplied for foreach() in [COREapp/models/parse_csv.php, line 121]
+2009-10-14 20:18:35 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/program/cake/cake/libs/debugger.php:501) in [COREapp/controllers/parse_csv_controller.php, line 243]
+2009-10-14 20:18:35 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/program/cake/cake/libs/debugger.php:501) in [COREapp/controllers/parse_csv_controller.php, line 244]
+2009-10-14 20:18:35 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/program/cake/cake/libs/debugger.php:501) in [COREapp/controllers/parse_csv_controller.php, line 245]
+2009-10-14 20:18:35 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/program/cake/cake/libs/debugger.php:501) in [COREapp/controllers/parse_csv_controller.php, line 246]
+2009-10-14 20:22:15 Warning: Warning (2): Invalid argument supplied for foreach() in [COREapp/models/parse_csv.php, line 122]
+2009-10-14 20:34:23 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  syntax error at or near &quot;&quot;TempParseCsv&quot;&quot;
+LINE 1: ...eCsv&quot;.&quot;user_id&quot; = &quot;TempDisusedParseCsv&quot;.&quot;user_id&quot; &quot;TempParse...
+                                                             ^ in [COREcake/libs/model/datasources/dbo/dbo_postgres.php, line 148]
+2009-10-14 20:34:23 Warning: Warning (512): <span style = "color:Red;text-align:left"><b>SQL Error:</b> ERROR:  syntax error at or near ""TempParseCsv""
+LINE 1: ...eCsv"."user_id" = "TempDisusedParseCsv"."user_id" "TempParse...
+                                                             ^</span> in [COREcake/libs/model/datasources/dbo_source.php, line 525]
+2009-10-14 20:35:08 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  syntax error at or near &quot;&quot;TempParseCsv&quot;&quot;
+LINE 1: ...eCsv&quot;.&quot;user_id&quot; = &quot;TempDisusedParseCsv&quot;.&quot;user_id&quot; &quot;TempParse...
+                                                             ^ in [COREcake/libs/model/datasources/dbo/dbo_postgres.php, line 148]
+2009-10-14 20:35:08 Warning: Warning (512): <span style = "color:Red;text-align:left"><b>SQL Error:</b> ERROR:  syntax error at or near ""TempParseCsv""
+LINE 1: ...eCsv"."user_id" = "TempDisusedParseCsv"."user_id" "TempParse...
+                                                             ^</span> in [COREcake/libs/model/datasources/dbo_source.php, line 525]
+2009-10-14 20:37:43 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  syntax error at or near &quot;&quot;TempParseCsv&quot;&quot;
+LINE 1: ...&quot;.&quot;user_id&quot; = &quot;temp_disused_parse_csvs&quot;.&quot;user_id&quot; &quot;TempParse...
+                                                             ^ in [COREcake/libs/model/datasources/dbo/dbo_postgres.php, line 148]
+2009-10-14 20:37:43 Warning: Warning (512): <span style = "color:Red;text-align:left"><b>SQL Error:</b> ERROR:  syntax error at or near ""TempParseCsv""
+LINE 1: ..."."user_id" = "temp_disused_parse_csvs"."user_id" "TempParse...
+                                                             ^</span> in [COREcake/libs/model/datasources/dbo_source.php, line 525]
+2009-10-14 20:38:35 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  syntax error at or near &quot;&quot;temp_parse_csvs&quot;&quot;
+LINE 1: ...AS &quot;TempParseCsv&quot;   WHERE temp_disused_parse_csvs &quot;temp_pars...
+                                                             ^ in [COREcake/libs/model/datasources/dbo/dbo_postgres.php, line 148]
+2009-10-14 20:38:35 Warning: Warning (512): <span style = "color:Red;text-align:left"><b>SQL Error:</b> ERROR:  syntax error at or near ""temp_parse_csvs""
+LINE 1: ...AS "TempParseCsv"   WHERE temp_disused_parse_csvs "temp_pars...
+                                                             ^</span> in [COREcake/libs/model/datasources/dbo_source.php, line 525]
+2009-10-14 20:40:35 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  column &quot;temp_disused_parse_csvs.mail&quot; must appear in the GROUP BY clause or be used in an aggregate function in [COREcake/libs/model/datasources/dbo/dbo_postgres.php, line 148]
+2009-10-14 20:40:35 Warning: Warning (512): <span style = "color:Red;text-align:left"><b>SQL Error:</b> ERROR:  column "temp_disused_parse_csvs.mail" must appear in the GROUP BY clause or be used in an aggregate function</span> in [COREcake/libs/model/datasources/dbo_source.php, line 525]
+2009-10-15 10:29:33 Warning: Warning (2): Wrong parameter count for in_array() in [COREapp/models/temp_parse_csv.php, line 166]
+2009-10-15 10:45:48 Warning: Warning (2): Invalid argument supplied for foreach() in [COREapp/models/parse_csv.php, line 121]
+2009-10-15 12:53:21 Warning: Warning (2): Invalid argument supplied for foreach() in [COREapp/models/parse_csv.php, line 121]
+2009-10-15 12:53:49 Warning: Warning (2): Invalid argument supplied for foreach() in [COREapp/models/parse_csv.php, line 121]
+2009-10-15 12:54:10 Warning: Warning (2): Invalid argument supplied for foreach() in [COREapp/models/parse_csv.php, line 121]
+2009-10-15 13:14:43 Warning: Warning (2): Invalid argument supplied for foreach() in [COREapp/models/parse_csv.php, line 122]
+2009-10-16 11:47:07 Warning: Warning (2): chmod() [<a href='http://php.net/function.chmod'>function.chmod</a>]: No such file or directory in [COREapp/models/temp_parse_csv.php, line 56]
+2009-10-16 12:17:20 Warning: Warning (2): file_put_contents() expects at least 2 parameters, 1 given in [COREapp/models/temp_parse_csv.php, line 53]
+2009-10-16 14:45:58 Warning: Warning (2): Wrong parameter count for ltrim() in [COREapp/models/temp_parse_csv.php, line 76]
+2009-10-16 14:57:54 Warning: Warning (2): preg_replace() [<a href='http://php.net/function.preg-replace'>function.preg-replace</a>]: No ending delimiter '^' found in [COREapp/models/temp_parse_csv.php, line 76]
+2009-10-16 15:10:41 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  invalid byte sequence for encoding &quot;EUC_JP&quot;: 0x82a0
+HINT:  This error can also happen if the byte sequence does not match the encoding expected by the server, which is controlled by &quot;client_encoding&quot;.
+CONTEXT:  COPY temp_csvs, line 7 in [COREapp/models/temp_parse_csv.php, line 179]
+2009-10-16 15:45:56 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  could not open file &quot;163,a a,niki@itm.ne.jp,,,,,,2009-08-04 15:52:37163,a a,niki@itm.ne.jp,,,,,,2009-08-04 15:57:10163, ,masaki@itm.ne.jp,,,,,,2009-05-26 16:32:12163, ,niki@itm.ne.jp,,,,,,2009-05-29 12:20:13163, ,niki@itm.ne.jp,,,,,,2009-05-29 12:21:32163,a a,niki@itm.ne.jp,a,b,,,,2009-05-29 12:21:49163,¤¢ ¤¢,monkichiro-1120@docomo.ne.jp,a,i,,,,2009-08-04 15:46:37163,a a,niki@itm.ne.jp,,,,,,2009-08-04 16:25:14163,a a,niki@itm.ne.jp,,,,,,2009-08-04 15:12:30163,a a,niki@itm.ne.jp,,,,,,2009-08-04 15:13:11163,a a,niki@itm.ne.jp,,,,,,2009-08-04 15:14:27163,a a,niki@itm.ne.jp,,,,,,2009-08-04 15:14:56163,a a,niki@itm.ne.jp,,,,,,2009-08-04 15:28:28163,¤¢ ¤¢,monkichiro-1120@docomo.ne.jp,a,i,,,,2009-08-04 15:29:51163,¤¢ ¤¢,monkichiro-1120@docomo.ne.jp,a,i,,,,2009-08-04 15:40:36163,¤¢ ¤¢,monkichiro-1120@docomo.ne.jp,a,i,,,,2009-08-04 15:42:21163,a a,niki@itm.ne.jp,,,,,,2009-08-04 15:42:30163,a a,niki@itm.ne.jp,,,,,,2009-08-04 15:44:29163,z d,monkichiro-1120@docomo.ne.jp,¤¢,¤¢,,,,2009-08-04 16:54:40163,a a,monkichiro-1120@docomo.ne.jp,a,,,,,2009-08-04 16:56:13163,a a,monkichiro-1120@docomo.ne.jp,a,,,,,2009-08-04 16:57:30163,a a,monkichiro-1120@docomo.ne.jp,a,,,,,2009-08-04 16:58:31163,a a,niki@itm.ne.jp,,,,,,2009-08-04 16:58:47163,a a,niki@itm.ne.jp,,,,,,2009-08-04 17:00:46163,a a,niki@itm.ne.jp,,,,,,2009-08-04 16:25:53163,a a,niki@itm.ne.jp,,,,,,2009-08-04 16:45:10163,z d,monkichiro-1120@docomo.ne.jp,¤¢,¤¢,,,,2009-08-04 16:45:56163,z d,monkichiro-1120@docomo.ne.jp,¤¢,¤¢,,,,2009-08-04 16:48:09163,z d,monkichiro-1120@docomo.ne.jp,¤¢,¤¢,,,,2009-08-04 16:51:12163,z d,monkichiro-1120@docomo.ne.jp,¤¢,¤¢,,,,2009-08-04 16:50:35163,z d,monkichiro-1120@docomo.ne.jp,¤¢,¤¢,,,,2009-08-04 16:53:07163,z d,monkichiro-1120@docomo.ne.jp,¤¢,¤¢,,,,2009-08-04 16:54:18163, ,niki@itm.ne.jp,,,,,,2009-07-10 13:51:18163,¤Ò ¤Ê,ajmt@a.j,Ê¡²¬,¤Ï¤Ê¤¿,,,,2009-08-04 16:30:08163,¤Ò ¤Ê,ajmt@a.j,Ê¡²¬,¤Ï¤Ê¤¿,,,,2009-08-04 16:30:29163,¤Ò ¤Ê,highcolor.highest-.-2-22...@docomo.ne.jp,Ê¡²¬,¤Ï¤Ê¤¿,,,,2009-08-04 16:31:18163,Æ£°æ Íµ¹¯,highcolor.highest-.-2-22...@docomo.ne.jp,,,,,,2009-08-04 16:33:36163,¿ÎÌÚ ¿µÌé,niki@itm.ne.jp,a,a,,,,2009-07-31 17:55:59163,¿ÎÌÚ ¿µÌé,aniki@itm.ne.jp,a,a,,,,2009-07-31 17:56:12163,¿ÎÌÚ ¿µÌé,aniki@itm.ne.jp,a,a,,,,2009-07-31 17:58:49163,¿ÎÌÚ ¿µÌé,niki@itm.ne.jp,a,a,,,,2009-07-31 18:02:26163,¿ÎÌÚ ¿µÌé,niki@itm.ne.jp,a,a,,,,2009-07-31 18:05:16163,z d,monkichiro-1120@docomo.ne.jp,¤¢,¤¢,,,,2009-08-04 16:41:18163,a a,niki@itm.ne.jp,,,,,,2009-08-04 15:59:16163,¤¢ ¤¢,monkichiro-1120@docomo.ne.jp,a,i,,,,2009-08-04 15:59:28163,a a,niki@itm.ne.jp,,,,,,2009-08-04 16:09:47163,¤¢ ¤¢,monkichiro-1120@docomo.ne.jp,a,i,,,,2009-08-04 16:09:36163,¤¢ ¤¢,monkichiro-1120@docomo.ne.jp,a,i,,,,2009-08-04 16:10:37163,z d,monkichiro-1120@docomo.ne.jp,¤¢,¤¢,,,,2009-08-04 16:13:32163,a a,niki@itm.ne.jp,,,,,,2009-08-04 16:44:25163, ,niki@itm.ne.jp,,,,,,2009-08-27 22:43:11163, ,niki@itm.ne.jp,,,,,,2009-08-27 22:46:57163, ,niki@itm.ne.jp,,,,,,2009-08-27 22:47:53163,a a,niki@itm.ne.jp,,,,,,2009-08-04 15:50:41163,¤¢ ¤¢,monkichiro-1120@docomo.ne.jp,a,i,,,,2009-08-04 15:51:08163, ,aaaaaaaa¡Ä@docomo.ne.jp,,,,,,2009-09-28 11:48:46163, ,aaaaaaaa¡Ä@docomo.ne.jp,,,,,,2009-09-28 11:49:28163, ,&quot;aaaaaaaa¡Ä&quot;@docomo.ne.jp,,,,,,2009-09-28 11:50:21163, ,niki..@itm.ne.jp,,,,,,2009-09-28 12:44:49163, ,niki..@itm.ne.jp,,,,,,2009-09-28 12:45:02163, ,niki@itm.ne.jp,,,,,,2009-09-28 12:52:11163, ,niki@itm.ne.jp,,,,,,2009-09-28 12:56:06163,Æ£°æ Íµ¹¯,fujii@itm.ne.jp,,,,,,2009-09-28 12:56:06&quot; for reading: File name too long in [COREapp/models/temp_parse_csv.php, line 89]
+2009-10-16 15:48:48 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  could not open file &quot;163,a a,niki@itm.ne.jp,,,,,,2009-08-04 15:52:37163,a a,niki@itm.ne.jp,,,,,,2009-08-04 15:57:10163, ,masaki@itm.ne.jp,,,,,,2009-05-26 16:32:12163, ,niki@itm.ne.jp,,,,,,2009-05-29 12:20:13163, ,niki@itm.ne.jp,,,,,,2009-05-29 12:21:32163,a a,niki@itm.ne.jp,a,b,,,,2009-05-29 12:21:49163,¤¢ ¤¢,monkichiro-1120@docomo.ne.jp,a,i,,,,2009-08-04 15:46:37163,a a,niki@itm.ne.jp,,,,,,2009-08-04 16:25:14163,a a,niki@itm.ne.jp,,,,,,2009-08-04 15:12:30163,a a,niki@itm.ne.jp,,,,,,2009-08-04 15:13:11163,a a,niki@itm.ne.jp,,,,,,2009-08-04 15:14:27163,a a,niki@itm.ne.jp,,,,,,2009-08-04 15:14:56163,a a,niki@itm.ne.jp,,,,,,2009-08-04 15:28:28163,¤¢ ¤¢,monkichiro-1120@docomo.ne.jp,a,i,,,,2009-08-04 15:29:51163,¤¢ ¤¢,monkichiro-1120@docomo.ne.jp,a,i,,,,2009-08-04 15:40:36163,¤¢ ¤¢,monkichiro-1120@docomo.ne.jp,a,i,,,,2009-08-04 15:42:21163,a a,niki@itm.ne.jp,,,,,,2009-08-04 15:42:30163,a a,niki@itm.ne.jp,,,,,,2009-08-04 15:44:29163,z d,monkichiro-1120@docomo.ne.jp,¤¢,¤¢,,,,2009-08-04 16:54:40163,a a,monkichiro-1120@docomo.ne.jp,a,,,,,2009-08-04 16:56:13163,a a,monkichiro-1120@docomo.ne.jp,a,,,,,2009-08-04 16:57:30163,a a,monkichiro-1120@docomo.ne.jp,a,,,,,2009-08-04 16:58:31163,a a,niki@itm.ne.jp,,,,,,2009-08-04 16:58:47163,a a,niki@itm.ne.jp,,,,,,2009-08-04 17:00:46163,a a,niki@itm.ne.jp,,,,,,2009-08-04 16:25:53163,a a,niki@itm.ne.jp,,,,,,2009-08-04 16:45:10163,z d,monkichiro-1120@docomo.ne.jp,¤¢,¤¢,,,,2009-08-04 16:45:56163,z d,monkichiro-1120@docomo.ne.jp,¤¢,¤¢,,,,2009-08-04 16:48:09163,z d,monkichiro-1120@docomo.ne.jp,¤¢,¤¢,,,,2009-08-04 16:51:12163,z d,monkichiro-1120@docomo.ne.jp,¤¢,¤¢,,,,2009-08-04 16:50:35163,z d,monkichiro-1120@docomo.ne.jp,¤¢,¤¢,,,,2009-08-04 16:53:07163,z d,monkichiro-1120@docomo.ne.jp,¤¢,¤¢,,,,2009-08-04 16:54:18163, ,niki@itm.ne.jp,,,,,,2009-07-10 13:51:18163,¤Ò ¤Ê,ajmt@a.j,Ê¡²¬,¤Ï¤Ê¤¿,,,,2009-08-04 16:30:08163,¤Ò ¤Ê,ajmt@a.j,Ê¡²¬,¤Ï¤Ê¤¿,,,,2009-08-04 16:30:29163,¤Ò ¤Ê,highcolor.highest-.-2-22...@docomo.ne.jp,Ê¡²¬,¤Ï¤Ê¤¿,,,,2009-08-04 16:31:18163,Æ£°æ Íµ¹¯,highcolor.highest-.-2-22...@docomo.ne.jp,,,,,,2009-08-04 16:33:36163,¿ÎÌÚ ¿µÌé,niki@itm.ne.jp,a,a,,,,2009-07-31 17:55:59163,¿ÎÌÚ ¿µÌé,aniki@itm.ne.jp,a,a,,,,2009-07-31 17:56:12163,¿ÎÌÚ ¿µÌé,aniki@itm.ne.jp,a,a,,,,2009-07-31 17:58:49163,¿ÎÌÚ ¿µÌé,niki@itm.ne.jp,a,a,,,,2009-07-31 18:02:26163,¿ÎÌÚ ¿µÌé,niki@itm.ne.jp,a,a,,,,2009-07-31 18:05:16163,z d,monkichiro-1120@docomo.ne.jp,¤¢,¤¢,,,,2009-08-04 16:41:18163,a a,niki@itm.ne.jp,,,,,,2009-08-04 15:59:16163,¤¢ ¤¢,monkichiro-1120@docomo.ne.jp,a,i,,,,2009-08-04 15:59:28163,a a,niki@itm.ne.jp,,,,,,2009-08-04 16:09:47163,¤¢ ¤¢,monkichiro-1120@docomo.ne.jp,a,i,,,,2009-08-04 16:09:36163,¤¢ ¤¢,monkichiro-1120@docomo.ne.jp,a,i,,,,2009-08-04 16:10:37163,z d,monkichiro-1120@docomo.ne.jp,¤¢,¤¢,,,,2009-08-04 16:13:32163,a a,niki@itm.ne.jp,,,,,,2009-08-04 16:44:25163, ,niki@itm.ne.jp,,,,,,2009-08-27 22:43:11163, ,niki@itm.ne.jp,,,,,,2009-08-27 22:46:57163, ,niki@itm.ne.jp,,,,,,2009-08-27 22:47:53163,a a,niki@itm.ne.jp,,,,,,2009-08-04 15:50:41163,¤¢ ¤¢,monkichiro-1120@docomo.ne.jp,a,i,,,,2009-08-04 15:51:08163, ,aaaaaaaa¡Ä@docomo.ne.jp,,,,,,2009-09-28 11:48:46163, ,aaaaaaaa¡Ä@docomo.ne.jp,,,,,,2009-09-28 11:49:28163, ,&quot;aaaaaaaa¡Ä&quot;@docomo.ne.jp,,,,,,2009-09-28 11:50:21163, ,niki..@itm.ne.jp,,,,,,2009-09-28 12:44:49163, ,niki..@itm.ne.jp,,,,,,2009-09-28 12:45:02163, ,niki@itm.ne.jp,,,,,,2009-09-28 12:52:11163, ,niki@itm.ne.jp,,,,,,2009-09-28 12:56:06163,Æ£°æ Íµ¹¯,fujii@itm.ne.jp,,,,,,2009-09-28 12:56:06&quot; for reading: File name too long in [COREapp/models/temp_parse_csv.php, line 89]
+2009-10-16 15:52:02 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  extra data after last expected column
+CONTEXT:  COPY temp_csvs, line 1: &quot;163,a a,niki@itm.ne.jp,,,,,,2009-08-04 15:52:37&quot; in [COREapp/models/temp_parse_csv.php, line 89]
+2009-10-16 15:55:02 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  extra data after last expected column
+CONTEXT:  COPY temp_csvs, line 1: &quot;163,a a,niki@itm.ne.jp,,,,,,2009-08-04 15:52:37&quot; in [COREapp/models/temp_parse_csv.php, line 89]
+2009-10-16 16:20:55 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  missing data for column &quot;parameter1&quot;
+CONTEXT:  COPY temp_parse_csvs, line 1: &quot;163,¤Ï¤¿¤¸£±,hataji01@itm.ne.jp&quot; in [COREapp/models/temp_parse_csv.php, line 95]
+2009-10-16 16:28:15 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  missing data for column &quot;parameter1&quot;
+CONTEXT:  COPY temp_parse_csvs, line 1: &quot;163,Æ£°æ¡¡Íµ¹¯,fujii@itm.ne.jp&quot; in [COREapp/models/temp_parse_csv.php, line 95]
+2009-10-16 16:31:46 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  missing data for column &quot;parameter1&quot;
+CONTEXT:  COPY temp_parse_csvs, line 1: &quot;163,Æ£°æ¡¡Íµ¹¯,fujii@itm.ne.jp&quot; in [COREapp/models/temp_parse_csv.php, line 95]
+2009-10-16 16:33:26 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  missing data for column &quot;parameter1&quot;
+CONTEXT:  COPY temp_parse_csvs, line 1: &quot;163,Æ£°æ¡¡Íµ¹¯,fujii@itm.ne.jp&quot; in [COREapp/models/temp_parse_csv.php, line 95]
+2009-10-16 16:35:15 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  missing data for column &quot;parameter1&quot;
+CONTEXT:  COPY temp_parse_csvs, line 1: &quot;163,Æ£°æ¡¡Íµ¹¯,fujii@itm.ne.jp&quot; in [COREapp/models/temp_parse_csv.php, line 95]
+2009-10-16 16:35:22 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  missing data for column &quot;parameter1&quot;
+CONTEXT:  COPY temp_parse_csvs, line 1: &quot;163,Æ£°æ¡¡Íµ¹¯,fujii@itm.ne.jp&quot; in [COREapp/models/temp_parse_csv.php, line 95]
+2009-10-16 16:39:36 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  missing data for column &quot;parameter1&quot;
+CONTEXT:  COPY temp_parse_csvs, line 1: &quot;163,Æ£°æ¡¡Íµ¹¯,fujii@itm.ne.jp&quot; in [COREapp/models/temp_parse_csv.php, line 95]
+2009-10-16 16:39:46 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  missing data for column &quot;parameter1&quot;
+CONTEXT:  COPY temp_parse_csvs, line 1: &quot;163,Æ£°æ¡¡Íµ¹¯,fujii@itm.ne.jp&quot; in [COREapp/models/temp_parse_csv.php, line 95]
+2009-10-16 16:44:27 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  missing data for column &quot;parameter1&quot;
+CONTEXT:  COPY temp_parse_csvs, line 1: &quot;163,Æ£°æ¡¡Íµ¹¯,fujii@itm.ne.jp&quot; in [COREapp/models/temp_parse_csv.php, line 95]
+2009-10-16 17:22:27 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  syntax error at or near &quot;\&quot;
+LINE 1: ...ar/www/html/csv/parse_csv/163pictData2009102.csv' WITH CSV\.
+                                                                     ^ in [COREapp/models/temp_parse_csv.php, line 95]
+2009-10-16 17:25:35 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  missing data for column &quot;parameter1&quot;
+CONTEXT:  COPY temp_parse_csvs, line 1: &quot;163,Æ£°æ¡¡Íµ¹¯,fujii@itm.ne.jp&quot; in [COREapp/models/temp_parse_csv.php, line 95]
+2009-10-16 17:50:34 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  missing data for column &quot;parameter1&quot;
+CONTEXT:  COPY temp_parse_csvs, line 1: &quot;163,Æ£°æ¡¡Íµ¹¯,fujii@itm.ne.jp&quot; in [COREapp/models/temp_parse_csv.php, line 95]
+2009-10-16 17:52:17 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  syntax error at end of input
+LINE 1: ...w/html/csv/parse_csv/163compare.csv' WITH CSV FORCE NOT NULL
+                                                                       ^ in [COREapp/models/temp_parse_csv.php, line 95]
+2009-10-16 17:54:13 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  syntax error at or near &quot;string&quot;
+LINE 1: .../www/html/csv/parse_csv/163compare.csv' WITH CSV null string
+                                                                 ^ in [COREapp/models/temp_parse_csv.php, line 95]
+2009-10-16 17:54:29 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  missing data for column &quot;parameter1&quot;
+CONTEXT:  COPY temp_parse_csvs, line 1: &quot;163,Æ£°æ¡¡Íµ¹¯,fujii@itm.ne.jp&quot; in [COREapp/models/temp_parse_csv.php, line 95]
+2009-10-16 17:58:00 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  extra data after last expected column
+CONTEXT:  COPY temp_parse_csvs, line 1: &quot;163,a a,niki@itm.ne.jp,,,,,,2009-08-04 15:52:37&quot; in [COREapp/models/temp_parse_csv.php, line 95]
+2009-10-16 18:04:21 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  syntax error at or near &quot;'null'&quot;
+LINE 1: ...w/html/csv/parse_csv/163pictData2009102.csv' WITH CSV 'null'
+                                                                 ^ in [COREapp/models/temp_parse_csv.php, line 95]
+2009-10-16 18:04:42 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  syntax error at end of input
+LINE 1: ...www/html/csv/parse_csv/163pictData2009102.csv' WITH CSV null
+                                                                       ^ in [COREapp/models/temp_parse_csv.php, line 95]
+2009-10-16 18:05:14 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  syntax error at end of input
+LINE 1: ...ml/csv/parse_csv/163pictData2009102.csv' delimiters ',' null
+                                                                       ^ in [COREapp/models/temp_parse_csv.php, line 95]
+2009-10-16 18:06:09 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  missing data for column &quot;parameter1&quot;
+CONTEXT:  COPY temp_parse_csvs, line 1: &quot;163,Æ£°æ¡¡Íµ¹¯,fujii@itm.ne.jp&quot; in [COREapp/models/temp_parse_csv.php, line 95]
+2009-10-16 18:10:30 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  syntax error at or near &quot;user_id&quot;
+LINE 1: COPY temp_parse_csvs user_id, name, mail, parameter1, parame...
+                             ^ in [COREapp/models/temp_parse_csv.php, line 95]
+2009-10-16 18:10:55 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  syntax error at or near &quot;user_id&quot;
+LINE 1: COPY temp_parse_csvs user_id, name, mail, parameter1, parame...
+                             ^ in [COREapp/models/temp_parse_csv.php, line 95]
+2009-10-16 18:11:29 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  syntax error at or near &quot;column&quot;
+LINE 1: COPY temp_parse_csvs column user_id, name, mail, parameter1,...
+                             ^ in [COREapp/models/temp_parse_csv.php, line 95]
+2009-10-16 18:12:16 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  syntax error at or near &quot;column&quot;
+LINE 1: COPY temp_parse_csvs (column user_id, name, mail, parameter1...
+                              ^ in [COREapp/models/temp_parse_csv.php, line 95]
+2009-10-17 10:07:53 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  syntax error at or near &quot;mail&quot;
+LINE 1: COPY temp_parse_csvs  mail FROM E'/var/www/html/csv/parse_cs...
+                              ^ in [COREapp/models/temp_parse_csv.php, line 95]
+2009-10-17 10:09:03 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  syntax error at or near &quot;column&quot;
+LINE 1: COPY temp_parse_csvs (column mail) FROM E'/var/www/html/csv/...
+                              ^ in [COREapp/models/temp_parse_csv.php, line 95]
+2009-10-17 10:09:51 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  syntax error at or near &quot;column&quot;
+LINE 1: COPY temp_parse_csvs (column 2) FROM E'/var/www/html/csv/par...
+                              ^ in [COREapp/models/temp_parse_csv.php, line 95]
+2009-10-17 10:10:04 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  syntax error at or near &quot;'column'&quot;
+LINE 1: COPY temp_parse_csvs ('column' 2) FROM E'/var/www/html/csv/p...
+                              ^ in [COREapp/models/temp_parse_csv.php, line 95]
+2009-10-17 10:10:16 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  syntax error at or near &quot;column&quot;
+LINE 1: COPY temp_parse_csvs column 2 FROM E'/var/www/html/csv/parse...
+                             ^ in [COREapp/models/temp_parse_csv.php, line 95]
+2009-10-17 10:10:58 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  syntax error at or near &quot;2&quot;
+LINE 1: COPY temp_parse_csvs 2 FROM E'/var/www/html/csv/parse_csv/16...
+                             ^ in [COREapp/models/temp_parse_csv.php, line 95]
+2009-10-17 10:11:15 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  syntax error at or near &quot;'2'&quot;
+LINE 1: COPY temp_parse_csvs '2' FROM E'/var/www/html/csv/parse_csv/...
+                             ^ in [COREapp/models/temp_parse_csv.php, line 95]
+2009-10-17 10:11:37 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  syntax error at or near &quot;'mail'&quot;
+LINE 1: COPY temp_parse_csvs 'mail' FROM E'/var/www/html/csv/parse_c...
+                             ^ in [COREapp/models/temp_parse_csv.php, line 95]
+2009-10-17 10:24:02 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  syntax error at or near &quot;,&quot;
+LINE 1: COPY temp_parse_csvs, 2 FROM E'/var/www/html/csv/parse_csv/1...
+                            ^ in [COREapp/models/temp_parse_csv.php, line 95]
+2009-10-17 10:28:11 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  syntax error at or near &quot;,&quot;
+LINE 1: COPY temp_parse_csvs, mail FROM E'/var/www/html/csv/parse_cs...
+                            ^ in [COREapp/models/temp_parse_csv.php, line 95]
+2009-10-17 11:04:53 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  syntax error at or near &quot;mail&quot;
+LINE 1: COPY temp_parse_csvs(name, mail) mail FROM E'/var/www/html/c...
+                                         ^ in [COREapp/models/temp_parse_csv.php, line 95]
+2009-10-17 11:05:09 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  extra data after last expected column
+CONTEXT:  COPY temp_parse_csvs, line 1: &quot;163,a a,niki@itm.ne.jp,,,,,,2009-08-04 15:52:37&quot; in [COREapp/models/temp_parse_csv.php, line 95]
+2009-10-17 11:05:43 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  extra data after last expected column
+CONTEXT:  COPY temp_parse_csvs, line 1: &quot;163,Æ£°æ¡¡Íµ¹¯,fujii@itm.ne.jp&quot; in [COREapp/models/temp_parse_csv.php, line 95]
+2009-10-17 11:05:48 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  extra data after last expected column
+CONTEXT:  COPY temp_parse_csvs, line 1: &quot;163,Æ£°æ¡¡Íµ¹¯,fujii@itm.ne.jp&quot; in [COREapp/models/temp_parse_csv.php, line 95]
+2009-10-17 11:08:48 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  missing data for column &quot;parameter1&quot;
+CONTEXT:  COPY temp_parse_csvs, line 1: &quot;163,Æ£°æ¡¡Íµ¹¯,fujii@itm.ne.jp&quot; in [COREapp/models/temp_parse_csv.php, line 95]
+2009-10-17 11:48:14 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  missing data for column &quot;time_date&quot;
+CONTEXT:  COPY temp_parse_csvs, line 1: &quot;a a,niki@itm.ne.jp,,,,,,2009-08-04 15:52:37&quot; in [COREapp/models/temp_parse_csv.php, line 104]
+2009-10-17 11:48:29 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  missing data for column &quot;time_date&quot;
+CONTEXT:  COPY temp_parse_csvs, line 1: &quot;a a,niki@itm.ne.jp,,,,,,2009-08-04 15:52:37&quot; in [COREapp/models/temp_parse_csv.php, line 104]
+2009-10-17 11:49:09 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  missing data for column &quot;time_date&quot;
+CONTEXT:  COPY temp_parse_csvs, line 1: &quot;a a,niki@itm.ne.jp,,,,,,2009-08-04 15:52:37&quot; in [COREapp/models/temp_parse_csv.php, line 104]
+2009-10-17 11:49:28 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  missing data for column &quot;time_date&quot;
+CONTEXT:  COPY temp_parse_csvs, line 1: &quot;a a,niki@itm.ne.jp,,,,,,2009-08-04 15:52:37&quot; in [COREapp/models/temp_parse_csv.php, line 104]
+2009-10-17 11:50:01 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  missing data for column &quot;time_date&quot;
+CONTEXT:  COPY temp_parse_csvs, line 1: &quot;a a,niki@itm.ne.jp,,,,,,2009-08-04 15:52:37&quot; in [COREapp/models/temp_parse_csv.php, line 104]
+2009-10-17 11:50:24 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  missing data for column &quot;time_date&quot;
+CONTEXT:  COPY temp_parse_csvs, line 1: &quot;a a,niki@itm.ne.jp,,,,,,2009-08-04 15:52:37&quot; in [COREapp/models/temp_parse_csv.php, line 104]
+2009-10-17 11:51:25 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  could not open file &quot;/var/www/html/csv/parse_csv/163163pictData2009102.csv&quot; for reading: No such file or directory in [COREapp/models/temp_parse_csv.php, line 104]
+2009-10-17 11:52:51 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  missing data for column &quot;parameter1&quot;
+CONTEXT:  COPY temp_parse_csvs, line 1: &quot;163,Æ£°æ¡¡Íµ¹¯,fujii@itm.ne.jp&quot; in [COREapp/models/temp_parse_csv.php, line 95]
+2009-10-17 12:54:18 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  missing data for column &quot;parameter1&quot;
+CONTEXT:  COPY temp_parse_csvs, line 1: &quot;163,Æ£°æ¡¡Íµ¹¯,fujii@itm.ne.jp&quot; in [COREapp/models/temp_parse_csv.php, line 95]
+2009-10-17 13:01:42 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  missing data for column &quot;parameter1&quot;
+CONTEXT:  COPY temp_parse_csvs, line 1: &quot;163,Æ£°æ¡¡Íµ¹¯,fujii@itm.ne.jp&quot; in [COREapp/models/temp_parse_csv.php, line 95]
+2009-10-17 13:34:07 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  missing data for column &quot;parameter1&quot;
+CONTEXT:  COPY temp_parse_csvs, line 10: &quot;163,g,g@itm.ne.jp&quot; in [COREapp/models/temp_parse_csv.php, line 92]
+2009-10-17 13:34:55 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  extra data after last expected column
+CONTEXT:  COPY temp_parse_csvs, line 1: &quot;163,a a,niki@itm.ne.jp,,,,,,2009-08-04 15:52:37,,,,,,&quot; in [COREapp/models/temp_parse_csv.php, line 92]
+2009-10-17 16:08:52 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  extra data after last expected column
+CONTEXT:  COPY temp_parse_csvs, line 1: &quot;163,a a,niki@itm.ne.jp,,,,,,2009-08-04 15:52:37,,,,,,&quot; in [COREapp/models/temp_parse_csv.php, line 92]
+2009-10-17 16:09:36 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  extra data after last expected column
+CONTEXT:  COPY temp_parse_csvs, line 1: &quot;163,a a,niki@itm.ne.jp,,,,,,2009-08-04 15:52:37,,,,,,&quot; in [COREapp/models/temp_parse_csv.php, line 94]
+2009-10-17 16:15:22 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  extra data after last expected column
+CONTEXT:  COPY temp_parse_csvs, line 1: &quot;163,a a,niki@itm.ne.jp,,,,,,2009-08-04 15:52:37,,,,,,&quot; in [COREapp/models/temp_parse_csv.php, line 92]
+2009-10-17 16:15:29 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  extra data after last expected column
+CONTEXT:  COPY temp_parse_csvs, line 1: &quot;163,a a,niki@itm.ne.jp,,,,,,2009-08-04 15:52:37,,,,,,&quot; in [COREapp/models/temp_parse_csv.php, line 92]
+2009-10-17 16:21:59 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  extra data after last expected column
+CONTEXT:  COPY temp_parse_csvs, line 1: &quot;163,a a,niki@itm.ne.jp,,,,,,2009-08-04 15:52:37,,,,,,&quot; in [COREapp/models/temp_parse_csv.php, line 92]
+2009-10-17 16:25:40 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  missing data for column &quot;parameter1&quot;
+CONTEXT:  COPY temp_parse_csvs, line 1: &quot;163,Æ£°æ¡¡Íµ¹¯,fujii@itm.ne.jp&quot; in [COREapp/models/temp_parse_csv.php, line 92]
+2009-10-17 16:50:44 Warning: Warning (2): fopen(/var/tmp/phpAo8Aif) [<a href='http://php.net/function.fopen'>function.fopen</a>]: failed to open stream: No such file or directory in [COREapp/models/temp_parse_csv.php, line 111]
+2009-10-17 16:50:44 Warning: Warning (2): fgetcsv() expects parameter 1 to be resource, boolean given in [COREapp/models/temp_parse_csv.php, line 113]
+2009-10-17 17:04:51 Warning: Warning (2): fopen(/var/tmp/phpEo8Aif) [<a href='http://php.net/function.fopen'>function.fopen</a>]: failed to open stream: No such file or directory in [COREapp/models/temp_parse_csv.php, line 110]
+2009-10-17 17:04:51 Warning: Warning (2): fgetcsv() expects parameter 1 to be resource, boolean given in [COREapp/models/temp_parse_csv.php, line 112]
+2009-10-17 17:07:03 Warning: Warning (2): fopen(/var/tmp/phpFo8Aif) [<a href='http://php.net/function.fopen'>function.fopen</a>]: failed to open stream: No such file or directory in [COREapp/models/temp_parse_csv.php, line 110]
+2009-10-17 17:07:03 Warning: Warning (2): fgetcsv() expects parameter 1 to be resource, boolean given in [COREapp/models/temp_parse_csv.php, line 112]
+2009-10-17 17:07:43 Warning: Warning (2): fopen(/var/tmp/phpFo8Aif) [<a href='http://php.net/function.fopen'>function.fopen</a>]: failed to open stream: No such file or directory in [COREapp/models/temp_parse_csv.php, line 110]
+2009-10-17 17:07:43 Warning: Warning (2): fgetcsv() expects parameter 1 to be resource, boolean given in [COREapp/models/temp_parse_csv.php, line 112]
+2009-10-17 17:07:53 Warning: Warning (2): fopen(/var/tmp/phpN2JBd0) [<a href='http://php.net/function.fopen'>function.fopen</a>]: failed to open stream: No such file or directory in [COREapp/models/temp_parse_csv.php, line 110]
+2009-10-17 17:07:53 Warning: Warning (2): fgetcsv() expects parameter 1 to be resource, boolean given in [COREapp/models/temp_parse_csv.php, line 112]
+2009-10-17 17:11:44 Warning: Warning (2): fopen(/var/tmp/phpAo8Aif) [<a href='http://php.net/function.fopen'>function.fopen</a>]: failed to open stream: No such file or directory in [COREapp/models/temp_parse_csv.php, line 111]
+2009-10-17 17:11:44 Warning: Warning (2): fgetcsv() expects parameter 1 to be resource, boolean given in [COREapp/models/temp_parse_csv.php, line 113]
+2009-10-17 17:25:51 Warning: Warning (2): fopen(/var/tmp/phpAo8Aif) [<a href='http://php.net/function.fopen'>function.fopen</a>]: failed to open stream: No such file or directory in [COREapp/models/temp_parse_csv.php, line 111]
+2009-10-17 17:25:51 Warning: Warning (2): fgetcsv() expects parameter 1 to be resource, boolean given in [COREapp/models/temp_parse_csv.php, line 113]
+2009-10-17 17:33:47 Warning: Warning (2): fopen(/var/tmp/phpAo8Aif) [<a href='http://php.net/function.fopen'>function.fopen</a>]: failed to open stream: No such file or directory in [COREapp/models/temp_parse_csv.php, line 111]
+2009-10-17 17:33:47 Warning: Warning (2): fgetcsv() expects parameter 1 to be resource, boolean given in [COREapp/models/temp_parse_csv.php, line 113]
+2009-10-17 17:35:21 Warning: Warning (2): fopen(/var/tmp/phpAo8Aif) [<a href='http://php.net/function.fopen'>function.fopen</a>]: failed to open stream: No such file or directory in [COREapp/models/temp_parse_csv.php, line 111]
+2009-10-17 17:35:21 Warning: Warning (2): fgetcsv() expects parameter 1 to be resource, boolean given in [COREapp/models/temp_parse_csv.php, line 113]
+2009-10-17 17:54:24 Warning: Warning (2): fopen(/var/tmp/phpAo8Aif) [<a href='http://php.net/function.fopen'>function.fopen</a>]: failed to open stream: No such file or directory in [COREapp/models/temp_parse_csv.php, line 111]
+2009-10-17 17:54:24 Warning: Warning (2): fgetcsv() expects parameter 1 to be resource, boolean given in [COREapp/models/temp_parse_csv.php, line 113]
+2009-10-17 17:55:20 Warning: Warning (2): fopen(/var/tmp/phpEo8Aif) [<a href='http://php.net/function.fopen'>function.fopen</a>]: failed to open stream: No such file or directory in [COREapp/models/temp_parse_csv.php, line 110]
+2009-10-17 17:55:20 Warning: Warning (2): fgetcsv() expects parameter 1 to be resource, boolean given in [COREapp/models/temp_parse_csv.php, line 112]
+2009-10-19 10:35:26 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  missing data for column &quot;time_date&quot;
+CONTEXT:  COPY temp_parse_csvs, line 2: &quot;a a,niki@itm.ne.jp,,,,,,2009-08-04 15:57:10&quot; in [COREapp/models/temp_parse_csv.php, line 112]
+2009-10-19 10:36:11 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  missing data for column &quot;time_date&quot;
+CONTEXT:  COPY temp_parse_csvs, line 2: &quot;a a,niki@itm.ne.jp,,,,,,2009-08-04 15:57:10&quot; in [COREapp/models/temp_parse_csv.php, line 114]
+2009-10-19 10:36:42 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  extra data after last expected column
+CONTEXT:  COPY temp_parse_csvs, line 1: &quot;163,a a,niki@itm.ne.jp,,,,,,2009-08-04 15:52:37,,,,,,&quot; in [COREapp/models/temp_parse_csv.php, line 114]
+2009-10-19 10:39:52 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  extra data after last expected column
+CONTEXT:  COPY temp_parse_csvs, line 1: &quot;163,a a,niki@itm.ne.jp,,,,,,2009-08-04 15:52:37,,,,,,,,&quot; in [COREapp/models/temp_parse_csv.php, line 114]
+2009-10-19 10:40:34 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  extra data after last expected column
+CONTEXT:  COPY temp_parse_csvs, line 1: &quot;163,Æ£°æ¡¡Íµ¹¯,fujii@itm.ne.jp,,,,,,,,&quot; in [COREapp/models/temp_parse_csv.php, line 114]
+2009-10-19 10:44:46 Warning: Warning (2): fopen(/var/tmp/phpOhmcLJ) [<a href='http://php.net/function.fopen'>function.fopen</a>]: failed to open stream: No such file or directory in [COREapp/models/temp_parse_csv.php, line 134]
+2009-10-19 10:44:46 Warning: Warning (2): fgetcsv() expects parameter 1 to be resource, boolean given in [COREapp/models/temp_parse_csv.php, line 136]
+2009-10-19 10:55:09 Warning: Warning (2): file_get_contents(/var/tmp/phpOhmcLJ) [<a href='http://php.net/function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory in [COREapp/models/temp_parse_csv.php, line 132]
+2009-10-19 10:59:15 Warning: Warning (2): file_get_contents(/var/tmp/phpMhmrwm) [<a href='http://php.net/function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory in [COREapp/models/temp_parse_csv.php, line 132]
+2009-10-19 11:03:27 Warning: Warning (2): file_get_contents(/var/tmp/phpNhmrwm) [<a href='http://php.net/function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory in [COREapp/models/temp_parse_csv.php, line 132]
+2009-10-19 11:04:02 Warning: Warning (2): file_get_contents(/var/tmp/phpNhmrwm) [<a href='http://php.net/function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory in [COREapp/models/temp_parse_csv.php, line 133]
+2009-10-19 11:05:47 Warning: Warning (2): file_get_contents(pictData2009102.csv) [<a href='http://php.net/function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory in [COREapp/models/temp_parse_csv.php, line 133]
+2009-10-19 11:12:03 Warning: Warning (2): file_get_contents(/var/www/html/csv/parse_csv/163/var/tmp/phpNhmrwm) [<a href='http://php.net/function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory in [COREapp/models/temp_parse_csv.php, line 132]
+2009-10-19 11:12:03 Warning: Warning (2): fopen(/var/tmp/phpNhmrwm) [<a href='http://php.net/function.fopen'>function.fopen</a>]: failed to open stream: No such file or directory in [COREapp/models/temp_parse_csv.php, line 139]
+2009-10-19 11:12:03 Warning: Warning (2): fgetcsv() expects parameter 1 to be resource, boolean given in [COREapp/models/temp_parse_csv.php, line 141]
+2009-10-19 11:24:22 Warning: Warning (2): Invalid argument supplied for foreach() in [COREapp/models/temp_parse_csv.php, line 134]
+2009-10-19 12:05:17 Warning: Warning (2): fopen(/var/www/html/csv/parse_csv/compare.csv) [<a href='http://php.net/function.fopen'>function.fopen</a>]: failed to open stream: No such file or directory in [COREapp/models/temp_parse_csv.php, line 135]
+2009-10-19 12:05:17 Warning: Warning (2): fgetcsv() expects parameter 1 to be resource, boolean given in [COREapp/models/temp_parse_csv.php, line 137]
+2009-10-19 12:49:21 Warning: Warning (2): Wrong parameter count for mb_convert_encoding() in [COREapp/models/temp_parse_csv.php, line 75]
+2009-10-19 12:49:21 Warning: Warning (2): file() expects parameter 2 to be long, string given in [COREapp/models/temp_parse_csv.php, line 75]
+2009-10-19 14:08:13 Warning: Warning (2): mb_substr_count() expects parameter 1 to be string, array given in [COREapp/models/temp_parse_csv.php, line 88]
+2009-10-19 14:08:35 Warning: Warning (2): mb_substr_count() expects parameter 1 to be string, array given in [COREapp/models/temp_parse_csv.php, line 88]
+2009-10-19 18:23:23 Warning: Warning (2): Invalid argument supplied for foreach() in [COREapp/models/temp_parse_csv.php, line 94]
+2009-10-19 18:23:29 Warning: Warning (2): Invalid argument supplied for foreach() in [COREapp/models/temp_parse_csv.php, line 94]
+2009-10-19 19:14:07 Warning: Warning (2): file_get_contents(/var/www/html/csv/parse_csv/compare.csv) [<a href='http://php.net/function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory in [COREapp/models/temp_parse_csv.php, line 77]
+2009-10-19 19:14:07 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  invalid byte sequence for encoding &quot;EUC_JP&quot;: 0x93a1
+HINT:  This error can also happen if the byte sequence does not match the encoding expected by the server, which is controlled by &quot;client_encoding&quot;.
+CONTEXT:  COPY temp_parse_csvs, line 1 in [COREapp/models/temp_parse_csv.php, line 126]
+2009-10-19 19:20:30 Warning: Warning (2): fgetcsv() expects parameter 1 to be resource, boolean given in [COREapp/models/temp_disused_parse_csv.php, line 84]
+2009-10-19 19:21:07 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  column TempParseCsv.id does not exist
+LINE 1: SELECT &quot;TempParseCsv&quot;.&quot;id&quot; AS &quot;TempParseCsv__id&quot; FROM &quot;temp_...
+               ^ in [COREcake/libs/model/datasources/dbo/dbo_postgres.php, line 148]
+2009-10-19 19:21:07 Warning: Warning (512): <span style = "color:Red;text-align:left"><b>SQL Error:</b> ERROR:  column TempParseCsv.id does not exist
+LINE 1: SELECT "TempParseCsv"."id" AS "TempParseCsv__id" FROM "temp_...
+               ^</span> in [COREcake/libs/model/datasources/dbo_source.php, line 525]
+2009-10-19 19:21:07 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/program/cake/cake/basics.php:313) in [COREapp/controllers/parse_csv_controller.php, line 248]
+2009-10-19 19:21:07 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/program/cake/cake/basics.php:313) in [COREapp/controllers/parse_csv_controller.php, line 249]
+2009-10-19 19:21:07 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/program/cake/cake/basics.php:313) in [COREapp/controllers/parse_csv_controller.php, line 250]
+2009-10-19 19:21:07 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/program/cake/cake/basics.php:313) in [COREapp/controllers/parse_csv_controller.php, line 251]
+2009-10-19 19:41:17 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  could not open file &quot;/var/www/html/csv/parse_csv/163&quot; for reading: No such file or directory in [COREapp/models/temp_disused_parse_csv.php, line 151]
+2009-10-19 19:41:17 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  column TempParseCsv.id does not exist
+LINE 1: SELECT &quot;TempParseCsv&quot;.&quot;id&quot; AS &quot;TempParseCsv__id&quot; FROM &quot;temp_...
+               ^ in [COREcake/libs/model/datasources/dbo/dbo_postgres.php, line 148]
+2009-10-19 19:41:17 Warning: Warning (512): <span style = "color:Red;text-align:left"><b>SQL Error:</b> ERROR:  column TempParseCsv.id does not exist
+LINE 1: SELECT "TempParseCsv"."id" AS "TempParseCsv__id" FROM "temp_...
+               ^</span> in [COREcake/libs/model/datasources/dbo_source.php, line 525]
+2009-10-19 19:41:17 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  column TempDisusedParseCsv.id does not exist
+LINE 1: SELECT &quot;TempDisusedParseCsv&quot;.&quot;id&quot; AS &quot;TempDisusedParseCsv__i...
+               ^ in [COREcake/libs/model/datasources/dbo/dbo_postgres.php, line 148]
+2009-10-19 19:41:17 Warning: Warning (512): <span style = "color:Red;text-align:left"><b>SQL Error:</b> ERROR:  column TempDisusedParseCsv.id does not exist
+LINE 1: SELECT "TempDisusedParseCsv"."id" AS "TempDisusedParseCsv__i...
+               ^</span> in [COREcake/libs/model/datasources/dbo_source.php, line 525]
+2009-10-19 19:42:21 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  could not open file &quot;/var/www/html/csv/parse_csv/163&quot; for reading: No such file or directory in [COREapp/models/temp_disused_parse_csv.php, line 151]
+2009-10-19 19:42:21 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  column TempParseCsv.id does not exist
+LINE 1: SELECT &quot;TempParseCsv&quot;.&quot;id&quot; AS &quot;TempParseCsv__id&quot; FROM &quot;temp_...
+               ^ in [COREcake/libs/model/datasources/dbo/dbo_postgres.php, line 148]
+2009-10-19 19:42:21 Warning: Warning (512): <span style = "color:Red;text-align:left"><b>SQL Error:</b> ERROR:  column TempParseCsv.id does not exist
+LINE 1: SELECT "TempParseCsv"."id" AS "TempParseCsv__id" FROM "temp_...
+               ^</span> in [COREcake/libs/model/datasources/dbo_source.php, line 525]
+2009-10-19 19:42:21 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  column TempDisusedParseCsv.id does not exist
+LINE 1: SELECT &quot;TempDisusedParseCsv&quot;.&quot;id&quot; AS &quot;TempDisusedParseCsv__i...
+               ^ in [COREcake/libs/model/datasources/dbo/dbo_postgres.php, line 148]
+2009-10-19 19:42:21 Warning: Warning (512): <span style = "color:Red;text-align:left"><b>SQL Error:</b> ERROR:  column TempDisusedParseCsv.id does not exist
+LINE 1: SELECT "TempDisusedParseCsv"."id" AS "TempDisusedParseCsv__i...
+               ^</span> in [COREcake/libs/model/datasources/dbo_source.php, line 525]
+2009-10-19 19:42:37 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  could not open file &quot;/var/www/html/csv/parse_csv/163&quot; for reading: No such file or directory in [COREapp/models/temp_disused_parse_csv.php, line 151]
+2009-10-19 19:42:37 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  column TempParseCsv.id does not exist
+LINE 1: SELECT &quot;TempParseCsv&quot;.&quot;id&quot; AS &quot;TempParseCsv__id&quot; FROM &quot;temp_...
+               ^ in [COREcake/libs/model/datasources/dbo/dbo_postgres.php, line 148]
+2009-10-19 19:42:37 Warning: Warning (512): <span style = "color:Red;text-align:left"><b>SQL Error:</b> ERROR:  column TempParseCsv.id does not exist
+LINE 1: SELECT "TempParseCsv"."id" AS "TempParseCsv__id" FROM "temp_...
+               ^</span> in [COREcake/libs/model/datasources/dbo_source.php, line 525]
+2009-10-19 19:42:37 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  column TempDisusedParseCsv.id does not exist
+LINE 1: SELECT &quot;TempDisusedParseCsv&quot;.&quot;id&quot; AS &quot;TempDisusedParseCsv__i...
+               ^ in [COREcake/libs/model/datasources/dbo/dbo_postgres.php, line 148]
+2009-10-19 19:42:37 Warning: Warning (512): <span style = "color:Red;text-align:left"><b>SQL Error:</b> ERROR:  column TempDisusedParseCsv.id does not exist
+LINE 1: SELECT "TempDisusedParseCsv"."id" AS "TempDisusedParseCsv__i...
+               ^</span> in [COREcake/libs/model/datasources/dbo_source.php, line 525]
+2009-10-19 19:42:42 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  could not open file &quot;/var/www/html/csv/parse_csv/163&quot; for reading: No such file or directory in [COREapp/models/temp_disused_parse_csv.php, line 151]
+2009-10-19 19:42:42 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  column TempParseCsv.id does not exist
+LINE 1: SELECT &quot;TempParseCsv&quot;.&quot;id&quot; AS &quot;TempParseCsv__id&quot; FROM &quot;temp_...
+               ^ in [COREcake/libs/model/datasources/dbo/dbo_postgres.php, line 148]
+2009-10-19 19:42:42 Warning: Warning (512): <span style = "color:Red;text-align:left"><b>SQL Error:</b> ERROR:  column TempParseCsv.id does not exist
+LINE 1: SELECT "TempParseCsv"."id" AS "TempParseCsv__id" FROM "temp_...
+               ^</span> in [COREcake/libs/model/datasources/dbo_source.php, line 525]
+2009-10-19 19:42:42 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  column TempDisusedParseCsv.id does not exist
+LINE 1: SELECT &quot;TempDisusedParseCsv&quot;.&quot;id&quot; AS &quot;TempDisusedParseCsv__i...
+               ^ in [COREcake/libs/model/datasources/dbo/dbo_postgres.php, line 148]
+2009-10-19 19:42:42 Warning: Warning (512): <span style = "color:Red;text-align:left"><b>SQL Error:</b> ERROR:  column TempDisusedParseCsv.id does not exist
+LINE 1: SELECT "TempDisusedParseCsv"."id" AS "TempDisusedParseCsv__i...
+               ^</span> in [COREcake/libs/model/datasources/dbo_source.php, line 525]
+2009-10-19 19:42:55 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  could not open file &quot;/var/www/html/csv/parse_csv/163&quot; for reading: No such file or directory in [COREapp/models/temp_disused_parse_csv.php, line 151]
+2009-10-19 19:42:55 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  column TempParseCsv.id does not exist
+LINE 1: SELECT &quot;TempParseCsv&quot;.&quot;id&quot; AS &quot;TempParseCsv__id&quot; FROM &quot;temp_...
+               ^ in [COREcake/libs/model/datasources/dbo/dbo_postgres.php, line 148]
+2009-10-19 19:42:55 Warning: Warning (512): <span style = "color:Red;text-align:left"><b>SQL Error:</b> ERROR:  column TempParseCsv.id does not exist
+LINE 1: SELECT "TempParseCsv"."id" AS "TempParseCsv__id" FROM "temp_...
+               ^</span> in [COREcake/libs/model/datasources/dbo_source.php, line 525]
+2009-10-19 19:42:55 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  column TempDisusedParseCsv.id does not exist
+LINE 1: SELECT &quot;TempDisusedParseCsv&quot;.&quot;id&quot; AS &quot;TempDisusedParseCsv__i...
+               ^ in [COREcake/libs/model/datasources/dbo/dbo_postgres.php, line 148]
+2009-10-19 19:42:55 Warning: Warning (512): <span style = "color:Red;text-align:left"><b>SQL Error:</b> ERROR:  column TempDisusedParseCsv.id does not exist
+LINE 1: SELECT "TempDisusedParseCsv"."id" AS "TempDisusedParseCsv__i...
+               ^</span> in [COREcake/libs/model/datasources/dbo_source.php, line 525]
+2009-10-19 19:43:12 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  could not open file &quot;/var/www/html/csv/parse_csv/163&quot; for reading: No such file or directory in [COREapp/models/temp_disused_parse_csv.php, line 151]
+2009-10-19 19:43:12 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  column TempParseCsv.id does not exist
+LINE 1: SELECT &quot;TempParseCsv&quot;.&quot;id&quot; AS &quot;TempParseCsv__id&quot; FROM &quot;temp_...
+               ^ in [COREcake/libs/model/datasources/dbo/dbo_postgres.php, line 148]
+2009-10-19 19:43:12 Warning: Warning (512): <span style = "color:Red;text-align:left"><b>SQL Error:</b> ERROR:  column TempParseCsv.id does not exist
+LINE 1: SELECT "TempParseCsv"."id" AS "TempParseCsv__id" FROM "temp_...
+               ^</span> in [COREcake/libs/model/datasources/dbo_source.php, line 525]
+2009-10-19 19:43:12 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  column TempDisusedParseCsv.id does not exist
+LINE 1: SELECT &quot;TempDisusedParseCsv&quot;.&quot;id&quot; AS &quot;TempDisusedParseCsv__i...
+               ^ in [COREcake/libs/model/datasources/dbo/dbo_postgres.php, line 148]
+2009-10-19 19:43:12 Warning: Warning (512): <span style = "color:Red;text-align:left"><b>SQL Error:</b> ERROR:  column TempDisusedParseCsv.id does not exist
+LINE 1: SELECT "TempDisusedParseCsv"."id" AS "TempDisusedParseCsv__i...
+               ^</span> in [COREcake/libs/model/datasources/dbo_source.php, line 525]
+2009-10-19 19:43:59 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  could not open file &quot;/var/www/html/csv/parse_csv/163&quot; for reading: No such file or directory in [COREapp/models/temp_disused_parse_csv.php, line 151]
+2009-10-19 19:43:59 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  column TempParseCsv.id does not exist
+LINE 1: SELECT &quot;TempParseCsv&quot;.&quot;id&quot; AS &quot;TempParseCsv__id&quot; FROM &quot;temp_...
+               ^ in [COREcake/libs/model/datasources/dbo/dbo_postgres.php, line 148]
+2009-10-19 19:43:59 Warning: Warning (512): <span style = "color:Red;text-align:left"><b>SQL Error:</b> ERROR:  column TempParseCsv.id does not exist
+LINE 1: SELECT "TempParseCsv"."id" AS "TempParseCsv__id" FROM "temp_...
+               ^</span> in [COREcake/libs/model/datasources/dbo_source.php, line 525]
+2009-10-19 19:43:59 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  column TempDisusedParseCsv.id does not exist
+LINE 1: SELECT &quot;TempDisusedParseCsv&quot;.&quot;id&quot; AS &quot;TempDisusedParseCsv__i...
+               ^ in [COREcake/libs/model/datasources/dbo/dbo_postgres.php, line 148]
+2009-10-19 19:43:59 Warning: Warning (512): <span style = "color:Red;text-align:left"><b>SQL Error:</b> ERROR:  column TempDisusedParseCsv.id does not exist
+LINE 1: SELECT "TempDisusedParseCsv"."id" AS "TempDisusedParseCsv__i...
+               ^</span> in [COREcake/libs/model/datasources/dbo_source.php, line 525]
+2009-10-19 19:47:11 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  could not open file &quot;/var/www/html/csv/parse_csv/163&quot; for reading: No such file or directory in [COREapp/models/temp_disused_parse_csv.php, line 151]
+2009-10-19 19:48:47 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  extra data after last expected column
+CONTEXT:  COPY temp_disused_parse_csvs, line 1: &quot;163,1476,niki@itm.ne.jp,2009-06-02 10:11:30&quot; in [COREapp/models/temp_disused_parse_csv.php, line 151]
+2009-10-19 19:56:23 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  extra data after last expected column
+CONTEXT:  COPY temp_disused_parse_csvs, line 1: &quot;163,1476,niki@itm.ne.jp,2009-06-02 10:11:30&quot; in [COREapp/models/temp_disused_parse_csv.php, line 151]
+2009-10-19 19:58:22 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  column TempParseCsv.id does not exist
+LINE 1: SELECT &quot;TempParseCsv&quot;.&quot;id&quot; AS &quot;TempParseCsv__id&quot; FROM &quot;temp_...
+               ^ in [COREcake/libs/model/datasources/dbo/dbo_postgres.php, line 148]
+2009-10-19 19:58:22 Warning: Warning (512): <span style = "color:Red;text-align:left"><b>SQL Error:</b> ERROR:  column TempParseCsv.id does not exist
+LINE 1: SELECT "TempParseCsv"."id" AS "TempParseCsv__id" FROM "temp_...
+               ^</span> in [COREcake/libs/model/datasources/dbo_source.php, line 525]
+2009-10-19 19:58:22 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  column TempDisusedParseCsv.id does not exist
+LINE 1: SELECT &quot;TempDisusedParseCsv&quot;.&quot;id&quot; AS &quot;TempDisusedParseCsv__i...
+               ^ in [COREcake/libs/model/datasources/dbo/dbo_postgres.php, line 148]
+2009-10-19 19:58:22 Warning: Warning (512): <span style = "color:Red;text-align:left"><b>SQL Error:</b> ERROR:  column TempDisusedParseCsv.id does not exist
+LINE 1: SELECT "TempDisusedParseCsv"."id" AS "TempDisusedParseCsv__i...
+               ^</span> in [COREcake/libs/model/datasources/dbo_source.php, line 525]
+2009-10-19 20:01:57 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  column TempParseCsv.id does not exist
+LINE 1: SELECT &quot;TempParseCsv&quot;.&quot;id&quot; AS &quot;TempParseCsv__id&quot; FROM &quot;temp_...
+               ^ in [COREcake/libs/model/datasources/dbo/dbo_postgres.php, line 148]
+2009-10-19 20:01:57 Warning: Warning (512): <span style = "color:Red;text-align:left"><b>SQL Error:</b> ERROR:  column TempParseCsv.id does not exist
+LINE 1: SELECT "TempParseCsv"."id" AS "TempParseCsv__id" FROM "temp_...
+               ^</span> in [COREcake/libs/model/datasources/dbo_source.php, line 525]
+2009-10-19 20:01:57 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  column TempDisusedParseCsv.id does not exist
+LINE 1: SELECT &quot;TempDisusedParseCsv&quot;.&quot;id&quot; AS &quot;TempDisusedParseCsv__i...
+               ^ in [COREcake/libs/model/datasources/dbo/dbo_postgres.php, line 148]
+2009-10-19 20:01:57 Warning: Warning (512): <span style = "color:Red;text-align:left"><b>SQL Error:</b> ERROR:  column TempDisusedParseCsv.id does not exist
+LINE 1: SELECT "TempDisusedParseCsv"."id" AS "TempDisusedParseCsv__i...
+               ^</span> in [COREcake/libs/model/datasources/dbo_source.php, line 525]
+2009-10-19 20:04:14 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  column TempParseCsv.id does not exist
+LINE 1: ... FROM &quot;temp_parse_csvs&quot; AS &quot;TempParseCsv&quot;   WHERE &quot;TempParse...
+                                                             ^ in [COREcake/libs/model/datasources/dbo/dbo_postgres.php, line 148]
+2009-10-19 20:04:14 Warning: Warning (512): <span style = "color:Red;text-align:left"><b>SQL Error:</b> ERROR:  column TempParseCsv.id does not exist
+LINE 1: ... FROM "temp_parse_csvs" AS "TempParseCsv"   WHERE "TempParse...
+                                                             ^</span> in [COREcake/libs/model/datasources/dbo_source.php, line 525]
+2009-10-19 20:04:14 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  column TempDisusedParseCsv.id does not exist
+LINE 1: ...used_parse_csvs&quot; AS &quot;TempDisusedParseCsv&quot;   WHERE &quot;TempDisus...
+                                                             ^ in [COREcake/libs/model/datasources/dbo/dbo_postgres.php, line 148]
+2009-10-19 20:04:14 Warning: Warning (512): <span style = "color:Red;text-align:left"><b>SQL Error:</b> ERROR:  column TempDisusedParseCsv.id does not exist
+LINE 1: ...used_parse_csvs" AS "TempDisusedParseCsv"   WHERE "TempDisus...
+                                                             ^</span> in [COREcake/libs/model/datasources/dbo_source.php, line 525]
+2009-10-19 20:04:30 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  column TempDisusedParseCsv.id does not exist
+LINE 1: ...used_parse_csvs&quot; AS &quot;TempDisusedParseCsv&quot;   WHERE &quot;TempDisus...
+                                                             ^ in [COREcake/libs/model/datasources/dbo/dbo_postgres.php, line 148]
+2009-10-19 20:04:30 Warning: Warning (512): <span style = "color:Red;text-align:left"><b>SQL Error:</b> ERROR:  column TempDisusedParseCsv.id does not exist
+LINE 1: ...used_parse_csvs" AS "TempDisusedParseCsv"   WHERE "TempDisus...
+                                                             ^</span> in [COREcake/libs/model/datasources/dbo_source.php, line 525]
+2009-10-19 20:06:10 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  column TempParseCsv.id does not exist
+LINE 1: ... FROM &quot;temp_parse_csvs&quot; AS &quot;TempParseCsv&quot;   WHERE &quot;TempParse...
+                                                             ^ in [COREcake/libs/model/datasources/dbo/dbo_postgres.php, line 148]
+2009-10-19 20:06:10 Warning: Warning (512): <span style = "color:Red;text-align:left"><b>SQL Error:</b> ERROR:  column TempParseCsv.id does not exist
+LINE 1: ... FROM "temp_parse_csvs" AS "TempParseCsv"   WHERE "TempParse...
+                                                             ^</span> in [COREcake/libs/model/datasources/dbo_source.php, line 525]
+2009-10-19 20:06:10 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  column TempDisusedParseCsv.id does not exist
+LINE 1: ...used_parse_csvs&quot; AS &quot;TempDisusedParseCsv&quot;   WHERE &quot;TempDisus...
+                                                             ^ in [COREcake/libs/model/datasources/dbo/dbo_postgres.php, line 148]
+2009-10-19 20:06:10 Warning: Warning (512): <span style = "color:Red;text-align:left"><b>SQL Error:</b> ERROR:  column TempDisusedParseCsv.id does not exist
+LINE 1: ...used_parse_csvs" AS "TempDisusedParseCsv"   WHERE "TempDisus...
+                                                             ^</span> in [COREcake/libs/model/datasources/dbo_source.php, line 525]
+2009-10-19 20:06:21 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  column TempDisusedParseCsv.id does not exist
+LINE 1: ...used_parse_csvs&quot; AS &quot;TempDisusedParseCsv&quot;   WHERE &quot;TempDisus...
+                                                             ^ in [COREcake/libs/model/datasources/dbo/dbo_postgres.php, line 148]
+2009-10-19 20:06:21 Warning: Warning (512): <span style = "color:Red;text-align:left"><b>SQL Error:</b> ERROR:  column TempDisusedParseCsv.id does not exist
+LINE 1: ...used_parse_csvs" AS "TempDisusedParseCsv"   WHERE "TempDisus...
+                                                             ^</span> in [COREcake/libs/model/datasources/dbo_source.php, line 525]
+2009-10-19 20:08:16 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  column TempParseCsv.id does not exist
+LINE 1: ... FROM &quot;temp_parse_csvs&quot; AS &quot;TempParseCsv&quot;   WHERE &quot;TempParse...
+                                                             ^ in [COREcake/libs/model/datasources/dbo/dbo_postgres.php, line 148]
+2009-10-19 20:08:16 Warning: Warning (512): <span style = "color:Red;text-align:left"><b>SQL Error:</b> ERROR:  column TempParseCsv.id does not exist
+LINE 1: ... FROM "temp_parse_csvs" AS "TempParseCsv"   WHERE "TempParse...
+                                                             ^</span> in [COREcake/libs/model/datasources/dbo_source.php, line 525]
+2009-10-19 20:08:16 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  column TempDisusedParseCsv.id does not exist
+LINE 1: ...used_parse_csvs&quot; AS &quot;TempDisusedParseCsv&quot;   WHERE &quot;TempDisus...
+                                                             ^ in [COREcake/libs/model/datasources/dbo/dbo_postgres.php, line 148]
+2009-10-19 20:08:16 Warning: Warning (512): <span style = "color:Red;text-align:left"><b>SQL Error:</b> ERROR:  column TempDisusedParseCsv.id does not exist
+LINE 1: ...used_parse_csvs" AS "TempDisusedParseCsv"   WHERE "TempDisus...
+                                                             ^</span> in [COREcake/libs/model/datasources/dbo_source.php, line 525]
+2009-10-19 20:11:01 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  column TempParseCsv.id does not exist
+LINE 1: ... FROM &quot;temp_parse_csvs&quot; AS &quot;TempParseCsv&quot;   WHERE &quot;TempParse...
+                                                             ^ in [COREcake/libs/model/datasources/dbo/dbo_postgres.php, line 148]
+2009-10-19 20:11:01 Warning: Warning (512): <span style = "color:Red;text-align:left"><b>SQL Error:</b> ERROR:  column TempParseCsv.id does not exist
+LINE 1: ... FROM "temp_parse_csvs" AS "TempParseCsv"   WHERE "TempParse...
+                                                             ^</span> in [COREcake/libs/model/datasources/dbo_source.php, line 525]
+2009-10-19 20:11:01 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  column TempDisusedParseCsv.id does not exist
+LINE 1: ...used_parse_csvs&quot; AS &quot;TempDisusedParseCsv&quot;   WHERE &quot;TempDisus...
+                                                             ^ in [COREcake/libs/model/datasources/dbo/dbo_postgres.php, line 148]
+2009-10-19 20:11:01 Warning: Warning (512): <span style = "color:Red;text-align:left"><b>SQL Error:</b> ERROR:  column TempDisusedParseCsv.id does not exist
+LINE 1: ...used_parse_csvs" AS "TempDisusedParseCsv"   WHERE "TempDisus...
+                                                             ^</span> in [COREcake/libs/model/datasources/dbo_source.php, line 525]
+2009-10-19 20:11:30 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  column TempParseCsv.id does not exist
+LINE 1: ... FROM &quot;temp_parse_csvs&quot; AS &quot;TempParseCsv&quot;   WHERE &quot;TempParse...
+                                                             ^ in [COREcake/libs/model/datasources/dbo/dbo_postgres.php, line 148]
+2009-10-19 20:11:30 Warning: Warning (512): <span style = "color:Red;text-align:left"><b>SQL Error:</b> ERROR:  column TempParseCsv.id does not exist
+LINE 1: ... FROM "temp_parse_csvs" AS "TempParseCsv"   WHERE "TempParse...
+                                                             ^</span> in [COREcake/libs/model/datasources/dbo_source.php, line 525]
+2009-10-19 20:11:30 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  column TempDisusedParseCsv.id does not exist
+LINE 1: ...used_parse_csvs&quot; AS &quot;TempDisusedParseCsv&quot;   WHERE &quot;TempDisus...
+                                                             ^ in [COREcake/libs/model/datasources/dbo/dbo_postgres.php, line 148]
+2009-10-19 20:11:30 Warning: Warning (512): <span style = "color:Red;text-align:left"><b>SQL Error:</b> ERROR:  column TempDisusedParseCsv.id does not exist
+LINE 1: ...used_parse_csvs" AS "TempDisusedParseCsv"   WHERE "TempDisus...
+                                                             ^</span> in [COREcake/libs/model/datasources/dbo_source.php, line 525]
+2009-10-19 20:12:51 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  column TempParseCsv.id does not exist
+LINE 1: SELECT &quot;TempParseCsv&quot;.&quot;id&quot; AS &quot;TempParseCsv__id&quot; FROM &quot;temp_...
+               ^ in [COREcake/libs/model/datasources/dbo/dbo_postgres.php, line 148]
+2009-10-19 20:12:51 Warning: Warning (512): <span style = "color:Red;text-align:left"><b>SQL Error:</b> ERROR:  column TempParseCsv.id does not exist
+LINE 1: SELECT "TempParseCsv"."id" AS "TempParseCsv__id" FROM "temp_...
+               ^</span> in [COREcake/libs/model/datasources/dbo_source.php, line 525]
+2009-10-19 20:12:51 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  column TempDisusedParseCsv.id does not exist
+LINE 1: SELECT &quot;TempDisusedParseCsv&quot;.&quot;id&quot; AS &quot;TempDisusedParseCsv__i...
+               ^ in [COREcake/libs/model/datasources/dbo/dbo_postgres.php, line 148]
+2009-10-19 20:12:51 Warning: Warning (512): <span style = "color:Red;text-align:left"><b>SQL Error:</b> ERROR:  column TempDisusedParseCsv.id does not exist
+LINE 1: SELECT "TempDisusedParseCsv"."id" AS "TempDisusedParseCsv__i...
+               ^</span> in [COREcake/libs/model/datasources/dbo_source.php, line 525]
+2009-10-19 20:14:02 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  argument of WHERE must be type boolean, not type integer in [COREcake/libs/model/datasources/dbo/dbo_postgres.php, line 148]
+2009-10-19 20:14:02 Warning: Warning (512): <span style = "color:Red;text-align:left"><b>SQL Error:</b> ERROR:  argument of WHERE must be type boolean, not type integer</span> in [COREcake/libs/model/datasources/dbo_source.php, line 525]
+2009-10-19 20:28:17 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  column TempParseCsv.id does not exist
+LINE 1: ... FROM &quot;temp_parse_csvs&quot; AS &quot;TempParseCsv&quot;   WHERE &quot;TempParse...
+                                                             ^ in [COREcake/libs/model/datasources/dbo/dbo_postgres.php, line 148]
+2009-10-19 20:28:17 Warning: Warning (512): <span style = "color:Red;text-align:left"><b>SQL Error:</b> ERROR:  column TempParseCsv.id does not exist
+LINE 1: ... FROM "temp_parse_csvs" AS "TempParseCsv"   WHERE "TempParse...
+                                                             ^</span> in [COREcake/libs/model/datasources/dbo_source.php, line 525]
+2009-10-19 20:28:17 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  column TempDisusedParseCsv.id does not exist
+LINE 1: ...used_parse_csvs&quot; AS &quot;TempDisusedParseCsv&quot;   WHERE &quot;TempDisus...
+                                                             ^ in [COREcake/libs/model/datasources/dbo/dbo_postgres.php, line 148]
+2009-10-19 20:28:17 Warning: Warning (512): <span style = "color:Red;text-align:left"><b>SQL Error:</b> ERROR:  column TempDisusedParseCsv.id does not exist
+LINE 1: ...used_parse_csvs" AS "TempDisusedParseCsv"   WHERE "TempDisus...
+                                                             ^</span> in [COREcake/libs/model/datasources/dbo_source.php, line 525]
+2009-10-19 20:30:04 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  column TempParseCsv.id does not exist
+LINE 1: SELECT &quot;TempParseCsv&quot;.&quot;id&quot; AS &quot;TempParseCsv__id&quot; FROM &quot;temp_...
+               ^ in [COREcake/libs/model/datasources/dbo/dbo_postgres.php, line 148]
+2009-10-19 20:30:04 Warning: Warning (512): <span style = "color:Red;text-align:left"><b>SQL Error:</b> ERROR:  column TempParseCsv.id does not exist
+LINE 1: SELECT "TempParseCsv"."id" AS "TempParseCsv__id" FROM "temp_...
+               ^</span> in [COREcake/libs/model/datasources/dbo_source.php, line 525]
+2009-10-19 20:30:04 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  column TempDisusedParseCsv.id does not exist
+LINE 1: SELECT &quot;TempDisusedParseCsv&quot;.&quot;id&quot; AS &quot;TempDisusedParseCsv__i...
+               ^ in [COREcake/libs/model/datasources/dbo/dbo_postgres.php, line 148]
+2009-10-19 20:30:04 Warning: Warning (512): <span style = "color:Red;text-align:left"><b>SQL Error:</b> ERROR:  column TempDisusedParseCsv.id does not exist
+LINE 1: SELECT "TempDisusedParseCsv"."id" AS "TempDisusedParseCsv__i...
+               ^</span> in [COREcake/libs/model/datasources/dbo_source.php, line 525]
+2009-10-19 20:41:55 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  duplicate key violates unique constraint &quot;temp_parse_csvs_pkey&quot;
+CONTEXT:  COPY temp_parse_csvs, line 2: &quot;163,a,a@itm.ne.jp,,,,,,&quot; in [COREapp/models/temp_parse_csv.php, line 122]
+2009-10-19 20:41:55 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  duplicate key violates unique constraint &quot;temp_disused_parse_csvs_pkey&quot;
+CONTEXT:  COPY temp_disused_parse_csvs, line 2: &quot;163,c@itm.ne.jp&quot; in [COREapp/models/temp_disused_parse_csv.php, line 151]
+2009-10-19 20:41:55 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  column TempParseCsv.id does not exist
+LINE 1: SELECT &quot;TempParseCsv&quot;.&quot;id&quot; AS &quot;TempParseCsv__id&quot; FROM &quot;temp_...
+               ^ in [COREcake/libs/model/datasources/dbo/dbo_postgres.php, line 148]
+2009-10-19 20:41:55 Warning: Warning (512): <span style = "color:Red;text-align:left"><b>SQL Error:</b> ERROR:  column TempParseCsv.id does not exist
+LINE 1: SELECT "TempParseCsv"."id" AS "TempParseCsv__id" FROM "temp_...
+               ^</span> in [COREcake/libs/model/datasources/dbo_source.php, line 525]
+2009-10-19 20:41:55 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  column TempDisusedParseCsv.id does not exist
+LINE 1: SELECT &quot;TempDisusedParseCsv&quot;.&quot;id&quot; AS &quot;TempDisusedParseCsv__i...
+               ^ in [COREcake/libs/model/datasources/dbo/dbo_postgres.php, line 148]
+2009-10-19 20:41:55 Warning: Warning (512): <span style = "color:Red;text-align:left"><b>SQL Error:</b> ERROR:  column TempDisusedParseCsv.id does not exist
+LINE 1: SELECT "TempDisusedParseCsv"."id" AS "TempDisusedParseCsv__i...
+               ^</span> in [COREcake/libs/model/datasources/dbo_source.php, line 525]
+2009-10-19 20:44:46 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  column TempParseCsv.id does not exist
+LINE 1: SELECT &quot;TempParseCsv&quot;.&quot;id&quot; AS &quot;TempParseCsv__id&quot; FROM &quot;temp_...
+               ^ in [COREcake/libs/model/datasources/dbo/dbo_postgres.php, line 148]
+2009-10-19 20:44:46 Warning: Warning (512): <span style = "color:Red;text-align:left"><b>SQL Error:</b> ERROR:  column TempParseCsv.id does not exist
+LINE 1: SELECT "TempParseCsv"."id" AS "TempParseCsv__id" FROM "temp_...
+               ^</span> in [COREcake/libs/model/datasources/dbo_source.php, line 525]
+2009-10-19 20:44:46 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  column TempDisusedParseCsv.id does not exist
+LINE 1: SELECT &quot;TempDisusedParseCsv&quot;.&quot;id&quot; AS &quot;TempDisusedParseCsv__i...
+               ^ in [COREcake/libs/model/datasources/dbo/dbo_postgres.php, line 148]
+2009-10-19 20:44:46 Warning: Warning (512): <span style = "color:Red;text-align:left"><b>SQL Error:</b> ERROR:  column TempDisusedParseCsv.id does not exist
+LINE 1: SELECT "TempDisusedParseCsv"."id" AS "TempDisusedParseCsv__i...
+               ^</span> in [COREcake/libs/model/datasources/dbo_source.php, line 525]
+2009-10-19 20:55:39 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  duplicate key violates unique constraint &quot;temp_parse_csvs_pkey&quot;
+CONTEXT:  COPY temp_parse_csvs, line 2: &quot;163,a,a@itm.ne.jp,,,,,,&quot; in [COREapp/models/temp_parse_csv.php, line 122]
+2009-10-19 20:55:39 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  duplicate key violates unique constraint &quot;temp_disused_parse_csvs_pkey&quot;
+CONTEXT:  COPY temp_disused_parse_csvs, line 2: &quot;163,c@itm.ne.jp&quot; in [COREapp/models/temp_disused_parse_csv.php, line 151]
+2009-10-19 20:55:39 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  column TempParseCsv.id does not exist
+LINE 1: SELECT &quot;TempParseCsv&quot;.&quot;id&quot; AS &quot;TempParseCsv__id&quot; FROM &quot;temp_...
+               ^ in [COREcake/libs/model/datasources/dbo/dbo_postgres.php, line 148]
+2009-10-19 20:55:39 Warning: Warning (512): <span style = "color:Red;text-align:left"><b>SQL Error:</b> ERROR:  column TempParseCsv.id does not exist
+LINE 1: SELECT "TempParseCsv"."id" AS "TempParseCsv__id" FROM "temp_...
+               ^</span> in [COREcake/libs/model/datasources/dbo_source.php, line 525]
+2009-10-19 20:55:39 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  column TempDisusedParseCsv.id does not exist
+LINE 1: SELECT &quot;TempDisusedParseCsv&quot;.&quot;id&quot; AS &quot;TempDisusedParseCsv__i...
+               ^ in [COREcake/libs/model/datasources/dbo/dbo_postgres.php, line 148]
+2009-10-19 20:55:39 Warning: Warning (512): <span style = "color:Red;text-align:left"><b>SQL Error:</b> ERROR:  column TempDisusedParseCsv.id does not exist
+LINE 1: SELECT "TempDisusedParseCsv"."id" AS "TempDisusedParseCsv__i...
+               ^</span> in [COREcake/libs/model/datasources/dbo_source.php, line 525]
+2009-10-19 21:01:30 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  duplicate key violates unique constraint &quot;temp_parse_csvs_pkey&quot;
+CONTEXT:  COPY temp_parse_csvs, line 2: &quot;163,a,a@itm.ne.jp,,,,,,&quot; in [COREapp/models/temp_parse_csv.php, line 122]
+2009-10-19 21:01:30 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  duplicate key violates unique constraint &quot;temp_disused_parse_csvs_pkey&quot;
+CONTEXT:  COPY temp_disused_parse_csvs, line 2: &quot;163,c@itm.ne.jp&quot; in [COREapp/models/temp_disused_parse_csv.php, line 151]
+2009-10-19 21:05:16 Warning: Warning (2): Missing argument 1 for Model::deleteAll(), called in /var/www/html/program/cake/app/controllers/parse_csv_controller.php on line 239 and defined in [COREcake/libs/model/model.php, line 1792]
+2009-10-19 21:05:16 Warning: Warning (2): Missing argument 1 for Model::deleteAll(), called in /var/www/html/program/cake/app/controllers/parse_csv_controller.php on line 240 and defined in [COREcake/libs/model/model.php, line 1792]
+2009-10-19 21:05:16 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/program/cake/cake/libs/debugger.php:505) in [COREapp/controllers/parse_csv_controller.php, line 255]
+2009-10-19 21:05:16 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/program/cake/cake/libs/debugger.php:505) in [COREapp/controllers/parse_csv_controller.php, line 256]
+2009-10-19 21:05:16 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/program/cake/cake/libs/debugger.php:505) in [COREapp/controllers/parse_csv_controller.php, line 257]
+2009-10-19 21:05:16 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/program/cake/cake/libs/debugger.php:505) in [COREapp/controllers/parse_csv_controller.php, line 258]
+2009-10-19 21:27:01 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  column TempParseCsv.id does not exist
+LINE 1: SELECT &quot;TempParseCsv&quot;.&quot;id&quot; AS &quot;TempParseCsv__id&quot; FROM &quot;temp_...
+               ^ in [COREcake/libs/model/datasources/dbo/dbo_postgres.php, line 148]
+2009-10-19 21:27:01 Warning: Warning (512): <span style = "color:Red;text-align:left"><b>SQL Error:</b> ERROR:  column TempParseCsv.id does not exist
+LINE 1: SELECT "TempParseCsv"."id" AS "TempParseCsv__id" FROM "temp_...
+               ^</span> in [COREcake/libs/model/datasources/dbo_source.php, line 525]
+2009-10-19 21:27:01 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  column TempDisusedParseCsv.id does not exist
+LINE 1: SELECT &quot;TempDisusedParseCsv&quot;.&quot;id&quot; AS &quot;TempDisusedParseCsv__i...
+               ^ in [COREcake/libs/model/datasources/dbo/dbo_postgres.php, line 148]
+2009-10-19 21:27:01 Warning: Warning (512): <span style = "color:Red;text-align:left"><b>SQL Error:</b> ERROR:  column TempDisusedParseCsv.id does not exist
+LINE 1: SELECT "TempDisusedParseCsv"."id" AS "TempDisusedParseCsv__i...
+               ^</span> in [COREcake/libs/model/datasources/dbo_source.php, line 525]
+2009-10-19 21:27:01 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/program/cake/cake/basics.php:313) in [COREapp/controllers/parse_csv_controller.php, line 256]
+2009-10-19 21:27:01 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/program/cake/cake/basics.php:313) in [COREapp/controllers/parse_csv_controller.php, line 257]
+2009-10-19 21:27:01 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/program/cake/cake/basics.php:313) in [COREapp/controllers/parse_csv_controller.php, line 258]
+2009-10-19 21:27:01 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/html/program/cake/cake/basics.php:313) in [COREapp/controllers/parse_csv_controller.php, line 259]
+2009-10-19 21:41:01 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  extra data after last expected column
+CONTEXT:  COPY temp_disused_parse_csvs, line 1: &quot;163,¤Ï¤¿¤¸£±,hataji01@itm.ne.jp&quot; in [COREapp/models/temp_disused_parse_csv.php, line 151]
+2009-10-19 21:57:04 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  relation &quot;tempdisusedparsecsv&quot; does not exist in [COREcake/libs/model/datasources/dbo/dbo_postgres.php, line 148]
+2009-10-19 21:57:04 Warning: Warning (512): <span style = "color:Red;text-align:left"><b>SQL Error:</b> ERROR:  relation "tempdisusedparsecsv" does not exist</span> in [COREcake/libs/model/datasources/dbo_source.php, line 525]
+2009-10-19 21:57:24 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  relation &quot;tempdisusedparsecsv&quot; does not exist in [COREcake/libs/model/datasources/dbo/dbo_postgres.php, line 148]
+2009-10-19 21:57:24 Warning: Warning (512): <span style = "color:Red;text-align:left"><b>SQL Error:</b> ERROR:  relation "tempdisusedparsecsv" does not exist</span> in [COREcake/libs/model/datasources/dbo_source.php, line 525]
+2009-10-19 22:01:33 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  syntax error at or near &quot;IN&quot;
+LINE 1:  SELECT * FROM temp_parse_csvs WHERE mail = NOT IN (SELECT m...
+                                                        ^ in [COREapp/models/temp_parse_csv.php, line 149]
+2009-10-19 22:03:18 Warning: Warning (2): Invalid argument supplied for foreach() in [COREapp/models/parse_csv.php, line 121]
+2009-10-19 22:03:37 Warning: Warning (2): Invalid argument supplied for foreach() in [COREapp/models/parse_csv.php, line 121]
+2009-10-20 16:56:39 Warning: Warning (2): pg_query(): supplied argument is not a valid PostgreSQL link resource in [COREapp/models/temp_parse_csv.php, line 115]
+2009-10-20 16:56:39 Warning: Warning (2): pg_fetch_assoc() expects parameter 1 to be resource, boolean given in [COREapp/models/temp_parse_csv.php, line 116]
+2009-10-20 16:58:20 Warning: Warning (2): pg_query(): supplied argument is not a valid PostgreSQL link resource in [COREapp/models/temp_parse_csv.php, line 115]
+2009-10-20 16:58:20 Warning: Warning (2): pg_fetch_assoc() expects parameter 1 to be resource, boolean given in [COREapp/models/temp_parse_csv.php, line 116]
+2009-10-20 16:58:46 Warning: Warning (2): pg_query(): supplied argument is not a valid PostgreSQL link resource in [COREapp/models/temp_parse_csv.php, line 115]
+2009-10-20 17:01:15 Warning: Warning (2): pg_query(): supplied argument is not a valid PostgreSQL link resource in [COREapp/models/temp_parse_csv.php, line 115]
+2009-10-20 17:01:54 Warning: Warning (2): pg_query(): supplied argument is not a valid PostgreSQL link resource in [COREapp/models/temp_parse_csv.php, line 117]
+2009-10-20 17:02:39 Warning: Warning (2): pg_query(): supplied argument is not a valid PostgreSQL link resource in [COREapp/models/temp_parse_csv.php, line 114]
+2009-10-20 17:02:39 Warning: Warning (2): pg_fetch_assoc() expects parameter 1 to be resource, boolean given in [COREapp/models/temp_parse_csv.php, line 115]
+2009-10-20 17:05:40 Warning: Warning (2): pg_query(): supplied argument is not a valid PostgreSQL link resource in [COREapp/models/temp_parse_csv.php, line 117]
+2009-10-20 17:21:34 Warning: Warning (2): session_start() [<a href='http://php.net/function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /var/www/html/program/cake/cake/libs/debugger.php:512) in [COREapp/controllers/parse_csv_controller.php, line 209]
+2009-10-20 17:23:07 Warning: Warning (2): session_start() [<a href='http://php.net/function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /var/www/html/program/cake/cake/libs/debugger.php:512) in [COREapp/controllers/parse_csv_controller.php, line 209]
+2009-10-20 17:23:20 Warning: Warning (2): session_start() [<a href='http://php.net/function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /var/www/html/program/cake/cake/libs/debugger.php:512) in [COREapp/controllers/parse_csv_controller.php, line 209]
+2009-10-20 17:24:39 Warning: Warning (2): session_start() [<a href='http://php.net/function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /var/www/html/program/cake/cake/libs/debugger.php:512) in [COREapp/controllers/parse_csv_controller.php, line 209]
+2009-10-20 17:25:08 Warning: Warning (2): session_start() [<a href='http://php.net/function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /var/www/html/program/cake/cake/libs/debugger.php:512) in [COREapp/controllers/parse_csv_controller.php, line 209]
+2009-10-20 17:28:43 Warning: Warning (2): pg_copy_from() expects at least 3 parameters, 2 given in [COREapp/models/temp_parse_csv.php, line 124]
+2009-10-20 17:28:43 Warning: Warning (2): pg_copy_from() expects parameter 1 to be resource, integer given in [COREapp/models/temp_parse_csv.php, line 135]
+2009-10-20 17:30:10 Warning: Warning (2): pg_copy_from() expects at least 3 parameters, 2 given in [COREapp/models/temp_parse_csv.php, line 124]
+2009-10-20 17:30:10 Warning: Warning (2): pg_copy_from() expects parameter 1 to be resource, integer given in [COREapp/models/temp_parse_csv.php, line 135]
+2009-10-20 17:30:19 Warning: Warning (2): pg_copy_from() expects at least 3 parameters, 2 given in [COREapp/models/temp_parse_csv.php, line 124]
+2009-10-20 17:30:19 Warning: Warning (2): pg_copy_from() expects parameter 1 to be resource, integer given in [COREapp/models/temp_parse_csv.php, line 135]
+2009-10-20 17:30:33 Warning: Warning (2): pg_copy_from() expects at least 3 parameters, 2 given in [COREapp/models/temp_parse_csv.php, line 124]
+2009-10-20 17:30:33 Warning: Warning (2): pg_copy_from() expects parameter 1 to be resource, integer given in [COREapp/models/temp_parse_csv.php, line 135]
+2009-10-20 17:31:16 Warning: Warning (2): pg_copy_from() expects at least 3 parameters, 2 given in [COREapp/models/temp_parse_csv.php, line 124]
+2009-10-20 17:31:16 Warning: Warning (2): pg_copy_from() expects parameter 1 to be resource, integer given in [COREapp/models/temp_parse_csv.php, line 135]
+2009-10-20 17:31:24 Warning: Warning (2): pg_copy_from() expects at least 3 parameters, 2 given in [COREapp/models/temp_parse_csv.php, line 124]
+2009-10-20 17:31:24 Warning: Warning (2): pg_copy_from() expects parameter 1 to be resource, integer given in [COREapp/models/temp_parse_csv.php, line 135]
+2009-10-20 17:31:49 Warning: Warning (2): pg_copy_from() expects parameter 1 to be resource, integer given in [COREapp/models/temp_parse_csv.php, line 134]
+2009-10-20 17:47:08 Warning: Warning (2): pg_copy_from() expects parameter 1 to be resource, integer given in [COREapp/models/temp_parse_csv.php, line 134]
+2009-10-20 17:47:24 Warning: Warning (2): pg_copy_from() expects parameter 1 to be resource, integer given in [COREapp/models/temp_parse_csv.php, line 134]
+2009-10-20 17:51:21 Warning: Warning (2): pg_copy_from() expects parameter 1 to be resource, integer given in [COREapp/models/temp_parse_csv.php, line 134]
+2009-10-20 18:18:11 Warning: Warning (2): pg_copy_from() expects parameter 1 to be resource, integer given in [COREapp/models/temp_parse_csv.php, line 134]
+2009-10-20 18:21:27 Warning: Warning (2): pg_copy_from() expects parameter 1 to be resource, integer given in [COREapp/models/temp_parse_csv.php, line 134]
+2009-10-20 18:22:54 Warning: Warning (2): pg_copy_from() expects parameter 1 to be resource, integer given in [COREapp/models/temp_parse_csv.php, line 134]
+2009-10-20 18:22:54 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  missing data for column &quot;mail&quot;
+CONTEXT:  COPY temp_disused_parse_csvs, line 1: &quot;163,b@itm.ne.jp&quot; in [COREapp/models/temp_disused_parse_csv.php, line 151]
+2009-10-20 18:25:39 Warning: Warning (2): pg_copy_from() expects parameter 1 to be resource, integer given in [COREapp/models/temp_parse_csv.php, line 134]
+2009-10-20 18:25:39 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  missing data for column &quot;mail&quot;
+CONTEXT:  COPY temp_disused_parse_csvs, line 1: &quot;163,b@itm.ne.jp&quot; in [COREapp/models/temp_disused_parse_csv.php, line 151]
+2009-10-20 18:25:55 Warning: Warning (2): pg_copy_from() expects parameter 1 to be resource, integer given in [COREapp/models/temp_parse_csv.php, line 134]
+2009-10-20 18:25:55 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  missing data for column &quot;mail&quot;
+CONTEXT:  COPY temp_disused_parse_csvs, line 1: &quot;163,niki@itm.ne.jp&quot; in [COREapp/models/temp_disused_parse_csv.php, line 151]
+2009-10-20 18:26:20 Warning: Warning (2): pg_copy_from() expects parameter 1 to be resource, integer given in [COREapp/models/temp_parse_csv.php, line 134]
+2009-10-20 18:26:20 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  missing data for column &quot;mail&quot;
+CONTEXT:  COPY temp_disused_parse_csvs, line 1: &quot;163,niki@itm.ne.jp&quot; in [COREapp/models/temp_disused_parse_csv.php, line 151]
+2009-10-23 16:28:20 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  extra data after last expected column
+CONTEXT:  COPY temp_parse_csvs, line 1: &quot;163,fujii@itm.ne.jp,Æ£°æÍµ¹¯\,fujii@itm.ne.jp\,1\,2\,3\,4\,5\,2009:10:23&quot; in [COREapp/models/temp_parse_csv.php, line 176]
+2009-10-23 16:29:18 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  extra data after last expected column
+CONTEXT:  COPY temp_parse_csvs, line 1: &quot;163,fujii@itm.ne.jp,Æ£°æÍµ¹¯\,fujii@itm.ne.jp\,1\,2\,3\,4\,5\,2009:10:23&quot; in [COREapp/models/temp_parse_csv.php, line 174]
+2009-10-23 16:51:51 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  extra data after last expected column
+CONTEXT:  COPY temp_parse_csvs, line 1: &quot;163,fujii@itm.ne.jp,Æ£°æÍµ¹¯\,fujii@itm.ne.jp\,1\,2\,3\,4\,5\,2009:10:23&quot; in [COREapp/models/temp_parse_csv.php, line 174]
+2009-10-23 16:54:17 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  extra data after last expected column
+CONTEXT:  COPY temp_parse_csvs, line 1: &quot;163,fujii@itm.ne.jp,Æ£°æÍµ¹¯\,fujii@itm.ne.jp\,1\,2\,3\,4\,5\,2009:10:23&quot; in [COREapp/models/temp_parse_csv.php, line 174]
+2009-10-23 16:54:43 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  extra data after last expected column
+CONTEXT:  COPY temp_parse_csvs, line 1: &quot;163,fujii@itm.ne.jp,Æ£°æÍµ¹¯\,fujii@itm.ne.jp\,1\,2\,3\,4\,5\,2009:10:23&quot; in [COREapp/models/temp_parse_csv.php, line 174]
+2009-10-23 16:55:08 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  extra data after last expected column
+CONTEXT:  COPY temp_parse_csvs, line 1: &quot;163,fujii@itm.ne.jp,Æ£°æÍµ¹¯,fujii@itm.ne.jp,1,2,3,4,5,2009:10:23&quot; in [COREapp/models/temp_parse_csv.php, line 174]
+2009-10-23 17:10:31 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  extra data after last expected column
+CONTEXT:  COPY temp_parse_csvs, line 1: &quot;163,fujii@itm.ne.jp,Æ£°æÍµ¹¯\,fujii@itm.ne.jp\,1\,2\,3\,4\,5\,2009:10:23&quot; in [COREapp/models/temp_parse_csv.php, line 174]
+2009-10-23 17:11:13 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  extra data after last expected column
+CONTEXT:  COPY temp_parse_csvs, line 1: &quot;163,fujii@itm.ne.jp,Æ£°æÍµ¹¯\\,fujii@itm.ne.jp\\,1\\,2\\,3\\,4\\,5\\,2009:10:23&quot; in [COREapp/models/temp_parse_csv.php, line 174]
+2009-10-23 17:11:39 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  extra data after last expected column
+CONTEXT:  COPY temp_parse_csvs, line 1: &quot;163,fujii@itm.ne.jp,Æ£°æÍµ¹¯\,fujii@itm.ne.jp\,1\,2\,3\,4\,5\,2009:10:23&quot; in [COREapp/models/temp_parse_csv.php, line 174]
+2009-10-23 17:12:47 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  extra data after last expected column
+CONTEXT:  COPY temp_parse_csvs, line 1: &quot;163,fujii@itm.ne.jp,Æ£°æÍµ¹¯'\,'fujii@itm.ne.jp'\,'1'\,'2'\,'3'\,'4'\,'5'\,'2009:10:23&quot; in [COREapp/models/temp_parse_csv.php, line 174]
+2009-10-23 17:13:07 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  extra data after last expected column
+CONTEXT:  COPY temp_parse_csvs, line 1: &quot;163,fujii@itm.ne.jp,Æ£°æÍµ¹¯','fujii@itm.ne.jp','1','2','3','4','5','2009:10:23&quot; in [COREapp/models/temp_parse_csv.php, line 174]
+2009-10-23 17:24:49 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  extra data after last expected column
+CONTEXT:  COPY temp_parse_csvs, line 1: &quot;163,fujii@itm.ne.jp,Æ£°æÍµ¹¯\,fujii@itm.ne.jp\,1\,2\,3\,4\,5\,2009:10:23&quot; in [COREapp/models/temp_parse_csv.php, line 174]
+2009-10-23 17:37:22 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  missing data for column &quot;mail_address&quot;
+CONTEXT:  COPY temp_parse_csvs, line 1: &quot;163,fujii@itm.ne.jp,Æ£°æÍµ¹¯\,fujii@itm.ne.jp\,1\,2\,3\,4\,5\,2009:10:23&quot; in [COREapp/models/temp_parse_csv.php, line 174]
+2009-10-23 17:38:01 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  missing data for column &quot;mail_address&quot;
+CONTEXT:  COPY temp_parse_csvs, line 1: &quot;163,fujii@itm.ne.jp,Æ£°æÍµ¹¯,fujii@itm.ne.jp,1,2,3,4,5,2009:10:23&quot; in [COREapp/models/temp_parse_csv.php, line 174]
+2009-10-23 17:38:39 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  extra data after last expected column
+CONTEXT:  COPY temp_parse_csvs, line 1: &quot;163	fujii@itm.ne.jp,Æ£°æÍµ¹¯	fujii@itm.ne.jp	1	2	3	4	5	2009:10:23&quot; in [COREapp/models/temp_parse_csv.php, line 174]
+2009-10-23 17:39:18 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  missing data for column &quot;parameter&quot;
+CONTEXT:  COPY temp_parse_csvs, line 1: &quot;163	fujii@itm.ne.jp,Æ£°æÍµ¹¯,fujii@itm.ne.jp,1,2,3,4,5,2009:10:23&quot; in [COREapp/models/temp_parse_csv.php, line 174]
+2009-10-23 18:09:55 Warning: Warning (2): file_get_contents(/var/www/html/csv/parse_csv/163) [<a href='http://php.net/function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory in [COREapp/models/temp_disused_parse_csv.php, line 84]
+2009-10-23 18:09:56 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  invalid byte sequence for encoding &quot;EUC_JP&quot;: 0x93a1
+HINT:  This error can also happen if the byte sequence does not match the encoding expected by the server, which is controlled by &quot;client_encoding&quot;.
+CONTEXT:  COPY temp_disused_parse_csvs, line 1 in [COREapp/models/temp_disused_parse_csv.php, line 145]
+2009-10-23 18:17:33 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  extra data after last expected column
+CONTEXT:  COPY temp_disused_parse_csvs, line 1: &quot;163	fujii@itm.ne.jp	163	fujii@itm.ne.jp	Æ£°æÍµ¹¯,fujii@itm.ne.jp,1,2,3,4,5,2009:10:23&quot; in [COREapp/models/temp_disused_parse_csv.php, line 145]
+2009-10-23 18:22:17 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  extra data after last expected column
+CONTEXT:  COPY temp_disused_parse_csvs, line 1: &quot;163	fujii@itm.ne.jp	163	fujii@itm.ne.jp	Æ£°æÍµ¹¯,fujii@itm.ne.jp,1,2,3,4,5,2009:10:23&quot; in [COREapp/models/temp_disused_parse_csv.php, line 116]
+2009-10-23 18:23:39 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  extra data after last expected column
+CONTEXT:  COPY temp_disused_parse_csvs, line 1: &quot;163	fujii@itm.ne.jp	163	fujii@itm.ne.jp	Æ£°æÍµ¹¯,fujii@itm.ne.jp,1,2,3,4,5,2009:10:23&quot; in [COREapp/models/temp_disused_parse_csv.php, line 116]
+2009-10-23 18:25:39 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  extra data after last expected column
+CONTEXT:  COPY temp_disused_parse_csvs, line 1: &quot;163	fujii@itm.ne.jp	163	fujii@itm.ne.jp	Æ£°æÍµ¹¯,fujii@itm.ne.jp,1,2,3,4,5,2009:10:23&quot; in [COREapp/models/temp_disused_parse_csv.php, line 116]
+2009-10-23 18:29:06 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  extra data after last expected column
+CONTEXT:  COPY temp_disused_parse_csvs, line 1: &quot;163	fujii@itm.ne.jp	163	fujii@itm.ne.jp	Æ£°æÍµ¹¯,fujii@itm.ne.jp,1,2,3,4,5,2009:10:23&quot; in [COREapp/models/temp_disused_parse_csv.php, line 117]
+2009-10-23 18:39:05 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  column &quot;mail&quot; does not exist
+LINE 1: ...Csv&quot;   WHERE &quot;TempParseCsv&quot;.&quot;mail&quot; NOT IN (SELECT mail FROM ...
+                                                             ^ in [COREcake/libs/model/datasources/dbo/dbo_postgres.php, line 148]
+2009-10-23 18:39:05 Warning: Warning (512): <span style = "color:Red;text-align:left"><b>SQL Error:</b> ERROR:  column "mail" does not exist
+LINE 1: ...Csv"   WHERE "TempParseCsv"."mail" NOT IN (SELECT mail FROM ...
+                                                             ^</span> in [COREcake/libs/model/datasources/dbo_source.php, line 525]
+2009-10-23 18:47:26 Warning: Warning (2): pg_exec() [<a href='http://php.net/function.pg-exec'>function.pg-exec</a>]: Query failed: ERROR:  syntax error at or near &quot;Resource&quot;
+LINE 1: Resource id #264
+        ^ in [COREapp/models/temp_parse_csv.php, line 202]
+2009-10-23 20:11:36 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  syntax error at or near &quot;&quot;TempParseCsv&quot;&quot;
+LINE 1: ...mpParseCsv&quot;   WHERE &quot;TempParseCsv&quot;.&quot;mail_address&quot; &quot;TempParse...
+                                                             ^ in [COREcake/libs/model/datasources/dbo/dbo_postgres.php, line 148]
+2009-10-23 20:11:36 Warning: Warning (512): <span style = "color:Red;text-align:left"><b>SQL Error:</b> ERROR:  syntax error at or near ""TempParseCsv""
+LINE 1: ...mpParseCsv"   WHERE "TempParseCsv"."mail_address" "TempParse...
+                                                             ^</span> in [COREcake/libs/model/datasources/dbo_source.php, line 525]
+2009-10-23 20:12:58 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  syntax error at or near &quot;&quot;temp_parse_csvs&quot;&quot;
+LINE 1: ...mpParseCsv&quot;   WHERE &quot;TempParseCsv&quot;.&quot;mail_address&quot; &quot;temp_pars...
+                                                             ^ in [COREcake/libs/model/datasources/dbo/dbo_postgres.php, line 148]
+2009-10-23 20:12:58 Warning: Warning (512): <span style = "color:Red;text-align:left"><b>SQL Error:</b> ERROR:  syntax error at or near ""temp_parse_csvs""
+LINE 1: ...mpParseCsv"   WHERE "TempParseCsv"."mail_address" "temp_pars...
+                                                             ^</span> in [COREcake/libs/model/datasources/dbo_source.php, line 525]
+2010-10-19 17:34:19 Warning: Warning (512): /var/www/html/program/cake//app/tmp/cache/ is not writable in [/var/www/vhosts/www.itm-asp.com/html/program/cake/cake/libs/cache/file.php, line 263]
+2010-10-19 17:34:19 Warning: Warning (2): pg_connect() [<a href='http://php.net/function.pg-connect'>function.pg-connect</a>]: Unable to connect to PostgreSQL server: FATAL:  role &quot;pgsql&quot; does not exist in [/var/www/vhosts/www.itm-asp.com/html/program/cake/cake/libs/model/datasources/dbo/dbo_postgres.php, line 110]
+2010-10-19 17:34:19 Warning: Warning (2): pg_set_client_encoding(): supplied argument is not a valid PostgreSQL link resource in [/var/www/vhosts/www.itm-asp.com/html/program/cake/cake/libs/model/datasources/dbo/dbo_postgres.php, line 756]
+2010-10-19 17:34:19 Warning: Warning (2): pg_query(): supplied argument is not a valid PostgreSQL link resource in [/var/www/vhosts/www.itm-asp.com/html/program/cake/cake/libs/model/datasources/dbo/dbo_postgres.php, line 148]
+2010-10-19 17:34:19 Warning: Warning (2): pg_last_error(): supplied argument is not a valid PostgreSQL link resource in [/var/www/vhosts/www.itm-asp.com/html/program/cake/cake/libs/model/datasources/dbo/dbo_postgres.php, line 304]
+2010-10-19 17:34:19 Warning: Warning (2): session_start() [<a href='http://php.net/function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /var/www/vhosts/www.itm-asp.com/html/program/cake/cake/basics.php:313) in [/var/www/vhosts/www.itm-asp.com/html/program/cls/define/Setup.php, line 15]
+2010-10-19 17:34:20 Warning: Warning (512): /var/www/html/program/cake//app/tmp/cache/ is not writable in [/var/www/vhosts/www.itm-asp.com/html/program/cake/cake/libs/cache/file.php, line 263]
+2010-10-19 17:36:04 Warning: Warning (512): /var/www/html/program/cake//app/tmp/cache/ is not writable in [/var/www/vhosts/www.itm-asp.com/html/program/cake/cake/libs/cache/file.php, line 263]
+2010-10-19 17:36:17 Warning: Warning (512): /var/www/html/program/cake//app/tmp/cache/ is not writable in [/var/www/vhosts/www.itm-asp.com/html/program/cake/cake/libs/cache/file.php, line 263]
+2010-10-19 17:36:43 Warning: Warning (512): /var/www/html/program/cake//app/tmp/cache/ is not writable in [/var/www/vhosts/www.itm-asp.com/html/program/cake/cake/libs/cache/file.php, line 263]
+2010-10-19 17:36:43 Warning: Warning (512): /var/www/html/program/cake//app/tmp/cache/ is not writable in [/var/www/vhosts/www.itm-asp.com/html/program/cake/cake/libs/cache/file.php, line 263]
+2010-10-19 17:38:24 Warning: Warning (2): unlink(/var/www/html/csv/parse_csv/12test.csv) [<a href='http://php.net/function.unlink'>function.unlink</a>]: No such file or directory in [/var/www/vhosts/www.itm-asp.com/html/program/cake/app/controllers/parse_csv_controller.php, line 247]
+2010-10-19 17:38:24 Warning: Warning (2): unlink(/var/www/html/csv/parse_csv/12itm-asp_test.csv) [<a href='http://php.net/function.unlink'>function.unlink</a>]: No such file or directory in [/var/www/vhosts/www.itm-asp.com/html/program/cake/app/controllers/parse_csv_controller.php, line 248]
+2010-10-20 19:07:43 Warning: Warning (2): unlink(/var/www/html/csv/parse_csv/12test.csv) [<a href='http://php.net/function.unlink'>function.unlink</a>]: No such file or directory in [/var/www/vhosts/www.itm-asp.com/html/program/cake/app/controllers/parse_csv_controller.php, line 247]
+2010-10-20 19:07:43 Warning: Warning (2): unlink(/var/www/html/csv/parse_csv/12itm-asp_test.csv) [<a href='http://php.net/function.unlink'>function.unlink</a>]: No such file or directory in [/var/www/vhosts/www.itm-asp.com/html/program/cake/app/controllers/parse_csv_controller.php, line 248]
+2010-10-20 19:10:13 Warning: Warning (2): unlink(/var/www/html/csv/parse_csv/12test.csv) [<a href='http://php.net/function.unlink'>function.unlink</a>]: No such file or directory in [/var/www/vhosts/www.itm-asp.com/html/program/cake/app/controllers/parse_csv_controller.php, line 247]
+2010-10-20 19:10:13 Warning: Warning (2): unlink(/var/www/html/csv/parse_csv/12itm-asp_test.csv) [<a href='http://php.net/function.unlink'>function.unlink</a>]: No such file or directory in [/var/www/vhosts/www.itm-asp.com/html/program/cake/app/controllers/parse_csv_controller.php, line 248]
+2010-10-20 19:36:32 Warning: Warning (2): unlink(/var/www/html/csv/parse_csv/12test.csv) [<a href='http://php.net/function.unlink'>function.unlink</a>]: No such file or directory in [/var/www/vhosts/www.itm-asp.com/html/program/cake/app/controllers/parse_csv_controller.php, line 248]
+2010-10-20 19:36:32 Warning: Warning (2): unlink(/var/www/html/csv/parse_csv/12itm-asp_test.csv) [<a href='http://php.net/function.unlink'>function.unlink</a>]: No such file or directory in [/var/www/vhosts/www.itm-asp.com/html/program/cake/app/controllers/parse_csv_controller.php, line 249]
+2010-10-20 19:47:01 Warning: Warning (2): unlink(/var/www/vhosts/www.itm-asp.com/html/csv/parse_csv/12test.csv) [<a href='http://php.net/function.unlink'>function.unlink</a>]: No such file or directory in [/var/www/vhosts/www.itm-asp.com/html/program/cake/app/controllers/parse_csv_controller.php, line 248]
+2010-10-20 19:47:01 Warning: Warning (2): unlink(/var/www/vhosts/www.itm-asp.com/html/csv/parse_csv/12itm-asp_test.csv) [<a href='http://php.net/function.unlink'>function.unlink</a>]: No such file or directory in [/var/www/vhosts/www.itm-asp.com/html/program/cake/app/controllers/parse_csv_controller.php, line 249]
+2010-10-20 19:48:16 Warning: Warning (2): unlink(/var/www/vhosts/www.itm-asp.com/html/csv/parse_csv/12test.csv) [<a href='http://php.net/function.unlink'>function.unlink</a>]: No such file or directory in [/var/www/vhosts/www.itm-asp.com/html/program/cake/app/controllers/parse_csv_controller.php, line 248]
+2010-10-20 19:48:16 Warning: Warning (2): unlink(/var/www/vhosts/www.itm-asp.com/html/csv/parse_csv/12itm-asp_test.csv) [<a href='http://php.net/function.unlink'>function.unlink</a>]: No such file or directory in [/var/www/vhosts/www.itm-asp.com/html/program/cake/app/controllers/parse_csv_controller.php, line 249]
+2010-10-20 19:50:51 Warning: Warning (2): unlink(/var/www/vhosts/www.itm-asp.com/html/csv/parse_csv/12test.csv) [<a href='http://php.net/function.unlink'>function.unlink</a>]: No such file or directory in [/var/www/vhosts/www.itm-asp.com/html/program/cake/app/controllers/parse_csv_controller.php, line 246]
+2010-10-25 11:04:10 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  operator does not exist: text = integer at character 45
+HINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts. in [COREapp/models/temp_parse_csv.php, line 175]
+2010-10-25 11:18:28 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  operator does not exist: text = integer at character 45
+HINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts. in [COREapp/models/temp_parse_csv.php, line 175]
+2010-10-25 11:38:40 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  operator does not exist: text = integer at character 45
+HINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts. in [COREapp/models/temp_parse_csv.php, line 175]
+2010-10-25 11:39:37 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  operator does not exist: text = integer at character 44
+HINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts. in [COREapp/models/temp_parse_csv.php, line 204]
+2010-10-25 11:39:37 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  operator does not exist: text = integer at character 52
+HINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts. in [COREapp/models/temp_disused_parse_csv.php, line 148]
+2010-10-25 11:39:37 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/vhosts/test.itm-asp.com/html/program/cake/cake/basics.php:313) in [COREapp/controllers/parse_csv_controller.php, line 234]
+2010-10-25 11:39:37 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/vhosts/test.itm-asp.com/html/program/cake/cake/basics.php:313) in [COREapp/controllers/parse_csv_controller.php, line 235]
+2010-10-25 11:40:01 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  operator does not exist: text = integer at character 44
+HINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts. in [COREapp/models/temp_parse_csv.php, line 204]
+2010-10-25 11:40:01 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  operator does not exist: text = integer at character 52
+HINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts. in [COREapp/models/temp_disused_parse_csv.php, line 148]
+2010-10-25 11:40:01 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/vhosts/test.itm-asp.com/html/program/cake/cake/basics.php:313) in [COREapp/controllers/parse_csv_controller.php, line 234]
+2010-10-25 11:40:01 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/vhosts/test.itm-asp.com/html/program/cake/cake/basics.php:313) in [COREapp/controllers/parse_csv_controller.php, line 235]
+2010-10-25 12:23:52 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  invalid byte sequence for encoding &quot;EUC_JP&quot;: 0x00
+HINT:  This error can also happen if the byte sequence does not match the encoding expected by the server, which is controlled by &quot;client_encoding&quot;.
+CONTEXT:  COPY temp_parse_csvs, line 1 in [COREapp/models/temp_parse_csv.php, line 150]
+2010-10-25 12:24:59 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  literal carriage return found in data
+HINT:  Use &quot;\r&quot; to represent carriage return.
+CONTEXT:  COPY temp_parse_csvs, line 11 in [COREapp/models/temp_parse_csv.php, line 150]
+2010-10-25 12:36:07 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  invalid byte sequence for encoding &quot;EUC_JP&quot;: 0x00
+HINT:  This error can also happen if the byte sequence does not match the encoding expected by the server, which is controlled by &quot;client_encoding&quot;.
+CONTEXT:  COPY temp_parse_csvs, line 1 in [COREapp/models/temp_parse_csv.php, line 150]
+2010-10-25 12:38:12 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  invalid byte sequence for encoding &quot;EUC_JP&quot;: 0x00
+HINT:  This error can also happen if the byte sequence does not match the encoding expected by the server, which is controlled by &quot;client_encoding&quot;.
+CONTEXT:  COPY temp_parse_csvs, line 1 in [COREapp/models/temp_parse_csv.php, line 150]
+2010-10-25 12:38:41 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  invalid byte sequence for encoding &quot;EUC_JP&quot;: 0x00
+HINT:  This error can also happen if the byte sequence does not match the encoding expected by the server, which is controlled by &quot;client_encoding&quot;.
+CONTEXT:  COPY temp_parse_csvs, line 1 in [COREapp/models/temp_parse_csv.php, line 150]
+2010-10-25 12:39:03 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  invalid byte sequence for encoding &quot;EUC_JP&quot;: 0x00
+HINT:  This error can also happen if the byte sequence does not match the encoding expected by the server, which is controlled by &quot;client_encoding&quot;.
+CONTEXT:  COPY temp_parse_csvs, line 1 in [COREapp/models/temp_parse_csv.php, line 150]
+2010-10-25 12:39:26 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  invalid byte sequence for encoding &quot;EUC_JP&quot;: 0x00
+HINT:  This error can also happen if the byte sequence does not match the encoding expected by the server, which is controlled by &quot;client_encoding&quot;.
+CONTEXT:  COPY temp_parse_csvs, line 1 in [COREapp/models/temp_parse_csv.php, line 150]
+2010-10-25 12:40:06 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  end-of-copy marker corrupt
+CONTEXT:  COPY temp_parse_csvs, line 37 in [COREapp/models/temp_parse_csv.php, line 150]
+2010-10-25 12:41:47 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  end-of-copy marker corrupt
+CONTEXT:  COPY temp_parse_csvs, line 37 in [COREapp/models/temp_parse_csv.php, line 150]
+2010-10-25 13:04:31 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  invalid byte sequence for encoding &quot;EUC_JP&quot;: 0xf18e
+HINT:  This error can also happen if the byte sequence does not match the encoding expected by the server, which is controlled by &quot;client_encoding&quot;.
+CONTEXT:  COPY temp_parse_csvs, line 264 in [COREapp/models/temp_parse_csv.php, line 150]
+2010-10-25 13:05:19 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  invalid byte sequence for encoding &quot;EUC_JP&quot;: 0x00
+HINT:  This error can also happen if the byte sequence does not match the encoding expected by the server, which is controlled by &quot;client_encoding&quot;.
+CONTEXT:  COPY temp_parse_csvs, line 1 in [COREapp/models/temp_parse_csv.php, line 150]
+2011-01-27 15:23:57 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  invalid byte sequence for encoding &quot;EUC_JP&quot;: 0xe83f
+HINT:  This error can also happen if the byte sequence does not match the encoding expected by the server, which is controlled by &quot;client_encoding&quot;.
+CONTEXT:  COPY temp_parse_csvs, line 4 in [COREapp/models/temp_parse_csv.php, line 150]
+2011-01-27 15:24:41 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  extra data after last expected column
+CONTEXT:  COPY temp_parse_csvs, line 670: &quot;55,55,¥¢¡¼¥×¥È¥í,global.partners.k.k@gmail.com,GLOBAL PARTNERS CO.,LTD ,,,,,&quot; in [COREapp/models/temp_parse_csv.php, line 150]
+2011-01-27 15:25:39 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  extra data after last expected column
+CONTEXT:  COPY temp_parse_csvs, line 670: &quot;55,55,¥¢¡¼¥×¥È¥í,global.partners.k.k@gmail.com,GLOBAL PARTNERS CO.,LTD ,,,,,&quot; in [COREapp/models/temp_parse_csv.php, line 150]
+2011-01-27 15:28:44 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  extra data after last expected column
+CONTEXT:  COPY temp_parse_csvs, line 817: &quot;55,55,¼ò°æ¡¡ÇîÅÐ,hiroto.s@hotmail.co.jp,mariana express lines, ltd.,,,,,&quot; in [COREapp/models/temp_parse_csv.php, line 150]
+2011-01-27 15:29:39 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  invalid byte sequence for encoding &quot;EUC_JP&quot;: 0xe22c
+HINT:  This error can also happen if the byte sequence does not match the encoding expected by the server, which is controlled by &quot;client_encoding&quot;.
+CONTEXT:  COPY temp_parse_csvs, line 1658 in [COREapp/models/temp_parse_csv.php, line 150]
+2011-01-27 15:30:10 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  extra data after last expected column
+CONTEXT:  COPY temp_parse_csvs, line 1948: &quot;55,55,ßÀÅÄ¡¡±Ñ»Ë,peach.pit@dance.ocn.ne.jp,Peach,pit,,,,,&quot; in [COREapp/models/temp_parse_csv.php, line 150]
+2011-01-27 15:30:53 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  invalid byte sequence for encoding &quot;EUC_JP&quot;: 0xaa2f
+HINT:  This error can also happen if the byte sequence does not match the encoding expected by the server, which is controlled by &quot;client_encoding&quot;.
+CONTEXT:  COPY temp_parse_csvs, line 2423 in [COREapp/models/temp_parse_csv.php, line 150]
+2011-01-27 15:31:29 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  invalid byte sequence for encoding &quot;EUC_JP&quot;: 0xe02c
+HINT:  This error can also happen if the byte sequence does not match the encoding expected by the server, which is controlled by &quot;client_encoding&quot;.
+CONTEXT:  COPY temp_parse_csvs, line 2775 in [COREapp/models/temp_parse_csv.php, line 150]
+2011-01-27 16:02:58 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  invalid byte sequence for encoding &quot;EUC_JP&quot;: 0x91ea
+HINT:  This error can also happen if the byte sequence does not match the encoding expected by the server, which is controlled by &quot;client_encoding&quot;.
+CONTEXT:  COPY temp_parse_csvs, line 17 in [COREapp/models/temp_parse_csv.php, line 157]
+2011-01-27 16:04:12 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  extra data after last expected column
+CONTEXT:  COPY temp_parse_csvs, line 17: &quot;55,55,ÂìÅÄ¡¡µÈ¹­,a.arena@htv-net.ne.jp,¡Ê³ô¡Ë¥ª¡¼¥È¥¢¥ê¡¼¥Ê,,,,,,&quot; in [COREapp/models/temp_parse_csv.php, line 157]
+2011-01-27 16:05:36 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  extra data after last expected column
+CONTEXT:  COPY temp_parse_csvs, line 17: &quot;55,55,ÂìÅÄ¡¡µÈ¹­,a.arena@htv-net.ne.jp,¡Ê³ô¡Ë¥ª¡¼¥È¥¢¥ê¡¼¥Ê,,,,,,&quot; in [COREapp/models/temp_parse_csv.php, line 157]
+2011-01-27 16:08:04 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  extra data after last expected column
+CONTEXT:  COPY temp_parse_csvs, line 670: &quot;55,55,¥¢¡¼¥×¥È¥í,global.partners.k.k@gmail.com,GLOBAL PARTNERS CO.,LTD ,,,,,&quot; in [COREapp/models/temp_parse_csv.php, line 157]
+2011-01-27 16:09:13 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  extra data after last expected column
+CONTEXT:  COPY temp_parse_csvs, line 1948: &quot;55,55,ßÀÅÄ¡¡±Ñ»Ë,peach.pit@dance.ocn.ne.jp,Peach,pit,,,,,&quot; in [COREapp/models/temp_parse_csv.php, line 157]
+2011-01-27 16:09:48 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  invalid byte sequence for encoding &quot;EUC_JP&quot;: 0xe02c
+HINT:  This error can also happen if the byte sequence does not match the encoding expected by the server, which is controlled by &quot;client_encoding&quot;.
+CONTEXT:  COPY temp_parse_csvs, line 2775 in [COREapp/models/temp_parse_csv.php, line 157]
+2011-01-27 16:16:13 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  invalid byte sequence for encoding &quot;EUC_JP&quot;: 0xe02c
+HINT:  This error can also happen if the byte sequence does not match the encoding expected by the server, which is controlled by &quot;client_encoding&quot;.
+CONTEXT:  COPY temp_parse_csvs, line 2775 in [COREapp/models/temp_parse_csv.php, line 157]
+2011-01-27 16:19:16 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  invalid byte sequence for encoding &quot;EUC_JP&quot;: 0xe02c
+HINT:  This error can also happen if the byte sequence does not match the encoding expected by the server, which is controlled by &quot;client_encoding&quot;.
+CONTEXT:  COPY temp_parse_csvs, line 1 in [COREapp/models/temp_parse_csv.php, line 159]
+2011-01-27 16:19:28 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  invalid byte sequence for encoding &quot;EUC_JP&quot;: 0xe02c
+HINT:  This error can also happen if the byte sequence does not match the encoding expected by the server, which is controlled by &quot;client_encoding&quot;.
+CONTEXT:  COPY temp_parse_csvs, line 1 in [COREapp/models/temp_parse_csv.php, line 159]
+2011-01-27 16:20:25 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  invalid byte sequence for encoding &quot;EUC_JP&quot;: 0xe02c
+HINT:  This error can also happen if the byte sequence does not match the encoding expected by the server, which is controlled by &quot;client_encoding&quot;.
+CONTEXT:  COPY temp_parse_csvs, line 1 in [COREapp/models/temp_parse_csv.php, line 159]
+2011-01-27 16:20:36 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  invalid byte sequence for encoding &quot;EUC_JP&quot;: 0xe02c
+HINT:  This error can also happen if the byte sequence does not match the encoding expected by the server, which is controlled by &quot;client_encoding&quot;.
+CONTEXT:  COPY temp_parse_csvs, line 1 in [COREapp/models/temp_parse_csv.php, line 160]
+2011-01-27 16:23:16 Warning: Warning (2): mb_convert_encoding() [<a href='http://php.net/function.mb-convert-encoding'>function.mb-convert-encoding</a>]: Illegal character encoding specified in [COREapp/models/temp_parse_csv.php, line 59]
+2011-01-27 16:23:27 Warning: Warning (2): mb_convert_encoding() [<a href='http://php.net/function.mb-convert-encoding'>function.mb-convert-encoding</a>]: Illegal character encoding specified in [COREapp/models/temp_parse_csv.php, line 59]
+2011-01-27 16:27:31 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  invalid byte sequence for encoding &quot;EUC_JP&quot;: 0x80e3
+HINT:  This error can also happen if the byte sequence does not match the encoding expected by the server, which is controlled by &quot;client_encoding&quot;.
+CONTEXT:  COPY temp_parse_csvs, line 1 in [COREapp/models/temp_parse_csv.php, line 158]
+2011-01-27 16:27:36 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  invalid byte sequence for encoding &quot;EUC_JP&quot;: 0x80e3
+HINT:  This error can also happen if the byte sequence does not match the encoding expected by the server, which is controlled by &quot;client_encoding&quot;.
+CONTEXT:  COPY temp_parse_csvs, line 1 in [COREapp/models/temp_parse_csv.php, line 158]
+2011-01-27 16:28:10 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  invalid byte sequence for encoding &quot;EUC_JP&quot;: 0x80e3
+HINT:  This error can also happen if the byte sequence does not match the encoding expected by the server, which is controlled by &quot;client_encoding&quot;.
+CONTEXT:  COPY temp_parse_csvs, line 1 in [COREapp/models/temp_parse_csv.php, line 158]
+2011-01-27 16:30:36 Warning: Warning (2): pg_query() [<a href='http://php.net/function.pg-query'>function.pg-query</a>]: Query failed: ERROR:  invalid byte sequence for encoding &quot;EUC_JP&quot;: 0x80e3
+HINT:  This error can also happen if the byte sequence does not match the encoding expected by the server, which is controlled by &quot;client_encoding&quot;.
+CONTEXT:  COPY temp_parse_csvs, line 1 in [COREapp/models/temp_parse_csv.php, line 158]
+2012-04-05 10:09:46 Warning: Warning (2): mb_convert_encoding() [<a href='http://php.net/function.mb-convert-encoding'>function.mb-convert-encoding</a>]: Unable to detect character encoding in [COREapp/controllers/parse_csv_controller.php, line 231]
+2012-04-05 10:09:46 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/vhosts/test.itm-asp.com/html/program/cake/cake/libs/debugger.php:512) in [COREapp/controllers/parse_csv_controller.php, line 234]
+2012-04-05 10:09:46 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/vhosts/test.itm-asp.com/html/program/cake/cake/libs/debugger.php:512) in [COREapp/controllers/parse_csv_controller.php, line 235]
+2012-04-05 10:29:56 Warning: Warning (2): mb_convert_encoding() [<a href='http://php.net/function.mb-convert-encoding'>function.mb-convert-encoding</a>]: Unable to detect character encoding in [COREapp/controllers/parse_csv_controller.php, line 231]
+2012-04-05 10:39:45 Warning: Warning (2): mb_convert_encoding() [<a href='http://php.net/function.mb-convert-encoding'>function.mb-convert-encoding</a>]: Unable to detect character encoding in [COREapp/controllers/parse_csv_controller.php, line 231]
+2012-04-05 10:39:45 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/vhosts/test.itm-asp.com/html/program/cake/cake/libs/debugger.php:512) in [COREapp/controllers/parse_csv_controller.php, line 234]
+2012-04-05 10:39:45 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /var/www/vhosts/test.itm-asp.com/html/program/cake/cake/libs/debugger.php:512) in [COREapp/controllers/parse_csv_controller.php, line 235]
+2012-04-05 10:40:44 Warning: Warning (2): mb_convert_encoding() [<a href='http://php.net/function.mb-convert-encoding'>function.mb-convert-encoding</a>]: Unable to detect character encoding in [COREapp/controllers/parse_csv_controller.php, line 231]

@@ -1,0 +1,36 @@
+
+    <!-- 入力テーブル--> 
+    <table width="535" border="0" cellspacing="0" cellpadding="0" bgcolor='#948E8E'>
+      <tr class='black10'> 
+        <td align='left' height='23' bgcolor="#FFFFFF" class='gold10'>
+          <b><img src='<?PHP echo _URL_COMMON_IMAGE_; ?>tri.gif'>　送信手続完了</b>
+        </td>
+      </tr>
+    </table> 
+    <table width="535" border="0" cellspacing="0" cellpadding="0" bgcolor='#FFFFFF'>
+      <tr><td width='535' height='1' bgcolor='#CCCCCC'><img src='<?PHP echo _URL_COMMON_IMAGE_; ?>spacer.gif' width='1' height='1'></td></tr>
+    </table>
+
+    <table width="520' height='' border="0" cellpadding="8" cellspacing="0" bgcolor='#948E8E'>
+      <tr bgcolor='#FFFFFF' class="gray12"> 
+        <td align='center'>
+          <b>送信の予約を承りました。</b>
+        </td> 
+      </tr>
+      <tr bgcolor='#FFFFFF' class="gray12"> 
+        <td align='left'>
+
+          ご利用ありがとうございます。<br>
+          送信の予約を承る旨のメールを<b><?PHP echo $_POST['inputS']['mail_from']; ?></b>宛までお送りいたしました。  <br>
+          もし、メールが届かなかった場合は、アップロードしたメールリストのデータ不具合等により正常に処理が行われなかった可能性が御座います。<br>
+          その場合は再度メールリストをご確認ください。<br>
+          原因が掴めない場合は<b><a href='../../inquiry/'>こちらのお問合せフォーム</a></b>よりご連絡を頂けますようお願いいたします。<br>
+          <br>
+          サーバーの状況によっては多少メール配信が送れる場合がございます。<br>
+          どうぞご了承いただくようお願い申し上げます。<br>
+          <br>
+          全てのメール配信終了後、<b><?PHP echo $_POST['inputS']['mail_from']; ?></b>宛まで配信したメールと同内容のメールをお送りいたします。<br>
+         
+        </td> 
+      </tr>
+    </table> 

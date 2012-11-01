@@ -1,0 +1,124 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="ja-JP">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-JP"> 
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>www.rabbit-mail.jp | メール配信ＡＳＰ</title>
+<link href="../../../css/common.css" rel="stylesheet" type="text/css">
+</head>
+<body bgcolor="#FFFFFF" >
+
+<div align="center">
+
+<?PHP require_once("../../program/html/master/header_user.html"); ?>
+
+
+<div id="pictmail-top-box">
+<table>
+  <tr>
+    <td class="title_l">
+      プランカスタム
+    </td>
+  </tr>
+  <tr>
+    <td class="explain_l">
+      ユーザーのプランをカスタマイズすることができます。
+    </td>
+  </tr>
+</table>
+</div>
+
+
+<div id="pictmail-input-box">
+<form name="form2" method="post" action="index.php" style="margin: 0px;">
+
+
+<table>
+  <tr>
+    <td colspan="2" class="title_l">
+      入力
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="title_m">
+      プラン情報
+    </td>
+  </tr>
+
+
+  <tr> 
+    <td class="input_title"><?PHP echo $this->Manager->nameS['price_month']; ?></td>
+    <td class="input_field">
+      <input type='text' name='inputS[price_month]'  value='<?PHP echo $this->Manager->writeS['price_month']; ?>' size='10'> 円
+    </td>
+  </tr>
+  <tr> 
+    <td class="input_title"><?PHP echo $this->Manager->nameS['price_month6']; ?></td>
+    <td class="input_field">
+      <input type='text' name='inputS[price_month6]'  value='<?PHP echo $this->Manager->writeS['price_month6']; ?>' size='10'> 円
+    </td>
+  </tr>
+  <tr> 
+    <td class="input_title"><?PHP echo $this->Manager->nameS['price_year']; ?></td>
+    <td class="input_field">
+      <input type='text' name='inputS[price_year]'  value='<?PHP echo $this->Manager->writeS['price_year']; ?>' size='10'> 円
+    </td>
+  </tr>
+  <tr> 
+    <td class="input_title"><?PHP echo $this->Manager->nameS['send_max']; ?></td>
+    <td class="input_field">
+      <input type='text' name='inputS[send_max]'  value='<?PHP echo $this->Manager->writeS['send_max']; ?>' size='10'> 件
+    </td>
+  </tr>
+  <tr> 
+    <td class="input_title"><?PHP echo $this->Manager->nameS['send_now']; ?></td>
+    <td class="input_field">
+      <input type='text' name='inputS[send_now]'  value='<?PHP echo $this->Manager->writeS['send_now']; ?>' size='10'> 件
+    </td>
+  </tr>
+  
+  <tr> 
+    <td colspan="2" class="input_button">
+      <input type='submit' name='confirm' value='　　確認画面へ　　'>
+      <input type='hidden' name='charaCode' value="もじこーどはんていようへんすう">
+      <input type='hidden' name='hidden'    value="confirm">
+      <input type='hidden' name='mode'      value="<?PHP echo $this->pageS['mode']; ?>">
+      <input type='hidden' name='inputS[pictmail_id]'     value="<?PHP echo $this->Manager->writeS['pictmail_id']; ?>">
+      <input type='hidden' name='inputS[plan_pictmail_id]'     value="<?PHP echo $this->Manager->writeS['plan_pictmail_id']; ?>">
+      <input type='hidden' name='inputS[user_id]'     value="<?PHP echo $this->Manager->writeS['user_id']; ?>">
+      <input type='hidden' name='inputS[flag_dm]'     value="1">
+<?PHP $this->showHidden(); ?>
+    </td>
+  </tr>
+</table>
+
+
+</form>
+
+</div>
+
+
+
+
+
+
+
+
+
+<div id="footer-box">
+<table border="0" width="100%">
+  <tr>
+    <td align="center">
+      rabbit-mail
+    </td>
+  </tr>
+</table >
+</div>
+
+
+
+</div>
+
+</body>
+</html>

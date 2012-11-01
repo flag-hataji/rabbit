@@ -1,0 +1,168 @@
+<?PHP require_once("../../program/cls/define/Setup.php");?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-JP">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+<meta name="Keywords" content="メール配信,ピクトメール,メルマガ配信,メールマーケティング,無料お試し">
+<meta name="Description" content=メルマガ配信は月額1050円から！、ピクトメールは複数のメールアドレスに向けて同じ内容のメールを同時に一斉配信するＡＳＰ型メール配信です。">
+<title> メール配信、メルマガ配信はピクトメール　 - ヘルプその２</title>
+<link href="../../common/css/common.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+<!--
+.style1 {color: #FF0000}
+-->
+</style>
+<script language="JavaScript">
+<!--
+<?PHP require_once(_DIR_USER_HTML_._HTML_JS_); ?>
+//-->
+</script>
+</head>
+<body  bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<div align='center'>
+  <table width="900" border="0" cellspacing="0" cellpadding="0" bgcolor='#FFFFFF'>
+    <tr> 
+      <td width="10" background="<?PHP echo _RELATIVE_; ?>common/image/shadow_left.gif"><img src='<?PHP echo _RELATIVE_; ?>common/image/spacer.gif' width='1' height='1' ></td>
+      <td width='1' bgcolor='#FFFFFF'><img src='<?PHP echo _RELATIVE_; ?>common/image/spacer.gif' width='1' height='1' ></td>
+      <td align='center' bgcolor='#FFFFFF'>
+<!-- ========================== HEADER ========================== -->
+<?PHP require_once(_DIR_USER_HTML_._HTML_HEADER_); ?>
+<!-- ========================== BODY ========================== -->
+        <table width="850" border="0" cellspacing="0" cellpadding="0" bgcolor='#948E8E'>
+          <tr class='gray10'> 
+<!-- --------LEFT AREA--------- -->
+            <td width='150' align='center' valign='top' bgcolor='#FFFFFF'> 
+              <?PHP require_once(_DIR_USER_HTML_._HTML_LEFT_MENU_); ?>
+              <br>
+            <br></td>
+
+<!-- --------CENTER AREA--------- -->
+            <td width='5' bgcolor='#FFFFFF'><img src='<?PHP echo _RELATIVE_; ?>common/image/spacer.gif' width='5' height='1' ></td>
+            <td width='1' bgcolor='#FFFFFF' background='<?PHP echo _RELATIVE_; ?>common/image/y_comma.gif'><img src='<?PHP echo _RELATIVE_; ?>common/image/spacer.gif' width='1' height='1' ></td>
+            <td width='700' align='right' valign='top' bgcolor='#FFFFFF'><table width="685" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td bgcolor='#FFFFFF'><?PHP require_once(_DIR_USER_HTML_._HTML_IN_HEADER_PICTMAIL_); ?></td>
+                </tr>
+              </table>
+              <br>
+              <!-- Main -->
+              <table width="685" border="0" cellspacing="0" cellpadding="0" bgcolor='#948E8E'>
+                <tr>
+                  <td width="504" bgcolor='#FFFFFF' class='black12'><img src="image/title_haishin.jpg" alt="ピクトメールの配信方法" width="685" height="30"></td>
+                <tr>
+                  <td bgcolor='#FFFFFF' class='black12'><span class="indigo12"><strong> </strong></span>
+                      <p><span class="indigo14"><strong>すこし高度な配信方法</strong><font size="2">（ 
+                        会社名や、肩書き等を加えることが出来るようになりました。）</font></span><br>
+                                    <br>
+                                    <b>1.メールリストの準備</b><br>
+                                    <br>
+                        メールリストに５つまでパラメータを設定することができます。<br>
+                        例えばメール本文に相手の会社名、役職きを加えたい場合は<br>
+                        <br>
+                        名前　，　メールアドレス　，　会社名　，　役職<br>
+                        <br>
+                        メールアドレス（Ｂ列）の次から順番に param1 param2 ・・・ となりますのでこの場合は<br>
+                        <br>
+                        Ｃ列　＝　%param1%<br>
+                        Ｄ列　＝　%param2%<br>
+                        Ｅ列　＝　%param3%<br>
+                        Ｆ列　＝　%param4%<br>
+                        Ｇ列　＝　%param5% <br>
+                        <br>
+                        となります。<br>
+                        <br>
+                        <img src="../../member/pictmail/help/help05.jpg" width="527" height="171"> <br>
+                        ※画像はエクセルで開いた場合です。リストはＣＳＶで保存してください。<br>
+                        ※解りやすいように色づけしております。 実際にはメールリストに %name% や %param1% 
+                        といった文言は入力しなくてＯＫです。<br>
+                                    <br>
+                        ※ メモ帳で開くとこのようになります。<br>
+                        <br>
+                        <img src="../../member/pictmail/help/help08.jpg" width="492" height="196"> <br>
+                        <br>
+                        <b>2.本文を入力</b><br>
+                        本文を入力します。パラメータは　%param1%　〜　%param5% までとなりますので、<br>
+                        この場合「会社名」が %param1% 　、　「役職」が　%param2%　となります。<br>
+                        <br>
+                        <img src="help06.jpg" alt="本文入力" width="532" height="256"> </p>
+                    <p><br>
+                          <br>
+                          <br>
+                          <b>4.送信する</b><br>
+                      送信すると本文は次のようになります。<br>
+                      <br>
+                      <img src="help07.jpg" alt="メールサンプル" width="497" height="408"> <br>
+                      <br>
+                      <font color="#FF0000"><strong>※但し、以下の点にご注意ください。</strong></font><br>
+                      <font color="#FF0000"><strong><br>
+                        ・「テストメール送信」 ではメールアドレス以外にパラメータを設定している箇所が無いため、<br>
+                        届いたメールは原文そのままになります。 ご注意ください。<br>
+                        <br>
+                        ・リストのパラメータがなにも無い場合（例えば肩書きが無い方など）はその部分は何も表示されません。<br>
+                        その分レイアウトが左詰めになりますのでご了承ください。</strong></font><br>
+                      <br>
+                      <br>
+                      <br>
+                      <span class="indigo14"><strong>さらに高度な配信方法</strong>（パラメータを使ったいろいろな配信の仕方）</span><br>
+                      <br>
+                      このパラメーター設定を使って、さらにニーズにあったメールが配信できるようになりました。<br>
+                      例えば特定の方だけにメッセージを添えることが出来ます。<br>
+                      <br>
+                      「最近お会いしていませんがお元気でしょうか？」<br>
+                      「福岡は暑い日が続いていますが、東京はどうでしょうか？」<br>
+                      「ＰＳ：今度また飲みに行きましょう。」 <br>
+                      <br>
+                      といった具合です。より一層心のこもったメールが配信できます。<br>
+                      <br>
+                      <br>
+                      <br>
+                      <strong>配信したメールのトラフィック、効果測定にも使えます。</strong><br>
+                      <br>
+                      例えば・・・・<br>
+                      メールリストにお客様のID番号をパラメータとしてつけます。<br>
+                      そしてメール本文に、<br>
+                      <br>
+                      商品のお申し込みはこちらから！！↓<br>
+                      http://www.itm-asp.com/index.php<font color="#FF0000">?id=%param1%</font><br>
+                      <br>
+                      としておくわけです。<br>
+                      すると届いたメールには <br>
+                      <br>
+                      商品のお申し込みはこちらから！！↓<br>
+                      http://www.itm-asp.com/index.php<font color="#0000FF">?id=0001</font><br>
+                      <br>
+                      というリンクがつきますので、後はホームページにその番号を受け取るプログラムがあれば、<br>
+                      どなたが見てくれたかすぐにわかりますし、<br>
+                      ＩＤ番号で名前を変換させるプログラムを作れば、<br>
+                      <br>
+                      「●●様こんにちは！<br>
+                      商品を見に来てくださってありがとうございます。」<br>
+                      <br>
+                      というようにお客様の名前を購入ページに表示させることも出来ます。<br>
+                      もっと高機能なプログラムだとお客様の名前、住所等がフォームにあらかじめ入力されてるていて、お客様はボタンひとつで購入可能・・ 
+                      なんてことも出来るでしょう。<br>
+                      （その場合他人のパラメータが想定できないようなにする必要がありますが・・） <br>
+                      <br>
+                      説明が長くなってしまいましたが、用途はいろいろです。ぜひご活用ください。<br>
+                      <br>
+                      <br>
+                      <br>
+                      &lt;&lt;「<a href="mailsend_help.html">配信方法</a>」にもどる</p></td>
+              </table></td>
+            <!-- --------RIGHT AREA--------- -->
+          </tr>
+        </table>
+
+        <!-- ==========================  FOOTER ========================== -->
+        <?PHP require_once(_DIR_USER_HTML_._HTML_FOOTER_); ?>
+      </td>
+      <td width='1' bgcolor='#FFFFFF'><img src='<?PHP echo _RELATIVE_; ?>common/image/spacer.gif' width='1' height='1' ></td>
+      <td width="10" background="<?PHP echo _RELATIVE_; ?>common/image/shadow_right.gif"><img src='<?PHP echo _RELATIVE_; ?>common/image/spacer.gif' width='1' height='1' ></td>
+    </tr>
+  </table>
+
+
+</div>
+</body>
+</html>

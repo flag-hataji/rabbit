@@ -1,0 +1,260 @@
+<?PHP $viewS = $this->getViewDataSConfirm(); ?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="ja-JP">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-JP"> 
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>www.rabbit-mail.jp | メール配信ＡＳＰ</title>
+<link href="../../../css/common.css" rel="stylesheet" type="text/css">
+</head>
+<body bgcolor="#FFFFFF" >
+
+<div align="center">
+
+<?PHP
+require_once("../../program/html/master/header_user.html");
+
+switch (REGIST_MODE) {
+
+    case "new":
+        $isWord1 = "新規登録";
+        $isForm  = "new";
+        break;
+
+
+    case "renew":
+        $isWord1 = "修正";
+        $isForm  = "renew";
+        break;
+
+
+}
+?>
+
+
+<div id="pictmail-top-box">
+<table>
+  <tr>
+    <td class="title_l">
+      ユーザー管理：<?php echo $isWord1;  ?>
+    </td>
+  </tr>
+  <tr>
+    <td class="explain_l">
+      ユーザーのデータを<?php echo $isWord1;  ?>することができます。
+    </td>
+  </tr>
+</table>
+</div>
+
+<div id="pictmail-input-box">
+<form name="form2" method="post" action="<?php echo $isForm;  ?>.php" style="margin: 0px;">
+<table>
+  <tr>
+    <td colspan="2" class="title_l">
+      入力確認
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="title_m">
+      ログイン情報
+    </td>
+  </tr>
+
+  <tr> 
+    <td class="input_title"><?PHP echo $this->Manager->nameS['id']; ?></td>
+    <td class="input_field">
+      <?PHP echo $viewS['id']; ?>
+　    </td>
+  </tr>
+  <tr> 
+    <td class="input_title"><?PHP echo $this->Manager->nameS['password']; ?></td>
+    <td class="input_field">
+      ***************
+    </td>
+  </tr>
+
+  <tr>
+    <td colspan="2" class="title_m">
+      お客様の情報
+    </td>
+  </tr>
+
+
+  <tr> 
+    <td class="input_title"><?PHP echo $this->Manager->nameS['name']; ?></td>
+    <td class="input_field">
+      <?PHP echo $viewS['name']; ?>
+　    </td>
+  </tr>
+  <tr> 
+    <td class="input_title"><?PHP echo $this->Manager->nameS['kana']; ?></td>
+    <td class="input_field">
+      <?PHP echo $viewS['kana']; ?>
+　    </td>
+  </tr>
+  <tr> 
+    <td class="input_title"><?PHP echo $this->Manager->nameS['flag_gender']; ?></td>
+    <td class="input_field">
+      <?PHP 
+      if ($viewS['flag_gender']==1) {
+
+          $viewS['flag_gender'] = "男性";
+
+      }
+      if ($viewS['flag_gender']==2) {
+
+          $viewS['flag_gender'] = "女性";
+
+      }
+      echo $viewS['flag_gender']; 
+      ?>
+　    </td>
+  </tr>
+  <tr> 
+    <td class="input_title"><?PHP echo $this->Manager->nameS['birthday']; ?></td>
+    <td class="input_field">
+      <?PHP echo $viewS['birthday']; ?>
+　    </td>
+  </tr>
+  <tr> 
+    <td class="input_title"><?PHP echo $this->Manager->nameS['name_company']; ?></td>
+    <td class="input_field">
+      <?PHP echo $viewS['name_company']; ?>
+　    </td>
+  </tr>
+  <tr> 
+    <td class="input_title"><?PHP echo $this->Manager->nameS['kana_company']; ?></td>
+    <td class="input_field">
+      <?PHP echo $viewS['kana_company']; ?>
+　    </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="title_m">
+      ご連絡先
+    </td>
+  </tr>
+
+  <tr> 
+    <td class="input_title"><?PHP echo $this->Manager->nameS['mail']; ?></td>
+    <td class="input_field">
+      <?PHP echo $viewS['mail']; ?>
+　    </td>
+  </tr>
+  <tr> 
+    <td class="input_title"><?PHP echo $this->Manager->nameS['tel']; ?></td>
+    <td class="input_field">
+      <?PHP echo $viewS['tel']; ?>
+　    </td>
+  </tr>
+
+  <tr> 
+    <td class="input_title"><?PHP echo $this->Manager->nameS['mobile']; ?></td>
+    <td class="input_field">
+      <?PHP echo $viewS['mobile']; ?>
+　    </td>
+  </tr>
+
+  <tr> 
+    <td class="input_title"><?PHP echo $this->Manager->nameS['fax']; ?></td>
+    <td class="input_field">
+      <?PHP echo $viewS['fax']; ?>
+　    </td>
+  </tr>
+
+
+  <tr>
+    <td colspan="2" class="title_m">
+      ご住所
+    </td>
+  </tr>
+
+
+
+  <tr> 
+    <td class="input_title"><?PHP echo $this->Manager->nameS['zip']; ?></td>
+    <td class="input_field">
+      <?PHP echo $viewS['zip']; ?>
+　    </td>
+  </tr>
+               <tr> 
+    <td class="input_title"><?PHP echo $this->Manager->nameS['area']; ?></td>
+    <td class="input_field">
+      <?PHP echo $viewS['area']; ?>
+　    </td>
+  </tr>
+               <tr> 
+    <td class="input_title"><?PHP echo $this->Manager->nameS['address1']; ?></td>
+    <td class="input_field">
+      <?PHP echo $viewS['address1']; ?>
+　    </td>
+  </tr>
+               <tr> 
+    <td class="input_title"><?PHP echo $this->Manager->nameS['address2']; ?></td>
+    <td class="input_field">
+      <?PHP echo $viewS['address2']; ?>
+　    </td>
+  </tr>
+
+  <tr>
+    <td colspan="2" class="title_m">
+      その他
+    </td>
+  </tr>
+
+
+  <tr> 
+    <td class="input_title"><?PHP echo $this->Manager->nameS['comment']; ?></td>
+    <td class="input_field">
+      <?PHP echo $viewS['comment']; ?>
+　    </td>
+  </tr>
+
+
+  <tr> 
+    <td colspan="2" class="input_button">
+      <input type='submit' name='post[rewrite]' value=' キャンセル '>　
+
+<?PHP if( $this->pageS['mode']=='renew' ){ ?>
+      <input type='submit' name='finish' value=' 修正登録 '>　
+<?PHP }else{ ?>
+      <input type='submit' name='finish' value=' 登録する '>
+<?PHP } ?>
+      <input type='hidden' name='charaCode' value="もじこーどはんていようへんすう">
+      <input type='hidden' name='hidden'    value="finish">
+      <input type='hidden' name='mode'      value="<?PHP echo $this->pageS['mode']; ?>">
+<?PHP $this->showHidden(); ?>
+
+    </td>
+  </tr>
+</table> 
+
+</form>
+
+</div>
+
+
+
+
+
+
+
+
+
+<div id="footer-box">
+<table border="0" width="100%">
+  <tr>
+    <td align="center">
+      rabbit-mail
+    </td>
+  </tr>
+</table >
+</div>
+
+
+
+</div>
+
+</body>
+</html>

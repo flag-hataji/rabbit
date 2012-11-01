@@ -1,0 +1,161 @@
+<?PHP require_once("../../../program/cls/define/Setup.php");?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="ja-JP">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-JP">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>ピクトメール：フォーム管理画面：CSVファイルダウンロード</title>
+<link href="/common/css/common.css" rel="stylesheet" type="text/css">
+<link href="./css/formStyle.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="./js/CheckValue.js"></script>
+<script language="JavaScript">
+<!--
+<?PHP require_once(_DIR_USER_HTML_._HTML_JS_); ?>
+	
+	var flag;
+	
+	function changeSub(){
+		document.fm.action = "./getcsv.php";
+	}
+	
+	function sendData(url){
+		document.fm.action = url;
+		document.fm.submit();
+	}
+	
+	function delCheck(mess,d_url){
+		if(!isNaN(mess)){
+			mess = "登録ID：" + mess + "を削除します\nよろしいですか？" 
+		}
+		
+		flag = window.confirm(mess);
+		if(flag==true){
+			sendData(d_url);
+			exit;
+		}
+	}
+
+
+//-->
+</script>
+</head>
+<body  bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<div align='center'> 
+  <table height="100%" width="900" border="0" cellspacing="0" cellpadding="0" bgcolor='#FFFFFF'>
+    <tr> 
+      <td width="10" background="/common/image/shadow_left.gif"><img src='/common/image/spacer.gif' width='1' height='1' ></td>
+      <td width='1' bgcolor='#FFFFFF'><img src='/common/image/spacer.gif' width='1' height='1' ></td>
+      <td valign="top" align='center' bgcolor='#FFFFFF'> 
+<?PHP require_once(_DIR_USER_HTML_._HTML_HEADER_); ?>
+
+        <table width="850" border="0" cellspacing="0" cellpadding="0" bgcolor="#948E8E">
+          <tr class="gray10"> 
+            <!-- --------LEFT AREA--------- -->
+            <td width="150" align="center" valign="top" bgcolor="#FFFFFF"> 
+              <?PHP require_once(_DIR_USER_HTML_._HTML_LEFT_MENU_); ?>
+              <br>
+              <?PHP //require_once(_DIR_USER_HTML_._HTML_RIGHT_MENU_); ?>
+            </td>
+            <td width="5" bgcolor="#FFFFFF"><img src="../../../../common/image/spacer.gif" width="5" height="1" ></td>
+            <td width="1" bgcolor="#FFFFFF" background="../../../../common/image/y_comma.gif"><img src="../../../../common/image/spacer.gif" width="1" height="1" ></td>
+            <!-- --------CENTER AREA--------- -->
+            <td width="700" align="right" valign="top" bgcolor="#FFFFFF">
+				<form action="./getcsv.php" method="post" name="fm" onSubmit="changeSub();">
+				  <table width="640" height="25" border="0" align="center" cellpadding="0" cellspacing="0" background="./images/in_title02.gif">
+					  <tr>
+						<td width="30" height="25"></td>
+						<td class="textWhite" width="610" height="25">CSVファイルダウンロード</td>
+					  </tr>
+				  </table>
+				  <table width="640" border="0" align="center" cellpadding="6" cellspacing="0">
+					  <tr>
+						  <td colspan="2" class="text1" id="line5">
+							<strong>CSVファイルにてフォームで登録されたデータをダウンロードすることができます。</strong><br /><br />
+							全データダウンロードでは登録されたすべてのデータをダウンロードすることができ、<br  />pictメール形式ではpictメールにて必要な情報だけをダウンロードすることができます
+						  </td>
+					  </tr>
+					  <tr align="center">
+						  <td id="line2" width="323">
+								<input type="submit" name="sub" value="全データダウンロード" onClick="changeSub();"/>　　
+						  </td>
+						  <td id="line1" width="314">
+							<input type="button" name="pict_butn" value="pictメール形式でダウンロード" onClick="sendData('./getcsvPict.php');"/>
+						  </td>
+					  </tr>
+				  </table>
+				  <table width="640" border="0" align="center" cellpadding="0" cellspacing="0" class="margin1">
+					<tr>
+						<td width="500" colspan="4">
+							<input type="button" name="alldel_butn" value="全データ削除" onClick="delCheck('全データ削除します、よろしいですか？','./delUserAllData.php');"/>
+						</td>
+						<td class="text1" width="133" colspan="2" align="right">※最新１００件のみを表示</td>
+					</tr>
+					<tr align="center">
+					  <td bgcolor="#A6C4F9" id="line4" width="125" class="text1">名前(姓)</td>
+					  <td bgcolor="#A6C4F9" id="line4" width="125" class="text1">名前(名)</td>
+					  <td bgcolor="#A6C4F9" id="line4" width="125" class="text1">メールアドレス</td>
+					  <td bgcolor="#A6C4F9" id="line4" width="125" class="text1">登録日</td>
+					  <td bgcolor="#A6C4F9" id="line4" width="70" class="text1">詳細画面</td>
+					  <td bgcolor="#A6C4F9" id="line3" width="63" class="text1">削除</td>
+					</tr>
+						<?php
+							foreach($user_list as $key=>$value){
+								echo "<tr>";
+								foreach($value as $key2=>$value2){
+									if($key2!="applicant_id"){
+										echo "<td bgcolor=\"#FFFFFF\" id=\"line4\" width=\"125\" class=\"text1\">&nbsp;$value2</td>";
+									}else if($key2=="applicant_id"){
+										$app_id = $value2;
+										echo "<td bgcolor=\"#FFFFFF\" id=\"line4\" width=\"70\" class=\"text1\">
+										<div align=\"center\">
+										<a href=\"./detailed.php?app_id=$value2\" target=\"_blank\" onClick=\"window.open('./detailed.php?app_id=$value2','詳細画面','width=650,height=500');return false;\">詳細</a>
+										</div>
+									</td>
+									<td bgcolor=\"#FFFFFF\" id=\"line3\" width=\"100\" class=\"text1\">
+										<div align=\"center\">
+											<input type=\"button\" name=\"del_butn[$value2]\" value=\"削除\" onClick=\"delCheck('$value2','./delUserData.php?app_id=$value2');\" />
+										</div>
+									</td>";
+									}
+								}
+								echo "</tr>";
+							}
+						?>
+					<tr>
+						<td bgcolor="#A6C4F9" id="line1" colspan="6">&nbsp;</td>
+					</tr>
+				  </table>
+				</form>
+            <!-- Menu Header --></td>
+          </tr>
+        </table>
+<!-- FOOTER -->
+<?PHP require_once(_DIR_USER_HTML_._HTML_FOOTER_); ?>
+
+      </td>
+      <td width='1' bgcolor='#FFFFFF'><img src='../../../common/image/spacer.gif' width='1' height='1' ></td>
+      <td width="10" background="../../../common/image/shadow_right.gif"><img src='../../../common/image/spacer.gif' width='1' height='1' ></td>
+    </tr>
+  </table>
+
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

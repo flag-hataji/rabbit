@@ -1,0 +1,102 @@
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-JP">
+<title><?PHP echo $this->pageS['title']; ?></title>
+<link href="../../../common/css/common.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<body bgcolor="#CCCCCC" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<div align="center">
+
+  <!-- Header -->
+<?PHP require_once(_DIR_ADMIN_HTML_._HTML_ADMIN_HEADER_); ?>
+
+  <table  border="0" cellpadding='5' cellspacing='1' bgcolor='#666666' width="700" border="0">
+    <tr> 
+      <td bgcolor='#DDDDDD' class='black12' valign='top' align='left' height='25'>
+        <img src='../../common/image/tri.gif'> <?PHP echo $this->pageS['title']; ?>
+      </td>
+    </tr>
+    <tr> 
+      <td bgcolor='#FFFFFF' class='gray12' valign='top' align='center'>
+
+        <!-- ページリンクHTML  ※ページ認識用文言 -->
+        <table  border="0" cellpadding='0' cellspacing='0' width="650" border="0">
+          <tr> 
+            <td align='right' colspan='1' class='gray14' nowrap>
+              <b>
+              <a href='<?PHP echo _URL_ADMIN_; ?>'><span  class='gray12'>▼ New Regist</span></a>　
+              <a href='<?PHP echo _URL_ADMIN_; ?>'><span  class='gray12'>▼ Renew/Delete List</span></a>
+              </b>
+            </td>
+          </tr>
+        </table>
+
+        <form name="form2" method="post" action="index.php" style="margin: 0px;">
+
+
+        <table  border="0" cellpadding='0' cellspacing='0' width="650" border="0">
+          <tr> 
+            <td align='left' bgcolor="#FFFFFF"><img src='../../common/image/space.gif' height='20'></td>
+          </tr>
+        </table>
+        <?PHP $this->showPageLink(); ?>
+        <table  border="0" cellpadding='0' cellspacing='0' width="650" border="0">
+          <tr> 
+            <td align='left' bgcolor="#333333"><img src='../../common/image/space.gif' height='1'></td>
+          </tr>
+          <tr> 
+            <td align='left' bgcolor="#FFFFFF"><img src='../../common/image/space.gif' height='15'></td>
+          </tr>
+        </table>
+        <table  border="0" cellpadding='4' cellspacing='1' bgcolor='#666666' width="630" border="0">
+          <tr> 
+            <td align='center'  colspan='1' class='emerald12'  bgcolor='#DDEEDD' width='80'>検索条件</td>
+            <td align='left'  colspan='1' class='purple12'  bgcolor='#FFFFFF'>
+<?PHP $this->showSeekCondition(); ?>
+            </td>
+          </tr>
+        </table>
+        <table  border="0" cellpadding='0' cellspacing='0' width="650" border="0">
+          <tr> 
+            <td align='left' bgcolor="#FFFFFF"><img src='../../common/image/space.gif' height='30'></td>
+          </tr>
+        </table>
+
+
+        <table  border="0" cellpadding='0' cellspacing='0' bgcolor='#666666' width="650" border="0">
+          <tr> 
+            <td align='center' valign='top' bgcolor="#FFFFFF">
+
+<?PHP $this->showListUser(); ?>
+
+
+              <?PHP $this->showPageLink(); ?>
+              <table  border="0" cellpadding='0' cellspacing='0' width="650" border="0">
+                <tr> 
+                  <td align='left' bgcolor="#FFFFFF"><img src='../../common/image/space.gif' height='15'></td>
+                </tr>
+              </table>
+
+            </td>
+          </tr>
+        </table>
+
+
+
+
+        </form>
+
+      </td>
+    </tr>
+  </table> 
+
+<?PHP require_once(_DIR_ADMIN_HTML_._HTML_ADMIN_FOOTER_); ?>
+
+</div>
+</body>
+</html>
+

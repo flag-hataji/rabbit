@@ -1,0 +1,137 @@
+<?PHP $ViewS = $this->getViewDataSDetail(); ?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="ja-JP">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-JP"> 
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>www.rabbit-mail.jp | メール配信ＡＳＰ</title>
+<link href="../../../css/common.css" rel="stylesheet" type="text/css">
+</head>
+<body bgcolor="#FFFFFF" >
+
+<div align="center">
+
+<?PHP require_once(_DIR_MEMBER_HTML_._HTML_MEMBER_HEADER_PICTMAIL_); ?>
+
+
+
+
+<div id="pictmail-input-box">
+
+<table>
+  <tr>
+    <td colspan="2" class="title_l">
+      配信ログ詳細
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="explain_l">
+      配信ログの詳細なデータが閲覧出来ます。
+    </td>
+  </tr>
+
+
+  <tr>
+    <td colspan="2" class="input_button">
+      <input type="button" name="link" value="　一覧へ戻る　" onClick="location.href='<?PHP echo $ViewS['url_list']; ?>'">
+    </td>
+  </tr>
+
+
+
+  <tr>
+    <td colspan="2" class="title_m">
+      <?PHP echo $ViewS['date_insert']; ?> に登録したログ　　[ <?PHP echo $ViewS['date_insert_ym']; ?>の<?PHP echo $ViewS['month_count']; ?> ]
+    </td>
+  </tr>
+
+
+  <tr>
+    <td class="input_title"><?PHP echo $this->Manager->nameS['send_count']; ?></td>
+    <td class="input_field">
+      <?PHP echo $ViewS['send_count']; ?>
+    </td>
+  </tr>
+  <tr>
+    <td class="input_title"><?PHP echo $this->Manager->nameS['send_count_pc']; ?></td>
+    <td class="input_field">
+      <?PHP echo $ViewS['flag_pc']; ?>（<?PHP echo $ViewS['send_count_pc']; ?>）
+    </td>
+  </tr>
+  <tr>
+    <td class="input_title"><?PHP echo $this->Manager->nameS['send_count_mobile']; ?></td>
+    <td class="input_field">
+      <?PHP echo $ViewS['flag_mobile']; ?>（<?PHP echo $ViewS['send_count_mobile']; ?>）
+    </td>
+  </tr>
+  <tr>
+    <td class="input_title"><?PHP echo $this->Manager->nameS['send_date']; ?></td>
+    <td class="input_field">
+      <?PHP echo $ViewS['send_date']; ?>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="input_title"><?PHP echo $this->Manager->nameS['mail_from']; ?></td>
+    <td class="input_field"">
+      <?PHP echo $ViewS['mail_from']; ?>
+    </td>
+  </tr>
+  <tr>
+    <td class="input_title"><?PHP echo $this->Manager->nameS['mail_error']; ?></td>
+    <td class="input_field"">
+      <?PHP echo $ViewS['mail_error']; ?>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="input_title"><?PHP echo $this->Manager->nameS['name_from']; ?></td>
+    <td class="input_field">
+      <?PHP echo $ViewS['name_from']; ?>
+    </td>
+  </tr>
+  <tr>
+    <td class="input_title"><?PHP echo $this->Manager->nameS['subject']; ?></td>
+    <td class="input_field">
+      <?PHP echo $ViewS['subject']; ?>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="title_m"><?PHP echo $this->Manager->nameS['message']; ?></td>
+  </tr>
+  <tr>
+    <td colspan="2" class="input_field"">
+      <?PHP echo $ViewS['message']; ?>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="title_m"><?PHP echo $this->Manager->nameS['message_html']; ?></td>
+  </tr>
+  <tr>
+    <td colspan="2" class="input_field"">
+      <?PHP echo $ViewS['message_html']; ?>
+    </td>
+  </tr>
+</table>
+
+
+
+
+
+<div id="footer-box">
+<table border="0" width="100%">
+  <tr>
+    <td align="center">
+      rabbit-mail
+    </td>
+  </tr>
+</table >
+</div>
+
+
+
+</div>
+
+</body>
+</html>

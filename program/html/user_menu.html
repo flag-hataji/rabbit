@@ -1,0 +1,80 @@
+
+              <table width="520" border="0" cellspacing="0" cellpadding="0" bgcolor='#FFFFFF'>
+                <tr><td width='1' bgcolor='#FFFFFF' background='/common/image/x_comma.gif'><img src='common/image/spacer.gif' width='1' height='1' ></td></tr>
+                <tr><td height='10' bgcolor='#FFFFFF'><img src='common/image/spacer.gif' width='1' height='10' ></td></tr>
+              </table>
+
+
+              <table  border="0" cellpadding='0' cellspacing='0' width="520" >
+                <tr> 
+                  <td class='blue12' valign='top' align='left' height='20'><img src='/common/image/tri.gif'> 
+                    <b><?PHP echo $_SESSION['user']['name_family']; ?> <?PHP echo $_SESSION['user']['name_first']; ?> 様のご利用状況<b>
+                  </td>
+                </tr>
+              </table>
+              <table  border="0" cellpadding='0' cellspacing='0' bgcolor='#666666' width="520" >
+                <tr bgcolor='#FFFFFF' class="black12"> 
+                  <td class='emerald12' align='left' height='20'>
+
+
+                    <table width="520" border="0" cellspacing="0" cellpadding="0" bgcolor='#948E8E'>
+                      <tr><td colspan='5' width='1' bgcolor='#FFFFFF' background='/common/image/x_comma.gif'><img src='common/image/spacer.gif' width='1' height='1' ></td></tr>
+                      <tr> 
+                        <td width='1' bgcolor='#FFFFFF' background='/common/image/y_comma.gif'><img src='/common/image/spacer.gif' width='1' height='1' ></td>
+                        <td width='207' align='left' valign='top' bgcolor='#EFEFEFF' class='emerald12'>
+                          ◆ 現在のプラン
+                        </td>
+                        <td width='1' bgcolor='#FFFFFF' background='/common/image/y_comma.gif'><img src='/common/image/spacer.gif' width='1' height='1' ></td>
+                        <td width='409' align='left' valign='top' bgcolor='#FFFFFF' class='indigo12'>
+                          <b> <?PHP echo $_SESSION['user']['plan']; ?> </b>
+                        </td>
+                        <td width='1' bgcolor='#FFFFFF' background='/common/image/y_comma.gif'><img src='/common/image/spacer.gif' width='1' height='1' ></td>
+                      </tr>
+                      <tr><td colspan='5' width='1' bgcolor='#FFFFFF' background='/common/image/x_comma.gif'><img src='common/image/spacer.gif' width='1' height='1' ></td></tr>
+                      <tr> 
+                        <td width='1' bgcolor='#FFFFFF' background='/common/image/y_comma.gif'><img src='/common/image/spacer.gif' width='1' height='1' ></td>
+                        <td width='207' align='left' valign='top' bgcolor='#EFEFEFF' class='emerald12'>
+                          ◆ 今月の送信数
+                        </td>
+                        <td width='1' bgcolor='#FFFFFF' background='/common/image/y_comma.gif'><img src='/common/image/spacer.gif' width='1' height='1' ></td>
+                        <td width='409' align='left' valign='top' bgcolor='#FFFFFF' class='indigo12'>
+                          <b> <?PHP echo ($_SESSION['user']['send_max']-$_SESSION['user']['send_now']); ?> </b>件
+                        </td>
+                        <td width='1' bgcolor='#FFFFFF' background='/common/image/y_comma.gif'><img src='/common/image/spacer.gif' width='1' height='1' ></td>
+                      </tr>
+                      <tr><td colspan='5' width='1' bgcolor='#FFFFFF' background='/common/image/x_comma.gif'><img src='common/image/spacer.gif' width='1' height='1' ></td></tr>
+                      <tr> 
+                        <td width='1' bgcolor='#FFFFFF' background='/common/image/y_comma.gif'><img src='/common/image/spacer.gif' width='1' height='1' ></td>
+                        <td width='207' align='left' valign='top' bgcolor='#EFEFEFF' class='emerald12'>
+                          ◆ 今月の残りメール送信数
+                        </td>
+                        <td width='1' bgcolor='#FFFFFF' background='/common/image/y_comma.gif'><img src='/common/image/spacer.gif' width='1' height='1' ></td>
+                        <td width='409' align='left' valign='top' bgcolor='#FFFFFF' class='indigo12'>
+                          <b> <?PHP echo $_SESSION['user']['send_now']; ?> </b>件 ( 月最高 <b><?PHP echo $_SESSION['user']['send_max']; ?> </b>件 )
+                        </td>
+                        <td width='1' bgcolor='#FFFFFF' background='/common/image/y_comma.gif'><img src='/common/image/spacer.gif' width='1' height='1' ></td>
+                      </tr>
+                      <tr><td colspan='5' width='1' bgcolor='#FFFFFF' background='/common/image/x_comma.gif'><img src='common/image/spacer.gif' width='1' height='1' ></td></tr>
+                    </table>
+
+
+                  </td>
+                </tr>
+              </table>
+
+              <table  border="0" cellpadding='3' cellspacing='0' bgcolor='#666666' width="520" >
+                <tr> 
+                  <td bgcolor='#FFFFFF' class='blue12' valign='top' align='right' height='25' >
+                    | <a href="/member/">ユーザーメニューTOP</a> |
+                    <a href="/member/pictmail/mail/">メール配信実行</a> |
+                    <a href="/member/pictmail/log/">エラーアドレス取得</a> |
+                    <a href="/member/pictmail/error/">配信ログ管理</a> |
+                  </td>
+                </tr>
+              </table>
+
+
+            <table width="520" border="0" cellspacing="0" cellpadding="0" bgcolor='#948E8E'>
+              <tr><td width='540' height='5' bgcolor='#FFFFFF'><img src='/common/image/spacer.gif' width='1' height='1'></td></tr>
+            </table>
+

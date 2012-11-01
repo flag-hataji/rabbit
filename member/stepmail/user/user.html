@@ -1,0 +1,263 @@
+<?PHP ini_set("display_errors",1); require_once("../../../program/cls/define/Setup.php");?>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-JP">
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<META HTTP-EQUIV="Expires" CONTENT="-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+<link href="../../../common/css/common.css" rel="stylesheet" type="text/css">
+<title>ステップメール管理画面</title>
+<SCRIPT TYPE="text/javascript" SRC="step.js"></SCRIPT>
+<SCRIPT type="text/javascript">
+<!--
+var count;
+function CheckboxChecked(obj){
+   if(obj.checked){ 
+      for(count = 0; count <  <?PHP echo count($searchData);?>; count++){
+        document.getElementById("ch1["+count+"]").checked = true;
+      }
+   }else{
+      for(count = 0; count <  <?PHP echo count($searchData);?>; count++){
+        document.getElementById("ch1["+count+"]").checked = false;
+      }
+   }
+    //タイムアウト処理
+    function timeoutCheck(){
+      timeout_sec --;
+      if(timeout_sec <= 0){
+        clearlnterval(timed);          //タイマーストップ
+        httpObj.abort();               //HTTPリクエスト中断 
+        alert('タイムアウトです。');
+        return false;
+      }
+    }
+
+}
+// -->
+</SCRIPT>
+</head>
+
+<body onload="" bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<div align='center'>
+	<table width="900" border="0" cellspacing="0" cellpadding="0" bgcolor='#FFFFFF'>
+		<tr> 
+			<td width="10" background="<?PHP echo _RELATIVE_; ?>common/image/shadow_left.gif"><img src='<?PHP echo _RELATIVE_; ?>common/image/spacer.gif' width='1' height='1' ></td>
+			<td width='1' bgcolor='#FFFFFF'><img src='<?PHP echo _RELATIVE_; ?>common/image/spacer.gif' width='1' height='1' ></td>
+		  <td align='center' bgcolor='#FFFFFF'>
+<!-- HEADER -->
+<?PHP require_once(_DIR_USER_HTML_._HTML_HEADER_); ?>
+<!-- BODY -->
+				<table width="850" border="0" cellspacing="0" cellpadding="0" bgcolor='#948E8E'>
+					<tr class='gray10'> 
+<!-- BODY LEFT -->
+					  <td width='152' align='center' valign='top' bgcolor='#FFFFFF'><?PHP require_once(_DIR_USER_HTML_._HTML_LEFT_MENU_); ?>
+                        <br>
+                        <br>
+</td>
+						<td width='5' bgcolor='#FFFFFF'><img src='<?PHP echo _RELATIVE_; ?>common/image/spacer.gif' width='5' height='1' ></td>
+						<td width='1' bgcolor='#FFFFFF' background='<?PHP echo _RELATIVE_; ?>common/image/y_comma.gif'><img src='<?PHP echo _RELATIVE_; ?>common/image/spacer.gif' width='1' height='1' ></td>
+						<td width='5' bgcolor='#FFFFFF'><img src='<?PHP echo _RELATIVE_; ?>common/image/spacer.gif' width='5' height='1' ></td>
+<!-- BODY CENTER -->
+						<td width='100%' align='center' valign='top' bgcolor='#FFFFFF'> 
+<!-- write area start -->
+	<table  border="0" cellpadding='0' cellspacing='0' width="100%" >
+		<tr> 
+			<td class='indigo12' valign='top' align='left'><img src='<?PHP echo _RELATIVE_; ?>common/image/mark_square.gif'> 
+				<b>ステップメールメニュー
+			</td>
+			<td class='indigo12' valign='top' align='right'></td>
+		</tr>
+		<tr>
+			<td width='1' height='5' bgcolor='#FFFFFF' colspan='2'><img src='<?PHP echo _RELATIVE_; ?>common/image/spacer.gif' width='1' height='5' ></td>
+		</tr>
+	</table>
+	<table width="100%" border="0" cellpadding='5' cellspacing='1' bgcolor='#666666'>
+		<tr>
+			<td colspan="3" align='left' class='black12'  bgcolor='#FFFFFF'><form name="form1" method="post" action="">
+			 　<a href="/member/stepmail/">ステップメールTOP</a> &gt; 配信ユーザー管理<br>
+              <table width="650" border="0" cellpadding="2" cellspacing="1" bgcolor="#999999">
+                <tr bgcolor="#CCCCCC">
+                  <td width="185" bgcolor="#7ACDFE" class="black12"><strong>配信ユーザー管理画面</strong></td>
+                  <td width="454" align="right" bgcolor="#7ACDFE"><input name="button2" type=button onClick="location.href='upload/index.php'" value="ＣＳＶでユーザーを追加する">
+                    <input name="button" type=button onClick="location.href='regist/index.php'" value="新規ユーザー登録"></td>
+                </tr>
+              </table>
+			  <br>
+              <table width="650" border="0" cellpadding="2" cellspacing="1" bgcolor="#999999">
+                <tr bgcolor="#CCCCCC">
+                  <td width="580" class="black12">配信ユーザー検索</td>
+                </tr>
+                <tr bgcolor="#CCCCCC">
+                  <td align="center" bgcolor="#FFFFFF"><table width="650" border="0" cellpadding="2" cellspacing="1">
+                      <tr>
+                        <td colspan="2" class="black12"><?PHP $View->printSelectBox_1(); ?>
+                          の
+                          <?PHP $View->printSelectBox_2(); ?>
+                          で(
+                          <input type="checkbox" name="jyufuku" value="checkbox" <?PHP if(isset($_POST['jyufuku'])){ echo "checked" ;};?>>
+                          メールアドレスの重複を )
+                          <input name="select" type="submit" id="select" value="抽出する"></td>
+                      </tr>
+                      <tr>
+                        <td colspan="2" class="black12">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td width="184" bgcolor="#FFFFFF" class="black12"><input type="text" name="where_like" value="<?PHP if(isset($_POST['where_like'])){ echo $_POST['where_like']; } ?>" >
+                            を含む   </td>
+                        <td width="455" class="black12"><input name="radio" type="radio" value="mail" <?PHP if(isset($_POST['radio'])){ $View->bCheckd($_POST['radio'],"mail"); }else{ echo "checked"; } ?>>
+メールアドレスを
+  <input type="radio" name="radio" value="name" <?PHP if(isset($_POST['radio'])){ $View->bCheckd($_POST['radio'],"name"); } ?>>
+名前 を
+<input name="user_select" type="submit" id="user_select" value="検索する"></td>
+                      </tr>
+                  </table></td>
+                </tr>
+              </table>
+			  <br>
+              <table width="650" border="0" cellspacing="0" cellpadding="１">
+                <tr>
+                  <td><font size="2">
+                    <?PHP PrintCountData(); ?>
+                  </font></td>
+                  <td align="right" class="black14">
+				 <?PHP 
+				 	if($_GET['limit']){
+						$i = $_GET['limit']-1 ;
+						echo "<a href='index.php?limit={$i}'>前へ</a>"; 
+					}
+				?>
+				  　
+				 <?PHP 
+				 	if($_GET['limit']){
+						$i = $_GET['limit']+1 ;
+						echo "<a href='index.php?limit={$i}'>次へ</a>"; 
+					}else{
+                        $i = 1 ;
+						echo "<a href='index.php?limit={$i}'>次へ</a>";
+					}
+				?>				  </td>
+                </tr>
+              </table>
+              <table width="700" border="0" cellpadding="2" cellspacing="1" bgcolor="#666666">
+                <tr align="right" bgcolor="#CCCCCC">
+                  <td colspan="9" align="center" bgcolor="#FFFFFF" class="black12"><a href="./index.php" >リストの再読み込み</a></td>
+                </tr>
+                <tr align="right" bgcolor="#CCCCCC">
+                  <td colspan="9"><input name="flag_send[stop_batch]" type="submit"  value="チェック一括ストップ">
+                      <input name="flag_send[del_batch]" type="submit"  value="チェック一括削除" onClick="return confirm('削除したデータは復帰できません。よろしいですか？');">					  </td>
+                </tr>
+                <tr bgcolor="#CCCCCC" class="black12">
+                  <td><input type="checkbox" name="allcheck" id="allcheck" value="checkbox" onclick=CheckboxChecked(this)></td>
+                  <td>メールアドレス</td>
+                  <td>名前</td>
+                  <td>シナリオ名</td>
+                  <td>配信済<br>
+                    ステップ数</td>
+                  <td>配信状態</td>
+                  <td>配信状態変更</td>
+                  <td>修正</td>
+                  <td>削除</td>
+                </tr>
+                <?PHP $View->printListData ($searchData);  ?>
+                <tr align="right" bgcolor="#FFFFFF">
+                  <td colspan="9"><span class="black14">
+                    <?PHP 
+				 	if($_GET['limit']){
+						$i = $_GET['limit']-1 ;
+						echo "<a href='index.php?limit={$i}'>前へ</a>"; 
+					}
+				?>
+　
+<?PHP 
+				 	if($_GET['limit']){
+						$i = $_GET['limit']+1 ;
+						echo "<a href='index.php?limit={$i}'>次へ</a>"; 
+					}else{
+                        $i = 1 ;
+						echo "<a href='index.php?limit={$i}'>次へ</a>";
+					}
+				?>
+                  </span></td>
+                </tr>
+              </table>
+			  <br>
+              <table width="650" border="0" cellpadding="2" cellspacing="1">
+                <tr>
+                  <td width="700" align="center"><font color="#FF0000">
+                    <?PHP if(!$searchData){ echo "該当データがありませんでした";}  ?>
+                  </font> </td>
+                </tr>
+              </table>
+			  <br>
+              <table width="650" border="0" cellpadding="2" cellspacing="1" bgcolor="#999999">
+                <tr>
+                  <td bgcolor="#CCCCCC" class="black12">メニュー</td>
+                </tr>
+                <tr>
+                  <td align="left" bgcolor="#FFFFFF"><p class="black12"><br>
+<span class="braun12"><strong>◆配信済みシナリオ、ステップの変更<br>
+                     </strong><strong>　配信ユーザーのシナリオ、ステップを変更します。  </strong></span><br>
+                      <br>
+                    １　上のリストより、変更するメンバーにチェックを入れます。<br>
+                    ２　下のメニューよりシナリオとステップを選び、　<strong>「にステップを変更する」</strong>ボタンを押します。<br>
+                    <span class="red12">　　※配信済みステップの変更ですので、例えば<strong>1通目から送信したい場合は「配信前」</strong>を選んでください。</span></p>
+                    <p class="black12"><span class="braun14"><strong>◆バックナンバー送信<br>
+                            </strong></span><span class="braun12"><strong>　
+                      チェックしたメンバーに選択したメールを１通だけ送信します。</strong></span><br>
+                              <br>
+                            １　上のリストより、変更するメンバーにチェックを入れます。<br>
+２　下のメニューよりシナリオとステップを選び、　<strong>「のメールを１通送信する」</strong>ボタンを押します。<br>
+<br>
+                    </p>
+                    </td>
+                </tr>
+                <tr>
+                  <td align="center" bgcolor="#FFFFFF"><br>
+                    <table width="600" border="0" cellpadding="2" cellspacing="1" bgcolor="#999999">
+                      <tr bgcolor="#FFFFFF">
+                        <td width="311" rowspan="2" class="black12">チェックしたメンバーを（に）<br>
+                          <?PHP $View->printSelectBox_3(); ?>
+                          の
+                          <select name="step_no" id="step_no">
+                            <option value="">ステップ</option>
+                          </select></td>
+                        <td width="278" align="center"><input name="scenario" type="submit" id="scenario5" value="にステップを変更する">
+                          <br>
+                          <span class="red10">※配信済みステップです</span> </td>
+                      </tr>
+                      <tr bgcolor="#FFFFFF">
+                        <td width="278" align="center"><input name="sendmail" type="submit" id="sendmail3" value="のメールを1通送信する"></td>
+                      </tr>
+                      <tr bgcolor="#FFFFFF">
+                        <td colspan="2" align="center">　<font color="FF0000">
+                          <?PHP if (isset($error)){ echo $error;} ?>
+                        </font> </td>
+                      </tr>
+                  </table>
+                    <br>
+                    <input name="download" type="submit"  value="今表示中のリストをダウンロード"></td>
+                </tr>
+              </table>
+			  <br>
+              <br>
+            </form></td>
+		</tr>
+	</table>
+
+	<table  border="0" cellpadding='0' cellspacing='0' width="485" >
+		<tr>
+			<td width='1' height='10' bgcolor='#FFFFFF'><img src='<?PHP echo _RELATIVE_; ?>common/image/spacer.gif' width='1' height='10' ></td>
+		</tr>
+	</table>
+<!-- write area end -->
+					</tr>
+				</table>
+<!-- FOOTER -->
+<?PHP require_once(_DIR_USER_HTML_._HTML_FOOTER_); ?></td>
+			<td width='1' bgcolor='#FFFFFF'><img src='<?PHP echo _RELATIVE_; ?>common/image/spacer.gif' width='1' height='1' ></td>
+			<td width="10" background="<?PHP echo _RELATIVE_; ?>common/image/shadow_right.gif"><img src='<?PHP echo _RELATIVE_; ?>common/image/spacer.gif' width='1' height='1' ></td>
+		</tr>
+	</table>
+</div>
+</body>
+</html>

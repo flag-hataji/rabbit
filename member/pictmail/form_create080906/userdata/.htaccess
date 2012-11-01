@@ -1,0 +1,5 @@
+<Files ~ "\.(html|php|jpg|gif|htm)$">
+#<Files ~ "showUserData\.php">
+Header set Pragma public
+Header set Cache-Control public
+</Files>

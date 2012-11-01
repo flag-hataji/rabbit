@@ -1,0 +1,107 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="ja-JP">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-JP"> 
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>www.rabbit-mail.jp | メール配信ＡＳＰ</title>
+<link href="../../css/common.css" rel="stylesheet" type="text/css">
+</head>
+<body bgcolor="#FFFFFF" >
+
+<div align="center">
+
+
+
+<div id="header-box">
+<table border="0" width="100%">
+  <tr>
+    <td align="left"><a href="/"><img src="../images/logo01.gif"></a></td>
+  </tr>
+  <tr>
+    <td align="right">
+      <hr size="1">
+      <A href="/forget/">ログインID・パスワードを忘れた方はこちら</A>
+    </td>
+  </tr>
+</table >
+</div>
+
+
+<div id="pictmail-top-box">
+<form action='/member/index.php' method='POST' style="margin: 0px;">
+<table>
+  <tr>
+    <td class="title_l">
+      ログインエラー
+    </td>
+  </tr>
+  <tr>
+    <td class="explain_l">
+      ご入力いただいたログインIDとパスワードでのログインに失敗いたしました
+    </td>
+  </tr>
+
+  <tr>
+    <td class="explain_m">
+      再度、ご確認いただきログインをお試しください。<br>
+      <br>
+      ※ログインID・パスワードを忘れた場合<br>
+      <a href='/forget/'>こちら</a>でご確認いただくか
+      もしくは、<a href='/inquiry/'>こちら</a>までお問い合わせください。<br>
+    </td>
+  </tr>
+</table >
+</div>
+
+
+
+
+<div id="login-box">
+<form action='/member/index.php' method='POST' style="margin: 0px;">
+<table>
+  <tr>
+    <td class="title">
+      ログインＩＤ
+    </td>
+    <td>
+      <input type="text"     name="id" value="" size="20" class="login_input" />
+    </td>
+  </tr>
+  <tr>
+    <td class="title">
+      パスワード
+    </td>
+    <td>
+      <input type="password" name="password" value="" size="20" class="login_input_pwd" />
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="button">
+      <input type="submit"   name="login" value="ログイン" />
+      <input type='hidden' name='hidden' value='login' class="user_login_hidden" />
+    </td>
+  </tr>
+</table >
+</form>
+
+
+</div>
+
+
+<div id="footer-box">
+<table border="0" width="100%">
+  <tr>
+    <td align="center">
+      rabbit-mail
+    </td>
+  </tr>
+</table >
+</div>
+
+
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+<?PHP require_once("../../program/cls/define/Setup.php");?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-JP">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+<meta name="Keywords" content="メール配信,ピクトメール,メルマガ配信,メールマーケティング,無料お試し">
+<meta name="Description" content=メルマガ配信は月額1050円から！、ピクトメールは複数のメールアドレスに向けて同じ内容のメールを同時に一斉配信するＡＳＰ型メール配信です。">
+<title> メール配信、メルマガ配信はピクトメール　 - Outlook_ExpressからCSVファイルを作る方法</title>
+<link href="../../common/css/common.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+<!--
+.style1 {color: #FF0000}
+-->
+</style>
+<script language="JavaScript">
+<!--
+<?PHP require_once(_DIR_USER_HTML_._HTML_JS_); ?>
+//-->
+</script>
+</head>
+<body  bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<div align='center'>
+  <table width="900" border="0" cellspacing="0" cellpadding="0" bgcolor='#FFFFFF'>
+    <tr> 
+      <td width="10" background="<?PHP echo _RELATIVE_; ?>common/image/shadow_left.gif"><img src='<?PHP echo _RELATIVE_; ?>common/image/spacer.gif' width='1' height='1' ></td>
+      <td width='1' bgcolor='#FFFFFF'><img src='<?PHP echo _RELATIVE_; ?>common/image/spacer.gif' width='1' height='1' ></td>
+      <td align='center' bgcolor='#FFFFFF'>
+<!-- ========================== HEADER ========================== -->
+<?PHP require_once(_DIR_USER_HTML_._HTML_HEADER_); ?>
+<!-- ========================== BODY ========================== -->
+        <table width="850" border="0" cellspacing="0" cellpadding="0" bgcolor='#948E8E'>
+          <tr class='gray10'> 
+<!-- --------LEFT AREA--------- -->
+            <td width='150' align='center' valign='top' bgcolor='#FFFFFF'> 
+              <?PHP require_once(_DIR_USER_HTML_._HTML_LEFT_MENU_); ?>
+              <br>
+            <br></td>
+
+<!-- --------CENTER AREA--------- -->
+            <td width='5' bgcolor='#FFFFFF'><img src='<?PHP echo _RELATIVE_; ?>common/image/spacer.gif' width='5' height='1' ></td>
+            <td width='1' bgcolor='#FFFFFF' background='<?PHP echo _RELATIVE_; ?>common/image/y_comma.gif'><img src='<?PHP echo _RELATIVE_; ?>common/image/spacer.gif' width='1' height='1' ></td>
+            <td width='700' align='right' valign='top' bgcolor='#FFFFFF'><table width="685" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td bgcolor='#FFFFFF'><?PHP require_once(_DIR_USER_HTML_._HTML_IN_HEADER_PICTMAIL_); ?></td>
+                </tr>
+              </table>
+              <br>
+              <!-- Main -->
+              <table width="685" border="0" cellspacing="0" cellpadding="0" bgcolor='#948E8E'>
+                <tr>
+                  <td bgcolor='#FFFFFF' class='black12'><img src="image/title_outlookEx.jpg" alt="OutlookExpressからＣＳＶファイルを作成する方法" width="685" height="30"></td>
+                <tr>
+                  <td width="504" bgcolor='#FFFFFF' class='black12'><font color="#FF0000">※ＯＳやソフトウェアのバージョンにより若干方法が異なる場合があります。 </font> <br>
+                      <br>
+                    １、「ファイル」の「エクスポート」から「アドレス帳」を選びます。<br>
+                    <img src="outlook/01.jpg" width="417" height="361"> <br>
+                    <br>
+                    <br>
+                    ２、「テキストファイル（ＣＳＶ）」を選び、「エクスポート」を押します。<br>
+                    <img src="outlook/02.jpg" width="472" height="243"> <br>
+                    <br>
+                    <br>
+                    ３、「参照」を選びます。<br>
+                    <img src="outlook/03.jpg" width="514" height="299"> <br>
+                    <br>
+                    <br>
+                    ４、適切な場所にファイル名をつけて、「保存」を押します。<br>
+                    <img src="outlook/04.jpg" width="500" height="292"> <br>
+                    <br>
+                    <br>
+                    ５、先ほどの画面に戻りますので、「次へ」を押します。<br>
+                    <img src="outlook/05.jpg" width="514" height="299"><br>
+                    <br>
+                    <br>
+                    <strong><font color="#FF0000">６、 エクスポートするフィールドは「表示名」と「電子メールアドレス」のみにチェックを入れ、他のチェックは消してください</font></strong><br>
+                    <br>
+                    ＯＫであれば「完了」を押します。 <br>
+                    <img src="outlook/06.jpg" width="514" height="299"><br>
+                    <br>
+                    <br>
+                    ７、「正常に終了しました」のメッセージを確認します。<br>
+                    <font color="#FF0000">※このときにこのメッセージが出ない場合は何らかの原因で失敗した可能性があります。手順１よりやり直してください。 </font><br>
+                    <img src="outlook/07.jpg" width="304" height="114"> <br>
+                    <br>
+                    <br>
+                    ８、 保存した場所に以下のようなアイコンのＣＳＶが出来上がりますので、そのファイルを開きます。<br>
+                    <br>
+                    <img src="csv.gif" alt="ＣＳＶファイルのアイコン" width="66" height="68"> <br>
+                    <br>
+                    <br>
+                    ９、一行目に「表示名」「電子メールアドレス」と入ったセルがありますので、一行目を消します。<br>
+                    <img src="outlook/08.jpg" width="281" height="229"> <br>
+                    <br>
+                    消し方は左の１の行を右クリックし「削除」を選びます <br>
+                    <img src="outlook/08-2.jpg" width="265" height="298"> <br>
+                    <br>
+                    <br>
+                    １０、無事消えたら「ファイル」の「上書き保存」を選んで上書きをしたら終了です。<br>
+                    <img src="outlook/09.jpg" width="274" height="172"> <br>
+                    <br>
+                    <br>
+                    <a href="<?PHP echo _RELATIVE_; ?>pictmail/mailsend/mailsend_outlook.html" target="_blank">「OutlookからＣＳＶファイルを作る方法」</a>はこちらから <br>
+                    <br>                  </td>
+                          </table></td>
+            <!-- --------RIGHT AREA--------- -->
+          </tr>
+        </table>
+
+        <!-- ==========================  FOOTER ========================== -->
+        <a href="http://tech.bayashi.net/">
+        <script type="text/javascript" language="JavaScript">
+        <?PHP require_once(_DIR_USER_HTML_._HTML_FOOTER_); ?>
+      </td>
+      <td width='1' bgcolor='#FFFFFF'><img src='<?PHP echo _RELATIVE_; ?>common/image/spacer.gif' width='1' height='1' ></td>
+      <td width="10" background="<?PHP echo _RELATIVE_; ?>common/image/shadow_right.gif"><img src='<?PHP echo _RELATIVE_; ?>common/image/spacer.gif' width='1' height='1' ></td>
+    </tr>
+  </table>
+
+
+</div>
+</body>
+</html>

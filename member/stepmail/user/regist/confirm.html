@@ -1,0 +1,95 @@
+<table width="500" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td>
+<br>
+<form name="form" method="post" action="index.php">
+        <table width="500" border="0" cellpadding="4" cellspacing="1" bgcolor="#999999" align="center">
+          <tr bgcolor="#FFFFFF"> 
+            <td width="197" bgcolor="#CFCFE2" class="black12">お名前</td>
+            <td width="396" class="black12"> <?PHP print $viewData['name']; ?></td>
+          </tr>
+          <tr bgcolor="#FFFFFF"> 
+            <td bgcolor="#CFCFE2" class="black12">メール</td>
+            <td class="black12"> <?PHP print $viewData['email']; ?></td>
+          </tr>
+          <tr bgcolor="#FFFFFF"> 
+            <td bgcolor="#CFCFE2" class="black12">会社名</td>
+            <td class="black12"><?PHP print $viewData['company']; ?></td>
+          </tr>
+          <tr bgcolor="#FFFFFF"> 
+            <td bgcolor="#CFCFE2" class="black12">肩書き</td>
+            <td class="black12"> <?PHP print $viewData['post']; ?></td>
+          </tr>
+          <tr bgcolor="#FFFFFF"> 
+            <td bgcolor="#CFCFE2" class="black12">パラメータ１</td>
+            <td class="black12"> 
+              <?PHP if($viewData['param1']){ print $viewData['param1']; } ?>
+            </td>
+          </tr>
+          <tr bgcolor="#FFFFFF"> 
+            <td bgcolor="#CFCFE2" class="black12">パラメータ２</td>
+            <td class="black12"> 
+              <?PHP if($viewData['param2']){ print $viewData['param2']; } ?>
+            </td>
+          </tr>
+          <tr bgcolor="#FFFFFF"> 
+            <td bgcolor="#CFCFE2" class="black12">パラメータ３</td>
+            <td class="black12">
+              <?PHP if($viewData['param3']){ print $viewData['param3']; } ?>
+            </td>
+          </tr>
+          <tr bgcolor="#FFFFFF"> 
+            <td bgcolor="#CFCFE2" class="black12">パラメータ４</td>
+            <td class="black12">
+              <?PHP if($viewData['param4']){ print $viewData['param4']; } ?>
+            </td>
+          </tr>
+          <tr bgcolor="#FFFFFF"> 
+            <td bgcolor="#CFCFE2" class="black12">パラメータ５</td>
+            <td class="black12">
+              <?PHP if($viewData['param5']){ print $viewData['param5']; } ?>
+            </td>
+          </tr>
+          <tr bgcolor="#FFFFFF"> 
+            <td bgcolor="#CFCFE2" class="black12">パラメータ６</td>
+            <td class="black12">
+              <?PHP if($viewData['param6']){ print $viewData['param6']; } ?>
+            </td>
+          </tr>
+          <tr bgcolor="#FFFFFF"> 
+            <td bgcolor="#CFCFE2" class="black12">パラメータ７</td>
+            <td class="black12">
+              <?PHP if($viewData['param7']){ print $viewData['param7']; } ?>
+            </td>
+          </tr>
+          <tr bgcolor="#FFFFFF"> 
+            <td bgcolor="#CFCFE2" class="black12">パラメータ８</td>
+            <td class="black12">
+              <?PHP if($viewData['param8']){ print $viewData['param8']; } ?>
+            </td>
+          </tr>
+          <tr bgcolor="#FFFFFF"> 
+            <td bgcolor="#CFCFE2" class="black12">パラメータ９</td>
+            <td class="black12">
+              <?PHP if($viewData['param9']){ print $viewData['param9']; } ?>
+            </td>
+          </tr>
+          <tr bgcolor="#FFFFFF"> 
+            <td bgcolor="#CFCFE2" class="black12">パラメータ１０</td>
+            <td class="black12">
+              <?PHP if($viewData['param10']){ print $viewData['param10']; } ?>
+            </td>
+          </tr>
+          <tr bgcolor="#FFFFFF"> 
+            <td colspan="2"><div align="center"> 
+                <input type="submit" name="finish" value="登録する">
+                　 
+                <input type="submit" name="back"   value="書き直す">
+              </div></td>
+          </tr>
+        </table>
+<?PHP outPutHidden ($aData); ?>
+</form>
+    </td>
+  </tr>
+</table>

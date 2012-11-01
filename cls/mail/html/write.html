@@ -1,0 +1,181 @@
+              <table width="535" border="0" cellspacing="0" cellpadding="0" bgcolor='#948E8E'>
+                <tr class='black10'> 
+                  <td align='left' height='23' bgcolor="#FFFFFF" class='gold10'>
+                    <b><img src='<?PHP echo _URL_COMMON_IMAGE_; ?>tri.gif'>　各種諸注意</b>
+                  </td>
+                </tr>
+              </table> 
+              <table width="535" border="0" cellspacing="0" cellpadding="0" bgcolor='#FFFFFF'>
+                <tr><td width='535' height='1' bgcolor='#CCCCCC'><img src='<?PHP echo _URL_COMMON_IMAGE_; ?>spacer.gif' width='1' height='1'></td></tr>
+              </table>
+                <br>
+                <span  class='black12'>
+                <b><span  class='gold12'>メールアドレスに関して</span></b><br>
+                </span>
+  <table width="535" border="0" cellspacing="0" cellpadding="0" bgcolor='#948E8E'>
+    <tr class='black10'> 
+      <td align='left' height='23' bgcolor="#FFFFFF" class='gold10'>
+        <b>※　メールアドレスに使用できる文字コード</b>
+      </td>
+    </tr>
+    <tr class='black12'> 
+      <td align='left' height='23' bgcolor="#FFFFFF">
+        以下の文字は使用できますが、他の文字が入っている場合<br>
+        メールリストアップロード時に異常なメールアドレスと判断されてアップロードできません。<br>
+        どうぞご了承ください。<br>
+        使用可能な文字：a〜z A〜Z 0〜9 . - _ / # % &amp;<br>
+      </td>
+    </tr>
+    <tr class='black10'> 
+      <td align='left' height='23' bgcolor="#FFFFFF" class='gold10'>
+        <b>※　使用できる文字</b>
+      </td>
+    </tr>
+    <tr class='black12'> 
+      <td align='left' height='23' bgcolor="#FFFFFF">
+        メールリスト配信リストの文字コードは<b>SJIS</b>でお願い致します。<br>
+        <span class='mazenda12'>ExcelやAccess等で作成したリストはSJISなので、特殊なソフトウェアを使用しない限りは問題ありません</span>
+      </td>
+    </tr>
+  </table> 
+
+  <form action='index.php' method='POST' enctype="multipart/form-data">
+
+    <!-- 入力テーブル--> 
+    <table width="535" border="0" cellspacing="0" cellpadding="0" bgcolor='#948E8E'>
+      <tr class='black10'> 
+        <td align='left' height='23' bgcolor="#FFFFFF" class='gold10'>
+          <b><img src='<?PHP echo _URL_COMMON_IMAGE_; ?>tri.gif'>　各種メールアドレス・送信日入力</b>
+        </td>
+      </tr>
+    </table> 
+
+    <table width="535" height='130' border="0" cellpadding="2" cellspacing="1" bgcolor='#948E8E'>
+      <tr bgcolor='#FFFFFF' class="gray12"> 
+        <td align='center' height='15' colspan='3' bgcolor='#F4F3F1'>
+          <b>すべて必須入力項目です<b><br>
+          <span class="gold10">
+          <?PHP $this->error(); ?>
+          </span>
+        </td> 
+      </tr>
+      <tr bgcolor='#FFFFFF' class="gray12"> 
+        <td align='center' width='180' bgcolor='#F4F3F1'><?PHP echo $pField->nameS['mail_from']; ?></td> 
+        <td align='center'>
+          <input type='text' name='inputS[mail_from]' value='<?PHP echo $pVariable->writeS['mail_from']; ?>' size='40'><br>
+        </td> 
+      </tr>
+      <tr bgcolor='#FFFFFF' class="gray12"> 
+        <td align='center' width='180' bgcolor='#F4F3F1'><?PHP echo $pField->nameS['mail_error']; ?></td> 
+        <td align='center'>
+          <input type='text' name='inputS[mail_error]' value='<?PHP echo $pVariable->writeS['mail_error']; ?>' size='40'> 
+        </td> 
+      </tr>
+      <tr bgcolor='#FFFFFF' class="gray12"> 
+        <td align='center' width='180' bgcolor='#F4F3F1'><?PHP echo $pField->nameS['mail_test']; ?></td> 
+        <td align='center'>
+          <input type='text' name='inputS[mail_test]' value='<?PHP echo $pVariable->writeS['mail_test']; ?>' size='40'> 
+        </td> 
+      </tr>
+      <tr bgcolor='#FFFFFF' class="gray12"> 
+        <td align='center' width='180' bgcolor='#F4F3F1'><?PHP echo $pField->nameS['send_date']; ?></td> 
+        <td align='left' class="gray10">
+          <?PHP $expUtil->selectboxInt( 'inputS[send_date_y]', date('Y'), 2, $pVariable->writeS['send_date_y'], True); ?> 年 
+          <?PHP $expUtil->selectboxInt( 'inputS[send_date_m]',               1,  12, $pVariable->writeS['send_date_m'], True); ?> 月 
+          <?PHP $expUtil->selectboxInt( 'inputS[send_date_d]',               1,  31, $pVariable->writeS['send_date_d'], True); ?> 日 
+          <?PHP $expUtil->selectboxInt( 'inputS[send_date_h]',               0,  24, $pVariable->writeS['send_date_h'], True); ?> 時 
+          <select name='inputS[send_date_i]'>
+            <option value='00'>00</option>
+            <option value='05'>05</option>
+            <option value='10'>10</option>
+            <option value='15'>15</option>
+            <option value='20'>20</option>
+            <option value='25'>25</option>
+            <option value='30'>30</option>
+            <option value='35'>35</option>
+            <option value='40'>40</option>
+            <option value='45'>45</option>
+            <option value='50'>50</option>
+            <option value='55'>55</option>
+          </select> 分<br>
+          ※ 携帯メールアドレスへの送信は9：00〜20：55までとなります。<br>
+          　 過去の時間をご指定いただきますと即座に送信を始めます。
+
+        </td> 
+      </tr>
+    </table> 
+    <br>
+
+    <table width="535" border="0" cellspacing="0" cellpadding="0" bgcolor='#948E8E'>
+      <tr class='black10'> 
+        <td align='left' height='23' bgcolor="#FFFFFF" class='gold10'>
+          <b><img src='<?PHP echo _URL_COMMON_IMAGE_; ?>tri.gif'>　送信情報入力</b>
+        </td>
+      </tr>
+    </table> 
+    <table width="535" height='500' border="0" cellpadding="2" cellspacing="1" bgcolor='#948E8E'>
+      <tr bgcolor='#FFFFFF' class="gray12"> 
+        <td align='center' width='200' bgcolor='#F4F3F1'><?PHP echo $pField->nameS['name_from']; ?></td> 
+        <td align='center'>
+          <input type='text' name='inputS[name_from]' value='<?PHP echo $pVariable->writeS['name_from']; ?>' size='40'> 
+        </td> 
+      </tr>
+      <tr bgcolor='#FFFFFF' class="gray12"> 
+        <td align='center' width='200' bgcolor='#F4F3F1'><?PHP echo $pField->nameS['subject']; ?></td> 
+        <td align='center'>
+          <input type='text' name='inputS[subject]' value='<?PHP echo $pVariable->writeS['subject']; ?>' size='40'> 
+        </td> 
+      </tr>
+      <tr bgcolor='#FFFFFF' class="gray12"> 
+        <td align='left' colspan='3' bgcolor='#F4F3F1'>　<?PHP echo $pField->nameS['message']; ?></td> 
+      </tr>
+      <tr bgcolor='#FFFFFF' class="gray12"> 
+        <td align='center' colspan='4'>
+          <textarea name='inputS[message]' rows='40' cols='70'><?PHP echo $pVariable->writeS['message']; ?></textarea> 
+        </td> 
+      </tr>
+      <tr bgcolor='#FFFFFF' class="gray12"> 
+        <td align='left' colspan='3' bgcolor='#F4F3F1'>
+          　<?PHP echo $pField->nameS['message_html']; ?>
+          　<input type='radio' name='inputS[flag_html]' value='1' <?PHP if($pVariable->writeS['flag_html']==1){ echo"checked"; } ?>> HTMLメールを送信する
+          　<input type='radio' name='inputS[flag_html]' value='0' <?PHP if($pVariable->writeS['flag_html']==0){ echo"checked"; } ?>> HTMLメールを送信しない
+        </td> 
+      </tr>
+      <tr bgcolor='#FFFFFF' class="gray12"> 
+        <td align='center' colspan='4'>
+          <textarea name='inputS[message_html]' rows='40' cols='70'><?PHP echo $pVariable->writeS['message_html']; ?></textarea> 
+        </td> 
+      </tr>
+      <tr bgcolor='#FFFFFF' class="gray12"> 
+        <td align='center' width='200' bgcolor='#F4F3F1'><?PHP echo $pField->nameS['file_mail']; ?></td> 
+        <td align='center'>
+          <input type="file" name='file_mail' size='45'><br>
+          <span class='red10'>※テスト送信ボタンを押した場合や、確認を押してエラーが出た場合は<br>
+          再度メールリストを再度選んでいただく必要があります。</span>
+        </td> 
+      </tr>
+    </table> 
+    <br>
+
+    <table width="535" height='50' border="0" cellpadding="8" cellspacing="1" bgcolor='#948E8E'>
+      <tr bgcolor='#F4F3F1' class="gray12"> 
+        <td align='center'>
+          <input type='submit' name='post[test]' value=' テスト送信[テキスト] '>　　
+          <input type='submit' name='post[test_html]' value=' テスト送信[HTML] '>
+        </td> 
+      </tr>
+    </table> 
+    <br>
+
+    <table width="535" height='50' border="0" cellpadding="8" cellspacing="1" bgcolor='#948E8E'>
+      <tr bgcolor='#F4F3F1' class="gray12"> 
+        <td align='center'>
+          <input type='submit' name='confirm' value=' 確認画面へ '>　　
+          <input type='submit' name='post[reset]' value=' リセット '>
+        </td> 
+      </tr>
+    </table> 
+
+<?PHP $this->hidden('confirm'); ?>
+
+  </form>

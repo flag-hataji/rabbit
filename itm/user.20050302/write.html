@@ -1,0 +1,177 @@
+  <form action='index.php' method='POST'>
+  <table width="750" height='25' border="0" cellpadding="8" cellspacing="0" bgcolor='#BBBBBB'>
+    <tr bgcolor='#FFFFFF' class="gray12"> 
+      <td align='left'>
+        <b>入力</b>
+      </td> 
+    </tr>
+  </table> 
+
+  <div align='center'>
+
+  <?PHP $this->error(); ?>
+
+  <!-- 入力テーブル--> 
+  <table width="750" height='15' border="0" cellpadding="5" cellspacing="1" bgcolor='#BBBBBB'>
+    <tr bgcolor='#FFFFFF' class="gray12"> 
+      <td align='center'>
+        下記の項目をご入力ください
+      </td> 
+    </tr>
+  </table> 
+  <br>
+
+  <table width="600" border="0" cellpadding="8" cellspacing="1" bgcolor='#BBBBBB'>
+    <tr bgcolor='#FFFFFF' class="black10"> 
+      <td align='center'><b>必須</b></td> 
+      <td align='center'><b>項目</b></td> 
+      <td align='center'><b>入力</b></td> 
+    </tr>
+    <tr bgcolor='#FFFFFF' class="black12"> 
+      <td align='center'><span class="red10">※</span></td> 
+      <td align='left'><?PHP echo $pField->nameS['id']; ?></td> 
+      <td align='left'>
+        <input type='text' name='inputS[id]' value='<?PHP echo $pVariable->writeS['id']; ?>' size='30'> 
+      </td> 
+    </tr>
+    <tr bgcolor='#FFFFFF' class="black12"> 
+      <td align='center'><span class="red10">※</span></td> 
+      <td align='left'><?PHP echo $pField->nameS['password']; ?></td> 
+      <td align='left'>
+        <input type='text' name='inputS[password]' value='<?PHP echo $pVariable->writeS['password']; ?>' size='30'> 
+      </td> 
+    </tr>
+    <tr bgcolor='#FFFFFF' class="black12"> 
+      <td align='center'><span class="red10">※</span></td> 
+      <td align='leftter'><?PHP echo $pField->nameS['name']; ?></td> 
+      <td align='left'>
+        姓 <input type='text' name='inputS[name_family]' value='<?PHP echo $pVariable->writeS['name_family']; ?>' size='20'>　
+        名 <input type='text' name='inputS[name_first]' value='<?PHP echo $pVariable->writeS['name_first']; ?>' size='20'> 
+      </td> 
+    </tr>
+    <tr bgcolor='#FFFFFF' class="black12"> 
+      <td align='center'><span class="red10">※</span></td> 
+      <td align='leftter'><?PHP echo $pField->nameS['kana']; ?></td> 
+      <td align='left'>
+        姓 <input type='text' name='inputS[kana_family]' value='<?PHP echo $pVariable->writeS['kana_family']; ?>' size='20'>　
+        名 <input type='text' name='inputS[kana_first]' value='<?PHP echo $pVariable->writeS['kana_first']; ?>' size='20'> 
+      </td> 
+    </tr>
+    <tr bgcolor='#FFFFFF' class="black12"> 
+      <td align='center'><span class="red10">※</span></td> 
+      <td align='leftter'><?PHP echo $pField->nameS['flag_gender']; ?></td> 
+      <td align='left'>
+        <input type='radio' name='inputS[flag_gender]' value='1' <?PHP $expUtil->marked( $pVariable->writeS['flag_gender'], 1, 'checked', True ); ?>>男性　
+        <input type='radio' name='inputS[flag_gender]' value='2' <?PHP $expUtil->marked( $pVariable->writeS['flag_gender'], 2, 'checked', True ); ?>>女性
+      </td> 
+    </tr>
+    <tr bgcolor='#FFFFFF' class="black12"> 
+      <td align='center'><span class="red10">※</span></td> 
+      <td align='left'><?PHP echo $pField->nameS['mail']; ?></td> 
+      <td align='left'>
+        <input type='text' name='inputS[mail]' value='<?PHP echo $pVariable->writeS['mail']; ?>' size='30'> 
+      </td> 
+    </tr>
+    <tr bgcolor='#FFFFFF' class="black12"> 
+      <td align='center'><span class="red10">※</span></td> 
+      <td align='left'><?PHP echo $pField->nameS['birthday']; ?></td> 
+      <td align='left'>
+<?PHP $expUtil->selectboxInt( 'inputS[birthday_y]', (date('Y')-130), 130, $pVariable->writeS['birthday_y'], True); ?> 年 
+<?PHP $expUtil->selectboxInt( 'inputS[birthday_m]',               1,  12, $pVariable->writeS['birthday_m'], True); ?> 月 
+<?PHP $expUtil->selectboxInt( 'inputS[birthday_d]',               1,  31, $pVariable->writeS['birthday_d'], True); ?> 日
+      </td> 
+    </tr>
+
+    <tr bgcolor='#FFFFFF' class="black12"> 
+      <td align='center'><span class="red10">※</span></td> 
+      <td align='left'><?PHP echo $pField->nameS['zip']; ?></td> 
+      <td align='left'>
+        <input type='text' name='inputS[zip_1]' value='<?PHP echo $pVariable->writeS['zip_1']; ?>' size='3'> - 
+        <input type='text' name='inputS[zip_2]' value='<?PHP echo $pVariable->writeS['zip_2']; ?>' size='4'>
+      </td> 
+    </tr>
+
+    <tr bgcolor='#FFFFFF' class="black12"> 
+      <td align='center'><span class="red10">※</span></td> 
+      <td align='left'><?PHP echo $pField->nameS['area']; ?></td> 
+      <td align='left'>
+<?PHP $this->selectboxKen('inputS[area]',$pVariable->writeS['area']); ?><br>
+      </td> 
+    </tr>
+
+    <tr bgcolor='#FFFFFF' class="black12"> 
+      <td align='center'><span class="red10">※</span></td> 
+      <td align='left'><?PHP echo $pField->nameS['address1']; ?></td> 
+      <td align='left'>
+        <input type='text' name='inputS[address1]' value='<?PHP echo $pVariable->writeS['address1']; ?>' size='30'> 
+      </td> 
+    </tr>
+
+    <tr bgcolor='#FFFFFF' class="black12"> 
+      <td align='center'><span class="red10">※</span></td> 
+      <td align='left'><?PHP echo $pField->nameS['address2']; ?></td> 
+      <td align='left'>
+        <input type='text' name='inputS[address2]' value='<?PHP echo $pVariable->writeS['address2']; ?>' size='30'> 
+      </td> 
+    </tr>
+
+    <tr bgcolor='#FFFFFF' class="black12"> 
+      <td align='center'><span class="red10"></span></td> 
+      <td align='left'><?PHP echo $pField->nameS['tel']; ?></td> 
+      <td align='left'>
+        <input type='text' name='inputS[tel_1]' value='<?PHP echo $pVariable->writeS['tel_1']; ?>' size='5'> - 
+        <input type='text' name='inputS[tel_2]' value='<?PHP echo $pVariable->writeS['tel_2']; ?>' size='5'> - 
+        <input type='text' name='inputS[tel_3]' value='<?PHP echo $pVariable->writeS['tel_3']; ?>' size='5'>
+      </td> 
+    </tr>
+
+    <tr bgcolor='#FFFFFF' class="black12"> 
+      <td align='center'><span class="red10"></span></td> 
+      <td align='left'><?PHP echo $pField->nameS['mobile']; ?></td> 
+      <td align='left'>
+        <input type='text' name='inputS[mobile_1]' value='<?PHP echo $pVariable->writeS['mobile_1']; ?>' size='5'> - 
+        <input type='text' name='inputS[mobile_2]' value='<?PHP echo $pVariable->writeS['mobile_2']; ?>' size='5'> - 
+        <input type='text' name='inputS[mobile_3]' value='<?PHP echo $pVariable->writeS['mobile_3']; ?>' size='5'>
+      </td> 
+    </tr>
+
+
+    <tr bgcolor='#FFFFFF' class="black12"> 
+      <td align='center'><span class="red10">※</span></td> 
+      <td align='left'><?PHP echo $pField->nameS['fax']; ?></td> 
+      <td align='left'>
+        <input type='text' name='inputS[fax_1]' value='<?PHP echo $pVariable->writeS['fax_1']; ?>' size='5'> - 
+        <input type='text' name='inputS[fax_2]' value='<?PHP echo $pVariable->writeS['fax_2']; ?>' size='5'> - 
+        <input type='text' name='inputS[fax_3]' value='<?PHP echo $pVariable->writeS['fax_3']; ?>' size='5'>
+      </td> 
+    </tr>
+
+    <tr bgcolor='#FFFFFF' class="black12"> 
+      <td align='center'><span class="red10">※</span></td> 
+      <td align='left'><?PHP echo $pField->nameS['comment']; ?></td> 
+      <td align='left'>
+        <textarea name='inputS[comment]' rows='10' cols='50'><?PHP echo $pVariable->writeS['comment']; ?></textarea> 
+      </td> 
+    </tr>
+
+  </table> 
+  <br>
+
+
+  <!--ボタン--> 
+  <table width="750" height='15' border="0" cellpadding="5" cellspacing="1" bgcolor='#BBBBBB'>
+
+    <tr bgcolor='#FFFFFF' class="black10"> 
+      <td align='center'>
+        <input type='submit' name='confirm' value=' 次 へ '>　
+        <input type='reset'  name='reset' value=' リセット '>
+      </td> 
+    </tr>
+  </table> 
+  <br>
+  <br>
+
+ </div>
+
+<?PHP $this->hidden('confirm'); ?>
+</form>

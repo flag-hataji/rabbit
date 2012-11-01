@@ -1,0 +1,169 @@
+<?PHP require_once("../../../program/cls/define/Setup.php");?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="ja-JP">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-JP">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>ピクトメール：フォーム管理画面：サンキューメール設定確認</title>
+<link href="/common/css/common.css" rel="stylesheet" type="text/css">
+<link href="./css/formStyle.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript">
+<!--
+<?PHP require_once(_DIR_USER_HTML_._HTML_JS_); ?>
+	
+	function changeSub(){
+		document.fm.action = "./settingMail.php";
+	}
+	
+	function sendData(){
+			var con = window.confirm("更新します、よろしいですか？");
+			if(con){
+				document.fm.action = "./sm_completion.php";
+				document.fm.submit();
+			}else{
+				return false;
+			}
+	}
+
+//-->
+</script>
+</head>
+<body  bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<div align='center'> 
+  <table height="100%" width="900" border="0" cellspacing="0" cellpadding="0" bgcolor='#FFFFFF'>
+    <tr> 
+      <td width="10" background="/common/image/shadow_left.gif"><img src='/common/image/spacer.gif' width='1' height='1' ></td>
+      <td width='1' bgcolor='#FFFFFF'><img src='/common/image/spacer.gif' width='1' height='1' ></td>
+      <td valign="top" align='center' bgcolor='#FFFFFF'> 
+<?PHP require_once(_DIR_USER_HTML_._HTML_HEADER_); ?>
+
+        <table width="850" border="0" cellspacing="0" cellpadding="0" bgcolor="#948E8E">
+          <tr class="gray10"> 
+            <!-- --------LEFT AREA--------- -->
+            <td width="150" align="center" valign="top" bgcolor="#FFFFFF"> 
+              <?PHP require_once(_DIR_USER_HTML_._HTML_LEFT_MENU_); ?>
+              <br>
+              <?PHP //require_once(_DIR_USER_HTML_._HTML_RIGHT_MENU_); ?>
+            </td>
+            <td width="5" bgcolor="#FFFFFF"><img src="../../../common/image/spacer.gif" width="5" height="1" ></td>
+            <td width="1" bgcolor="#FFFFFF" background="../../../common/image/y_comma.gif"><img src="../../../common/image/spacer.gif" width="1" height="1" ></td>
+            <!-- --------CENTER AREA--------- -->
+            <td width="700" align="right" valign="top" bgcolor="#FFFFFF">
+				<form action="./settingMail.php" method="post" name="fm" onSubmit="changeSub();">
+				  <table width="600" height="25" border="0" align="center" cellpadding="0" cellspacing="0" background="./images/in_title01.gif" class="margin2">
+					  <tr>
+						<td width="30" height="25"></td>
+						<td class="textWhite" width="570" height="25">登録内容確認</td>
+					  </tr>
+				  </table>
+					<table width="600" border="0" align="center" cellpadding="5" cellspacing="0">
+					<tr align="center">
+						<td bgcolor="#A6C4F9" class="text4" id="line3" colspan="2">内容を確認し、良ければ登録を押して下さい</td>
+					  <tr>
+						<td width="200" bgcolor="#FFFFFF" class="text1" id="line4">サンキューメールを送信</td>
+						<td id="line3">
+						<span class="text1">
+						<?php
+							if($sendMail=="t"){
+								echo "使用する";
+							}else{
+								echo "使用しない";
+							}
+						?>
+						</span>
+						</td>
+					  </tr>
+					  <tr>
+						<td width="200" bgcolor="#FFFFFF" class="text1" id="line4">送信者名（日本語表記）</td>
+						<td id="line3" class="text1"><?php echo $transmit_name; ?></td>
+					  </tr>
+					  <tr>
+						<td width="200" bgcolor="#FFFFFF" class="text1" id="line4">送信元メールアドレス</td>
+						<td id="line3" class="text1"><?php echo $transmit_mailadd; ?></td>
+					  </tr>
+					  <tr>
+						<td width="200" bgcolor="#FFFFFF" class="text1" id="line4">エラー戻り先メールアドレス</td>
+						<td id="line3" class="text1"><?php echo $return_err; ?></td>
+					  </tr>
+					  <tr>
+						<td width="200" bgcolor="#FFFFFF" class="text1" id="line4">件名</td>
+						<td id="line3" class="text1"><?php echo $subject; ?></td>
+					  </tr>
+					  <tr>
+						<td width="200" bgcolor="#FFFFFF" class="text1" id="line4">ＴＥＸＴメッセージ</td>
+						<td id="line3" class="text1"><?php echo $s_text_mess; ?></td>
+					  </tr>
+					  <tr>
+						<td width="200" bgcolor="#FFFFFF" class="text1" id="line4">HTMLメール送信する</td>
+						<td id="line3" class="text1">
+							<?php
+								if($use_html=="t"){
+									echo "送信する";
+								}else{
+									echo "送信しない";
+								}
+							?>
+						</td>
+					  </tr>
+					  <tr>
+						<td width="200" bgcolor="#FFFFFF" class="text1" id="line4">ＨＴＭＬメッセージ</td>
+						<td id="line3" class="text1">
+							<?php
+								if($use_html=="t"){
+									echo $s_html_mess.'&nbsp;';
+								}else{
+									echo '&nbsp;';
+								}
+							?>
+						</td>
+					  </tr>
+					  <tr align="center">
+						<td colspan="2" id="line1" bgcolor="#A6C4F9"><input type="button" value="登録" name="butn" onClick="return sendData();">　<input type="submit" value="戻る" name="sub" onClick="changeSub();"/></td>
+					  </tr>
+					</table>
+					<input type="hidden" name="data[sendMail]" value="<?php echo $sendMail; ?>" />
+					<input type="hidden" name="data[transmit_name]" value="<?php echo $transmit_name; ?>" />
+					<input type="hidden" name="data[transmit_mailadd]" value="<?php echo $transmit_mailadd; ?>" />
+					<input type="hidden" name="data[return_err]" value="<?php echo $return_err; ?>" />
+					<input type="hidden" name="data[subject]" value="<?php echo $subject?>" />
+					<input type="hidden" name="data[text_mess]" value="<?php echo $text_mess?>" />
+					<input type="hidden" name="data[use_html]" value="<?php echo $use_html; ?>" />
+					<input type="hidden" name="data[html_mess]" value="<?php echo $html_mess; ?>" />
+					<input type="hidden" name="data[mode]" value="input" />
+					<input type="hidden" name="data[flag]" value="<?php echo $flag; ?>" />
+					<input type="hidden" name="data[del_flag]" value="<?php echo $del_flag; ?>" />
+				</form>
+
+            <!-- Menu Header --></td>
+          </tr>
+        </table>
+<!-- FOOTER -->
+<?PHP require_once(_DIR_USER_HTML_._HTML_FOOTER_); ?>
+
+      </td>
+      <td width='1' bgcolor='#FFFFFF'><img src='../../../common/image/spacer.gif' width='1' height='1' ></td>
+      <td width="10" background="../../../common/image/shadow_right.gif"><img src='../../../common/image/spacer.gif' width='1' height='1' ></td>
+    </tr>
+  </table>
+
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

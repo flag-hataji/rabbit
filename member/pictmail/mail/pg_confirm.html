@@ -1,0 +1,214 @@
+<?PHP $viewS = $this->getViewDataSConfirm(); ?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="ja-JP">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-JP"> 
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>www.rabbit-mail.jp | メール配信ＡＳＰ</title>
+<link href="../../../css/common.css" rel="stylesheet" type="text/css">
+</head>
+<body bgcolor="#FFFFFF" >
+
+<div align="center">
+
+<?PHP require_once(_DIR_MEMBER_HTML_._HTML_MEMBER_HEADER_PICTMAIL_); ?>
+
+
+
+<div id="pictmail-input-box">
+<form name="form2" method="post" action="index.php" style="margin: 0px;">
+
+<table>
+  <tr>
+    <td colspan="2" class="title_l">
+      メール配信：入力確認
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="explain_l">
+      下記の内容で宜しければ[ 送信予約する ]ボタンをクリックしてください。
+    </td>
+  </tr>
+
+
+
+  <tr> 
+    <td colspan="2" class="title_m">
+    メールリスト
+    </td>
+  </tr>
+
+  <tr> 
+    <td class="input_title"><?PHP echo $this->Manager->nameS['flag_omit']; ?></td>
+    <td class="input_field">
+      <?PHP echo $viewS['flag_omit']; ?>
+    </td>
+  </tr>
+  <tr> 
+    <td class="input_title">アップしたデータ数(行数)</td>
+    <td class="input_field">
+      <?PHP echo $this->Fileup->numS['fileLine']; ?>件(行) ※空白行も含む
+    </td>
+  </tr>
+  <tr> 
+    <td class="input_title">有効なデータ数</td>
+    <td class="input_field">
+      <?PHP echo $this->Fileup->numS['ok']; ?>件
+      ( 内 PC向け：<?PHP echo $this->Fileup->numS['pc']; ?>件 / 
+      携帯向け：<?PHP echo $this->Fileup->numS['mobile']; ?>件 ）
+
+    </td>
+  </tr>
+  <tr> 
+    <td class="input_title">不正なデータ数</td>
+    <td class="input_field">
+      <?PHP echo $this->Fileup->numS['ng']; ?>件
+    </td>
+  </tr>
+
+<?PHP
+  if($this->Fileup->dataErrorS!=""){
+?>
+  <tr> 
+    <td colspan="2" class="title_m">
+      不正データ一覧
+    </td>
+  </tr>
+  <?PHP $this->showErrorFileup($this->Fileup->dataErrorS); ?>
+<?PHP
+  }
+?>
+  <tr> 
+    <td colspan="2" class="title_m">
+    各種メールアドレス
+    </td>
+  </tr>
+  <tr> 
+    <td class="input_title"><?PHP echo $this->Manager->nameS['mail_from']; ?></td>
+    <td class="input_field">
+      <?PHP echo $viewS['mail_from']; ?>
+    </td>
+  </tr>
+  <tr> 
+    <td class="input_title"><?PHP echo $this->Manager->nameS['mail_confirm']; ?></td>
+    <td class="input_field">
+      <?PHP echo $viewS['mail_confirm']; ?>
+    </td>
+  </tr>
+  <tr> 
+    <td class="input_title"><?PHP echo $this->Manager->nameS['mail_error']; ?></td>
+    <td class="input_field">
+      <?PHP echo $viewS['mail_error']; ?>
+    </td>
+  </tr>
+
+  <tr> 
+    <td colspan="2" class="title_m">
+      送信日
+    </td>
+  </tr>
+
+  <tr> 
+    <td class="input_title"><?PHP echo $this->Manager->nameS['send_date']; ?></td>
+    <td class="input_field">
+      <?PHP echo $viewS['send_date']; ?>
+    </td>
+  </tr>
+  <tr> 
+    <td colspan="12" class='input_explain'>※ 携帯メールアドレスへの送信は9：00〜20：55までとなります。</td>
+  </tr>
+
+  <tr> 
+    <td colspan="2" class="title_m">
+      送信内容入力
+    </td>
+  </tr>
+
+  <tr> 
+    <td class="input_title"><?PHP echo $this->Manager->nameS['subject']; ?></td>
+    <td class="input_field">
+      <?PHP echo $viewS['subject']; ?>
+    </td>
+  </tr>
+  <tr> 
+    <td class="input_title"><?PHP echo $this->Manager->nameS['name_from']; ?></td>
+    <td class="input_field">
+      <?PHP echo $viewS['name_from']; ?>
+    </td>
+  </tr>
+  <tr> 
+    <td colspan="2" class="title_m">
+      <?PHP echo $this->Manager->nameS['message']; ?>
+    </td>
+  </tr>
+
+  <tr> 
+    <td colspan="2" class="input_field">
+      <?PHP echo $viewS['message']; ?>
+    </td>
+  </tr>
+
+
+  <tr> 
+    <td colspan="2" class="title_m">
+      <?PHP echo $this->Manager->nameS['message_html']; ?>
+    </td>
+  </tr>
+
+  <tr> 
+    <td colspan="2" class="input_field">
+      <span class='indigo12'><?PHP echo $viewS['flag_html']; ?></span><br>
+      <?PHP echo $viewS['message_html']; ?>　
+    </td>
+  </tr>
+
+  <tr> 
+    <td colspan="2" class="input_button">
+      <input type='submit' name='finish'        value='　　送信予約する　　'>　
+      <input type='submit' name='post[rewrite]' value='　　入力に戻る　　'>
+      <input type='hidden' name='charaCode' value="もじこーどはんていようへんすう">
+      <input type='hidden' name='hidden'    value="finish">
+      <input type='hidden' name='mode'      value="<?PHP echo $this->pageS['mode']; ?>">
+      <input type='hidden' name='uploadS[file]'            value="<?PHP echo $this->Fileup->tempS['file']; ?>">
+      <input type='hidden' name='uploadS[numS][fileLine]'  value="<?PHP echo $this->Fileup->numS['fileLine']; ?>">
+      <input type='hidden' name='uploadS[numS][ok]'        value="<?PHP echo $this->Fileup->numS['ok'] ?>">
+      <input type='hidden' name='uploadS[numS][pc]'        value="<?PHP echo $this->Fileup->numS['pc'] ?>">
+      <input type='hidden' name='uploadS[numS][mobile]'    value="<?PHP echo $this->Fileup->numS['mobile'] ?>">
+
+
+      <input type='hidden' name='uploadS[flagS][pc]'       value="<?PHP echo $this->Fileup->flagS['pc'] ?>">
+      <input type='hidden' name='uploadS[flagS][mobile]'   value="<?PHP echo $this->Fileup->flagS['mobile'] ?>">
+      <input type='hidden' name='uploadS[flagS][type]'     value="<?PHP echo $this->Fileup->flagS['type'] ?>">
+
+<?PHP $this->showHidden(); ?>
+    </td>
+  </tr>
+</table>
+</form>
+</div>
+
+
+
+
+
+
+
+
+
+<div id="footer-box">
+<table border="0" width="100%">
+  <tr>
+    <td align="center">
+      rabbit-mail
+    </td>
+  </tr>
+</table >
+</div>
+
+
+
+</div>
+
+</body>
+</html>

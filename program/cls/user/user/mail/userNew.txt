@@ -1,0 +1,56 @@
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+■仮登録をいただきありがとうございます。
+
+このメールは仮登録への自動返信です。
+
+#name# 様
+
+
+                                              http://www.rabbit-mail.jp
+
+
+この度はrabbit-mail.jpのメール送信サービスに
+仮登録いただききありがとうございます。
+#name#様のご登録情報は下記の通りです。
+
+□#n_id# 
+　#id#
+□#n_password# 
+　#password#
+
+□#n_name# 
+　#name#
+□#n_kana# 
+　#kana#
+
+□#n_mail# 
+　#mail#
+□#n_tel# 
+　#tel#
+□#n_mobile# 
+　#mobile#
+□#n_fax# 
+　#fax#
+
+□#n_name_company# 
+　#name_company#
+□#n_kana_company# 
+　#kana_company#
+
+□#n_zip# 
+　#zip#
+□#n_area# 
+　#area#
+□#n_address1# 
+　#address1#
+□#n_address2# 
+　#address2#
+
+□#n_flag_gender# 
+　#flag_gender#
+
+　□何処から来たか
+　#root_id##text_root#
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

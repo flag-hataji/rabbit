@@ -1,0 +1,202 @@
+            <!-- + Left Menu -->
+            <div id="left_menu">
+            <?PHP
+              if( isset($_SESSION['user']['id']) && isset($_SESSION['user']['password']) ){
+            ?>
+              <img src="/common/image/leftmenu/user/title.gif" alt="ユーザー用メニュー" width="150" height="25" class="user_title" />
+              <!-- ++ UserMenu -->
+              <div class="user_menu_box">
+                <p class="user_menu_link"><a href="/member/">ユーザーメニューTOP</a></p>
+                <img src="/common/image/line_g_125.gif" class="line_g_125" />
+                <p class="user_menu_link"><a href="/member/user/index.php?get=write&mode=renew">ユーザー情報変更</a></p>
+                <img src="/common/image/line_g_125.gif" class="line_g_125" />
+                <p class="user_menu_link"><a href="/member/logout.php?get=logout">ログアウト</a></p>
+                <!-- +++ Pictmail -->
+                <a href="/member/pictmail/"><img src="/common/image/leftmenu/user/pictmail.gif" alt="メール配信"  onmouseover="ROver(this, '/common/image/leftmenu/user/ov_pictmail.gif');" onmouseout="ROver(this, '/common/image/leftmenu/user/pictmail.gif');" class="user_menu" /></a>
+            <?PHP 
+                if(_DIR_IS_POSITION2_=="pictmail"){
+            ?>
+                <p class="user_menu_link"><a href="/member/pictmail/mail/">配信実行</a></p>
+                <img src="/common/image/line_g_125.gif" class="line_g_125" />
+                <p class="user_menu_link"><a href="/member/pictmail/plan/">配信プラン変更</a></p>
+                <img src="/common/image/line_g_125.gif" class="line_g_125" />
+                <p class="user_menu_link"><a href="/member/pictmail/log/">配信ログの確認</a></p>
+                <img src="/common/image/line_g_125.gif" class="line_g_125" />
+                <p class="user_menu_link"><a href="/member/pictmail/error/">エラーメールアドレス確認</a></p>
+                <!-- /// Pictmail -->
+            <?PHP 
+                }
+            ?>
+                <!-- +++ CC -->
+                <a href="/member/clickcounter/"><img src="/common/image/leftmenu/user/cc.gif" alt="クリックカウンター"  onmouseover="ROver(this, '/common/image/leftmenu/user/ov_cc.gif');" onmouseout="ROver(this, '/common/image/leftmenu/user/cc.gif');" class="user_menu" /></a>
+            <?PHP 
+                if(_DIR_IS_POSITION2_=="clickcounter"){
+            ?>
+                <p class="user_menu_link"><a href="/member/clickcounter/counter2/">URL一括作成</a></p>
+                <img src="/common/image/line_g_125.gif" class="line_g_125" />
+                <p class="user_menu_link"><a href="/member/clickcounter/analyze/viewer/index.php?inputs[submit][category-l]=1">アクセス閲覧</a></p>
+                <img src="/common/image/line_g_125.gif" class="line_g_125" />
+                <p class="user_menu_link"><a href="/member/clickcounter/user/">基本設定編集</a></p>
+                <img src="/common/image/line_g_125.gif" class="line_g_125" />
+                <p class="user_menu_link"><a href="/member/user/cc.php">有料版お申し込み</a></p>
+                <!-- /// CC -->
+            <?PHP 
+                }
+            ?>
+              </div>
+              <!-- // UserMenu -->
+            <?PHP
+              }else{
+            ?>
+              <!-- ++ Login -->
+              <form action='/member/index.php' method='POST' style="margin: 0px;">
+              <div class="login_box">
+                <img src="/common/image/leftmenu/login/id.gif" alt="ID" class="user_login"><input type="text" name="id" value="" size="6" class="user_login">
+                <img src="/common/image/line_g_150.gif" class="line_g_150" />
+                <img src="/common/image/leftmenu/login/password.gif" alt="パスワード" class="user_login"><input type="password" name="password" value="" size="6" class="user_login">
+                <input type="image" src="/common/image/leftmenu/login/button_login1.gif" alt="ログイン" name="login" value="ログイン" onmouseover="ROver(this, '/common/image/leftmenu/login/button_login2.gif');" onmouseout="ROver(this, '/common/image/leftmenu/login/button_login1.gif');" class="user_login_button" />
+                <input type='hidden' name='hidden' value='login' class="user_login_hidden" />
+                <img src="/common/image/line_g_150.gif" class="line_g_150" />
+                <p class="user_menu_link"><a href="/forget/">ID・パスワードを忘れた</a></p>
+                <img src="/common/image/line_g_150.gif" class="line_g_150" />
+                <p class="user_menu_link"><a href="/sign_up/sign_up.php">新規登録・無料体験はこちら</a></p>
+                <img src="/common/image/line_g_150.gif" class="line_g_150" />
+              </div>
+              </form>
+              <!-- // Login -->
+            <?PHP
+              }
+            ?>
+              <!-- ++ ServiceMenu -->
+              <img src="/common/image/leftmenu/asp/title.gif" alt="ASPサービス一覧" width="150" height="25" class="menu_title" />
+              <!-- +++ ServiceMenu Pictmail -->
+              <div class="service_box_pictmail">
+                <div id="close_pictmail" style="display:block"> 
+                  <a href="#"><span onClick="hydeAndSeek('open_pictmail','close_pictmail')" ><img src='/common/image/leftmenu/pictmail/title1.gif' onmouseover="ROver(this, '/common/image/leftmenu/pictmail/ov_title1.gif');" onmouseout="ROver(this, '/common/image/leftmenu/pictmail/title1.gif');"  alt='メルマガ配信、メール配信のピクトメール　サービスご紹介' class="service_title"></span></a>
+                </div>
+                <?PHP 
+                  if(_DIR_IS_POSITION1_!="pictmail"){
+                ?>
+                <div id="open_pictmail" style="display:none">
+                  <a href="#"><span onClick="hydeAndSeek('open_pictmail','close_pictmail')" ><img src='/common/image/leftmenu/pictmail/title2.gif' onmouseover="ROver(this, '/common/image/leftmenu/pictmail/ov_title2.gif');" onmouseout="ROver(this, '/common/image/leftmenu/pictmail/title2.gif');"  alt='メルマガ配信、メール配信のピクトメール　サービスご紹介' class="service_title"></span></a>
+                <?PHP 
+                  }
+                ?>
+                  <p class="user_menu_link"><a href="/pictmail/mailsend/mailsend01.html">はじめに</a></p>
+                  <img src="/common/image/line_g_125.gif" class="line_g_125" />
+                  <p class="user_menu_link"><a href="/pictmail/mailsend/mailsend.html">ピクトメールとは？</a></p>
+                  <img src="/common/image/line_g_125.gif" class="line_g_125" />
+                  <p class="user_menu_link"><a href="/pictmail/mailsend/mailsend_help.html">配信方法について</a></p>
+                  <img src="/common/image/line_g_125.gif" class="line_g_125" />
+                  <p class="user_menu_link"><a href="/pictmail/mailsend/mailsend_help2.html">少し高度な配信方法</a></p>
+                  <img src="/common/image/line_g_125.gif" class="line_g_125" />
+                  <p class="user_menu_link"><a href="/pictmail/mailsend/mailsend_maillist.html">メールリストについて</a></p>
+                  <img src="/common/image/line_g_125.gif" class="line_g_125" />
+                  <p class="user_menu_link"><a href="/pictmail/mailsend/mailsend_oshirase.html">携帯への配信について</a></p>
+                  <img src="/common/image/line_g_125.gif" class="line_g_125" />
+                  <p class="user_menu_link"><a href="/pictmail/mailsend/mailsend_ryoukin.html">プラン・料金一覧</a></p>
+                  <img src="/common/image/line_g_125.gif" class="line_g_125" />
+                  <p class="user_menu_link"><a href="/pictmail/mailsend/mailsend_faq.html">メール配信システム</a></p>
+                  <img src="/common/image/line_g_125.gif" class="line_g_125" />
+                  <p class="user_menu_link"><a href="/pictmail/mailsend/mailsend_shiryo.html">資料のダウンロード</a></p>
+                  <img src="/common/image/line_g_125.gif" class="line_g_125" />
+                  <p class="user_menu_link"><a href="/pictmail/mailsend/mailsend_kinou.html">メール配信の機能一覧</a></p>
+                  <img src="/common/image/line_g_125.gif" class="line_g_125" />
+                  <p class="user_menu_link"><a href="/pictmail/mailsend/mailsend_member.html">ご利用のお客様リンク</a></p>
+                  <img src="/common/image/line_g_125.gif" class="line_g_125" />
+                  <p class="user_menu_link"><a href="/pictmail/mailsend/mailsend_koe.html">開発スタッフのおまけ話</a></p>
+                <?PHP 
+                  if(_DIR_IS_POSITION1_!="pictmail"){
+                ?>
+                </div>
+                <?PHP 
+                  }
+                ?>
+              </div>
+              <!-- /// ServiceMenu Pictmail -->
+              <!-- +++ ServiceMenu CC -->
+              <div class="service_box_cc">
+                <div id="close_clickcounter" style="display:block"> 
+                  <a href="#"><span onClick="hydeAndSeek('open_clickcounter','close_clickcounter')" ><img src='/common/image/leftmenu/clickcounter/title1.gif' onmouseover="ROver(this, '/common/image/leftmenu/clickcounter/ov_title1.gif');" onmouseout="ROver(this, '/common/image/leftmenu/clickcounter/title1.gif');"  alt='メルマガ効果測定、クリックカウンター　サービスご紹介' class="service_title"></span></a>
+                </div>
+                <?PHP 
+                  if(_DIR_IS_POSITION1_!="clickcounter"){
+                ?>
+                <div id="open_clickcounter" style="display:none">
+                  <a href="#"><span onClick="hydeAndSeek('open_clickcounter','close_clickcounter')" ><img src='/common/image/leftmenu/clickcounter/title2.gif' onmouseover="ROver(this, '/common/image/leftmenu/clickcounter/ov_title2.gif');" onmouseout="ROver(this, '/common/image/leftmenu/clickcounter/title2.gif');"  alt='メルマガ効果測定、クリックカウンター　サービスご紹介' class="service_title"></span></a>
+                <?PHP 
+                  }
+                ?>
+                  <p class="user_menu_link"><a href="/clickcounter/">クリックカウンターとは</a></p>
+                  <img src="/common/image/line_g_125.gif" class="line_g_125" />
+                  <p class="user_menu_link"><a href="/clickcounter/cc_help01.html">ご利用方法</a></p>
+                  <img src="/common/image/line_g_125.gif" class="line_g_125" />
+                  <p class="user_menu_link"><a href="/clickcounter/conversion.html">コンバージョン取得</a></p>
+                  <img src="/common/image/line_g_125.gif" class="line_g_125" />
+                  <p class="user_menu_link"><a href="/clickcounter/ryokin.html">料金表</a></p>
+                  <img src="/common/image/line_g_125.gif" class="line_g_125" />
+                  <p class="user_menu_link"><a href="/clickcounter/nagare.html">ご登録までの流れ</a></p>
+                  <img src="/common/image/line_g_125.gif" class="line_g_125" />
+                  <p class="user_menu_link"><a href="/clickcounter/cc_faq.html">よくあるご質問</a></p>
+                <?PHP 
+                  if(_DIR_IS_POSITION1_!="clickcounter"){
+                ?>
+                </div>
+                <?PHP 
+                  }
+                ?>
+              </div>
+              <!-- /// ServiceMenu CC -->
+              <!-- // ServiceMenu -->
+
+              <!-- ++ InformationMenu -->
+              <img src="/common/image/leftmenu/information/title.gif" alt="ASPサービス インフォメーション" width="150" height="25" class="menu_title" />
+              <div class="information_box">
+                <p class="user_menu_link"><a href="/inquiry/">お問合せ</a></p>
+                <img src="/common/image/line_g_125.gif" class="line_g_125" />
+                <p class="user_menu_link"><a href="http://jbbs.livedoor.jp/computer/32416/" target="_blank">質問・要望掲示板</a></p>
+                <img src="/common/image/line_g_125.gif" class="line_g_125" />
+                <p class="user_menu_link"><a href="/company.html">会社概要</a></p>
+                <img src="/common/image/line_g_125.gif" class="line_g_125" />
+                <p class="user_menu_link"><a href="/kiyaku.html">ご利用規約</a></p>
+              </div>
+              <!-- // InformationMenu -->
+
+              <!-- ++ ToolMenu -->
+              <img src="/common/image/leftmenu/tool/title.gif" alt="メールマーケティング　戦略　ツール　ASPサービス" width="150" height="25" class="menu_title" />
+              <div class="tool_box">
+                <p class="user_menu_link"><a href="/tool/seo/">SEO支援ツールとは？</a></p>
+                <img src="/common/image/line_g_125.gif" class="line_g_125" />
+                <p class="user_menu_link"><a href="/tool/seo-kakugen/">日替わり格言システム</a></p>
+                <img src="/common/image/line_g_125.gif" class="line_g_125" />
+                <p class="user_menu_link"><a href="/tool/3232/">URL短縮 ミニミニURL</a></p>
+                <img src="/common/image/line_g_125.gif" class="line_g_125" />
+                <p class="user_menu_link"><a href="/tool/merumaga/">メルマガ一括短縮ＵＲＬ作成</a></p>
+                <img src="/common/image/line_g_125.gif" class="line_g_125" />
+                <p class="user_menu_link"><a href="/sero/">検索エンジンランキング調査</a></p>
+              </div>
+              <!-- // ToolMenu -->
+
+              <!-- ++ LinkMenu -->
+              <img src="/common/image/leftmenu/link/title.gif" alt="リンク" width="150" height="25" class="menu_title" />
+              <div class="link_box">
+                <p class="user_menu_link"><a href="http://www.it1616.com/" target="_blank">通販セミナー・手帳販売<br>it1616.com</a></p>
+                <img src="/common/image/line_g_125.gif" class="line_g_125" />
+                <p class="user_menu_link"><a href="http://www.itm.ne.jp/" target="_blank">（株）アイティマネジメント</p>
+                <img src="/common/image/line_g_125.gif" class="line_g_125" />
+                <p class="user_menu_link"><a href="/link.html">その他関連サイト</p>
+                <img src="/common/image/line_g_125.gif" class="line_g_125" />
+                <p class="user_menu_link"><strong>ご利用のお客様</strong></p>
+                <img src="/common/image/line_g_125.gif" class="line_g_125" />
+                <p class="user_menu_link"><a href="http://www.hotelnikko-fukuoka.com/" target="_blank">ホテル日航福岡</a></p>
+                <img src="/common/image/line_g_125.gif" class="line_g_125" />
+                <p class="user_menu_link"><a href="http://www.2912103.co.jp/" target="_blank">福一不動産</a></p>
+                <img src="/common/image/line_g_125.gif" class="line_g_125" />
+                <p class="user_menu_link"><a href="http://www.chinaflower.jp" target="_blank">チャイナドレスFlower</a></p>
+                <img src="/common/image/line_g_125.gif" class="line_g_125" />
+                <p class="user_menu_link"><a href="/pictmail/mailsend/mailsend_member.html" >→他のお客様はこちら</a></p>
+              </div>
+              <!-- // LinkMenu -->
+            </div>
+
+            

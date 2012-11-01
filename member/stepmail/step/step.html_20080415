@@ -1,0 +1,127 @@
+<?PHP ini_set("display_errors",1); require_once("../../../program/cls/define/Setup.php");?>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-JP">
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<META HTTP-EQUIV="Expires" CONTENT="-1">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+<link href="../../../common/css/common.css" rel="stylesheet" type="text/css">
+<title><?PHP echo $this->pageS['title']; ?></title>
+<SCRIPT TYPE="text/javascript" SRC="step.js"></SCRIPT>
+<SCRIPT type="text/javascript">
+<!--
+var count;
+function CheckboxChecked(obj){
+   if(obj.checked){ 
+      for(count = 0; count <  <?PHP echo count($searchData);?>; count++){
+        document.getElementById("ch1["+count+"]").checked = true;
+      }
+   }else{
+      for(count = 0; count <  <?PHP echo count($searchData);?>; count++){
+        document.getElementById("ch1["+count+"]").checked = false;
+      }
+   }
+    //タイムアウト処理
+    function timeoutCheck(){
+      timeout_sec --;
+      if(timeout_sec <= 0){
+        clearlnterval(timed);          //タイマーストップ
+        httpObj.abort();               //HTTPリクエスト中断 
+        alert('タイムアウトです。');
+        return false;
+      }
+    }
+
+}
+// -->
+</SCRIPT>
+</head>
+<!--
+<body //onLoad="CheckboxChecked(document.getElementById('allcheck'))"; ><br>
+-->
+<body  bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<div align='center'>
+	<table width="900" border="0" cellspacing="0" cellpadding="0" bgcolor='#FFFFFF'>
+		<tr> 
+			<td width="10" background="<?PHP echo _RELATIVE_; ?>common/image/shadow_left.gif"><img src='<?PHP echo _RELATIVE_; ?>common/image/spacer.gif' width='1' height='1' ></td>
+			<td width='1' bgcolor='#FFFFFF'><img src='<?PHP echo _RELATIVE_; ?>common/image/spacer.gif' width='1' height='1' ></td>
+		  <td align='center' bgcolor='#FFFFFF'>
+<!-- HEADER -->
+<?PHP require_once(_DIR_USER_HTML_._HTML_HEADER_); ?>
+<!-- BODY -->
+				<table width="850" border="0" cellspacing="0" cellpadding="0" bgcolor='#948E8E'>
+					<tr class='gray10'> 
+<!-- BODY LEFT -->
+					  <td width='152' align='center' valign='top' bgcolor='#FFFFFF'><?PHP require_once(_DIR_USER_HTML_._HTML_LEFT_MENU_); ?>
+                        <br>
+                        <br>
+</td>
+						<td width='5' bgcolor='#FFFFFF'><img src='<?PHP echo _RELATIVE_; ?>common/image/spacer.gif' width='5' height='1' ></td>
+						<td width='1' bgcolor='#FFFFFF' background='<?PHP echo _RELATIVE_; ?>common/image/y_comma.gif'><img src='<?PHP echo _RELATIVE_; ?>common/image/spacer.gif' width='1' height='1' ></td>
+						<td width='5' bgcolor='#FFFFFF'><img src='<?PHP echo _RELATIVE_; ?>common/image/spacer.gif' width='5' height='1' ></td>
+<!-- BODY CENTER -->
+						<td width='100%' valign='top' bgcolor='#FFFFFF'> 
+<!-- write area start -->
+	<table  border="0" cellpadding='0' cellspacing='0' width="100%" >
+		<tr> 
+			<td class='indigo12' valign='top' align='left'><img src='<?PHP echo _RELATIVE_; ?>common/image/mark_square.gif'> 
+				<b>ステップメールメニュー
+			</td>
+			<td class='indigo12' valign='top' align='right'></td>
+		</tr>
+		<tr>
+			<td width='1' height='5' bgcolor='#FFFFFF' colspan='2'><img src='<?PHP echo _RELATIVE_; ?>common/image/spacer.gif' width='1' height='5' ></td>
+		</tr>
+	</table>
+	<form name="form1" method="post" action="">
+      <span class="gray12"><a href="/member/stepmail/">ステップメールTOP</a> &gt; <a href="/member/stepmail/scenario/">シナリオ管理</a> &gt; ステップ管理</span>
+      <table width="650" border="0" cellpadding="2" cellspacing="1" bgcolor="#999999">
+        <tr bgcolor="#CCCCCC">
+          <td width="580" class="black12">シナリオ　ステップ　管理画面</td>
+          <td width="110"><INPUT name="button" type=button onClick="location.href='regist/index.php'" value="新規ステップ登録"></td>
+        </tr>
+      </table>
+	  <br>
+      <br>
+      <table width="650" border="0" cellpadding="2" cellspacing="1" bgcolor="#666666">
+        <tr bgcolor="#CCCCCC">
+          <td colspan="5" align="center" bgcolor="#FFFFFF" class="black12"><a href="../scenario/index.php">ヘッダーフッターの修正はシナリオ画面に戻って「修正」ボタンから出来ます。</a><br>
+            メール登録直後に1通目を配信したい場合は「登録フォーム管理」の「<a href="/member/stepmail/form/">サンキューメール</a>」で設定してください。</td>
+          </tr>
+        <tr bgcolor="#CCCCCC">
+          <td class="black12">ステップ名</td>
+          <td class="black12">配信順番</td>
+          <td class="black12">件名</td>
+          <td class="black12">修正</td>
+          <td class="black12">削除</td>
+        </tr>
+        <?PHP $View->printListData ($searchData);  ?>
+      </table>
+	  <br>
+	  <table width="650" border="0" cellspacing="0" cellpadding="1">
+  <tr>
+    <td align="center"><font color="#FF0000">
+      <?PHP if(!$searchData){ echo "該当データがありませんでした";}  ?>
+    </font></td>
+    </tr>
+</table>
+
+      <table width="650" border="0" cellpadding="2" cellspacing="1" bgcolor="#666666">
+        <tr>
+          <td width="700" align="center" bgcolor="#FFFFFF" class="black12"><INPUT name="button2" type=button onClick="location.href='sort/index.php'" value="配信順序を入れ替える">
+              <br>
+            <a href="../scenario/index.php">シナリオ画面に戻る</a></td>
+        </tr>
+      </table>
+	  </form>
+	<!-- write area end --></tr>
+				</table>
+<!-- FOOTER -->
+<?PHP require_once(_DIR_USER_HTML_._HTML_FOOTER_); ?></td>
+			<td width='1' bgcolor='#FFFFFF'><img src='<?PHP echo _RELATIVE_; ?>common/image/spacer.gif' width='1' height='1' ></td>
+			<td width="10" background="<?PHP echo _RELATIVE_; ?>common/image/shadow_right.gif"><img src='<?PHP echo _RELATIVE_; ?>common/image/spacer.gif' width='1' height='1' ></td>
+		</tr>
+	</table>
+</div>
+</body>
+</html>

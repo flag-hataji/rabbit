@@ -1,0 +1,280 @@
+<?PHP
+/**
+ * メール配信の共通関数 使ってねぇよ　これから使う予定
+ * [ StepMail用になってる ]
+ *
+ * @author fujita
+ * @package defaultPackage
+ */
+
+class BaseMail {
+
+	// Mail
+	var $Mail = "";
+	var $Mime = "";
+
+	// Mail送信 (SMTP送信)
+	var $host 		= "localhost";
+	var $port 		= 25;
+	var $auth 		= false;
+	var $persist	= true;
+
+	var $html_params = "";
+
+	var $Util = "";
+
+	/**
+	* @desc コンストラクタ
+	*/
+	function BaseMail(){
+
+		// 変換クラス
+		require_once _DIR_LIB_.'util/Util.php';
+
+		// PearMailの宣言
+		require_once '/usr/local/share/pear/PEAR.php';
+		require_once '/usr/local/share/pear/DB.php';
+
+		require_once '/usr/local/share/pear/Mail.php';
+		require_once '/usr/local/share/pear/Mail/mime.php';
+
+		// SMTP接続用情報 ( PEAR MAIL )
+		$params = array(
+			"host"    => $this->host,
+			"port"    => $this->port,
+			"auth"    => $this->auth,
+			"persist" => $this->persist
+		);
+
+		// HTML MAIL用の情報
+		$this->html_params = array(
+			"text_encoding" => "7bit",
+			"html_encoding" => "7bit",
+			"text_charset"  => "ISO-2022-JP",
+			"html_charset"  => "ISO-2022-JP",
+		  	"head_charset"  => "ISO-2022-JP"
+
+		);
+
+ 		// PEAR MAIL CLASS
+		$this->Mail = Mail::factory("sendmail", $params);
+		$this->Util = new Util();
+
+	}
+
+	/**
+	* @return bool
+	* @param  from			送信元
+	* @param  to			送信先
+	* @param  subject		件名
+	* @param  message		本文
+	* @param  error			Error送信先
+	* @param  flag_html True=HTMLメール, False=TEXTメール
+	* @desc   メール送信実行 変換済
+	*/
+	function sendMail($from, $from_name, $to, $to_name, $subject, $message, $error, $flag_html, $html_message=""){
+
+		$subject = $this->getSubject($subject);
+		$from 	 = $this->getSender($from, $from_name);
+		$to      = $this->getSender($to,   $to_name);
+		$message = $this->getMessage($message);
+		$html_message = $this->getMessage($html_message);
+
+//		$to = "abce@itm-asp.com";
+
+		// メール情報
+		$headers = array(
+			"From"			=> $from,
+			"To"			=> $to,
+			"Subject"		=> $subject,
+			"Return-Path"	=> $error
+		);
+
+		// メールの送信実行
+		if ( $flag_html==true ) {
+			// HTMLメール
+			$this->Mime = & new Mail_mime("\n");
+			$this->Mime->setTXTBody($message);
+			$this->Mime->setHTMLBody($html_message);
+
+			$message    = $this->Mime->get($this->html_params);
+			$mimeHeader = $this->Mime->headers($headers);
+
+			$mail_flag = $this->Mail->send($to, $mimeHeader, $message);
+
+		}else{
+			// TEXTメール
+			$mail_flag = $this->Mail->send($to, $headers, $message);
+
+		}
+
+		return $mail_flag;
+
+	}
+
+	/**
+	* @return String
+	* @param  $subject 件名
+	* @desc   件名の加工
+	*/
+	function getSubject($subject){
+		$subject = $this->Util->decodeTag($subject);
+//		$subject = mb_encode_mimeheader($subject);
+	    $subject = mb_convert_encoding($subject ,"ISO-2022-JP","EUC-JP");
+	    $subject = "=?iso-2022-jp?B?" . base64_encode($subject) . "?=";
+
+		return $subject;
+	}
+
+	/**
+	* @return String
+	* @param	$email      メアド
+	* @param	$email_name 名前
+	* @desc   送信者、受信者名の加工
+	*/
+	function getSender($email, $email_name){
+
+		if ( $email_name=="　" or $email_name=="") {
+			// 名前が無い
+			$to = $email;
+		}else{
+			// 名前が有る
+			$email_name = $this->Util->decodeTag($email_name);
+			$email_name = str_replace('"', '\"', $email_name);
+//			$to = "\"".mb_encode_mimeheader( $email_name )."\" <".$email.">";
+
+		    $to    = mb_convert_encoding($email_name ,"ISO-2022-JP","EUC-JP");
+		    $to    = "\"=?iso-2022-jp?B?" . base64_encode($to) . "?=\" <".$email.">";
+
+		}
+
+		return $to;
+
+	}
+
+	/**
+	* @return String
+	* @param $message 本文
+	* @desc メール本文の加工
+	*/
+	function getMessage($message){
+		// 改行コードを \n に変更
+		$message = $this->Util->nl2LF($message);
+		$message = $this->Util->decodeTag($message);
+		$message = mb_convert_encoding($message, "JIS", "EUC-JP");
+		return $message;
+	}
+
+	/**
+	* @return String
+	* @param  $message 本文
+	* @param  $ary		 変換する文字列の配列
+	* @desc   本文内のパラメータを変換
+	*/
+	function getConvertMessage($message, $ary){
+
+		$message = str_replace("%name%",    	$ary['name'],			$message);
+		$message = str_replace("%name_family%", $ary['name_family'], 	$message);
+		$message = str_replace("%name_first%",  $ary['name_first'],		$message);
+
+		$message = str_replace("%company%", $ary['company'], $message);
+		$message = str_replace("%post%",  	$ary['post'],    $message);
+
+		$message = str_replace("%param1%",  $ary['param1'],  $message);
+		$message = str_replace("%param2%",  $ary['param2'],  $message);
+		$message = str_replace("%param3%",  $ary['param3'],  $message);
+		$message = str_replace("%param4%",  $ary['param4'],  $message);
+		$message = str_replace("%param5%",  $ary['param5'],  $message);
+		$message = str_replace("%param6%",  $ary['param6'],  $message);
+		$message = str_replace("%param7%",  $ary['param7'],  $message);
+		$message = str_replace("%param8%",  $ary['param8'],  $message);
+		$message = str_replace("%param9%",  $ary['param9'],  $message);
+		$message = str_replace("%param10%", $ary['param10'], $message);
+
+		$message = str_replace("%email%",   $ary['email'], $message);
+
+		// 退会用リンク
+//		$member_id = $ary['stepmail_member_id'];
+//		$email     = crypt( $ary['email'] , "hoge");
+//		$url       = "https://www.itm-asp.com/member/stepmail/mail_stop/stop.php?m={$email}&num={$member_id}";
+//		$message   = str_replace("%stop%", $url, $message);
+
+		return $message;
+
+	}
+
+
+	/**
+	* @return string
+	* @param  $message
+	* @param  $id
+	* @param  $mali
+	* @param  $html_flag
+	* @desc	  退会のメッセージ
+	*/
+	function getLeaveMessage($message, $id, $mail, $html_flag)
+	{
+
+	    // 退会用リンク
+		$m    = crypt($mail,"stepmail");  // 暗号化
+		
+		if ( $_SERVER['HTTP_HOST'] == "test.itm-asp.com" ) {
+		    $link = "http://test.itm-asp.com";
+		}else{
+		    $link = "http://www.itm-asp.com";
+		}
+        $link .= "/stepmail/mail_stop/stop.php?m={$m}&num={$id}";
+
+		// 配信停止処理
+
+		// 退会メッセージ
+		if ( strpos($message, "%stop%")===false  )
+		{
+            // 退会用リンクが存在しない
+    		if ( $html_flag == 't')
+    		{
+    		    // HTML Mail
+        		$message .= "配信停止は";
+        		$message .= "<a href='{$link}'>こちら</a>";
+        		$message .= "をクリック<BR>\n";
+    		}
+    		else
+    		{
+    		    // TEXT Mail
+        		$message .= "配信停止はこちらをクリック\n{$link}";
+    		}
+
+		}
+		else
+		{
+		    // 退会用リンクが存在する
+		    $message = str_replace("%stop%", $link, $message);
+		}
+
+		return $message;
+
+	}
+
+
+	/**
+	* @return void
+	* @param	$to      宛先
+	* @param	$subject 件名
+	* @param	$body    本文
+	* @param	$isError isError Object
+	* @desc   レポート用のメール送信
+	*/
+	function sendReportMail($to, $subject, $body, $isError){
+
+//		print_a($isError, "_ReportMail");
+
+		// 本文の System Error のメッセージ
+		$body .= $isError->message ."\n\n";
+		$body .= $isError->userinfo."\n\n";
+		// Error 報告メール送信
+		mb_send_mail( $to, $subject, $body );
+
+	}
+
+}
+?>

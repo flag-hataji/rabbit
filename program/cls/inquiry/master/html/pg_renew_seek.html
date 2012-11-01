@@ -1,0 +1,191 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-JP">
+<title><?PHP echo $this->pageS['title']; ?></title>
+<link href="../../../common/css/common.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<body bgcolor="#CCCCCC" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" background='<?PHP echo _RELATIVE_; ?>common/image/line2.gif'>
+
+<div align="center">
+
+<?PHP require_once(_DIR_ADMIN_HTML_._HTML_ADMIN_HEADER_); ?>
+
+  <table  border="0" cellpadding='5' cellspacing='1' bgcolor='#666666' width="700" border="0">
+    <tr> 
+      <td bgcolor='#DDDDDD' class='blue12' valign='top' align='left' height='25' background='<?PHP echo _RELATIVE_; ?>common/image/line6.gif'>
+        <b><img src='../../common/image/tri.gif'> <?PHP echo $this->pageS['title']; ?></b>
+      </td>
+    </tr>
+    <tr> 
+      <td bgcolor='#FFFFFF' class='gray12' valign='top' align='center'>
+
+        <table  border="0" cellpadding='0' cellspacing='0' width="670" border="0">
+          <tr> 
+            <td align='right' colspan='1' class='gray12' nowrap>
+              <b>
+              <a href='<?PHP echo _PG_URL_RENEW_SEEK_; ?>'>▼ 修正/削除 検索</a>　　
+              <a href='<?PHP echo _PG_URL_RENEW_LIST_; ?>'>▼ 修正/削除 リスト</a>　　
+              </b>
+            </td>
+          </tr>
+        </table>
+
+        <form name="form2" method="post" action="index.php" style="margin: 0px;">
+
+
+        <table  border="0" cellpadding='0' cellspacing='0' width="650" border="0">
+          <tr> 
+            <td align='left' bgcolor="#FFFFFF"><img src='../../common/image/space.gif' height='20'></td>
+          </tr>
+        </table>
+
+
+        <table  border="0" cellpadding='0' cellspacing='0' bgcolor='#666666' width="650" border="0">
+          <tr> 
+            <td align='center' valign='top' bgcolor="#FFFFFF">
+
+
+              <table  border="0" cellpadding='0' cellspacing='0' width="650" border="0">
+                <tr> 
+                  <td align='left' bgcolor="#FFFFFF"><img src='../../common/image/space.gif' height='15'></td>
+                </tr>
+              </table>
+              <table  border="0" cellpadding='0' cellspacing='0' width="630" border="0">
+                <tr> 
+                  <td align='left'  colspan='2' class='mazenda12'>※検索条件を指定してお客様の一覧を表示いたします。</td>
+                </tr>
+              </table>
+
+
+              <table  border="0" cellpadding='5' cellspacing='1' bgcolor='#666666' width="630" border="0">
+                <tr> 
+                  <td align='center'  colspan='1' class='gray12'  bgcolor='#EEEEFF' width='150'>プラン</td>
+                  <td align='left'  colspan='1' class='gray12'  bgcolor='#FFFFFF'>
+<?PHP $this->ViewerLib->showSelectPlanPictmail( 'seekS[plan_pictmail_id]', $_SESSION[_SESSION_MODE_][_SESSION_NAME_]['seekS']['plan_pictmail_id'] ); ?>
+                  </td>
+                </tr>
+                <tr> 
+                  <td align='center'  colspan='1' class='gray12'  bgcolor='#EEEEFF' width='150'><?PHP echo $this->Manager->nameS['name']; ?></td>
+                  <td align='left'  colspan='1' class='gray12'  bgcolor='#FFFFFF'>
+                    姓 <input type='text' name='seekS[name_family]' value='<?PHP echo $_SESSION[_SESSION_MODE_][_SESSION_NAME_]['seekS']['name_family']; ?>' size='20'>
+                    名 <input type='text' name='seekS[name_first]'  value='<?PHP echo $_SESSION[_SESSION_MODE_][_SESSION_NAME_]['seekS']['name_first']; ?>' size='20'>
+                  </td>
+                </tr>
+                <tr> 
+                  <td align='center'  colspan='1' class='gray12'  bgcolor='#EEEEFF' width='150'><?PHP echo $this->Manager->nameS['kana']; ?></td>
+                  <td align='left'  colspan='1' class='gray12'  bgcolor='#FFFFFF'>
+                    姓 <input type='text' name='seekS[kana_family]' value='<?PHP echo $_SESSION[_SESSION_MODE_][_SESSION_NAME_]['seekS']['kana_family']; ?>' size='20'>
+                    名 <input type='text' name='seekS[kana_first]'  value='<?PHP echo $_SESSION[_SESSION_MODE_][_SESSION_NAME_]['seekS']['kana_first']; ?>' size='20'>
+                  </td>
+                </tr>
+                <tr> 
+                  <td align='center'  colspan='1' class='emerald12'  bgcolor='#EEEEFF' width='150'><?PHP echo $this->Manager->nameS['birthday']; ?></td>
+                  <td align='left'  colspan='1' class='gray12'  bgcolor='#FFFFFF'>
+                    <?PHP $this->showSelect('seekS[birthday_y]',date('Y')-100,date('Y')-10,$_SESSION[_SESSION_MODE_][_SESSION_NAME_]['seekS']['birthday_y'],'----'); ?> 年 
+                    <?PHP $this->showSelect('seekS[birthday_m]',1,12,$_SESSION[_SESSION_MODE_][_SESSION_NAME_]['seekS']['birthday_m'],'----'); ?> 月 
+                    <?PHP $this->showSelect('seekS[birthday_d]',1,31,$_SESSION[_SESSION_MODE_][_SESSION_NAME_]['seekS']['birthday_d'],'----'); ?> 日 
+                  </td>
+                </tr>
+                <tr> 
+                  <td align='center'  colspan='1' class='emerald12'  bgcolor='#EEEEFF' width='150'><?PHP echo $this->Manager->nameS['date_insert']; ?></td>
+                  <td align='left'  colspan='1' class='gray12'  bgcolor='#FFFFFF'>
+                    <?PHP $this->showSelect('seekS[date_insert_y1]', 2005, date('Y'), $_SESSION[_SESSION_MODE_][_SESSION_NAME_]['seekS']['date_insert_y1'], '----'); ?> 年 
+                    <?PHP $this->showSelect('seekS[date_insert_m1]',    1,        12, $_SESSION[_SESSION_MODE_][_SESSION_NAME_]['seekS']['date_insert_m1'], '----'); ?> 月 
+                    <?PHP $this->showSelect('seekS[date_insert_d1]',    1,        31, $_SESSION[_SESSION_MODE_][_SESSION_NAME_]['seekS']['date_insert_d1'], '----'); ?> 日 
+                    〜
+                    <?PHP $this->showSelect('seekS[date_insert_y2]', 2005, date('Y'), $_SESSION[_SESSION_MODE_][_SESSION_NAME_]['seekS']['date_insert_y2'], '----'); ?> 年 
+                    <?PHP $this->showSelect('seekS[date_insert_m2]',    1,        12, $_SESSION[_SESSION_MODE_][_SESSION_NAME_]['seekS']['date_insert_m2'], '----'); ?> 月 
+                    <?PHP $this->showSelect('seekS[date_insert_d2]',    1,        31, $_SESSION[_SESSION_MODE_][_SESSION_NAME_]['seekS']['date_insert_d2'], '----'); ?> 日 
+                  </td>
+                </tr>
+                <tr> 
+                  <td align='center'  colspan='1' class='emerald12'  bgcolor='#EEEEFF' width='150'><?PHP echo $this->Manager->nameS['name_company']; ?></td>
+                  <td align='left'  colspan='1' class='gray12'  bgcolor='#FFFFFF'>
+                    <input type='text' name='seekS[name_company]' value='<?PHP echo $_SESSION[_SESSION_MODE_][_SESSION_NAME_]['seekS']['name_company']; ?>' size='35'>
+                  </td>
+                </tr>
+                <tr> 
+                  <td align='center'  colspan='1' class='emerald12'  bgcolor='#EEEEFF' width='150'><?PHP echo $this->Manager->nameS['kana_company']; ?></td>
+                  <td align='left'  colspan='1' class='gray12'  bgcolor='#FFFFFF'>
+                    <input type='text' name='seekS[kana_company]' value='<?PHP echo $_SESSION[_SESSION_MODE_][_SESSION_NAME_]['seekS']['kana_company']; ?>' size='35'>
+                  </td>
+                </tr>
+                <tr> 
+                  <td align='center'  colspan='1' class='gray12'  bgcolor='#EEEEFF' width='150'><?PHP echo $this->Manager->nameS['mail']; ?></td>
+                  <td align='left'  colspan='1' class='gray12'  bgcolor='#FFFFFF'>
+                    <input type='text' name='seekS[mail]' value='<?PHP echo $_SESSION[_SESSION_MODE_][_SESSION_NAME_]['seekS']['mail']; ?>' size='35'>
+                  </td>
+                </tr>
+                <tr> 
+                  <td align='center'  colspan='1' class='gray12'  bgcolor='#EEEEFF' width='150'><?PHP echo $this->Manager->nameS['tel']; ?></td>
+                  <td align='left'  colspan='1' class='gray12'  bgcolor='#FFFFFF'>
+                    <input type='text' name='seekS[tel_1]' value='<?PHP echo $_SESSION[_SESSION_MODE_][_SESSION_NAME_]['seekS']['tel_1']; ?>' size='5'> -
+                    <input type='text' name='seekS[tel_2]' value='<?PHP echo $_SESSION[_SESSION_MODE_][_SESSION_NAME_]['seekS']['tel_2']; ?>' size='5'> -
+                    <input type='text' name='seekS[tel_3]' value='<?PHP echo $_SESSION[_SESSION_MODE_][_SESSION_NAME_]['seekS']['tel_3']; ?>' size='5'>
+                  </td>
+               </tr>
+
+                <tr> 
+                  <td align='center'  colspan='1' class='gray12'  bgcolor='#EEEEFF' width='150'><?PHP echo $this->Manager->nameS['user_id']; ?></td>
+                  <td align='left'  colspan='1' class='gray12'  bgcolor='#FFFFFF'>
+                    <input type='text' name='seekS[user_id]' value='<?PHP echo $_SESSION[_SESSION_MODE_][_SESSION_NAME_]['seekS']['user_id']; ?>' size='35'>
+                  </td>
+                </tr>
+
+                <tr> 
+                  <td align='center'  colspan='1' class='gray12'  bgcolor='#EEEEFF' width='150'><?PHP echo $this->Manager->nameS['comment']; ?></td>
+                  <td align='left'  colspan='1' class='gray12'  bgcolor='#FFFFFF'>
+                    <input type='text' name='seekS[comment]' value='<?PHP echo $_SESSION[_SESSION_MODE_][_SESSION_NAME_]['seekS']['comment']; ?>' size='35'>
+                  </td>
+                </tr>
+
+
+              </table>
+
+              <table  border="0" cellpadding='0' cellspacing='0' width="630" border="0">
+                <tr> 
+                  <td align='left' bgcolor="#FFFFFF"><img src='../../common/image/space.gif' height='15'></td>
+                </tr>
+              </table>
+              <table  border="0" cellpadding='0' cellspacing='4' width="630" border="0">
+                <tr> 
+                  <td align='center'  colspan='1' class='emerald12'>
+                    <input type='submit' name='list' value=' 検 索 '>　
+                    <input type='hidden' name='charaCode' value="もじこーどはんていようへんすう">
+                    <input type='hidden' name='hidden'    value="list">
+                    <input type='hidden' name='mode'      value="<?PHP echo $this->pageS['mode']; ?>">
+                    <input type='hidden' name='page'      value="1">
+                  </td>
+                </tr>
+              </table>
+              <table  border="0" cellpadding='0' cellspacing='0' width="630" border="0">
+                <tr> 
+                  <td align='left' bgcolor="#FFFFFF"><img src='../../common/image/space.gif' height='15'></td>
+                </tr>
+              </table>
+
+            </td>
+          </tr>
+        </table>
+
+
+        </form>
+
+      </td>
+    </tr>
+  </table> 
+
+  <table  border="0" cellpadding='0' cellspacing='0' width="630" border="0">
+    <tr> 
+      <td align='left'><img src='../../common/image/space.gif' height='100'></td>
+    </tr>
+  </table>
+
+<?PHP require_once(_DIR_ADMIN_HTML_._HTML_ADMIN_FOOTER_); ?>
+
+</div>
+</body>
+</html>
+

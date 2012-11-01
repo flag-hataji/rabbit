@@ -1,0 +1,4 @@
+<Files ~ "\.(html|php|jpg|gif|htm)$">
+Header add Pragma "no-cache"
+Header set Cache-Control no-cache
+</Files>

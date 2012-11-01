@@ -1,0 +1,233 @@
+<?PHP require_once("../../../program/cls/define/Setup.php");?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="ja-JP">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-JP"> 
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>www.rabbit-mail.com | メール配信ＡＳＰ</title>
+<link href="../../../css/common.css" rel="stylesheet" type="text/css">
+</head>
+<body bgcolor="#FFFFFF" >
+
+<div align="center">
+
+<?PHP require_once(_DIR_MEMBER_HTML_._HTML_MEMBER_HEADER_PICTMAIL_); ?>
+
+
+
+<div id="pictmail-top-box">
+<form action='/member/pictmail/error/download/download.php' method='POST' style="margin: 0px;">
+  <table width="685" height="25" border="0" cellspacing="0" cellpadding="0" >
+    <tr>
+      <td width="30" height="25" align="left"></td>
+      <td width="650" height="25" align="left" ><strong>エラーメールアドレス</strong></td>
+    </tr>
+  </table>
+  <table width="685" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+    <tr>
+      <td width="683" height="25" align="center" class="white12"><br>
+          <table  border="0" cellpadding='5' cellspacing='0' width="495" >
+            <tr>
+              <td class='black12' valign='top'>※エラーログの取得は配信時に弊社指定の「エラーメール戻り先」を指定した場合のみです。<br>
+                ※携帯への配信エラーは戻ってくる場合に時間がかかることがあります。<br>
+                ※中には取得できないエラーもあります。ご了承ください。<br />
+                <br/>
+                ※<a href='../parse_csv/'>ダウンロードしたエラーを配信リストから削除するにはこちらから</a>
+                </td>
+            </tr>
+            <tr>
+              <td class='mazenda14' valign='top' align='center'><span class="mazenda12"><strong><?PHP echo "※".$getCount."件のデータが見つかりました。"; ?></strong></span><br>
+                  <span class="indigo12">エラー回数の多かった順に500件まで表示しています。<br>
+                    全てを見たい方はＣＳＶダウンロードをしてご覧下さい<br>
+                </span> </td>
+            </tr>
+            <tr>
+              <td class='indigo12' valign='top' align='center'><br />
+              ◆ <a href='index.php?id=all' onClick="return confirm('全てのエラーデータを削除します。\nデータの復旧は出来ませんがよろしいでしょうか？\n');">溜まっているエラーデータを全クリア（削除）する </a> </td>
+            </tr>
+          </table>
+
+                      <table width="650" border="0" cellpadding="5" cellspacing="1" bgcolor="#666666">
+                        <tr class='black12'>
+                        <td bgcolor="#CCCCCC" align="center" colspan="2">エラーログCSVダウンロード</td>
+                        </tr>
+                        <tr>
+                       <td bgcolor="#CCCCCC" class="black12">日付</td>
+                       <td bgcolor="#FFFFFF" align="left">
+                       <select name="data[start_year]">
+                       <?php
+                           
+                           $i = 0;
+                           $html ='<option value="">----</option>'."\n";
+                           while($i<=4){
+                               $str = date("Y",strtotime("-$i year"));
+                               $html .='<option value="' . $str . '">' . $str . '</option>'."\n";
+                               $i++;
+                           }
+                           echo $html;
+                       ?>
+                       </select><span class="black12">年</span>
+                       <select name="data[start_month]">
+                       <?php
+                           
+                           $i = 1;
+                           $html ='<option value="">--</option>'."\n";
+                           while($i<=12){
+                               $html .='<option value="' . $i . '">' . $i . '</option>'."\n";
+                               $i++;
+                           }
+                           echo $html;
+                       ?>
+                       </select><span class="black12">月</span>
+                       <select name="data[start_day]">
+                       <?php
+                           
+                           $i = 1;
+                           $html ='<option value="">--</option>'."\n";
+                           while($i<=31){
+                               $html .='<option value="' . $i . '">' . $i . '</option>'."\n";
+                               $i++;
+                           }
+                           echo $html;
+                       ?>
+                       </select><span class="black12">日</span>
+                       <span class="black12">〜</span>&nbsp;
+                       <select name="data[end_year]">
+                       <?php
+                           
+                           $i = 0;
+                           $html ='<option value="">----</option>'."\n";
+                           while($i<=4){
+                               $str = date("Y",strtotime("-$i year"));
+                               $html .='<option value="' . $str . '">' . $str . '</option>'."\n";
+                               $i++;
+                           }
+                           echo $html;
+                       ?>
+                       </select><span class="black12">年</span>
+                       <select name="data[end_month]">
+                       <?php
+                           
+                           $i = 1;
+                           $html ='<option value="">--</option>'."\n";
+                           while($i<=12){
+                               $html .='<option value="' . $i . '">' . $i . '</option>'."\n";
+                               $i++;
+                           }
+                           echo $html;
+                       ?>
+                       </select><span class="black12">月</span>
+                       <select name="data[end_day]">
+                       <?php
+                           
+                           $i = 1;
+                           $html ='<option value="">--</option>'."\n";
+                           while($i<=31){
+                               $html .='<option value="' . $i . '">' . $i . '</option>'."\n";
+                               $i++;
+                           }
+                           echo $html;
+                       ?>
+                       </select><span class="black12">日</span>
+                       </td>
+                        </tr>
+                        <tr bgcolor="#FFFFFF" class="black12">
+                            <td bgcolor="#CCCCCC">エラー回数</td>
+                            <td bgcolor="#FFFFFF" align="left">
+                            <select name="data[err_count]">
+                       <?php
+                           
+                           $i = 1;
+                           $html ='<option value="">--</option>'."\n";
+                           while($i<=10){
+                               $html .='<option value="' . $i . '">' . $i . '</option>'."\n";
+                               $i++;
+                           }
+                           echo $html;
+                       ?>
+                            </select>&nbsp;回以上</td>
+                        </tr>
+                        <tr bgcolor="#FFFFFF" class="black12">
+                            <td bgcolor="#CCCCCC">メールアドレス</td>
+                            <td bgcolor="#FFFFFF" align="left">
+                            <input type="text" value="" name="data[mail]" size="30">
+                            </td>
+                        </tr>
+
+                        <tr bgcolor="#FFFFFF"><td align="center" colspan="2"><input type="submit" name="mode[download_light]" value="メールアドレスのみダウンロード">&nbsp;<input type="submit" name="mode[download]" value="エラーの本文もすべてダウンロード"></td></tr>
+                      </table>   
+                          </td>
+                        </tr>
+                        <!--
+                        <tr>
+                          <td bgcolor='#FFFFFF' class='indigo12' valign='top' align='center'>◆ <a href='http://www.itm-asp.com/member/pictmail/error/download_light.php'>メールアドレスのみダウンロード</a>｜　
+                          </td>
+                        </tr>
+                        -->
+                        <!--
+                        <tr>
+                          <td bgcolor='#FFFFFF' class='indigo12' valign='top' align='center'>◆ <a href='http://www.itm-asp.com/member/pictmail/error/download.php'>エラーの本文もすべてダウンロード</a></td>
+                        </tr>
+                        -->
+                      </table>
+                      
+                      
+        <br>
+          <table width="650" border="0" cellpadding="2" cellspacing="1" bgcolor="#666666">
+            <tr bgcolor="#CCCCCC" class='black12'>
+              <td >メールアドレス</td>
+              <td>回数</td>
+              <td>初回エラー日</td>
+              <td>最終エラー取得日</td>
+              <td>削除</td>
+            </tr>
+            <?PHP 
+                    if(isset($searchData)){
+                        printListData ($searchData); 
+                    }else{
+					echo "
+                  <tr bgcolor='#FFFFFF' align='center'> 
+                    <td colspan='5'><font color= '#FF000000' >データはありません</font></td>
+                  </tr>";
+                    }  
+
+                  ?>
+          </table>
+        <br></td>
+    </tr>
+    <tr>
+      <td width="685" height="1" bgcolor="#19287B" colspan="3"><img src="../../common/image/spacer.gif" width="685" height="1" ></td>
+    </tr>
+  </table>
+  <br>
+  <br>
+
+</form>
+
+</div>
+
+
+
+
+
+
+
+
+
+<div id="footer-box">
+<table border="0" width="100%">
+  <tr>
+    <td align="center">
+      rabbit-mail
+    </td>
+  </tr>
+</table >
+</div>
+
+
+
+</div>
+
+</body>
+</html>

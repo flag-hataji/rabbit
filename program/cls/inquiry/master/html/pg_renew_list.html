@@ -1,0 +1,99 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-JP">
+<title><?PHP echo $this->pageS['title']; ?></title>
+<link href="../../../common/css/common.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<body bgcolor="#CCCCCC" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" background='<?PHP echo _RELATIVE_; ?>common/image/line2.gif'>
+
+<div align="center">
+
+<?PHP require_once(_DIR_ADMIN_HTML_._HTML_ADMIN_HEADER_); ?>
+
+  <table  border="0" cellpadding='5' cellspacing='1' bgcolor='#666666' width="700" border="0">
+    <tr> 
+      <td bgcolor='#DDDDDD' class='blue12' valign='top' align='left' height='25' background='<?PHP echo _RELATIVE_; ?>common/image/line6.gif'>
+        <b><img src='../../common/image/tri.gif'> <?PHP echo $this->pageS['title']; ?></b>
+      </td>
+    </tr>
+    <tr> 
+      <td bgcolor='#FFFFFF' class='gray12' valign='top' align='center'>
+
+        <table  border="0" cellpadding='0' cellspacing='0' width="670" border="0">
+          <tr> 
+            <td align='right' colspan='1' class='gray12' nowrap>
+              <b>
+              <a href='<?PHP echo _PG_URL_RENEW_SEEK_; ?>'>▼ 修正/削除 検索</a>　　
+              <a href='<?PHP echo _PG_URL_RENEW_LIST_; ?>'>▼ 修正/削除 リスト</a>　　
+              </b>
+            </td>
+          </tr>
+        </table>
+
+        <form name="form2" method="post" action="index.php" style="margin: 0px;">
+
+
+        <table  border="0" cellpadding='0' cellspacing='0' width="650" border="0">
+          <tr> 
+            <td align='left' bgcolor="#FFFFFF"><img src='../../common/image/space.gif' height='20'></td>
+          </tr>
+        </table>
+        <?PHP $this->showPageLink(); ?>
+        <table  border="0" cellpadding='0' cellspacing='0' width="650" border="0">
+          <tr> 
+            <td align='left' bgcolor="#333333"><img src='../../common/image/space.gif' height='1'></td>
+          </tr>
+          <tr> 
+            <td align='left' bgcolor="#FFFFFF"><img src='../../common/image/space.gif' height='15'></td>
+          </tr>
+        </table>
+        <table  border="0" cellpadding='4' cellspacing='1' bgcolor='#666666' width="630" border="0">
+          <tr> 
+            <td align='center'  colspan='1' class='emerald12'  bgcolor='#DDEEDD' width='80'>検索条件</td>
+            <td align='left'  colspan='1' class='purple12'  bgcolor='#FFFFFF'>
+<?PHP $this->showSeekCondition(); ?>
+            </td>
+          </tr>
+        </table>
+        <table  border="0" cellpadding='0' cellspacing='0' width="650" border="0">
+          <tr> 
+            <td align='left' bgcolor="#FFFFFF"><img src='../../common/image/space.gif' height='30'></td>
+          </tr>
+        </table>
+
+
+        <table  border="0" cellpadding='0' cellspacing='0' bgcolor='#666666' width="650" border="0">
+          <tr> 
+            <td align='center' valign='top' bgcolor="#FFFFFF">
+
+<?PHP $this->showListUser(); ?>
+
+
+              <?PHP $this->showPageLink(); ?>
+              <table  border="0" cellpadding='0' cellspacing='0' width="650" border="0">
+                <tr> 
+                  <td align='left' bgcolor="#FFFFFF"><img src='../../common/image/space.gif' height='15'></td>
+                </tr>
+              </table>
+
+            </td>
+          </tr>
+        </table>
+
+
+
+
+        </form>
+
+      </td>
+    </tr>
+  </table> 
+
+<?PHP require_once(_DIR_ADMIN_HTML_._HTML_ADMIN_FOOTER_); ?>
+
+</div>
+</body>
+</html>
+

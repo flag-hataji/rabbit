@@ -1,0 +1,271 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-JP">
+<title><?PHP echo $this->pageS['title']; ?></title>
+<link href="../../../common/css/common.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<body bgcolor="#CCCCCC" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" background='<?PHP echo _RELATIVE_; ?>common/image/line2.gif'>
+
+<div align="center">
+
+<?PHP require_once(_DIR_ADMIN_HTML_._HTML_ADMIN_HEADER_); ?>
+
+  <table  border="0" cellpadding='5' cellspacing='1' bgcolor='#666666' width="700" border="0">
+    <tr> 
+      <td bgcolor='#DDDDDD' class='blue12' valign='top' align='left' height='25' background='<?PHP echo _RELATIVE_; ?>common/image/line6.gif'>
+        <b><img src='../../common/image/tri.gif'> <?PHP echo $this->pageS['title']; ?></b>
+      </td>
+    </tr>
+    <tr> 
+      <td bgcolor='#FFFFFF' class='gray12' valign='top' align='center'>
+
+        <table  border="0" cellpadding='0' cellspacing='0' width="670" border="0">
+          <tr> 
+            <td align='right' colspan='1' class='gray12' nowrap>
+              <b>
+              <a href='<?PHP echo _PG_URL_RENEW_SEEK_; ?>'>▼ 修正/削除 検索</a>　　
+              <a href='<?PHP echo _PG_URL_RENEW_LIST_; ?>'>▼ 修正/削除 リスト</a>　　
+              </b>
+            </td>
+          </tr>
+        </table>
+        <form name="form2" method="post" action="index.php" style="margin: 0px;">
+
+
+        <table  border="0" cellpadding='0' cellspacing='0' width="650" border="0">
+          <tr> 
+            <td align='left' bgcolor="#FFFFFF"><img src='../../common/image/space.gif' height='20'></td>
+          </tr>
+        </table>
+
+
+        <table  border="0" cellpadding='0' cellspacing='0' bgcolor='#666666' width="650" border="0">
+          <tr> 
+            <td align='center' valign='top' bgcolor="#FFFFFF">
+
+
+              <table  border="0" cellpadding='0' cellspacing='0' width="650" border="0">
+                <tr> 
+                  <td align='left' bgcolor="#FFFFFF"><img src='../../common/image/space.gif' height='15'></td>
+                </tr>
+              </table>
+              <table  border="0" cellpadding='0' cellspacing='0' width="630" border="0">
+                <tr> 
+                  <td align='left'  colspan='2' class='emerald12'><b>入力：ログイン情報</b></td>
+                </tr>
+              </table>
+              <table  border="0" cellpadding='5' cellspacing='1' bgcolor='#666666' width="630" border="0">
+                <tr> 
+                  <td align='center'  colspan='1' class='mazenda12'  bgcolor='#EEFFEE' width='150'><?PHP echo $this->Manager->nameS['id']; ?></td>
+                  <td align='left'  colspan='1' class='gray12'  bgcolor='#FFFFFF'>
+                    <input type='text' name='inputS[id]'  value='<?PHP echo $this->Manager->writeS['id']; ?>' size='20'>
+                  </td>
+                </tr>
+                <tr> 
+                  <td align='center'  colspan='1' class='mazenda12'  bgcolor='#EEFFEE' width='150'><?PHP echo $this->Manager->nameS['password']; ?></td>
+                  <td align='left'  colspan='1' class='gray12'  bgcolor='#FFFFFF'>
+                    <input type='text' name='inputS[password]'  value='<?PHP echo $this->Manager->writeS['password']; ?>' size='20'>
+                  </td>
+                </tr>
+              </table>
+
+              <table  border="0" cellpadding='0' cellspacing='0' width="650" border="0">
+                <tr> 
+                  <td align='left' bgcolor="#FFFFFF"><img src='../../common/image/space.gif' height='15'></td>
+                </tr>
+              </table>
+              <table  border="0" cellpadding='0' cellspacing='0' width="630" border="0">
+                <tr> 
+                  <td align='left'  colspan='2' class='emerald12'><b>入力：お客様の情報</b></td>
+                </tr>
+              </table>
+              <table  border="0" cellpadding='5' cellspacing='1' bgcolor='#666666' width="630" border="0">
+                <tr> 
+                  <td align='center'  colspan='1' class='mazenda12'  bgcolor='#EEFFEE' width='150'><?PHP echo $this->Manager->nameS['name']; ?></td>
+                  <td align='left'  colspan='1' class='gray12'  bgcolor='#FFFFFF'>
+                    姓 <input type='text' name='inputS[name_family]' value='<?PHP echo $this->Manager->writeS['name_family']; ?>' size='20'>
+                    名 <input type='text' name='inputS[name_first]'  value='<?PHP echo $this->Manager->writeS['name_first']; ?>' size='20'>
+                  </td>
+                </tr>
+                <tr> 
+                  <td align='center'  colspan='1' class='mazenda12'  bgcolor='#EEFFEE' width='150'><?PHP echo $this->Manager->nameS['kana']; ?></td>
+                  <td align='left'  colspan='1' class='gray12'  bgcolor='#FFFFFF'>
+                    姓 <input type='text' name='inputS[kana_family]' value='<?PHP echo $this->Manager->writeS['kana_family']; ?>' size='20'>
+                    名 <input type='text' name='inputS[kana_first]'  value='<?PHP echo $this->Manager->writeS['kana_first']; ?>' size='20'>
+                  </td>
+                </tr>
+                <tr> 
+                  <td align='center'  colspan='1' class='emerald12'  bgcolor='#EEFFEE' width='150'><?PHP echo $this->Manager->nameS['flag_gender']; ?></td>
+                  <td align='left'  colspan='1' class='gray12'  bgcolor='#FFFFFF'>
+<?PHP $this->ViewerLib->showSelectLibrary( 'inputS[flag_gender]', $this->Library->aryGender(), $this->Manager->writeS['flag_gender'] ); ?>
+                  </td>
+                </tr>
+                <tr> 
+                  <td align='center'  colspan='1' class='emerald12'  bgcolor='#EEFFEE' width='150'><?PHP echo $this->Manager->nameS['birthday']; ?></td>
+                  <td align='left'  colspan='1' class='gray12'  bgcolor='#FFFFFF'>
+                    <?PHP $this->showSelect('inputS[birthday_y]',date('Y')-100,date('Y')-10,$this->Manager->writeS['birthday_y'],'----'); ?> 年 
+                    <?PHP $this->showSelect('inputS[birthday_m]',1,12,$this->Manager->writeS['birthday_m'],'----'); ?> 月 
+                    <?PHP $this->showSelect('inputS[birthday_d]',1,31,$this->Manager->writeS['birthday_d'],'----'); ?> 日 
+                  </td>
+                </tr>
+                <tr> 
+                  <td align='center'  colspan='1' class='emerald12'  bgcolor='#EEFFEE' width='150'><?PHP echo $this->Manager->nameS['name_company']; ?></td>
+                  <td align='left'  colspan='1' class='gray12'  bgcolor='#FFFFFF'>
+                    <input type='text' name='inputS[name_company]' value='<?PHP echo $this->Manager->writeS['name_company']; ?>' size='35'>
+                  </td>
+                </tr>
+                <tr> 
+                  <td align='center'  colspan='1' class='emerald12'  bgcolor='#EEFFEE' width='150'><?PHP echo $this->Manager->nameS['kana_company']; ?></td>
+                  <td align='left'  colspan='1' class='gray12'  bgcolor='#FFFFFF'>
+                    <input type='text' name='inputS[kana_company]' value='<?PHP echo $this->Manager->writeS['kana_company']; ?>' size='35'>
+                  </td>
+                </tr>
+              </table>
+
+
+
+              <table  border="0" cellpadding='0' cellspacing='0' width="650" border="0">
+                <tr> 
+                  <td align='left' bgcolor="#FFFFFF"><img src='../../common/image/space.gif' height='15'></td>
+                </tr>
+              </table>
+              <table  border="0" cellpadding='0' cellspacing='0' width="630" border="0">
+                <tr> 
+                  <td align='left'  colspan='2' class='emerald12'><b>入力：ご連絡先</b></td>
+                </tr>
+              </table>
+              <table  border="0" cellpadding='5' cellspacing='1' bgcolor='#666666' width="630" border="0">
+
+                <tr> 
+                  <td align='center'  colspan='1' class='mazenda12'  bgcolor='#EEFFEE' width='150'><?PHP echo $this->Manager->nameS['mail']; ?></td>
+                  <td align='left'  colspan='1' class='gray12'  bgcolor='#FFFFFF'>
+                    <input type='text' name='inputS[mail]' value='<?PHP echo $this->Manager->writeS['mail']; ?>' size='35'>
+                  </td>
+                </tr>
+                <tr> 
+                  <td align='center'  colspan='1' class='mazenda12'  bgcolor='#EEFFEE' width='150'><?PHP echo $this->Manager->nameS['tel']; ?></td>
+                  <td align='left'  colspan='1' class='gray12'  bgcolor='#FFFFFF'>
+                    <input type='text' name='inputS[tel_1]' value='<?PHP echo $this->Manager->writeS['tel_1']; ?>' size='5'> -
+                    <input type='text' name='inputS[tel_2]' value='<?PHP echo $this->Manager->writeS['tel_2']; ?>' size='5'> -
+                    <input type='text' name='inputS[tel_3]' value='<?PHP echo $this->Manager->writeS['tel_3']; ?>' size='5'>
+                  </td>
+                </tr>
+
+                <tr> 
+                  <td align='center'  colspan='1' class='emerald12'  bgcolor='#EEFFEE' width='150'><?PHP echo $this->Manager->nameS['mobile']; ?></td>
+                  <td align='left'  colspan='1' class='gray12'  bgcolor='#FFFFFF'>
+                    <input type='text' name='inputS[mobile_1]' value='<?PHP echo $this->Manager->writeS['mobile_1']; ?>' size='5'> -
+                    <input type='text' name='inputS[mobile_2]' value='<?PHP echo $this->Manager->writeS['mobile_2']; ?>' size='5'> -
+                    <input type='text' name='inputS[mobile_3]' value='<?PHP echo $this->Manager->writeS['mobile_3']; ?>' size='5'>
+                  </td>
+                </tr>
+
+                <tr> 
+                  <td align='center'  colspan='1' class='emerald12'  bgcolor='#EEFFEE' width='150'><?PHP echo $this->Manager->nameS['fax']; ?></td>
+                  <td align='left'  colspan='1' class='gray12'  bgcolor='#FFFFFF'>
+                    <input type='text' name='inputS[fax_1]' value='<?PHP echo $this->Manager->writeS['fax_1']; ?>' size='5'> -
+                    <input type='text' name='inputS[fax_2]' value='<?PHP echo $this->Manager->writeS['fax_2']; ?>' size='5'> -
+                    <input type='text' name='inputS[fax_3]' value='<?PHP echo $this->Manager->writeS['fax_3']; ?>' size='5'>
+                  </td>
+                </tr>
+              </table>
+
+              <table  border="0" cellpadding='0' cellspacing='0' width="650" border="0">
+                <tr> 
+                  <td align='left' bgcolor="#FFFFFF"><img src='../../common/image/space.gif' height='15'></td>
+                </tr>
+              </table>
+              <table  border="0" cellpadding='0' cellspacing='0' width="630" border="0">
+                <tr> 
+                  <td align='left'  colspan='2' class='emerald12'><b>入力：住所</b></td>
+                </tr>
+              </table>
+              <table  border="0" cellpadding='5' cellspacing='1' bgcolor='#666666' width="630" border="0">
+                <tr> 
+                  <td align='center'  colspan='1' class='mazenda12'  bgcolor='#EEFFEE' width='150'><?PHP echo $this->Manager->nameS['zip']; ?></td>
+                  <td align='left'  colspan='1' class='gray12'  bgcolor='#FFFFFF'>
+                    <input type='text' name='inputS[zip]' value='<?PHP echo $this->Manager->writeS['zip']; ?>' size='10'>
+                  </td>
+                </tr>
+               <tr> 
+                  <td align='center'  colspan='1' class='mazenda12'  bgcolor='#EEFFEE' width='150'><?PHP echo $this->Manager->nameS['area']; ?></td>
+                  <td align='left'  colspan='1' class='gray12'  bgcolor='#FFFFFF'>
+<?PHP $this->ViewerLib->showSelectPrefName( 'inputS[area]', $this->Manager->writeS['area'] ); ?>
+                  </td>
+                </tr>
+               <tr> 
+                  <td align='center'  colspan='1' class='mazenda12'  bgcolor='#EEFFEE' width='150'><?PHP echo $this->Manager->nameS['address1']; ?></td>
+                  <td align='left'  colspan='1' class='gray12'  bgcolor='#FFFFFF'>
+                    <input type='text' name='inputS[address1]' value='<?PHP echo $this->Manager->writeS['address1']; ?>' size='35'>
+                  </td>
+                </tr>
+               <tr> 
+                  <td align='center'  colspan='1' class='emerald12'  bgcolor='#EEFFEE' width='150'><?PHP echo $this->Manager->nameS['address2']; ?></td>
+                  <td align='left'  colspan='1' class='gray12'  bgcolor='#FFFFFF'>
+                    <input type='text' name='inputS[address2]' value='<?PHP echo $this->Manager->writeS['address2']; ?>' size='35'>
+                  </td>
+                </tr>
+              </table>
+
+              <table  border="0" cellpadding='0' cellspacing='0' width="650" border="0">
+                <tr> 
+                  <td align='left' bgcolor="#FFFFFF"><img src='../../common/image/space.gif' height='15'></td>
+                </tr>
+              </table>
+              <table  border="0" cellpadding='0' cellspacing='0' width="630" border="0">
+                <tr> 
+                  <td align='left'  colspan='2' class='emerald12'><b>入力：その他</b></td>
+                </tr>
+              </table>
+              <table  border="0" cellpadding='5' cellspacing='1' bgcolor='#666666' width="630" border="0">
+               <tr> 
+                  <td align='center'  colspan='1' class='emerald12'  bgcolor='#EEFFEE' width='150'><?PHP echo $this->Manager->nameS['comment']; ?></td>
+                  <td align='center'  colspan='1' class='gray12'  bgcolor='#FFFFFF'>
+                    <textarea type='text' name='inputS[comment]' rows='10' cols='60'><?PHP echo $this->Manager->writeS['comment']; ?></textarea>
+                  </td>
+                </tr>
+              </table>
+
+              <table  border="0" cellpadding='0' cellspacing='0' width="630" border="0">
+                <tr> 
+                  <td align='left' bgcolor="#FFFFFF"><img src='../../common/image/space.gif' height='15'></td>
+                </tr>
+              </table>
+              <table  border="0" cellpadding='0' cellspacing='4' width="630" border="0">
+                <tr> 
+                  <td align='center'  colspan='1' class='emerald12'>
+                    <input type='submit' name='confirm' value='　　確認画面へ　　'>
+                    <input type='hidden' name='charaCode' value="もじこーどはんていようへんすう">
+                    <input type='hidden' name='hidden'    value="confirm">
+                    <input type='hidden' name='mode'      value="<?PHP echo $this->pageS['mode']; ?>">
+                    <input type='hidden' name='inputS[user_id]'     value="<?PHP echo $this->Manager->writeS['user_id']; ?>">
+                    <input type='hidden' name='inputS[flag_pictmail]'     value="<?PHP echo $this->Manager->writeS['flag_pictmail']; ?>">
+                    <input type='hidden' name='inputS[flag_stepmail]'     value="<?PHP echo $this->Manager->writeS['flag_stepmail']; ?>">
+<?PHP $this->showHidden(); ?>
+                  </td>
+                </tr>
+              </table>
+              <table  border="0" cellpadding='0' cellspacing='0' width="630" border="0">
+                <tr> 
+                  <td align='left' bgcolor="#FFFFFF"><img src='../../common/image/space.gif' height='15'></td>
+                </tr>
+              </table>
+
+            </td>
+          </tr>
+        </table>
+
+        </form>
+
+      </td>
+    </tr>
+  </table> 
+
+
+<?PHP require_once(_DIR_ADMIN_HTML_._HTML_ADMIN_FOOTER_); ?>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-jp" />
+<title>登録者一覧画面</title>
+<link href="css/formStyle.css" rel="stylesheet" type="text/css" />
+</head>
+<table width="550" border="0" align="center" cellpadding="0" cellspacing="0" height="100%">
+<tr align="center">
+	<td bgcolor="#A6C4F9" id="line3" width="100%" class="text4" colspan="2" height="20">登録者詳細情報</td>
+</tr>
+	<?php
+		foreach($app_list as $key2=>$value2){
+			if(($key=!"")||($value!="")){
+				echo "<tr><td bgcolor=\"#FFFFFF\" id=\"line4\" width=\"200\" class=\"text4\" height=\"40\">$key2 &nbsp;</td><td bgcolor=\"#FFFFFF\" id=\"line3\" width=\"347\" class=\"text4\">$value2&nbsp;</td></tr>";
+			}
+		}
+	?>
+<tr align="center">
+	<td bgcolor="#A6C4F9" id="line1" width="598" class="text4" colspan="2" height="20"><a href="./index.php" onclick="window.close();return false;">閉じる</a></td>
+</tr>
+</table>
+</body>
+</html>

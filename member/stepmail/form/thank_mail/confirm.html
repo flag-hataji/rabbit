@@ -1,0 +1,51 @@
+<table width="716" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td>
+<br>
+<form name="form" method="post" action="index.php">
+        <table width="612" border="0" cellpadding="4" cellspacing="1" bgcolor="#999999" align="center">
+          <tr bgcolor="#FFFFFF">
+            <td bgcolor="#CCCCCC" class="point12"><span class="black12">サンキューメールを送信</span></td>
+            <td bgcolor="#FFFFFF" class="point12"><span class="black12"><?PHP if($viewData['flag_mailsend']=="T"){ print "送信する" ; }else{ print "送信しない"; } ?></span></td>
+          </tr>
+          <tr bgcolor="#FFFFFF"> 
+            <td width="197" bgcolor="#CCCCCC" class="point12"><span class="black12">送信者名（日本語表記）</span></td>
+            <td width="396" bgcolor="#FFFFFF" class="point12"><span class="black12"><?PHP print $viewData['email_from_text']; ?></span></td>
+          </tr>
+          <tr bgcolor="#FFFFFF">
+            <td bgcolor="#CCCCCC" class="point12"><span class="black12">送信元メールアドレス</span></td>
+            <td bgcolor="#FFFFFF" class="point12"><span class="black12"><?PHP print $viewData['email_from']; ?></span></td>
+          </tr>
+          <tr bgcolor="#FFFFFF">
+            <td bgcolor="#CCCCCC" class="point12"><span class="black12">エラー戻り先メールアドレス</span></td>
+            <td bgcolor="#FFFFFF" class="point12"><span class="black12"><?PHP print $viewData['email_error']; ?></span></td>
+          </tr>
+          <tr bgcolor="#FFFFFF"> 
+            <td bgcolor="#CCCCCC" class="point12"><span class="black12">件名</span></td>
+            <td bgcolor="#FFFFFF" class="point12"><span class="black12"><?PHP print $viewData['subject']; ?></span></td>
+          </tr>
+          <tr bgcolor="#FFFFFF"> 
+            <td bgcolor="#CCCCCC" class="point12"><span class="black12">ＴＥＸＴメッセージ</span></td>
+            <td bgcolor="#FFFFFF" class="point12"><span class="black12"><?PHP print $viewData['text_msg']; ?></span></td>
+          </tr>
+          <tr bgcolor="#FFFFFF"> 
+            <td bgcolor="#CCCCCC" class="point12"><span class="black12">HTMLメール送信する</span></td>
+            <td bgcolor="#FFFFFF" class="point12"><span class="black12"><?PHP if(isset($viewData['flag_html'])){ print "送信する" ; }else{ print "送信しない"; } ?></span></td>
+          </tr>
+          <tr bgcolor="#FFFFFF">
+            <td bgcolor="#CCCCCC" class="point12"><span class="black12">ＨＴＭＬメッセージ</span></td>
+            <td bgcolor="#FFFFFF" class="point12"><span class="black12"><?PHP if($viewData['html_msg'] && isset($viewData['flag_html'])){ print $viewData['html_msg']; } ?></span></td>
+          </tr>
+          <tr bgcolor="#FFFFFF"> 
+            <td colspan="2"><div align="center"> 
+                <input type="submit" name="finish" value="登録する">
+                　 
+                <input type="submit" name="back"   value="書き直す">
+              </div></td>
+          </tr>
+        </table>
+<?PHP outPutHidden ($aData); ?>
+</form>
+    </td>
+  </tr>
+</table>

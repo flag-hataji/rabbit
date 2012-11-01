@@ -1,0 +1,186 @@
+  <font color="#FF0000" size="3"><strong><?PHP if(isset($errorMsg['error'])){ print_error($errorMsg['error']);} ?></strong></font>
+<form name="form" method="post" action="index.php">
+  <table width="600" border="0" cellpadding="4" cellspacing="1" bgcolor="#999999">
+    <tr >
+      <td bgcolor="#FFCC33" class='black12'>■フォーム名<font color="#FF0000">※</font></td>
+      <td colspan="-1" class='black12' <?PHP if(isset($errorMsg['color']['sform_name'])){ echo "bgcolor=\"{$errorMsg['color']['sform_name']}\""; }else{ echo "bgcolor=\"#FFFFFF\""; } ?>>
+         <input name="aData[sform_name]" type="text" value="<?PHP if($aData['sform_name']){ print $aData['sform_name']; } ?>" size="60" />
+         <input type="submit" name="confirm" value="確認する" />
+        <input name="aData[sform_ini_id]" type="hidden" value="<?PHP if(isset($_GET['id'])){ print $_GET['id']; } ?>" />      </td>
+    </tr>
+    <tr >
+      <td colspan="2" align="center" bgcolor="#FFFFFF" class='black12'><table width="500" border="0" cellspacing="0" cellpadding="0">
+        <tr	class='black12'>
+          <td>フォーム名を決めてください。<strong></strong> </td>
+        </tr>
+      </table></td>
+    </tr>
+  </table>
+
+  <br>
+<?PHP if(!$_GET['id']){ echo "<!--" ; } ?>
+  <table width="600" border="0" cellpadding="4" cellspacing="1" bgcolor="#999999">
+
+    <tr bgcolor="#FFFFFF">
+      <td colspan="4" bgcolor="#FFCC33" class='black12'>フォームヘッダーの文章　（注意事項などを入力してください）</td>
+    </tr>
+    <tr bgcolor="#FFFFFF">
+      <td colspan="4" align="center" bgcolor="#FFFFFF" class='black12'>
+	  <textarea name="aData[heder]" cols="60" rows="10"><?PHP if($aData['heder']){ print $aData['heder']; } ?></textarea>	  </td>
+    </tr>
+    <tr bgcolor="#FFFFFF">
+      <td colspan="4" bgcolor="#FFCC33" class='black12'>■フォームの設定<font color="#FF0000">&nbsp;</font></td>
+    </tr>
+    <tr bgcolor="#FFFFFF">
+      <td width="30%" align="center" bgcolor="#CCCCCC" class='black12'>設定フィールド</td>
+      <td width="57%" align="center" bgcolor="#CCCCCC" class='black12'>表記名</td>
+      <td width="7%" bgcolor="#CCCCCC" class='black12'>使用</td>
+      <td width="6%" bgcolor="#CCCCCC" class='black12'>必須</td>
+    </tr>
+<?PHP if( $qData){ $View->printListData($qData); } ?>
+
+    <tr bgcolor="#FFFFFF">
+      <td bgcolor="#FFCCFF" align="center" class='black12'>name_family</td>
+      <td bgcolor="#FFCCFF" align="center" class='black12'>お名前 (姓)</td>
+      <td bgcolor="#FFCCFF" align="center" class='black12'>○</td>
+      <td bgcolor="#FFCCFF" align="center" class='black12'>○</td>
+    </tr>
+    <tr bgcolor="#FFFFFF">
+      <td bgcolor="#FFCCFF" align="center" class='black12'>name_firest</td>
+      <td bgcolor="#FFCCFF" align="center" class='black12'>お名前（名）</td>
+      <td bgcolor="#FFCCFF" align="center" class='black12'>○</td>
+      <td bgcolor="#FFCCFF" align="center" class='black12'>○</td>
+    </tr>
+    <tr bgcolor="#FFFFFF">
+      <td bgcolor="#FFCCFF" align="center" class='black12'>email</td>
+      <td bgcolor="#FFCCFF" align="center" class='black12'>メールアドレス</td>
+      <td bgcolor="#FFCCFF" align="center" class='black12'>○</td>
+      <td bgcolor="#FFCCFF" align="center" class='black12'>○</td>
+    </tr>
+    <tr bgcolor="#FFFFFF">
+      <td bgcolor="#FFFFFF" align="center" class='black12'>company_name</td>
+      <td bgcolor="#FFFFFF" align="center" class='black12'>会社名</td>
+      <td bgcolor="#FFFFFF" align="center" class='black12'>
+        <input name="aData[company_name_ini][0]" type="checkbox" value="t" <?PHP if($aData['company_name_ini'] >= "1"){ echo "checked" ;}?>/>      </td>
+      <td bgcolor="#FFFFFF" align="center">
+	  <input name="aData[company_name_ini][1]" type="checkbox"  value="t" <?PHP if($aData['company_name_ini'] >= "2"){ echo "checked" ;}?>/>	  </td>
+    </tr>
+    <tr bgcolor="#FFFFFF">
+      <td bgcolor="#FFFFFF" align="center" class='black12'>post</td>
+      <td bgcolor="#FFFFFF" align="center" class='black12'>役職名</td>
+      <td bgcolor="#FFFFFF" align="center"><span class="black12">
+        <input name="aData[post_ini][0]" type="checkbox" value="t" <?PHP if($aData['post_ini'] >= "1"){ echo "checked" ;}?>/>
+      </span></td>
+      <td bgcolor="#FFFFFF" align="center"><input name="aData[post_ini][1]" type="checkbox"  value="t" <?PHP if($aData['post_ini'] >= "2"){ echo "checked" ;}?>/></td>
+    </tr>
+    <tr bgcolor="#FFFFFF">
+      <td bgcolor="#FFFFFF" align="center" class='black12'>param1</td>
+      <td bgcolor="#FFFFFF" align="center"><label>
+        <input name="aData[param1_name]" type="text" value="<?PHP if($aData['param1_name']){ print $aData['param1_name']; } ?>" size="50" />
+      </label></td>
+      <td bgcolor="#FFFFFF" align="center"><span class="black12">
+        <input name="aData[param1_ini][0]" type="checkbox" value="t" <?PHP if($aData['param1_ini'] >= "1"){ echo "checked" ;}?>/>
+      </span></td>
+      <td bgcolor="#FFFFFF" align="center"><input name="aData[param1_ini][1]" type="checkbox"  value="t" <?PHP if($aData['param1_ini'] >= "2"){ echo "checked" ;}?>/></td>
+    </tr>
+    <tr bgcolor="#FFFFFF">
+      <td bgcolor="#FFFFFF" align="center" class='black12'>param2</td>
+      <td bgcolor="#FFFFFF" align="center"><input name="aData[param2_name]" type="text" id="aData[param2_name]" value="<?PHP if($aData['param2_name']){ print $aData['param2_name']; } ?>" size="50" /></td>
+      <td bgcolor="#FFFFFF" align="center"><span class="black12">
+        <input name="aData[param2_ini][0]" type="checkbox" value="t" <?PHP if($aData['param2_ini'] >= "1"){ echo "checked" ;}?>/>
+      </span></td>
+      <td bgcolor="#FFFFFF" align="center"><input name="aData[param2_ini][1]" type="checkbox"  value="t" <?PHP if($aData['param2_ini'] >= "2"){ echo "checked" ;}?>/></td>
+    </tr>
+    <tr bgcolor="#FFFFFF">
+      <td bgcolor="#FFFFFF" align="center" class='black12'>param3</td>
+      <td bgcolor="#FFFFFF" align="center"><input name="aData[param3_name]" type="text" id="aData[param3_name]" value="<?PHP if($aData['param3_name']){ print $aData['param3_name']; } ?>" size="50" /></td>
+      <td bgcolor="#FFFFFF" align="center"><span class="black12">
+        <input name="aData[param3_ini][0]" type="checkbox" value="t" <?PHP if($aData['param3_ini'] >= "1"){ echo "checked" ;}?>/>
+      </span></td>
+      <td bgcolor="#FFFFFF" align="center"><input name="aData[param3_ini][1]" type="checkbox"  value="t" <?PHP if($aData['param3_ini'] >= "2"){ echo "checked" ;}?>/></td>
+    </tr>
+    <tr bgcolor="#FFFFFF">
+      <td bgcolor="#FFFFFF" align="center" class='black12'>param4</td>
+      <td bgcolor="#FFFFFF" align="center"><input name="aData[param4_name]" type="text" id="aData[param4_name]" value="<?PHP if($aData['param4_name']){ print $aData['param4_name']; } ?>" size="50" /></td>
+      <td bgcolor="#FFFFFF" align="center"><span class="black12">
+        <input name="aData[param4_ini][0]" type="checkbox" value="t" <?PHP if($aData['param4_ini'] >= "1"){ echo "checked" ;}?>/>
+      </span></td>
+      <td bgcolor="#FFFFFF" align="center"><input name="aData[param4_ini][1]" type="checkbox"  value="t" <?PHP if($aData['param4_ini'] >= "2"){ echo "checked" ;}?>/></td>
+    </tr>
+    <tr bgcolor="#FFFFFF">
+      <td bgcolor="#FFFFFF" align="center" class='black12'>param5</td>
+      <td bgcolor="#FFFFFF" align="center"><input name="aData[param5_name]" type="text" id="aData[param5_name]" value="<?PHP if($aData['param5_name']){ print $aData['param5_name']; } ?>" size="50" /></td>
+      <td bgcolor="#FFFFFF" align="center"><span class="black12">
+        <input name="aData[param5_ini][0]" type="checkbox" value="t" <?PHP if($aData['param5_ini'] >= "1"){ echo "checked" ;}?>/>
+      </span></td>
+      <td bgcolor="#FFFFFF" align="center"><input name="aData[param5_ini][1]" type="checkbox"  value="t" <?PHP if($aData['param5_ini'] >= "2"){ echo "checked" ;}?>/></td>
+    </tr>
+    <tr bgcolor="#FFFFFF">
+      <td bgcolor="#FFFFFF" align="center" class='black12'>param6</td>
+      <td bgcolor="#FFFFFF" align="center"><input name="aData[param6_name]" type="text" id="aData[param6_name]" value="<?PHP if($aData['param6_name']){ print $aData['param6_name']; } ?>" size="50" /></td>
+      <td bgcolor="#FFFFFF" align="center"><span class="black12">
+        <input name="aData[param6_ini][0]" type="checkbox" value="t" <?PHP if($aData['param6_ini'] >= "1"){ echo "checked" ;}?>/>
+      </span></td>
+      <td bgcolor="#FFFFFF" align="center"><input name="aData[param6_ini][1]" type="checkbox"  value="t" <?PHP if($aData['param6_ini'] >= "2"){ echo "checked" ;}?>/></td>
+    </tr>
+    <tr bgcolor="#FFFFFF">
+      <td bgcolor="#FFFFFF" align="center" class='black12'>param7</td>
+      <td bgcolor="#FFFFFF" align="center"><input name="aData[param7_name]" type="text" id="aData[param7_name]" value="<?PHP if($aData['param7_name']){ print $aData['param7_name']; } ?>" size="50" /></td>
+      <td bgcolor="#FFFFFF" align="center"><span class="black12">
+        <input name="aData[param7_ini][0]" type="checkbox" value="t" <?PHP if($aData['param7_ini'] >= "1"){ echo "checked" ;}?>/>
+      </span></td>
+      <td bgcolor="#FFFFFF" align="center"><input name="aData[param7_ini][1]" type="checkbox"  value="t" <?PHP if($aData['param7_ini'] >= "2"){ echo "checked" ;}?>/></td>
+    </tr>
+    <tr bgcolor="#FFFFFF">
+      <td bgcolor="#FFFFFF" align="center" class='black12'>param8</td>
+      <td bgcolor="#FFFFFF" align="center"><input name="aData[param8_name]" type="text" id="aData[param8_name]" value="<?PHP if($aData['param8_name']){ print $aData['param8_name']; } ?>" size="50" /></td>
+      <td bgcolor="#FFFFFF" align="center"><span class="black12">
+        <input name="aData[param8_ini][0]" type="checkbox" value="t" <?PHP if($aData['param8_ini'] >= "1"){ echo "checked" ;}?>/>
+      </span></td>
+      <td bgcolor="#FFFFFF" align="center"><input name="aData[param8_ini][1]" type="checkbox"  value="t" <?PHP if($aData['param8_ini'] >= "2"){ echo "checked" ;}?>/></td>
+    </tr>
+    <tr bgcolor="#FFFFFF">
+      <td bgcolor="#FFFFFF" align="center" class='black12'>param9</td>
+      <td bgcolor="#FFFFFF" align="center"><input name="aData[param9_name]" type="text" id="aData[param9_name]" value="<?PHP if($aData['param9_name']){ print $aData['param9_name']; } ?>" size="50" /></td>
+      <td bgcolor="#FFFFFF" align="center"><span class="black12">
+        <input name="aData[param9_ini][0]" type="checkbox" value="t" <?PHP if($aData['param9_ini'] >= "1"){ echo "checked" ;}?>/>
+      </span></td>
+      <td bgcolor="#FFFFFF" align="center"><input name="aData[param9_ini][1]" type="checkbox"  value="t" <?PHP if($aData['param9_ini'] >= "2"){ echo "checked" ;}?>/></td>
+    </tr>
+    <tr bgcolor="#FFFFFF">
+      <td bgcolor="#FFFFFF" align="center" class='black12'>param10</td>
+      <td bgcolor="#FFFFFF" align="center"><input name="aData[param10_name]" type="text" id="aData[param10_name]" value="<?PHP if($aData['param10_name']){ print $aData['param10_name']; } ?>" size="50" /></td>
+      <td bgcolor="#FFFFFF" align="center"><span class="black12">
+        <input name="aData[param10_ini][0]" type="checkbox" value="t" <?PHP if($aData['param10_ini'] >= "1"){ echo "checked" ;}?>/>
+      </span></td>
+      <td bgcolor="#FFFFFF" align="center"><input name="aData[param10_ini][1]" type="checkbox"  value="t" <?PHP if($aData['param10_ini'] >= "2"){ echo "checked" ;}?>/></td>
+    </tr>
+    <tr bgcolor="#FFFFFF">
+      <td bgcolor="#FFFFFF" align="center" class='black12'>登録先シナリオ</td>
+      <td bgcolor="#FFFFFF" align="center"><?PHP printScenarioSelect($aData); ?></td>
+      <td bgcolor="#FFFFFF" align="center">&nbsp;</td>
+      <td bgcolor="#FFFFFF" align="center">&nbsp;</td>
+    </tr>
+    <tr bgcolor="#FFFFFF">
+      <td align="center" bgcolor="#FFFFFF" class='black12'>サンキューページ<br />
+      戻り先ＵＲＬ</td>
+      <td align="center" bgcolor="#FFFFFF" class='black12'><input name="aData[back_url]" type="text" id="aData[back_url]" value="<?PHP if($aData['back_url']){ print $aData['back_url']; } ?>" size="50" /><br>
+      例）  http://www.itm-asp.com/
+      </td>
+      <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+      <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
+    </tr>
+    <tr bgcolor="#FFFFFF">
+      <td colspan="4" bgcolor="#FFCC00" align="center"><input name="add_finish" type="submit" id="add_finish" onclick="location.href='../sort/index.php?id=<?PHP echo $_GET['id']; ?>'" value="設定を変更する" /></td>
+    </tr>
+    <tr bgcolor="#FFFFFF">
+      <td colspan="4" bgcolor="#FFFFFF" align="center">&nbsp;</td>
+    </tr>
+    <tr bgcolor="#FFFFFF">
+      <td colspan="4" bgcolor="#FFCC00" align="center"><input type="button" onclick="location.href='/stepmail/form/user_regist/index.php<?PHP echo "?id={$_GET['id']}&u_id={$aData['user_id']}"; ?>'" value="出来上がったフォームを確認する" /></td>
+    </tr>
+  </table>
+<?PHP if(!$_GET['id']){ echo "-->";} ?>
+  <br />
+  </div>
+</form>

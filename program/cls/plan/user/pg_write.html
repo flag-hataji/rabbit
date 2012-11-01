@@ -1,0 +1,197 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="ja-JP">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-JP">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>ピクトメール：メール配信実行：受付完了</title>
+<link href="/common/css/common.css" rel="stylesheet" type="text/css">
+<script language="JavaScript">
+<!--
+<?PHP require_once(_DIR_USER_HTML_._HTML_JS_); ?>
+//-->
+</script>
+</head>
+<body  bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<div align='center'> 
+  <table height="100%" width="900" border="0" cellspacing="0" cellpadding="0" bgcolor='#FFFFFF'>
+    <tr> 
+      <td width="10" background="/common/image/shadow_left.gif"><img src='/common/image/spacer.gif' width='1' height='1' ></td>
+      <td width='1' bgcolor='#FFFFFF'><img src='/common/image/spacer.gif' width='1' height='1' ></td>
+      <td valign="top" align='center' bgcolor='#FFFFFF'> 
+<?PHP require_once(_DIR_USER_HTML_._HTML_HEADER_); ?>
+
+        <table width="870" border="0" cellspacing="0" cellpadding="0" bgcolor="#948E8E">
+          <tr class="gray10"> 
+            <!-- --------LEFT AREA--------- -->
+            <td width="150" align="center" valign="top" bgcolor="#FFFFFF"> 
+              <?PHP require_once(_DIR_USER_HTML_._HTML_LEFT_MENU_); ?>
+              <br>
+              <?PHP //require_once(_DIR_USER_HTML_._HTML_RIGHT_MENU_); ?>
+            </td>
+            <td width="5" bgcolor="#FFFFFF"><img src="../../../common/image/spacer.gif" width="5" height="1" ></td>
+            <td width="1" bgcolor="#FFFFFF" background="../../../common/image/y_comma.gif"><img src="../../../common/image/spacer.gif" width="1" height="1" ></td>
+            <!-- --------CENTER AREA--------- -->
+            <td width="700" align="right" valign="top" bgcolor="#FFFFFF">
+
+              <!-- Menu Header -->
+              <?PHP require_once(_DIR_MEMBER_HTML_._HTML_MEMBER_HEADER_PICTMAIL_); ?>
+
+              <table width="685" height="25" border="0" cellspacing="0" cellpadding="0">
+                <tr> 
+                  <td width="685" height="25" align="left" colspan="2" class="black10">
+                    <a href="/">TOP</a> &gt;
+                    <a href="/member/">ユーザーメニューTOP</a> &gt;
+                    <a href="/member/pictmail/">ピクトメール</a> &gt;
+                    プラン変更申請
+                  </td>
+                </tr>
+              </table>
+
+              <table width="685" border="0" cellspacing="0" cellpadding="0">
+                <tr> 
+                  <td  width="1" height="10" bgcolor="#FFFFFF"><img src="../../../common/image/spacer.gif" width="1" height="10" ></td>
+                </tr>
+              </table>
+
+
+
+              <table width="685" height="25" border="0" cellspacing="0" cellpadding="0" background="/common/image/member/pictmail/in_title02.gif">
+                <tr> 
+                  <td width="30" height="25" align="left"></td>
+                  <td width="655" height="25" align="left" class="white12"><strong><?PHP echo $isTitle; ?></strong></td>
+                </tr> 
+              </table>
+ 
+              <table  border="0" cellpadding='5' cellspacing='0' bgcolor='#19287B' width="685" >
+                <tr> 
+                  <td bgcolor='#FFFFFF' class='gray12' valign='top' align='center'>
+
+                    <table  border="0" cellpadding='0' cellspacing='0' width="655" >
+                      <tr> 
+                        <td align='left' bgcolor="#FFFFFF"><img src='/common/image/space.gif' height='20'></td>
+                      </tr>
+                    </table>
+
+                    <form name="form2" method="post" action="change.php" style="margin: 0px;">
+
+
+<?PHP if( $this->cDataS->error!="" ){ ?>
+                    <table  border="0" cellpadding='0' cellspacing='0' width="600" height='30' bgcolor='#FF9900'>
+                      <tr> 
+                        <td class='white12' align='center'>
+                          <b>!!エラー!!<br> <?PHP //echo $this->cDataS->error; ?></b>
+                        </td>
+                      </tr>
+                      <tr> 
+                        <td width='1' height='5' bgcolor='#FFFFFF'><img src='/common/image/spacer.gif' width='1' height='5' ></td>
+                      </tr>
+                    </table>
+<?PHP } ?>
+
+<?php
+$isFormat = "
+                    <table  border='0' cellpadding='5' cellspacing='1' width='600' bgcolor='#000000' >
+                      <tr> 
+                        <th width='200' align='center'  colspan='1' bgcolor='#B39B6F' class='white12'>
+                          プラン名
+                        </td>
+                        <td align='left'  colspan='1' bgcolor='#FFFFFF' class='black12'>
+                          #str1#
+                        </td>
+                      </tr>
+                      <tr> 
+                        <th align='center'  colspan='1' bgcolor='#B39B6F' class='white12'>
+                          配信メール件数
+                        </td>
+                        <td align='left'  colspan='1' bgcolor='#FFFFFF' class='black12'>
+                          #str2#
+                        </td>
+                      </tr>
+                      <tr> 
+                        <th align='center'  colspan='1' bgcolor='#B39B6F' class='white12'>
+                          6ヶ月の使用料金
+                        </td>
+                        <td align='left'  colspan='1' bgcolor='#FFFFFF' class='black12'>
+                          #str3#
+                        </td>
+                      </tr>
+                      <tr> 
+                        <th align='center'  colspan='1' bgcolor='#B39B6F' class='white12'>
+                          初期費用<br>※<span class='white10'>使いきりプランの場合、プラン代を表示</span>
+                        </td>
+                        <td align='left'  colspan='1' bgcolor='#FFFFFF' class='black12'>
+                          #str4#
+                        </td>
+                      </tr>
+                    </table>
+";
+$this->showPlan($isFormat);
+?>
+                    <br>
+                    
+                    <table  border="0" cellpadding='5' cellspacing='1' width="600" bgcolor="#000000" >
+                      <tr> 
+                        <th width='200' align='center'  colspan='1' bgcolor='#B39B6F' class='white12'>
+                          <b>支払い方法<b><br>
+                        </td>
+                        <td align='left'  colspan='1' bgcolor="#FFFFFF" class='black12'>
+                          <input type='radio' name='inputS[flag_pay]' value='1' <?PHP if( isset($isDataS['flag_pay']) && $isDataS['flag_pay']==1){ echo "checked"; } ?>>クレジットカード決済　　
+                          <input type='radio' name='inputS[flag_pay]' value='2' <?PHP if( isset($isDataS['flag_pay']) && $isDataS['flag_pay']==2){ echo "checked"; } ?>>銀行振り込み<br>
+                          <span class="mazenda12">※クレジットカード決済の場合はご申請後、即座にご使用いただけます。<br><img src='http://www.itm-asp.com/images/top0806/right-menu-card.gif'></span>
+                        </td>
+                      </tr>
+                      <tr> 
+                        <th width='200' align='center'  colspan='1' bgcolor='#B39B6F' class='white12'>
+                          <b>二回目以降の自動引き落とし<b><br>
+                        </td>
+                        <td align='left'  colspan='1' bgcolor="#FFFFFF" class='black12'>
+                          <input type='radio' name='inputS[flag_automoney]' value='1' <?PHP if( isset($isDataS['flag_automoney']) && $isDataS['flag_automoney']==1){ echo "checked"; } ?>>希望する　　
+                          <input type='radio' name='inputS[flag_automoney]' value='2' <?PHP if( isset($isDataS['flag_automoney']) && $isDataS['flag_automoney']==2){ echo "checked"; } ?>>希望しない
+                          <span class="mazenda12">
+                          <br>
+                          ※ 銀行振り込みのみ<br>
+                          ※ 使いきりプランは<b>「希望しない」</b>に設定してください。
+                          </span>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <table  border="0" cellpadding='0' cellspacing='4' width="600" border="0">
+                      <tr> 
+                        <td align='center'  colspan='1' class='indigo12'>
+                          <input type='submit' name='position[confirm]' value='　　確認画面へ　　'>
+                          <input type='hidden' name='inputS[user_id]' value="<?PHP echo $isDataS['user_id']; ?>">
+                          <input type='hidden' name='inputS[plan_id]' value="<?PHP echo $isDataS['plan_id']; ?>">
+                        </td>
+                      </tr>
+                    </table>
+
+                    </form>
+
+                    <table  border="0" cellpadding='0' cellspacing='0' width="655" >
+                      <tr> 
+                        <td align='left' bgcolor="#FFFFFF"><img src='/common/image/space.gif' height='15'></td>
+                      </tr>
+                    </table>
+
+                  </td>
+                </tr>
+              </table>
+
+
+
+            </td>
+          </tr>
+        </table>
+<!-- FOOTER -->
+<?PHP require_once(_DIR_USER_HTML_._HTML_FOOTER_); ?>
+
+      </td>
+      <td width='1' bgcolor='#FFFFFF'><img src='../../../common/image/spacer.gif' width='1' height='1' ></td>
+      <td width="10" background="../../../common/image/shadow_right.gif"><img src='../../../common/image/spacer.gif' width='1' height='1' ></td>
+    </tr>
+  </table>
+
+  </div>
+</body>
+</html>

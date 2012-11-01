@@ -1,0 +1,166 @@
+<?PHP
+  if( isset($_SESSION['user']['id']) && isset($_SESSION['user']['password']) ){
+    require_once(_HTML_LEFT_MENU_LOGOUT_);
+  }else{
+    require_once(_HTML_LEFT_MENU_LOGIN_);
+  }
+?>
+<!-- Service -->
+<img src='<?PHP echo _RELATIVE_; ?>common/image/index02.gif' width='152' height='31' alt='メール配信システム サービスご紹介'> 
+<table width="150" border="0" cellspacing="0" cellpadding="2" bgcolor='#eeeeee'>
+  <tr class='black12'> 
+    <td bgcolor='#eeeeee'> 
+      <table width="145" border="0" cellspacing="0" cellpadding="0" bgcolor='#eeeeee'>
+        <tr><td height='1' bgcolor='#9EA5FF'><img src='<?PHP echo _RELATIVE_; ?>common/image/spacer.gif' width='1' height='1'></td></tr>
+        <tr class='black12'> 
+          <td align='left' height='20' >
+            <img src='<?PHP echo _RELATIVE_; ?>common/image/arrow.gif'><a href="<?PHP echo _RELATIVE_; ?>mailsend/mailsend.html"><strong>メール配信システム</strong></a><br>
+          </td>
+        </tr>
+      </table>
+      <table width="145" border="0" cellspacing="0" cellpadding="3" bgcolor='#eeeeee'>
+        <tr class='black12'> 
+          <td align='left' height='20' > 　<img src='<?PHP echo _RELATIVE_; ?>common/image/arrow03.gif'> 
+            <a href="<?PHP echo _RELATIVE_; ?>mailsend/mailsend_regist.html">ご登録までの流れ</a><br> 
+          </td>
+        </tr>
+        <tr class='black12'> 
+          <td align='left' height='20' > 　<img src='<?PHP echo _RELATIVE_; ?>common/image/arrow03.gif'> 
+            <a href="<?PHP echo _RELATIVE_; ?>mailsend/mailsend_help.html">配信方法</a><br> 
+          </td>
+        </tr>
+        <tr class='black12'> 
+          <td align='left' height='20' > 　<img src='<?PHP echo _RELATIVE_; ?>common/image/arrow03.gif'> 
+            <a href="<?PHP echo _RELATIVE_; ?>mailsend/mailsend_help2.html">少し高度な配信方法</a><br> 
+          </td>
+        </tr>
+        <tr class='black12'> 
+          <td align='left' height='20' > 　<img src='<?PHP echo _RELATIVE_; ?>common/image/arrow03.gif'> 
+            <a href="<?PHP echo _RELATIVE_; ?>mailsend/mailsend_maillist.html">メールリストについて</a><br> 
+          </td>
+        </tr>
+        <tr class='black12'> 
+          <td align='left' height='20' > 　<img src='<?PHP echo _RELATIVE_; ?>common/image/arrow03.gif'> 
+            <a href="<?PHP echo _RELATIVE_; ?>oshirase.html">携帯配信について</a><br> 
+          </td>
+        </tr>
+        <tr class='black12'> 
+          <td align='left' height='20' > 　 <strong><font color="#FF0000">新プラン誕生!</font></strong><br>
+            　<img src='<?PHP echo _RELATIVE_; ?>common/image/arrow03.gif'> <a href="<?PHP echo _RELATIVE_; ?>mailsend/mailsend_ryoukin.html">プラン・料金一覧</a><br> 
+          </td>
+        </tr>
+        <tr class='black12'>
+          <td align='left' height='20' >　<img src='<?PHP echo _RELATIVE_; ?>common/image/arrow03.gif'> 
+            <a href="<?PHP echo _RELATIVE_; ?>member.html">ご利用のお客様</a><br></td>
+        </tr>
+        <tr class='black12'> 
+          <td align='left' height='20' > 　<img src='<?PHP echo _RELATIVE_; ?>common/image/arrow03.gif'> 
+            <a href="<?PHP echo _RELATIVE_; ?>mailsend/mailsend_koe.html">おまけ話<br>
+            　　　（開発スタッフの声）</a><br> </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table width="150" border="0" cellspacing="0" cellpadding="0" bgcolor='#FFFFFF'>
+  <tr><td height='1' bgcolor='#9EA5FF'><img src='<?PHP echo _RELATIVE_; ?>common/image/spacer.gif' width='1' height='1'></td></tr>
+</table>
+<table width="150" border="0" cellspacing="0" cellpadding="2" bgcolor='#eeeeee'>
+  <tr class='black12'> 
+    <td bgcolor='#eeeeee'> 
+      <table width="145" border="0" cellspacing="1" cellpadding="3" bgcolor='#eeeeee'>
+        <tr class='black12'> 
+          <td align='left' height='40'><img src='<?PHP echo _RELATIVE_; ?>common/image/arrow.gif'> 
+            ステップメールシステム<br>
+            （近日開始予定）<br>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- Info -->
+<img src='<?PHP echo _RELATIVE_; ?>common/image/index03.gif' width='152' height='31' alt='メール配信システム インフォメーション'> 
+<table width="150" border="0" cellspacing="0" cellpadding="1" bgcolor='#eeeeee'>
+  <tr class='black12'> 
+    <td bgcolor='#eeeeee'> 
+      <table width="145" border="0" cellspacing="1" cellpadding="3" bgcolor='#eeeeee'>
+        <tr class='black12'> 
+          <td align='left' height='20'><img src='<?PHP echo _RELATIVE_; ?>common/image/arrow.gif'> 
+            <a href="<?PHP echo _RELATIVE_; ?>faq.html">FAQ（よくあるご質問）</a></td>
+        </tr>
+        <tr class='black12'> 
+          <td align='left' height='20'><img src='<?PHP echo _RELATIVE_; ?>common/image/arrow.gif'> 
+            <a href="<?PHP echo _RELATIVE_; ?>inquiry/index.php">お問合せ</a></td>
+        </tr>
+        <tr class='black12'> 
+          <td align='left' height='20'><img src='<?PHP echo _RELATIVE_; ?>common/image/arrow.gif'> 
+            <a href="<?PHP echo _RELATIVE_; ?>company.html">会社概要</a></td>
+        </tr>
+        <tr class='black12'> 
+          <td align='left' height='20'><img src='<?PHP echo _RELATIVE_; ?>common/image/arrow.gif'> 
+            <a href="<?PHP echo _RELATIVE_; ?>kojin.html"> 個人情報保護方針</a></td>
+        </tr>
+        <tr class='black12'> 
+          <td align='left' height='20'><img src='<?PHP echo _RELATIVE_; ?>common/image/arrow.gif'> 
+            <a href="<?PHP echo _RELATIVE_; ?>kiyaku.html">ご利用規約</a></td>
+        </tr>
+        <tr class='black12'>
+          <td align='left' height='20'><img src='<?PHP echo _RELATIVE_; ?>common/image/arrow.gif'> 
+            <a href="<?PHP echo _RELATIVE_; ?>tokutei.html">特定商取引に関する法律に基づく表記</a></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- Link -->
+<img src='<?PHP echo _RELATIVE_; ?>common/image/index04.gif' width='152' height='31' alt='メール配信システム リンク'> 
+<table width="150" border="0" cellspacing="0" cellpadding="1" bgcolor='#eeeeee'>
+  <form action='member/index.php' method='POST'>
+    <tr class='black12'> 
+      <td bgcolor='#eeeeee'> 
+        <table width="145" border="0" cellspacing="1" cellpadding="3" bgcolor='#eeeeee'>
+          <tr class='black10'> 
+            <td align='left' height='20'><img src='<?PHP echo _RELATIVE_; ?>common/image/arrow.gif'> 
+              <a href="http://www.it1616.com/" target='_blank'>ITM セミナーサイト</a></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr class='black12'> 
+      <td bgcolor='#eeeeee'> 
+        <table width="145" border="0" cellspacing="1" cellpadding="3" bgcolor='#eeeeee'>
+          <tr class='black10'> 
+            <td align='left' height='20'><img src='<?PHP echo _RELATIVE_; ?>common/image/arrow.gif'> 
+              <a href="http://www.itm.ne.jp/" target='_blank'>株式会社アイティマネジメント</a></td>
+          </tr>
+          <tr class='black10'>
+            <td align='left' height='20'><img src='<?PHP echo _RELATIVE_; ?>common/image/arrow.gif'> 
+              <a href="http://www.itm-asp.com/link.html">その他リンク集</a> </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </form>
+</table>
+<table width="150" border="0" cellspacing="0" cellpadding="0" bgcolor='#FFFFFF'>
+  <tr> 
+    <td width='150' height='5' bgcolor='#FFFFFF'><img src='<?PHP echo _RELATIVE_; ?>common/image/spacer.gif' width='1' height='5'></td>
+  </tr>
+</table>
+<table width="150" border="0" cellspacing="0" cellpadding="1" bgcolor='#eeeeee'>
+  <form action='member/index.php' method='POST'>
+    <tr class='black12'> 
+      <td bgcolor='#eeeeee'> 
+        <table width="145" border="0" cellspacing="1" cellpadding="3" bgcolor='#eeeeee'>
+          <tr class='black10'> 
+            <td align='center'> </td>
+          </tr>
+          <tr class='black10'> 
+            <td align='left'> 当サービスは<a href='http://www.digitrust.jp/about_ssl.html' taeget='_blank'>【SSL】</a>を利用する事でより安全に情報を送信しております。 
+        </table>
+      </td>
+    </tr>
+  </form>
+</table>
+

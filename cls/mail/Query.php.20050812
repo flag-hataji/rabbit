@@ -1,0 +1,162 @@
+<?PHP
+/*
+
+  登録関連
+
+*/
+
+  class Query{
+
+    var $debug     = "";
+    var $datPath   = "";
+
+    Function Query($debug=False){
+
+      if( $debug )   $this->debug   = $debug;
+
+      return ;
+    }
+
+
+
+    /*
+      update_td_pictmail update文
+    */
+    Function update_td_pictmail(){
+      global $pField,$pVariable;
+
+      if( $this->debug ) echo" - "._ROOT_PG_."Query.php | update_td_pictmail() <br>\n";
+
+      $query  = "UPDATE td_pictmail SET ";
+      //$query .= " month_now=(month_now-1), ";
+      $query .= " send_now=(send_now-SEND_NUM), ";
+      $query .= " date_update='now' ";
+      $query .= " WHERE pictmail_id = {$_SESSION['user']['pictmail_id']} ";
+
+      return $query;
+    }
+
+
+
+    /*
+      td_log INSERT文
+    */
+    Function insert_td_log(){
+      global $pField,$pVariable;
+
+      if( $this->debug ) echo" - "._ROOT_PG_."Query.php | insert_td_log() <br>\n";
+
+      $column  = "";
+      $values  = "";
+
+      $column .= "user_id,";
+      $values .= "{$pVariable->inputS['user_id']},";
+
+      $column .= "name_from,";
+      $values .= "'{$pVariable->inputS['name_from']}',";
+
+      $column .= "mail_from,";
+      $values .= "'{$pVariable->inputS['mail_from']}',";
+
+      $column .= "month_count,";
+      $values .= (($_SESSION['user']['month_max']-$_SESSION['user']['month_now'])+1).",";
+
+      $column .= "send_count,";
+      $values .= count(file(_ROOT_PG_DAT_.$pVariable->inputS['file_mail'])).",";
+
+      $column .= "ip,";
+      $values .= "'{$pVariable->inputS['ip']}',";
+
+      $column .= "host,";
+      $values .= "'{$pVariable->inputS['host']}',";
+
+      $column = substr($column,0,-1);
+      $values = substr($values,0,-1);
+      $query  = "INSERT INTO td_log({$column}) VALUES ({$values})";
+
+      return $query;
+    }
+
+
+    /*
+      td_message INSERT文
+    */
+    Function insert_td_message(){
+      global $pField,$pVariable;
+
+      if( $this->debug ) echo" - "._ROOT_PG_."Query.php | insert_td_message() <br>\n";
+
+      $column  = "";
+      $values  = "";
+
+
+      $column .= "message_id,";
+      $values .= "{$pVariable->inputS['message_id']},";
+
+      $column .= "user_id,";
+      $values .= "{$pVariable->inputS['user_id']},";
+
+      $column .= "count,";
+      $values .= (($_SESSION['user']['month_max']-$_SESSION['user']['month_now'])+1).",";
+
+      $column .= "email_from,";
+      $values .= "'{$pVariable->inputS['mail_from']}',";
+
+      $column .= "email_from_name,";
+      $values .= "'{$pVariable->inputS['name_from']}',";
+
+
+      $column .= "email_error,";
+      $values .= "'{$pVariable->inputS['mail_error']}',";
+
+      $column .= "subject,";
+      $values .= "'{$pVariable->inputS['subject']}',";
+
+      $column .= "message,";
+      $values .= "'{$pVariable->inputS['message']}',";
+
+      $column .= "send_date,";
+      $values .= "'{$pVariable->inputS['send_date']}',";
+
+      $column = substr($column,0,-1);
+      $values = substr($values,0,-1);
+      $query  = "INSERT INTO td_message({$column}) VALUES ({$values})";
+
+      return $query;
+    }
+
+    /*
+      td_mailq INSERT文
+    */
+    Function insert_td_mailq(){
+      global $pField,$pVariable;
+
+      if( $this->debug ) echo" - "._ROOT_PG_."Query.php | insert_td_mailq() <br>\n";
+
+      $column  = "";
+      $values  = "";
+
+
+      $column .= "email,";
+      $values .= "'EMAIL',";
+
+      $column .= "email_name,";
+      $values .= "'EMAIL_NAME',";
+
+      $column .= "message_id,";
+      $values .= "{$pVariable->inputS['message_id']},";
+
+      $column .= "flag_pc,";
+      $values .= "'FLAG_PC',";
+
+      $column = substr($column,0,-1);
+      $values = substr($values,0,-1);
+      $query  = "INSERT INTO td_mailq({$column}) VALUES ({$values})";
+
+      return $query;
+    }
+
+
+  }
+
+?>

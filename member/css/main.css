@@ -1,0 +1,718 @@
+/* common
+------------------*/
+  body{
+    white-space:nowrap;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    background-color:#FFFFFF;
+    margin-left: auto;
+    margin-right: auto;
+    white-space: nowrap;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size:14px;
+    color: #555555;
+  }
+
+  img{
+    border: none;
+    border-width: 0px 0px 0px 0px;
+  }
+
+
+  A:link{ 
+    color: #0000AA;
+    text-decoration: none;
+  }
+  A:visited{
+    color: #0000AA;
+    text-decoration: none;
+  }
+  A:hover{
+    color: #ff6600;
+    text-decoration: underline;
+  }
+
+
+  ul{
+    margin:0px 0px 0px 0px;
+    padding:0px 0px 0px 0px;
+  }
+
+  li{
+    display:inline;
+  }
+
+  p{
+    margin: 0px;
+  }
+
+
+
+  /*-------------------------------*/
+  .frame{
+
+      background-color: #FFFFFF;
+
+      text-align: center;
+
+      margin:5px;
+
+      padding:0px;
+
+  }
+
+
+
+
+  /*
+   * 
+   * Header
+   * 
+   */
+
+  .frame_header{
+
+      text-align: left;
+
+      margin:0px 0px 0px 0px;
+
+      padding:0px 0px 0px 0px;
+
+  }
+
+
+      .header_dirA{
+
+          width:100%;
+
+          text-align: left;
+
+          margin:0px 0px 0px 0px;
+
+          padding:0px 0px 0px 0px;
+
+          white-space:nowrap;
+
+      }
+
+
+          .header_dirA_menu{
+
+              width:100%;
+
+              white-space:nowrap;
+
+          }
+
+
+          .header_dirA_image{
+
+
+          }
+
+
+      .header_dirB{
+
+          text-align: left;
+
+          margin:0px 0px 0px 0px;
+
+          padding:0px 0px 0px 0px;
+
+          white-space:nowrap;
+
+      }
+
+          .header_dirB_menu1{
+
+              background-color: #EEEEEE;
+
+              margin:0px 0px 0px 0px;
+
+              padding:0px 1px 0px 0px;
+
+              white-space:nowrap;
+
+          }
+
+          .header_dirB_menu2{
+
+              margin:0px 0px 0px 0px;
+
+              padding:0px 0px 0px 0px;
+
+              text-align: left;
+
+
+              white-space:nowrap;
+
+          }
+
+
+              A.header_menu_link2 {
+
+                margin: 0px 0px 0px 5px;
+
+                padding: 5px 30px 5px 30px;
+
+                line-height: 40px;
+
+                background-color: #FFFFFF;
+
+                background-image: url("/member/images/icon/comma01.gif");
+                background-repeat: no-repeat;
+                background-position: 10px center;
+
+                border-top:1px solid #DDDDDD;
+                border-bottom:1px solid #DDDDDD;
+                border-left:1px solid #DDDDDD;
+                border-right:1px solid #DDDDDD;
+
+          font-weight:bold;
+
+                color: #486a00;
+                font-size: 14px;
+                text-decoration: none;
+
+              }
+
+              A.header_menu_link2:visited {
+                color: #486a00;
+              }
+
+              A.header_menu_link2:hover {
+                background-image: url("/member/images/icon/comma01.gif");
+                background-repeat: no-repeat;
+                background-position: 10px center;
+                background-color: #FFFFEE;
+              }
+
+              A.header_menu_button2:active {
+                color: #486a00;
+              }
+
+
+
+
+
+  .frame_main{
+
+      text-align: center;
+
+
+      margin:0px 0px 0px 0px;
+
+      padding:0px 0px 0px 0px;
+
+  }
+
+
+      .main_title_l{
+
+        white-space:nowrap;
+
+        text-align: left;
+
+        background-color:#486a00;
+
+        margin:2px 2px 0px 2px;
+        padding:8px 0px 8px 25px;
+
+
+        font-size:13px;
+        color: #FFFFFF;
+
+        background-image: url("/member/images/icon/comma02.gif");
+        background-repeat: no-repeat;
+        background-position: 10px center;
+
+      }
+
+
+      .main_root{
+
+        white-space:nowrap;
+
+        text-align: left;
+
+        margin:0px 2px 0px 2px;
+        padding:0px 0px 0px 30px;
+
+
+        font-size:12px;
+
+        background-image: url("/member/images/icon/comma01.gif");
+        background-repeat: no-repeat;
+        background-position: 15px center;
+
+      }
+
+
+
+      .main_title_m{
+
+          height:30px;
+
+          border-left:10px solid #405d03;
+
+          white-space:nowrap;
+
+          text-align: left;
+
+          background-color:#DDEEDD;
+
+          margin:2px 2px 0px 2px;
+          padding:10px 0px 10px 10px;
+
+
+          font-size:20pt;
+          color: #405d03;
+
+          font-weight:bold;
+
+
+      }
+
+
+      .main_title_s{
+
+          height:15px;
+
+          border-left:10px solid #405d03;
+
+          white-space:nowrap;
+
+          text-align: left;
+
+          background-color:#DDEEDD;
+
+          margin:2px 2px 0px 2px;
+          padding:10px 0px 10px 10px;
+
+
+          font-size:12pt;
+          color: #405d03;
+
+          font-weight:bold;
+
+
+      }
+
+
+      .main_title_in{
+
+          height:10px;
+
+          white-space:nowrap;
+
+          text-align: center;
+
+          background-color:#DDEEDD;
+
+          margin:2px 2px 0px 2px;
+          padding:10px 0px 10px 10px;
+
+
+
+          font-size:10pt;
+          color: #405d03;
+
+          font-weight:bold;
+
+
+      }
+
+
+      .main_explain{
+
+        white-space:nowrap;
+
+        text-align: left;
+
+        border:    1px solid #BBCCBB;
+
+        margin:2px 2px 0px 2px;
+        padding:12px 15px 12px 15px;
+
+        line-height: 17pt;          /* 行の高さ */
+
+        font-size:10pt;
+
+      }
+
+
+
+      .main_explain2{
+
+        white-space:nowrap;
+
+        text-align: center;
+
+        border:    1px solid #486a00;
+
+        margin:2px 2px 0px 2px;
+        padding:3px 5px 3px 5px;
+
+        line-height: 4em; 
+
+        font-size:12px;
+
+      }
+
+
+
+
+      .main_table_left{
+
+        text-align: center;
+
+        vertical-align:top;
+
+
+        white-space:nowrap;
+
+        margin:0px;
+        padding:0px;
+
+
+        font-size:11px;
+        color: #333333;
+
+      }
+
+
+
+      .main_table_center{
+
+        text-align: center;
+
+        vertical-align:top;
+
+
+        white-space:nowrap;
+
+
+        margin:0px;
+        padding:0px;
+
+
+        font-size:11px;
+        color: #333333;
+
+      }
+
+
+
+  .hissu{ 
+    color: #770000;
+    text-decoration: none;
+  }
+
+
+  .caution{ 
+    color: #770000;
+    text-decoration: none;
+  }
+
+  .rei{ 
+    color: #000077;
+    text-decoration: none;
+  }
+
+
+
+
+      A.link_button1 {
+        color: #566608;
+        font-size: 12px;            /* フォントサイズ */
+        text-align: center;         /* 水平揃え */
+        text-decoration: none;      /* 下線を消す */
+        white-space:nowrap;
+
+      }
+      A.link_button1:visited { color: #566608; }
+      A.link_button1:hover {
+        color: #ffffff;
+        background-color: #e5c212;  /* 背景色 */
+      }
+      A.link_button1:active { color: #566608; }
+
+
+
+
+      A.link_button2 {
+        color: #006633;
+        background:#FFCC99;
+        border-top:1px outset #AAAAAA;
+        border-left:1px outset #AAAAAA;
+        border-right:2px outset #AAAAAA;
+        border-bottom:2px outset #AAAAAA;
+        margin:0px 0px 0px 0px;
+        padding:10px 10px 10px 10px;
+        font-size: 12px;            /* フォントサイズ */
+        line-height: 30px;          /* 行の高さ */
+        text-align: center;         /* 水平揃え */
+        text-decoration: none;      /* 下線を消す */
+
+        font-weight:bold;
+
+        white-space:nowrap;
+
+      }
+      A.link_button2:visited {
+      }
+      A.link_button2:hover {
+        background-color: #FFBBBB;
+      }
+      A.link_button2:active {
+      }
+
+
+
+
+
+
+
+    .button1 { 
+        height:25px;
+
+        color: #006633;
+        background:#FFCC99;
+        border-top:1px outset #AAAAAA;
+        border-left:1px outset #AAAAAA;
+        border-right:2px outset #AAAAAA;
+        border-bottom:2px outset #AAAAAA;
+        margin:2px 0px 2px 0px;
+        font-size: 12px;            /* フォントサイズ */
+        line-height: 14px;          /* 行の高さ */
+        text-align: center;         /* 水平揃え */
+        text-decoration: none;      /* 下線を消す */
+    }
+
+    .button1:hover {
+        background-color: #FFBBBB;
+    }
+
+
+
+    .button3 { 
+        width:200px;
+        height:25px;
+
+        color: #FFFFFF;
+        background-color: #339933;
+        border-top:1px outset #AAAAAA;
+        border-left:1px outset #AAAAAA;
+        border-right:2px outset #AAAAAA;
+        border-bottom:2px outset #AAAAAA;
+        margin:2px 0px 2px 0px;
+        font-size: 12px;            /* フォントサイズ */
+        line-height: 14px;          /* 行の高さ */
+        text-align: center;         /* 水平揃え */
+        text-decoration: none;      /* 下線を消す */
+    }
+
+    .button3:hover {
+        background:#66CC66;
+    }
+
+
+    .button_check_run { 
+        width:40px;
+        height:25px;
+
+        color: #006633;
+        background:#FFCC99;
+        border-top:1px outset #AAAAAA;
+        border-left:1px outset #AAAAAA;
+        border-right:2px outset #AAAAAA;
+        border-bottom:2px outset #AAAAAA;
+        margin:2px 0px 2px 0px;
+        font-size: 12px;            /* フォントサイズ */
+        line-height: 13px;          /* 行の高さ */
+        text-align: center;         /* 水平揃え */
+        text-decoration: none;      /* 下線を消す */
+    }
+
+    .button_check_run:hover {
+        background-color: #FFBBBB;
+    }
+
+
+    .button_send { 
+        height:25px;
+
+        color: #006633;
+        background:#FFCC99;
+        border-top:1px outset #AAAAAA;
+        border-left:1px outset #AAAAAA;
+        border-right:2px outset #AAAAAA;
+        border-bottom:2px outset #AAAAAA;
+        margin:12px 0px 12px 0px;
+        font-size: 12px;            /* フォントサイズ */
+        line-height: 13px;          /* 行の高さ */
+        text-align: center;         /* 水平揃え */
+        text-decoration: none;      /* 下線を消す */
+    }
+
+    .button_send:hover {
+        background-color: #FFBBBB;
+    }
+
+
+    .cancel_link { 
+        height:25px;
+        width:150px;
+
+        color: #FFFFFF;
+        background:#FF3333;
+        border-top:1px outset #AAAAAA;
+        border-left:1px outset #AAAAAA;
+        border-right:2px outset #AAAAAA;
+        border-bottom:2px outset #AAAAAA;
+    font-weight:bold;
+        font-size: 12px;            /* フォントサイズ */
+        line-height: 13px;          /* 行の高さ */
+        text-align: center;         /* 水平揃え */
+        text-decoration: none;      /* 下線を消す */
+    }
+
+    .cancel_link:hover {
+        background-color: #FFBBBB;
+    }
+
+
+
+
+
+
+
+
+
+/*
+ *
+ * GROUP
+ *
+ */
+  .user_title1{
+    white-space:nowrap;
+
+
+    margin:2px 2px 0px 2px;
+    padding:5px 0px 5px 5px;
+
+    background-color: #DDEEDD;
+    border-left:10px solid #AABBAA;
+
+    text-align:left;
+
+    font-size:12px;
+    color: #666666;
+
+  }
+
+
+
+  .user_field1{
+    white-space:nowrap;
+
+    background-color: #EEFFEE;
+    border:1px solid #DDEEDD;
+
+    margin:2px 2px 0px 2px;
+    padding:5px 10px 5px 10px;
+
+
+    text-align:left;
+
+    font-size:12px;
+
+
+  }
+
+
+
+
+
+  .email_menu{
+
+    height:30px;
+
+    margin:2px 2px 0px 2px;
+    padding:0px 0px 0px 0px;
+
+    background-color: #BBCCBB;
+
+    text-align: center;
+
+    font-size:12px;
+    color: #666666;
+
+
+
+    border-top:3px outset #CCDDCC;
+    border-left:3px outset #CCDDCC;
+    border-right:3px outset #CCDDCC;
+    border-bottom:3px outset #CCDDCC;
+
+    white-space:nowrap;
+  }
+
+
+
+  .email_menu_explain{
+
+    background-color: #EEFFEE;
+    border:1px solid #DDEEDD;
+
+    margin:2px 2px 0px 2px;
+    padding:5px 10px 5px 10px;
+
+
+    text-align: center;
+
+    margin:2px 2px 0px 2px;
+    padding:3px 5px 3px 5px;
+
+    font-size:12px;
+
+  }
+
+
+
+
+  A.email_menu_link {
+
+    margin: 0px 0px 0px 0px;
+
+    padding: 0px 0px 0px 30px;
+
+
+    background-color: #BBCCBB;
+
+    background-image: url("/member/images/icon/comma01.gif");
+    background-repeat: no-repeat;
+    background-position: 10px center;
+
+
+    font-weight:bold;
+
+    color: #6666FF;
+    font-size: 14px;
+    text-decoration: none;
+
+  }
+
+  A.email_menu_link:visited {
+    color: #6666FF;
+  }
+
+  A.email_menu_link:hover {
+    color: #FFFFFF;
+  }
+  
+
+  A.email_menu_link:active {
+    color: #6666FF;
+  }

@@ -1,0 +1,213 @@
+2006.5.7
+クリックカウンタ用DB
+
+-- クリックカウンタのカテゴリ情報
+CREATE TABLE td_cc_category(
+ category_id      int4 primary key ,
+ user_id          int4 ,
+ base_category_id int4 , --root_id = 0
+ mail_id          int4 ,
+ title            text ,
+ comment1         text ,
+ comment2         text ,
+ comment3         text ,
+ delete_flag      boolean          ,
+ insert_date      timestamp        ,
+ update_date      timestamp        ,
+ delivery_num     int4 
+);
+GRANT ALL ON td_cc_category TO pgsql ;
+CREATE SEQUENCE td_cc_category_seq ;
+GRANT ALL ON td_cc_category_seq TO pgsql ;
+
+
+-- クリックカウンタの情報保持
+CREATE TABLE td_clickcounter(
+ clickcounter_id int4 primary key ,
+ user_id         int4             ,
+ user_counter_id int4             , -- 1 to 10000
+ category_id     int4             ,
+ url_cd          text             , -- auto
+ url             text             ,
+ title           text             ,
+ comment1        text             ,
+ comment2        text             ,
+ comment3        text             ,
+ delete_flag     boolean          ,
+ insert_date     timestamp        ,
+ update_date     timestamp
+);
+GRANT ALL ON td_clickcounter TO pgsql ;
+CREATE SEQUENCE td_clickcounter_seq ;
+GRANT ALL ON td_clickcounter_seq TO pgsql ;
+
+-- INSERT INTO td_clickcounter VALUES(nextval('td_clickcounter_seq'),55, 'qwerty','http://blog.goo.ne.jp/pandiani/e/8a7928b1cb2009d04184aecc96e22849',now(),now());
+
+-- カウンターとカテゴリーのリレーション
+CREATE TABLE td_cc_relation(
+ clickcounter_id int4       ,
+ category_id     int4       ,
+ user_id         int4       ,
+ title           text       ,
+ delete_flag     boolean    ,
+ insert_date     timestamp  ,
+ update_date     timestamp  ,
+ CONSTRAINT td_cc_relation_pkey PRIMARY KEY(clickcounter_id,category_id)
+);
+
+
+-- 除外ＩＰリスト
+CREATE TABLE td_cc_ip(
+ cc_ip_id        int4 primary key ,
+ user_id         int4             ,
+ title           text             ,
+ ip              text             ,
+ delete_flag     boolean          ,
+ insert_date     timestamp        ,
+ update_date     timestamp
+);
+GRANT ALL ON td_cc_ip TO pgsql ;
+CREATE SEQUENCE td_cc_ip_seq ;
+GRANT ALL ON td_cc_ip_seq TO pgsql ;
+
+-- クリックカウンターユーザー別設定
+CREATE TABLE td_cc_user(
+ user_id         int4 primary key ,
+ delete_flag     boolean          ,
+ insert_date     timestamp        ,
+ update_date     timestamp        ,
+ change_flag     boolean          ,
+ change_title    text             ,
+ change_url      text             ,
+ email_send_flag boolean          ,
+ email           text             ,
+ url_flag        boolean          ,
+ url             text             ,
+ setting_url     text
+);
+GRANT ALL ON td_cc_user TO pgsql ;
+CREATE SEQUENCE td_cc_user_seq ;
+GRANT ALL ON td_cc_user_seq TO pgsql ;
+
+-- アクセス数の保持
+CREATE TABLE td_click_access(
+ click_access_id int4 primary key ,
+ clickcounter_id int4             ,
+ user_counter_id int4             ,
+ user_id         int4             ,
+ url_cd          text             ,
+ user_var        text             ,
+ remote_addr     text             ,
+ http_user_agent text             ,
+ http_referer    text             ,
+ date            date             ,
+ insert_date     timestamp        ,
+ update_date     timestamp
+);
+GRANT ALL ON td_click_access TO pgsql ;
+CREATE SEQUENCE td_click_access_seq ;
+GRANT ALL ON td_click_access_seq TO pgsql ;
+
+-- コンバージョン結果を保持
+CREATE TABLE td_cc_conversion(
+ conversion_id    int4 primary key ,
+ clickcounter_id  int4             ,
+ user_id          int4             ,
+ url_cd           text             ,
+ remote_addr      text             ,
+ access_date      timestamp        ,
+ insert_date      timestamp        ,
+ update_date      timestamp        
+);
+GRANT ALL ON td_cc_conversion TO pgsql ;
+CREATE SEQUENCE td_cc_conversion_seq ;
+GRANT ALL ON td_cc_conversion_seq TO pgsql ;
+
+
+-- 解析結果の保持
+CREATE TABLE td_click_analyze(
+ click_access_id int4 primary key ,
+ clickcounter_id int4             ,
+ user_counter_id int4             ,
+ user_id         int4             ,
+ url_cd          text             ,
+ user_var        text             ,
+ remote_addr     text             ,
+ http_user_agent text             ,
+ http_referer    text             ,
+ date            date             ,
+ access_date     timestamp        ,
+ insert_date     timestamp
+);
+GRANT ALL ON td_click_access TO pgsql ;
+CREATE SEQUENCE td_click_analyze_seq ;
+GRANT ALL ON td_click_analyze_seq TO pgsql ;
+
+
+CREATE TABLE td_cc_analyze(
+ clickcounter_id int4             ,
+ user_counter_id int4             ,
+ user_id         int4             ,
+ access_date     date             ,
+ access          int4             ,
+ org_access      int4             ,
+ access_0        int4             ,
+ access_1        int4             ,
+ access_2        int4             ,
+ access_3        int4             ,
+ access_4        int4             ,
+ access_5        int4             ,
+ access_6        int4             ,
+ access_7        int4             ,
+ access_8        int4             ,
+ access_9        int4             ,
+ access_10       int4             ,
+ access_11       int4             ,
+ access_12       int4             ,
+ access_13       int4             ,
+ access_14       int4             ,
+ access_15       int4             ,
+ access_16       int4             ,
+ access_17       int4             ,
+ access_18       int4             ,
+ access_19       int4             ,
+ access_20       int4             ,
+ access_21       int4             ,
+ access_22       int4             ,
+ access_23       int4             ,
+ org_access_0    int4             ,
+ org_access_1    int4             ,
+ org_access_2    int4             ,
+ org_access_3    int4             ,
+ org_access_4    int4             ,
+ org_access_5    int4             ,
+ org_access_6    int4             ,
+ org_access_7    int4             ,
+ org_access_8    int4             ,
+ org_access_9    int4             ,
+ org_access_10   int4             ,
+ org_access_11   int4             ,
+ org_access_12   int4             ,
+ org_access_13   int4             ,
+ org_access_14   int4             ,
+ org_access_15   int4             ,
+ org_access_16   int4             ,
+ org_access_17   int4             ,
+ org_access_18   int4             ,
+ org_access_19   int4             ,
+ org_access_20   int4             ,
+ org_access_21   int4             ,
+ org_access_22   int4             ,
+ org_access_23   int4             ,
+ insert_date     timestamp        ,
+ update_date     timestamp
+);
+
+
+統計データに必要な物、
+どのクリックが、
+ -> 全体、クリック数。
+ -> 一週間、クリック数。
+ -> 日別、クリック数。
+ -> 時間別、クリック数。
+

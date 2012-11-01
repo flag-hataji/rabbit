@@ -1,0 +1,141 @@
+<?PHP require_once("../../program/cls/define/Setup.php");?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-JP">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+<meta name="Keywords" content="メール配信,ピクトメール,メルマガ配信,メールマーケティング,無料お試し">
+<meta name="Description" content=メルマガ配信は月額1050円から！、ピクトメールは複数のメールアドレスに向けて同じ内容のメールを同時に一斉配信するＡＳＰ型メール配信です。">
+<title>rabbit-mail.jp</title>
+<link href="../../common/css/common.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+<!--
+.style1 {color: #FF0000}
+-->
+</style>
+<script language="JavaScript">
+<!--
+<?PHP require_once(_DIR_USER_HTML_._HTML_JS_); ?>
+//-->
+</script>
+</head>
+<body  bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<div align='center'>
+  <table width="685" border="0" cellspacing="0" cellpadding="0" bgcolor='#948E8E'>
+    <tr>
+      <td width="504" bgcolor='#FFFFFF' class='black12'>&nbsp;</td>
+    <tr>
+      <td bgcolor='#FFFFFF' class='black12'><span class="indigo12"><strong><br>
+        インターネットに接続して、ブラウザ上から送信するだけ！簡単送信！</strong></span><br>
+        <br>
+        <br>
+        <b>1.準備</b><br>
+        ローカル（自分のパソコン） に、<br>
+        送信するメールアドレスと名前が記載されたあて先リストファイルを作成します。<br>
+        ファイルはすべ半角でカンマ（，）で区切って、 <span class='mazenda12'>CSV 
+          又は テキストファイル（拡張子が .csv 又は .txt ）</span> で保存してください。<br>
+                            <br>
+        例）<br>
+        <table width="70%" border="0" cellpadding="2" cellspacing="1" bgcolor="#666666">
+          <tr>
+            <td bgcolor="#FFFFFF" class="black12">山田さん, yamada@xxx.co.jp<br>
+              太郎,tarou@xxx.co.jp<br>
+              福岡太郎,fukuoka@xxx.cojp</td>
+          </tr>
+        </table>
+        <br>
+        <b>2.入力</b><br>
+        必須項目に入力します。 <br>
+        <br>
+        <table width="500" border="0" cellpadding="3" cellspacing="1" bgcolor="#CCCCCC" class='black12'>
+          <tr>
+            <td bgcolor="#FFFFFF"><img src="toshiba01.jpg" width="500" height="625"></td>
+          </tr>
+          <tr>
+            <td bgcolor="#EEEEEE"><br>
+              １　　送信元のメールアドレスです。このメールアドレスから配信されたことになります。<br>
+              <br>
+              ２　　全てのメールが送信されると完了メールが届きます。完了メールの送り先です。<br>
+              <br>
+              ３　　何らかの理由でメールがエラーで帰ってきた場合のエラー戻り先です。<br>
+              下の<strong>error-**@rabbit-mail.jp</strong>を選ぶと、エラーメールアドレスの自動取得ができます。<br>
+              <br>
+              ４　　配信時間を５分単位で指定できます<br>
+              <br>
+              ５　　送信メールのタイトルになります。<br>
+              <br>
+              ６　　送信者名（日本語）です。<br>
+              <br>
+              ７　　テキストメールの本文です。<strong><br>
+                ＨＴＭＬメールを配信する際も入力してください。</strong><br>
+              <font color="#FF0000">(※HTMLメールの受信を拒否されてる方はここに入力したテキストが表示されます)</font><br>
+              本文中に名前を差し込みたいときは半角小文字で<br>
+              %name% 入力すると自動で名前が差し込まれます。<br>
+              <br>
+              名前以外のデータを差し込みたい場合のタグは、エクセルで見た場合<br>
+              <br>
+Ｃ列　＝　%param1%<br>
+Ｄ列　＝　%param2%<br>
+Ｅ列　＝　%param3%<br>
+Ｆ列　＝　%param4%<br>
+Ｇ列　＝　%param5% <br>
+となります。<br>
+<br>
+※エクセルで作った場合の対応表（クリックで拡大）<br>
+              <a href="param.jpg"><img src="param.jpg" width="260" height="85" border="0"></a><br>            </td>
+          </tr>
+          <tr>
+            <td bgcolor="#FFFFFF"><img src="toshiba02.jpg" width="500" height="581"></td>
+          </tr>
+          <tr>
+            <td bgcolor="#EEEEEE"><p> ８　　ＨＴＭＬメールを送信するかどうか選択してください。<br>
+              「送信しない」を選択した場合、入力は必要なくなります。<br>
+              <br>
+              ９　テスト送信ボタンを押すと「テストメール送り先」にテストで１通だけ送信されます<br>
+              <font color="#FF0000">ただし、%name%や、%param%といったパラメータは反映されませんのでご注意下さい</font><br>
+              <br>
+              １０　メールリストを選びます。【参照】ボタンを押して、<br>
+              　　　さきほどの<strong>１.準備</strong>で作成したリストを指定してください。</p>
+              <p>１１　メールリストに不正なメールアドレス<br>
+                　　（@が無い、使用できない文字が使用されている等）が存在した場合、<br>
+                　　そのメールを省いて送信するかどうかが選択できます。<br>
+                <br>
+                １２　以上の内容に問題がなければ、「次へすすむ」を押して確認画面に進みます。 <br>
+                <br>
+                </p></td>
+          </tr>
+        </table>
+　　 
+      <br>
+        <br>
+        <b>3.確認</b><br>
+        <br>
+        <br>
+        問題がなければ以下のような確認画面が出ます。<br>
+        エラーが表示された場合は再度エラーの内容を修正してください。 <br>
+        <img src="toshiba03.jpg" width="500" height="778">        <br>
+        
+        送信内容がOKであれば「送信予約をする」ボタンを押します <br>
+        <font color="#FF0000">　※ＨＴＭＬメールの画像等はここでは表示されません。<br>
+          HTMLメールが正しく表示されているかどうかの確認は「入力に戻る」ボタンで戻っていただいて、<br>
+          テスト送信[HTMLメール] より確認をおねがいたします。<br>
+        </font><br>
+        <br>
+        <br>
+        <br>
+        <b>4.送信予約完了</b><br>
+        送信予約完了です。<br>
+        <br>
+        予約完了後すぐに予約完了のメールを『送信後の確認メール送り先』まで送信しています。<br>
+        もし、メールが届かなかった場合は、アップロードしたメールリストのデータ不具合等により<br>
+        正常に処理が行われなかった可能性が御座います。<br>
+        その場合は再度メールリストをご確認ください。 <br>
+        <br>
+        全てのメール配信終了後、再度、『送信後の確認メール送り先』まで<br>
+        配信したメールと同内容のメールをお送りいたします。 <br></td>
+    <tr>
+      <td bgcolor='#FFFFFF' class='black12'>&nbsp;</td>
+  </table>
+</div>
+</body>
+</html>

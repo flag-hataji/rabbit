@@ -1,0 +1,15 @@
+<?PHP echo "<!--"; print_r($value); echo"-->"; ?>
+    <tr bgcolor="#FFFFFF" class="black12"> 
+      <td NOWRAP> <input type="checkbox" id="ch1[<?PHP echo $ch1; ?>]" name="check[<?PHP echo $value['stepmail_member_id']; ?>]" value="checkbox"></td>
+      <td NOWRAP><?PHP echo $value['email']; ?></td>
+      <td NOWRAP><?PHP echo $value['name_family'].$value['name_first']; ?></td>
+      <td NOWRAP><?PHP if($value['scenario_id']==0){ echo "無し"; }else{ echo $value['scenario_name'];} ?></td>
+      <td NOWRAP><?PHP if($value['scenario_id']==0){ echo "無し"; }else{ echo $value['step_no'];} ?></td>
+      <td NOWRAP><?PHP echo $this->flag_send_name($value['flag_send']); ?></td>
+      <td NOWRAP>
+        <input type="submit" name="flag_send[start][<?PHP echo $value['stepmail_member_id']; ?>]" value="配信"> 
+        <input type="submit" name="flag_send[stop][<?PHP echo $value['stepmail_member_id']; ?>]" value="停止"> 
+      </td>
+      <td NOWRAP><a href="./regist/index.php?id=<?PHP echo $value['stepmail_member_id']; ?>">修正</a></td>
+      <td NOWRAP><input type="submit" name="flag_send[delete][<?PHP echo $value['stepmail_member_id']; ?>]" onclick="return confirm('以下のユーザーを削除します。宜しいでしょうか？\n\nmail  ： <?PHP echo $value['email'];?>\n名前  ： <?PHP echo $value['name_family']."　".$value['name_first'];?>\n');" value="削除"></td>
+    </tr>

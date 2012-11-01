@@ -1,0 +1,137 @@
+	<?PHP ini_set("display_errors",1); require_once("../../../program/cls/define/Setup.php");?>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-JP">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+<link href="../../../common/css/common.css" rel="stylesheet" type="text/css">
+<title>ステップメール　フォーム管理画面</title>
+<SCRIPT TYPE="text/javascript" SRC="step.js"></SCRIPT>
+<SCRIPT type="text/javascript">
+<!--
+var count;
+function CheckboxChecked(obj){
+   if(obj.checked){ 
+      for(count = 0; count <  <?PHP echo count($searchData);?>; count++){
+        document.getElementById("ch1["+count+"]").checked = true;
+      }
+   }else{
+      for(count = 0; count <  <?PHP echo count($searchData);?>; count++){
+        document.getElementById("ch1["+count+"]").checked = false;
+      }
+   }
+    //タイムアウト処理
+    function timeoutCheck(){
+      timeout_sec --;
+      if(timeout_sec <= 0){
+        clearlnterval(timed);          //タイマーストップ
+        httpObj.abort();               //HTTPリクエスト中断 
+        alert('タイムアウトです。');
+        return false;
+      }
+    }
+
+}
+// -->
+</SCRIPT>
+</head>
+
+<body  bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<div align='center'>
+	<table width="900" border="0" cellspacing="0" cellpadding="0" bgcolor='#FFFFFF'>
+		<tr> 
+			<td width="10" background="<?PHP echo _RELATIVE_; ?>common/image/shadow_left.gif"><img src='<?PHP echo _RELATIVE_; ?>common/image/spacer.gif' width='1' height='1' ></td>
+			<td width='1' bgcolor='#FFFFFF'><img src='<?PHP echo _RELATIVE_; ?>common/image/spacer.gif' width='1' height='1' ></td>
+		  <td align='center' bgcolor='#FFFFFF'>
+<!-- HEADER -->
+<?PHP require_once(_DIR_USER_HTML_._HTML_HEADER_); ?>
+<!-- BODY -->
+				<table width="850" border="0" cellspacing="0" cellpadding="0" bgcolor='#948E8E'>
+					<tr class='gray10'> 
+<!-- BODY LEFT -->
+					  <td width='152' align='center' valign='top' bgcolor='#FFFFFF'><?PHP require_once(_DIR_USER_HTML_._HTML_LEFT_MENU_); ?>
+                        <br>
+                        <br>
+</td>
+						<td width='5' bgcolor='#FFFFFF'><img src='<?PHP echo _RELATIVE_; ?>common/image/spacer.gif' width='5' height='1' ></td>
+						<td width='1' bgcolor='#FFFFFF' background='<?PHP echo _RELATIVE_; ?>common/image/y_comma.gif'><img src='<?PHP echo _RELATIVE_; ?>common/image/spacer.gif' width='1' height='1' ></td>
+						<td width='5' bgcolor='#FFFFFF'><img src='<?PHP echo _RELATIVE_; ?>common/image/spacer.gif' width='5' height='1' ></td>
+<!-- BODY CENTER -->
+						<td width='100%' align='center' valign='top' bgcolor='#FFFFFF'> 
+<!-- write area start -->
+	<table  border="0" cellpadding='0' cellspacing='0' width="100%" >
+		<tr> 
+			<td class='indigo12' valign='top' align='left'><img src='<?PHP echo _RELATIVE_; ?>common/image/mark_square.gif'> 
+				<b>ステップメールメニュー
+			</td>
+			<td class='indigo12' valign='top' align='right'></td>
+		</tr>
+		<tr>
+			<td width='1' height='5' bgcolor='#FFFFFF' colspan='2'><img src='<?PHP echo _RELATIVE_; ?>common/image/spacer.gif' width='1' height='5' ></td>
+		</tr>
+	</table>
+	<table width="100%" border="0" cellpadding='5' cellspacing='1' bgcolor='#666666'>
+		<tr>
+			<td colspan="3" align='left' class='black12'  bgcolor='#FFFFFF'><form name="form1" method="post" action="">
+			 　<a href="/member/stepmail/">ステップメールTOP</a> &gt; 登録フォーム管理<br>
+              <table width="650" border="0" cellpadding="2" cellspacing="1" bgcolor="#999999">
+                <tr bgcolor="#CCCCCC">
+                  <td width="580" bgcolor="#7ACDFE" class="black12"><strong>登録フォーム管理画面</strong></td>
+                  <td width="110" bgcolor="#7ACDFE"><INPUT name="button" type=button onClick="location.href='regist/index.php'" value="新規フォーム登録"></td>
+                </tr>
+              </table>
+			  <br>
+              <font size="2">
+                <?PHP if(isset($searchData['0'])){ echo count($searchData)."件のデータを抽出しました"; }?>
+                </font>
+              <table width="650" border="0" cellpadding="2" cellspacing="1" bgcolor="#666666">
+                <tr align="right" bgcolor="#CCCCCC">
+                  <td colspan="7"><input name="flag_send[del_batch]" type="submit"  value="チェック一括削除" onClick="return confirm('チェックしたフォームを削除します。復帰は出来ませんが宜しいでしょうか？');">                  </td>
+                </tr>
+                <tr bgcolor="#CCCCCC" class="black12">
+                  <td width="20"><input type="checkbox" name="allcheck" id="allcheck" value="checkbox" onclick=CheckboxChecked(this)></td>
+                  <td width="122">フォーム名</td>
+                  <td width="122">登録先の<br>
+                    シナリオ</td>
+                  <td width="170">フォーム表示<br/>
+                  （リンクを貼ってご利用ください）</td>
+                  <td width="60">サンキュー<br>
+                    メール</td>
+                  <td width="60">修正</td>
+                  <td width="60">削除</td>
+                </tr>
+                <?PHP $View->printListData ($searchData);  ?>
+                <tr align="right" bgcolor="#FFFFFF">
+                  <td colspan="7">&nbsp;</td>
+                </tr>
+              </table>
+			  <br>
+              <table width="650" border="0" cellpadding="2" cellspacing="1">
+                <tr>
+                  <td width="700" align="center"><font color="#FF0000">
+                    <?PHP if(!$searchData){ echo "該当データがありませんでした";}  ?>
+                  </font> </td>
+                </tr>
+              </table>
+			  <br>
+              <br>
+            </form></td>
+		</tr>
+	</table>
+
+	<table  border="0" cellpadding='0' cellspacing='0' width="485" >
+		<tr>
+			<td width='1' height='10' bgcolor='#FFFFFF'><img src='<?PHP echo _RELATIVE_; ?>common/image/spacer.gif' width='1' height='10' ></td>
+		</tr>
+	</table>
+<!-- write area end -->
+					</tr>
+				</table>
+<!-- FOOTER -->
+<?PHP require_once(_DIR_USER_HTML_._HTML_FOOTER_); ?></td>
+			<td width='1' bgcolor='#FFFFFF'><img src='<?PHP echo _RELATIVE_; ?>common/image/spacer.gif' width='1' height='1' ></td>
+			<td width="10" background="<?PHP echo _RELATIVE_; ?>common/image/shadow_right.gif"><img src='<?PHP echo _RELATIVE_; ?>common/image/spacer.gif' width='1' height='1' ></td>
+		</tr>
+	</table>
+</div>
+</body>
+</html>

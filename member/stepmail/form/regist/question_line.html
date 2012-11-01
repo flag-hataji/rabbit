@@ -1,0 +1,12 @@
+    <tr bgcolor="#FFFFFF">
+      <td  bgcolor="#FFFFFF" align="center" class='black12'><input type="checkbox" id="ch1[<?PHP echo $ch1; ?>]" name="check[<?PHP echo $searchData[$ch1]['question_id']; ?>]" value="checkbox"></td>
+      <td  bgcolor="#FFFFFF" align="center" class='black12'><?PHP $num = $ch1+1 ; echo "Ｑ{$num}"; ?></td>
+      <td  bgcolor="#FFFFFF" align="center" class='black12'><?PHP if ($searchData[$ch1]['flag_neces']=='t'){ echo "○"; } ?></td>
+      <td  bgcolor="#FFFFFF" class='black12'><?PHP if($searchData[$ch1]['flag_type'] == "1"){ echo "入力"; }else{ echo "二択"; } ?></td>
+      <td  bgcolor="#FFFFFF" class='black12'><?PHP echo $searchData[$ch1]['content']; ?></td>
+      <td  bgcolor="#FFFFFF" align="center" class='black12'><?PHP echo $searchData[$ch1]['plural']; ?></td>
+      <td  bgcolor="#FFFFFF" align="center" class='black12'><input type="submit" name="flag_delete[<?PHP echo $value['question_id']; ?>]" onclick="return confirm('質問を削除します。宜しいでしょうか？\n\質問ナンバー  ： Ｑ<?PHP echo $value['sort'];?>\n');" value="削除">
+      <INPUT name="button" type=button <?PHP echo "onClick=\"location.href='index.php?id={$_GET['id']}&question_no={$ch1}'\" ";?> value="修正">
+      </td>
+
+    </tr>

@@ -1,0 +1,220 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="ja-JP">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=EUC-JP">
+	<meta http-equiv="Content-Style-Type" content="text/css">
+	<title>ユーザーメニュー : クリックカウンター : 独自URL設定</title>
+	<link href="/common/css/common.css" rel="stylesheet" type="text/css">
+	<script language="JavaScript">
+	<!--
+	<?PHP require_once(_DIR_USER_HTML_._HTML_JS_); ?>
+	//-->
+	</script>
+    <style type="text/css">
+<!--
+#back_color {	background-color:#E5ECF3;
+}
+.style1 {color: #FF0000}
+-->
+    </style>
+</head>
+<body  bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<div align="center"> 
+	<table height="100%" width="900" border="0" cellspacing="0" cellpadding="0" bgcolor='#FFFFFF'>
+		<tr>
+			<td width="10" background="/common/image/shadow_left.gif"><img src='/common/image/spacer.gif' width='1' height='1' ></td>
+			<td width='1' bgcolor='#FFFFFF'><img src='/common/image/spacer.gif' width='1' height='1' ></td>
+		  <td valign="top" align='center' bgcolor='#FFFFFF'> 
+				<!-- Header -->
+				<?PHP require_once(_DIR_USER_HTML_._HTML_HEADER_); ?>
+				<table width="850" border="0" cellspacing="0" cellpadding="0" bgcolor="#948E8E">
+					<tr class="gray10"> 
+					<!-- --------LEFT AREA--------- -->
+						<td width="150" align="center" valign="top" bgcolor="#FFFFFF"> 
+							<?PHP require_once(_DIR_USER_HTML_._HTML_LEFT_MENU_); ?>
+							<br>
+							<?PHP //require_once(_DIR_USER_HTML_._HTML_RIGHT_MENU_); ?>
+						</td>
+						<td width="5" bgcolor="#FFFFFF"><img src="/common/image/spacer.gif" width="5" height="1" ></td>
+						<td width="1" bgcolor="#FFFFFF" background="/common/image/y_comma.gif"><img src="/common/image/spacer.gif" width="1" height="1" ></td>
+						<!-- --------CENTER AREA--------- -->
+					  <td width="700" align="right" valign="top" bgcolor="#FFFFFF">
+							<!-- Menu Header -->
+							<?PHP require_once(_DIR_MEMBER_HTML_._HTML_MEMBER_HEADER_CC_); ?>
+<!-- ここから -->
+<!-- navi start-->
+							<table width="685" height="25" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td width="685" height="25" align="left" colspan="2" class="black10">
+										<a href="/">TOP</a> &gt;
+										<a href="/member/">ユーザーメニューTOP</a> &gt;
+										<a href="/member/clickcounter/">クリックカウンターTOP</a> &gt;
+										<a href="/member/clickcounter/user/">独自ＵＲＬ設定</a> &gt;
+										<?php echo $this->bean->getView('navi') ?><?php echo $this->bean->getView('title') ?>
+									</td>
+								</tr>
+							</table>
+							<table width="685" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td  width="1" height="10" bgcolor="#FFFFFF"><img src="../../../common/image/spacer.gif" width="1" height="10" ></td>
+								</tr>
+							</table>
+							<table width="685" height="25" border="0" cellspacing="0" cellpadding="0" background="/common/image/member/cc/in_title01.gif">
+							<tr>
+							<td>
+<!-- navi end-->
+							<table width="685" height="25" border="0" cellspacing="0" cellpadding="0" background="/common/image/member/cc/in_title01.gif">
+								<tr>
+									<td width="30" height="25" align="left"></td>
+									<td width="650" height="25" align="left" class="white12"><strong>独自ドメインを利用する</strong></td>
+								</tr>
+							</table>
+							<table width="685" border="0" cellpadding="5" cellspacing="1" bgcolor="#009933">
+								<tr>
+									<td align="center" bgcolor="#FFFFFF">
+										<table width="670" border="0" cellspacing="" cellpadding="0">
+											<tr class="black12">
+												<td width="20" valign="top">
+													<img src="/common/image/arrow.gif"  height="20">
+												</td>
+											  <td width="650" class="black12">
+												  <p><strong>独自URL設定   <?php echo $this->bean->getView('navi') ?><?php echo $this->bean->getView('title') ?></strong><br/>
+													１　先に下記の<a  href="#domain">.htaccessを設定</a>する必要があります。<br/>
+												  ２　.htaccessを設置したURLをご記入ください　例 http://www.test.com/cc/
+											      <br>
+											    ３　独自ドメインを「利用する」にして「確認画面へ」を押し、設定してさい。<br>
+											    ４　設定後、カウンターURLを作成し<br>
+											    　　
+											    ・URLが設定したドメインになっているかどうか<br>
+											    　　 ・クリックして、きちんと飛ぶか、カウントが増えるか<br>
+											    をご確認ください。</p>
+											    </td>
+											</tr>
+											<tr class="black12">
+												<td colspan="2" align="center">
+
+<br />
+<form action="index.php" method="post">
+<?PHP $this->viewErrorMessages() ?>
+<table border="0" cellspacing='0'cellpadding='0' bgcolor="#aaaaaa" width="650" >
+	<tr>
+		<td>
+			<table width="100%" cellspacing='1'cellpadding='3' >
+				<tr>
+					<td class="black12" bgcolor="#D0D2FA" width="150">設定URL：</td>
+					<td class="black12" bgcolor="#FFFFFF">
+						<?php $this->viewInputHtml('setting_url') ?>
+					</td>
+				</tr>
+				<tr>
+					<td class="black12" bgcolor="#D0D2FA" width="150">独自ドメイン<font color="#FF0000">(必須)</font>：</td>
+					<td class="black12" bgcolor="#FFFFFF">
+						<input name="inputs[change_flag]" type="radio" value="t" <?php $this->viewChecked($this->bean->getInput('change_flag'),'t')?> >
+						利用する
+						<input name="inputs[change_flag]" type="radio" value="f" <?php $this->viewChecked($this->bean->getInput('change_flag'),'f')?> >
+						利用しない
+					</td>
+				</tr>
+				<tr>
+					<td class="black12" bgcolor="#D0D2FA" width="150">独自URL</td>
+					<td class="black12" bgcolor="#FFFFFF">
+						<input name="inputs[change_url]" type="text" value="<?php $this->viewInputHtml('change_url') ?>" size="60">
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+<br>
+<?php echo $this->bean->getView('next_button') ?>
+</form>
+
+												</td>
+											</tr>
+											<tr>
+												<td colspan="3">
+													<img src="/common/image/spacer.gif" width="5" height="10" >
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+							
+<!-- ここまで -->
+						</td>
+					</tr>
+				</table>
+                            <br>
+                            <br>
+                            <table width="685" height="25" border="0" cellspacing="0" cellpadding="0" background="/common/image/member/cc/in_title01.gif">
+                              <tr>
+                                <td width="30" height="25" align="left"><a name="domain"></a></td>
+                                <td width="650" height="25" align="left" class="white12"><strong>.htaccessの設置方法</strong></td>
+                              </tr>
+                            </table>
+                            <table width="685" border="0" cellpadding="5" cellspacing="1" bgcolor="#009933">
+                              <tr>
+                                <td align="center" bgcolor="#FFFFFF"><table width="670" border="0" cellspacing="0" cellpadding="0">
+                                    <tr class="black12">
+                                      <td width="36"><img src="/common/image/arrow.gif"  height="20"> </td>
+                                      <td width="634" class="black12"><strong>.htaccessというファイルをお客様のサーバーにアップロードする必要があります。</strong>  　 </td>
+                                    </tr>
+                                    <tr class="black12">
+                                      <td colspan="2">                                        例）http://www.test.com/に設定する場合<br>
+                                        <br>
+                                        １、以下の青枠のテキストをコピーし、「htaccess.txt」というファイル名で保存します。<br>
+                                        ↓.htaccessの中身<br>
+                                        <div id='back_color'> −−−−−↓ここから↓−−−−−<br>
+                                          Options FollowSymLinks<br>
+                                          RewriteEngine on<br>
+                                          RewriteBase /cc<br>
+                                          RewriteRule ^([0-9A-Za-z]+)/(.*)$ http://itm-asp.com/cc/$1/$2 [L]<br>
+                                        −−−−−↑ここまで↑−−−−−</div>                                        
+                                        <p>２、http://www.test.com/cc/ というフォルダを作成します。<br>
+                                        ３、http://www.test.com/cc/ に１で作成した「htaccess.txt」ファイルをアップロードします。<br>
+                                        ４、「htaccess.txt」というファイル名を「.htaccess」と変更します。<br>
+                                        以上。<br>
+                                          
+                                          <br>
+                                          <span class="style1">注意</span>                                        <br>
+                                          上記のが動かない場合下記の原因をチェックしてみてください。<br>
+                                          <br>
+                                          １）.htaccessが動くかテストします。空(もしくは改行だけ)の.htaccessをアップして<br>
+                                          アップしたフォルダにアクセスし、エラーがでないか確認してみる。<br>
+                                          <br>
+                                          ２）options の設定ができるか。<br>
+                                        </p>
+                                        <div id='back_color'> Options FollowSymLinks<br>
+                                        </div>
+                                        の設定だけを行った.htaccessをアップしてエラーが出ないか確認する。<br>
+                                        <br>
+                                        ３）RewriteEngineが使えるかどうか。<br>
+                                        <div id='back_color'> RewriteEngine on<br>
+                                        </div>
+                                        の設定だけを行った.htaccessをアップしてエラーが出ないか確認する。<br>
+                                        <br>
+                                        その他、動かない場合下記の原因が考えられます。<br>
+                                        ・そもそも .htaccess が設置できない -> サーバー会社にお問い合せの上、ご確認下さい。<br>
+                                        ・RewriteEngine が利用できない -> サーバー会社にお問い合せの上、ご確認下さい。<br>
+                                        <br>
+                                        サーバーや、FTPの環境において、アップされた.htaccessが閲覧出来なくなる場合があります。<br>
+                                        サーバー会社にお問い合せの上ご確認ください。<br>
+                                        <br>                                      </td>
+                                    </tr>
+                                </table></td>
+                              </tr>
+                            </table>
+                      <!-- FOOTER --></td>
+
+	</table>
+                <br>
+          <?PHP require_once(_DIR_USER_HTML_._HTML_FOOTER_); ?></td>
+			<td width='1' bgcolor='#FFFFFF'><img src='/common/image/spacer.gif' width='1' height='1' ></td>
+			<td width="10" background="/common/image/shadow_right.gif"><img src='/common/image/spacer.gif' width='1' height='1' ></td>
+		</tr>
+</table>
+</div>
+</body>
+</html>
+

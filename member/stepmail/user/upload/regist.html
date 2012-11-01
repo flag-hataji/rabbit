@@ -1,0 +1,28 @@
+<table width="600" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td>
+        <form name="form" method="post" action="index.php"  enctype="multipart/form-data">
+        <div align="center">
+          <font size ="2" color="#FF0000"><?PHP if(isset($errorMsg)){ echo $errorMsg;} ?></font>
+          <br>
+        </div>
+                
+        <table width="600" border="0" cellpadding="4" cellspacing="1" bgcolor="#999999" align="center">
+          <tr> 
+            <td width="82" bgcolor="#CFCFE2" class="point12">ファイル名</td>
+            <td width="499" bgcolor="#FFFFFF" class="point12"> <input name="userfile" type="file" size="50"> 
+              <input type="submit" value="送信"> </td>
+          </tr>
+          <tr>
+          <td width="82" bgcolor="#CFCFE2" class="point12">登録する<br>シナリオ</td>
+          <td width="499" bgcolor="#FFFFFF" class="point12"><?PHP printScenarioSelect($aData); ?></td>
+          </tr>
+        </table>
+      </form>
+    </td>
+  </tr>
+</table>
+<br />
+<br />
+<font size="3">アップロード用ＣＳＶのフォーマットはこちらから<a href="member.csv">ダウンロード</a>できます。<br />
+（右クリックで「対象をファイルに保存」をお選びください。）</font>

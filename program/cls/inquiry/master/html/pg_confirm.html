@@ -1,0 +1,267 @@
+<?PHP $viewS = $this->getViewDataSConfirm(); ?>
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-JP">
+<title><?PHP echo $this->pageS['title']; ?></title>
+<link href="../../../common/css/common.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<body bgcolor="#CCCCCC" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" background='<?PHP echo _RELATIVE_; ?>common/image/line2.gif'>
+
+<div align="center">
+
+<?PHP require_once(_DIR_ADMIN_HTML_._HTML_ADMIN_HEADER_); ?>
+
+  <table  border="0" cellpadding='5' cellspacing='1' bgcolor='#666666' width="700" border="0">
+    <tr> 
+      <td bgcolor='#DDDDDD' class='blue12' valign='top' align='left' height='25' background='<?PHP echo _RELATIVE_; ?>common/image/line6.gif'>
+        <b><img src='../../common/image/tri.gif'> <?PHP echo $this->pageS['title']; ?></b>
+      </td>
+    </tr>
+    <tr> 
+      <td bgcolor='#FFFFFF' class='gray12' valign='top' align='center'>
+
+        <table  border="0" cellpadding='0' cellspacing='0' width="670" border="0">
+          <tr> 
+            <td align='right' colspan='1' class='gray12' nowrap>
+              <b>
+              <a href='<?PHP echo _PG_URL_RENEW_SEEK_; ?>'>▼ 修正/削除 検索</a>　　
+              <a href='<?PHP echo _PG_URL_RENEW_LIST_; ?>'>▼ 修正/削除 リスト</a>　　
+              </b>
+            </td>
+          </tr>
+        </table>
+        <form name="form2" method="post" action="index.php" style="margin: 0px;">
+
+
+        <table  border="0" cellpadding='0' cellspacing='0' width="650" border="0">
+          <tr> 
+            <td align='left' bgcolor="#FFFFFF"><img src='../../common/image/space.gif' height='20'></td>
+          </tr>
+        </table>
+
+
+        <table  border="0" cellpadding='0' cellspacing='0' bgcolor='#666666' width="650" border="0">
+          <tr> 
+            <td align='center' valign='top' bgcolor="#FFFFFF">
+
+
+              <table  border="0" cellpadding='0' cellspacing='0' width="650" border="0">
+                <tr> 
+                  <td align='left' bgcolor="#FFFFFF"><img src='../../common/image/space.gif' height='15'></td>
+                </tr>
+              </table>
+              <table  border="0" cellpadding='0' cellspacing='0' width="630" border="0">
+                <tr> 
+                  <td align='left'  colspan='2' class='emerald12'><b>入力確認：ログイン情報</b></td>
+                </tr>
+              </table>
+              <table  border="0" cellpadding='5' cellspacing='1' bgcolor='#666666' width="630" border="0">
+                <tr> 
+                  <td align='center'  colspan='1' class='emerald12'  bgcolor='#EEFFEE' width='150'><?PHP echo $this->Manager->nameS['id']; ?></td>
+                  <td align='left'  colspan='1' class='gray12'  bgcolor='#FFFFFF'>
+                    <?PHP echo $viewS['id']; ?>
+                  </td>
+                </tr>
+                <tr> 
+                  <td align='center'  colspan='1' class='emerald12'  bgcolor='#EEFFEE' width='150'><?PHP echo $this->Manager->nameS['password']; ?></td>
+                  <td align='left'  colspan='1' class='gray12'  bgcolor='#FFFFFF'>
+                    <?PHP echo $viewS['password']; ?>
+                  </td>
+                </tr>
+              </table>
+
+              <table  border="0" cellpadding='0' cellspacing='0' width="650" border="0">
+                <tr> 
+                  <td align='left' bgcolor="#FFFFFF"><img src='../../common/image/space.gif' height='15'></td>
+                </tr>
+              </table>
+              <table  border="0" cellpadding='0' cellspacing='0' width="630" border="0">
+                <tr> 
+                  <td align='left'  colspan='2' class='emerald12'><b>入力確認：お客様の情報</b></td>
+                </tr>
+              </table>
+              <table  border="0" cellpadding='5' cellspacing='1' bgcolor='#666666' width="630" border="0">
+                <tr> 
+                  <td align='center'  colspan='1' class='emerald12'  bgcolor='#EEFFEE' width='150'><?PHP echo $this->Manager->nameS['name']; ?></td>
+                  <td align='left'  colspan='1' class='gray12'  bgcolor='#FFFFFF'>
+                    <?PHP echo $viewS['name']; ?>
+                  </td>
+                </tr>
+                <tr> 
+                  <td align='center'  colspan='1' class='emerald12'  bgcolor='#EEFFEE' width='150'><?PHP echo $this->Manager->nameS['kana']; ?></td>
+                  <td align='left'  colspan='1' class='gray12'  bgcolor='#FFFFFF'>
+                    <?PHP echo $viewS['kana']; ?>
+                  </td>
+                </tr>
+                <tr> 
+                  <td align='center'  colspan='1' class='emerald12'  bgcolor='#EEFFEE' width='150'><?PHP echo $this->Manager->nameS['flag_gender']; ?></td>
+                  <td align='left'  colspan='1' class='gray12'  bgcolor='#FFFFFF'>
+                    <?PHP echo $viewS['flag_gender']; ?>
+                  </td>
+                </tr>
+                <tr> 
+                  <td align='center'  colspan='1' class='emerald12'  bgcolor='#EEFFEE' width='150'><?PHP echo $this->Manager->nameS['birthday']; ?></td>
+                  <td align='left'  colspan='1' class='gray12'  bgcolor='#FFFFFF'>
+                    <?PHP echo $viewS['birthday']; ?>
+                  </td>
+                </tr>
+                <tr> 
+                  <td align='center'  colspan='1' class='emerald12'  bgcolor='#EEFFEE' width='150'><?PHP echo $this->Manager->nameS['name_company']; ?></td>
+                  <td align='left'  colspan='1' class='gray12'  bgcolor='#FFFFFF'>
+                    <?PHP echo $viewS['name_company']; ?>
+                  </td>
+                </tr>
+                <tr> 
+                  <td align='center'  colspan='1' class='emerald12'  bgcolor='#EEFFEE' width='150'><?PHP echo $this->Manager->nameS['kana_company']; ?></td>
+                  <td align='left'  colspan='1' class='gray12'  bgcolor='#FFFFFF'>
+                    <?PHP echo $viewS['kana_company']; ?>
+                  </td>
+                </tr>
+              </table>
+
+
+
+              <table  border="0" cellpadding='0' cellspacing='0' width="650" border="0">
+                <tr> 
+                  <td align='left' bgcolor="#FFFFFF"><img src='../../common/image/space.gif' height='15'></td>
+                </tr>
+              </table>
+              <table  border="0" cellpadding='0' cellspacing='0' width="630" border="0">
+                <tr> 
+                  <td align='left'  colspan='2' class='emerald12'><b>入力確認：ご連絡先</b></td>
+                </tr>
+              </table>
+              <table  border="0" cellpadding='5' cellspacing='1' bgcolor='#666666' width="630" border="0">
+
+                <tr> 
+                  <td align='center'  colspan='1' class='emerald12'  bgcolor='#EEFFEE' width='150'><?PHP echo $this->Manager->nameS['mail']; ?></td>
+                  <td align='left'  colspan='1' class='gray12'  bgcolor='#FFFFFF'>
+                    <?PHP echo $viewS['mail']; ?>
+                  </td>
+                </tr>
+                <tr> 
+                  <td align='center'  colspan='1' class='emerald12'  bgcolor='#EEFFEE' width='150'><?PHP echo $this->Manager->nameS['tel']; ?></td>
+                  <td align='left'  colspan='1' class='gray12'  bgcolor='#FFFFFF'>
+                    <?PHP echo $viewS['tel']; ?>
+                  </td>
+                </tr>
+
+                <tr> 
+                  <td align='center'  colspan='1' class='emerald12'  bgcolor='#EEFFEE' width='150'><?PHP echo $this->Manager->nameS['mobile']; ?></td>
+                  <td align='left'  colspan='1' class='gray12'  bgcolor='#FFFFFF'>
+                    <?PHP echo $viewS['mobile']; ?>
+                  </td>
+                </tr>
+
+                <tr> 
+                  <td align='center'  colspan='1' class='emerald12'  bgcolor='#EEFFEE' width='150'><?PHP echo $this->Manager->nameS['fax']; ?></td>
+                  <td align='left'  colspan='1' class='gray12'  bgcolor='#FFFFFF'>
+                    <?PHP echo $viewS['fax']; ?>
+                  </td>
+                </tr>
+              </table>
+
+              <table  border="0" cellpadding='0' cellspacing='0' width="650" border="0">
+                <tr> 
+                  <td align='left' bgcolor="#FFFFFF"><img src='../../common/image/space.gif' height='15'></td>
+                </tr>
+              </table>
+              <table  border="0" cellpadding='0' cellspacing='0' width="630" border="0">
+                <tr> 
+                  <td align='left'  colspan='2' class='emerald12'><b>入力確認：住所</b></td>
+                </tr>
+              </table>
+              <table  border="0" cellpadding='5' cellspacing='1' bgcolor='#666666' width="630" border="0">
+                <tr> 
+                  <td align='center'  colspan='1' class='emerald12'  bgcolor='#EEFFEE' width='150'><?PHP echo $this->Manager->nameS['zip']; ?></td>
+                  <td align='left'  colspan='1' class='gray12'  bgcolor='#FFFFFF'>
+                    <?PHP echo $viewS['zip']; ?>
+                  </td>
+                </tr>
+               <tr> 
+                  <td align='center'  colspan='1' class='emerald12'  bgcolor='#EEFFEE' width='150'><?PHP echo $this->Manager->nameS['area']; ?></td>
+                  <td align='left'  colspan='1' class='gray12'  bgcolor='#FFFFFF'>
+                    <?PHP echo $viewS['area']; ?>
+                  </td>
+                </tr>
+               <tr> 
+                  <td align='center'  colspan='1' class='emerald12'  bgcolor='#EEFFEE' width='150'><?PHP echo $this->Manager->nameS['address1']; ?></td>
+                  <td align='left'  colspan='1' class='gray12'  bgcolor='#FFFFFF'>
+                    <?PHP echo $viewS['address1']; ?>
+                  </td>
+                </tr>
+               <tr> 
+                  <td align='center'  colspan='1' class='emerald12'  bgcolor='#EEFFEE' width='150'><?PHP echo $this->Manager->nameS['address2']; ?></td>
+                  <td align='left'  colspan='1' class='gray12'  bgcolor='#FFFFFF'>
+                    <?PHP echo $viewS['address2']; ?>
+                  </td>
+                </tr>
+              </table>
+
+              <table  border="0" cellpadding='0' cellspacing='0' width="650" border="0">
+                <tr> 
+                  <td align='left' bgcolor="#FFFFFF"><img src='../../common/image/space.gif' height='15'></td>
+                </tr>
+              </table>
+              <table  border="0" cellpadding='0' cellspacing='0' width="630" border="0">
+                <tr> 
+                  <td align='left'  colspan='2' class='emerald12'><b>入力確認：その他</b></td>
+                </tr>
+              </table>
+              <table  border="0" cellpadding='5' cellspacing='1' bgcolor='#666666' width="630" border="0">
+               <tr> 
+                  <td align='center'  colspan='1' class='emerald12'  bgcolor='#EEFFEE' width='150'><?PHP echo $this->Manager->nameS['comment']; ?></td>
+                  <td align='center'  colspan='1' class='gray12'  bgcolor='#FFFFFF'>
+                    <?PHP echo $viewS['comment']; ?>
+                  </td>
+                </tr>
+              </table>
+
+              <table  border="0" cellpadding='0' cellspacing='0' width="630" border="0">
+                <tr> 
+                  <td align='left' bgcolor="#FFFFFF"><img src='../../common/image/space.gif' height='15'></td>
+                </tr>
+              </table>
+              <table  border="0" cellpadding='0' cellspacing='4' width="630" border="0">
+                <tr> 
+                  <td align='center'  colspan='1' class='emerald12'>
+                    <input type='submit' name='post[rewrite]' value=' キャンセル '>　
+
+<?PHP if( $this->pageS['mode']=='renew' ){ ?>
+                    <input type='submit' name='finish' value=' 修正登録 '>　
+<?PHP }else{ ?>
+                    <input type='submit' name='finish' value=' 登録する '>
+<?PHP } ?>
+                    <input type='hidden' name='charaCode' value="もじこーどはんていようへんすう">
+                    <input type='hidden' name='hidden'    value="finish">
+                    <input type='hidden' name='mode'      value="<?PHP echo $this->pageS['mode']; ?>">
+<?PHP $this->showHidden(); ?>
+                  </td>
+                </tr>
+              </table>
+              <table  border="0" cellpadding='0' cellspacing='0' width="630" border="0">
+                <tr> 
+                  <td align='left' bgcolor="#FFFFFF"><img src='../../common/image/space.gif' height='15'></td>
+                </tr>
+              </table>
+
+            </td>
+          </tr>
+        </table>
+
+        </form>
+
+      </td>
+    </tr>
+  </table> 
+
+<?PHP require_once(_DIR_ADMIN_HTML_._HTML_ADMIN_FOOTER_); ?>
+
+</div>
+</body>
+</html>
+
+

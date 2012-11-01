@@ -1,0 +1,115 @@
+<?PHP require_once("../../../program/cls/define/Setup.php");?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="ja-JP">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-JP"> 
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>www.rabbit-mail.jp | メール配信ＡＳＰ</title>
+<link href="../../../css/common.css" rel="stylesheet" type="text/css">
+<link href="./css/text.css" rel="stylesheet" type="text/css">
+</head>
+<body bgcolor="#FFFFFF" >
+
+<div align="center">
+
+<?PHP require_once(_DIR_MEMBER_HTML_._HTML_MEMBER_HEADER_PICTMAIL_); ?>
+<div id="pictmail-top-box">
+      <table border="0" cellpadding="0" cellspacing="0" width="690" align="center" class="outLine" id="marginLeft1">
+  <tr>
+    <td colspan="2" class="title_l">
+      メール配信解除フォーム
+    </td>
+  </tr>
+  <tr>
+    <td class="explain_l">
+      &nbsp;
+    </td>
+  </tr> 
+
+        <tr>
+          <td class="title_m"><a href="./correction.php"><b>解除用フォーム編集</b></a>　<span class="red12">※まずはじめにご設定ください</span>         </td>
+          </tr>
+          <tr>
+            <td class="explain_m">
+              ◆お客様専用のメールアドレス収集フォームを作成、修正できることができます。<br />
+              ◆設定できる内容<br />
+　・フォーム名の設定<br />　・フォームヘッダー設定<br />　・パラーメーターの設定<br />　・サンキューメール戻り先URL</td>
+          </tr>
+          <tr>
+            <td class="title_m"><a href="./settingMail.php"><b>■サンキューメール設定</b></a>　<span class="red12">※次にご設定ください。</span></td>
+          </tr>
+          <tr>
+            <td class="explain_m">
+              ◆フォームに登録頂いたお客様へのサンキューメールの設定ができます<br />◆設定できる内容<br />　・送信者名<br />　・送信先アドレス<br />　・エラー時戻り先アドレス<br />　・件名<br />　・テキストメッセージ<br />　・HTMLメール送信の有無<br />             　・HTMLメッセージ</td>
+          </tr>
+          <tr>
+            <td class="title_m">
+            <?php
+                  if($f_id==""){
+                    echo '<span style="color:#CCCCCC">作成したフォームの確認</span>';
+                  }else{
+                     echo '<a href="./confirmForm.php?u_id='.$user_id.'&f_id='.$f_id.'" target="_blank"><span class="textBule">作成したフォームの確認</span></a>　　';
+                        echo '<img src="./images/mark_square_2.gif" alt="フォーム編集">';
+                       echo ' <a href="./m-confirmForm.php?u_id='.$user_id.'&f_id='.$f_id.'" target="_blank"><span class="textBule">携帯用はこちら</span></a>';
+                  }
+            ?>
+
+<span class="red12">※フォームはここから確認できます。</span>
+            </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="explain_m">
+              <span class="red12">※確認出来ない場合は『フォーム編集』を行ってください。</span><br />
+              ◆フォーム編集にて作成したフォームを確認、使用することができます<br>
+              （アドレスをコピーしてご利用ください。）<br />              
+              ◆登録された内容は、下記にあるCSVダウンロードにて確認できます            </td>
+          </tr>
+          <tr>
+            <td class="title_m"><a href="./showUserData.php">■登録されたデータを確認</a>　<span class="red12">登録されたデータをこちらからダウンロードできます。</span></td>
+          </tr>
+          <tr>
+            <td class="explain_m">
+              ◆フォームに登録されたメールアドレスなどをダウンロードすることができます<br />              
+              ◆登録されたリストもこちらにてできます。<br />
+※最新の情報を100件まで表示してあります。全件確認したい場合は、お手数ですがCSVファイルにて確認して下さい<br />
+◆登録された詳細情報、不要なデータの削除等もこちらでできますので、ぜひ活用してください           </td>
+          </tr>
+        </table>
+</div>
+<div id="footer-box">
+<table border="0" width="100%">
+  <tr>
+    <td align="center">
+      rabbit-mail
+    </td>
+  </tr>
+</table >
+</div>
+
+
+
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

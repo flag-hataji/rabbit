@@ -1,0 +1,182 @@
+<?PHP require_once("../../../program/cls/define/Setup.php");?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="ja-JP">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-JP"> 
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>www.rabbit-mail.jp | メール配信ＡＳＰ</title>
+<link href="../../../css/common.css" rel="stylesheet" type="text/css">
+<link href="./css/text.css" rel="stylesheet" type="text/css">
+<script language="JavaScript">
+<!--
+<?PHP require_once(_DIR_USER_HTML_._HTML_JS_); ?>
+	
+	function changeSub(){
+		document.fm.action = "./settingMail3.php";
+	}
+	
+	function sendData(){
+			var con = window.confirm("更新します、よろしいですか？");
+			if(con){
+				document.fm.action = "./sm_completion3.php";
+				document.fm.submit();
+			}else{
+				return false;
+			}
+	}
+
+//-->
+</script>
+</head>
+<body bgcolor="#FFFFFF" >
+
+<div align="center">
+
+<?PHP require_once(_DIR_MEMBER_HTML_._HTML_MEMBER_HEADER_PICTMAIL_); ?>
+<div id="pictmail-top-box">
+      <table border="0" cellpadding="0" cellspacing="0">
+            <td valign="top" bgcolor="#FFFFFF">
+  <tr>
+    <td colspan="2" class="title_l">
+      メールアドレス収集フォーム
+    </td>
+  </tr>
+				<form action="./settingMail3.php" method="post" name="fm" onSubmit="changeSub();">
+				  <table align="center" cellpadding="0" cellspacing="0">
+					  <tr>
+						<td width="30" height="25"></td>
+						<td class="title_m" width="570" height="25">■登録内容確認</td>
+					  </tr>
+				  </table>
+					<table width="600" border="0" align="center" cellpadding="5" cellspacing="3" bgcolor="#FFFFFF">
+					<tr align="center">
+						<td bgcolor="#DDEEDD" class="explain_m"  colspan="2"><b>内容を確認し、良ければ登録を押して下さい</b></td>
+					  <tr>
+						<td width="200" bgcolor="#DDEEDD" class="explain_m" >サンキューメールを送信</td>
+						<td >
+						<span class="explain_m">
+						<?php
+							if($sendMail=="t"){
+								echo "使用する";
+							}else{
+								echo "使用しない";
+							}
+						?>
+						</span>						</td>
+					  </tr>
+					  <tr>
+						<td width="200" bgcolor="#DDEEDD" class="explain_m" >送信者名（日本語表記）</td>
+						<td  class="explain_m"><?php echo $transmit_name; ?></td>
+					  </tr>
+					  <tr>
+						<td width="200" bgcolor="#DDEEDD" class="explain_m" >送信元メールアドレス</td>
+						<td  class="explain_m"><?php echo $transmit_mailadd; ?></td>
+					  </tr>
+					  <tr>
+						<td width="200" bgcolor="#DDEEDD" class="explain_m" >エラー戻り先メールアドレス</td>
+						<td  class="explain_m"><?php echo $return_err; ?></td>
+					  </tr>
+					  <tr>
+						<td width="200" bgcolor="#DDEEDD" class="explain_m" >件名</td>
+						<td  class="explain_m"><?php echo $subject; ?></td>
+					  </tr>
+					  <tr>
+						<td width="200" bgcolor="#DDEEDD" class="explain_m" >ＴＥＸＴメッセージ</td>
+						<td  class="explain_m"><?php echo $s_text_mess; ?></td>
+					  </tr>
+					  <tr>
+						<td width="200" bgcolor="#DDEEDD" class="explain_m" >HTMLメール送信する</td>
+						<td  class="explain_m">
+							<?php
+								if($use_html=="t"){
+									echo "送信する";
+								}else{
+									echo "送信しない";
+								}
+							?>						</td>
+					  </tr>
+					  <tr>
+						<td width="200" bgcolor="#DDEEDD" class="explain_m" >ＨＴＭＬメッセージ</td>
+						<td  class="explain_m">
+							<?php
+								if($use_html=="t"){
+									echo $s_html_mess.'&nbsp;';
+								}else{
+									echo '&nbsp;';
+								}
+							?>						</td>
+					  </tr>
+					  <tr>
+						<td width="200" bgcolor="#DDEEDD" class="explain_m" >携帯電話へのメッセージ</td>
+						<td  class="explain_m">
+							<?php
+								if($use_mobail=="1"){
+									echo "ＰＣのテキストメールを使う";
+								}else if($use_mobail=="2"){
+									echo "携帯用にサンキューメールを設定する";
+								}
+							?>						</td>
+					  </tr>
+					  <tr>
+						<td width="200" bgcolor="#DDEEDD" class="explain_m" >携帯電話用メッセージ</td>
+						<td  class="explain_m">
+							<?php
+								if($use_mobail=="2"){
+									echo $s_mobail_mess.'&nbsp;';
+								}else{
+									echo '&nbsp;';
+								}
+							?>						</td>
+					  </tr>
+
+					  <tr align="center">
+						<td colspan="2" class="explain_m" bgcolor="#DDEEDD"><input type="button" value="登録" name="butn" onClick="return sendData();">　<input type="submit" value="戻る" name="sub" onClick="changeSub();"/></td>
+					  </tr>
+					</table>
+					<input type="hidden" name="data[sendMail]" value="<?php echo $sendMail; ?>" />
+					<input type="hidden" name="data[transmit_name]" value="<?php echo $transmit_name; ?>" />
+					<input type="hidden" name="data[transmit_mailadd]" value="<?php echo $transmit_mailadd; ?>" />
+					<input type="hidden" name="data[return_err]" value="<?php echo $return_err; ?>" />
+					<input type="hidden" name="data[subject]" value="<?php echo $subject?>" />
+					<input type="hidden" name="data[text_mess]" value="<?php echo $text_mess?>" />
+					<input type="hidden" name="data[use_html]" value="<?php echo $use_html; ?>" />
+					<input type="hidden" name="data[html_mess]" value="<?php echo $html_mess; ?>" />
+					<input type="hidden" name="data[use_mobail]" value="<?php echo $use_mobail; ?>" />
+					<input type="hidden" name="data[mobail_mess]" value="<?php echo $mobail_mess; ?>" />					
+					<input type="hidden" name="data[mode]" value="input" />
+					<input type="hidden" name="data[flag]" value="<?php echo $flag; ?>" />
+					<input type="hidden" name="data[del_flag]" value="<?php echo $del_flag; ?>" />
+				</form>
+
+            <!-- Menu Header --></td>
+          </tr>
+        </table>
+</div>
+<div id="footer-box">
+<table border="0" width="100%">
+  <tr>
+    <td align="center">
+      rabbit-mail
+    </td>
+  </tr>
+</table >
+</div>
+
+
+
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

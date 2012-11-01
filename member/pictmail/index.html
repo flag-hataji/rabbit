@@ -1,0 +1,131 @@
+<?PHP require_once("../../program/cls/define/Setup.php");?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="ja-JP">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-JP"> 
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>www.rabbit-mail.jp | メール配信ＡＳＰ</title>
+<link href="../../css/common.css" rel="stylesheet" type="text/css">
+</head>
+<body bgcolor="#FFFFFF" >
+
+<div align="center">
+
+<?PHP require_once(_DIR_MEMBER_HTML_._HTML_MEMBER_HEADER_PICTMAIL_); ?>
+
+
+
+<div id="pictmail-top-box">
+<form action='/member/index.php' method='POST' style="margin: 0px;">
+<table>
+  <tr>
+    <td class="title_l">
+      機能の選択
+    </td>
+  </tr>
+  <tr>
+    <td class="explain_l">
+      ご利用したい機能ををご選択ください。
+    </td>
+  </tr>
+  <tr>
+    <td class="title_m">
+      <a href="mail/"><b>■メール配信の実行 </b></a>
+    </td>
+  </tr>
+  <tr>
+    <td class="explain_m">
+      ・メールの一括配信を行えます。<br>
+      ・事前に配信するメールアドレスと名前が記載された宛先リストファイル（CSV形式）をご用意していただく必要があります。詳しい配信方法は<a href="../../pictmail/mailsend/mailsend_help.html#">こちら</a>をご覧下さい。<br>
+
+    </td>
+  </tr>
+  <tr>
+    <td class="title_m">
+      <a href="log/"><b>■配信ログ管理・配信キャンセル</b></a>
+    </td>
+  </tr>
+  <tr>
+    <td class="explain_m">
+      ・以前、配信したメールの内容の閲覧・確認。（宛先は閲覧できません）<br>
+      ・配信予約のキャンセル。<br>
+      などが行えます。
+
+    </td>
+  </tr>
+  <tr>
+    <td class="title_m">
+      <a href="error/"><b>■エラーメールアドレス一覧 </b></a>
+    </td>
+  </tr>
+  <tr>
+    <td class="explain_m">
+      エラーにより配信が出来なかったメールアドレスの確認・閲覧が行えます。<br>
+      ※エラーログの取得は配信時に弊社指定の「エラーメール戻り先」を指定した場合のみです。<br>
+      ※携帯への配信エラーは戻ってくる場合に時間がかかることがあります。<br>
+      ※中には取得できないエラーもあります。ご了承ください。 <br>
+
+    </td>
+  </tr>
+  <tr>
+    <td class="title_m">
+      <a href="parse_csv/"><b>■エラーアドレスを配信リストから削除 </b></a>
+    </td>
+  </tr>
+  <tr>
+    <td class="explain_m">
+      ダウンロードしたエラーリストを、配信リストから削除します
+
+    </td>
+  </tr>
+  <tr>
+    <td class="title_m">
+      <a href="form_create/"><strong>■メアド収集フォームの管理</strong></a>
+    </td>
+  </tr>
+  <tr>
+    <td class="explain_m">
+      メールアドレス収集用のフォームを作ることができます。<br>
+      出来上がったフォームに、リンクをはるだけでごりよういただけます。<br>
+    </td>
+  </tr>
+  <tr>
+    <td class="title_m">
+      <a href="form_create2/"><strong>■解除用メアド収集フォームの管理</strong></a>
+    </td>
+  </tr>
+  <tr>
+    <td class="explain_m">
+      作成したフォームのURLをメルマガ本文に貼り付けて、使用することが出来ます。<br>
+    </td>
+  </tr>
+</table >
+</form>
+
+</div>
+
+
+
+
+
+
+
+
+
+<div id="footer-box">
+<table border="0" width="100%">
+  <tr>
+    <td align="center">
+      rabbit-mail
+    </td>
+  </tr>
+</table >
+</div>
+
+
+
+</div>
+
+</body>
+</html>

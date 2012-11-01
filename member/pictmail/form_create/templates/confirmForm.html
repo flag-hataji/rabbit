@@ -1,0 +1,157 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="ja-JP">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-JP">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title><?php echo $form_name; ?></title>
+<link href="/common/css/common.css" rel="stylesheet" type="text/css">
+<link href="./css/formStyle.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="./js/CheckValue.js"></script>
+<script language="JavaScript">
+<!--
+	//入力チェック
+	function checkVal(){
+		
+		//エラーの初期化
+		var strErr = "";
+		
+		//パラメーター数取得
+		var cnt = document.fm.cnt.value;
+    
+    //お名前の入力チェック
+    if(document.fm.name_require){
+  		var name_require = document.fm.name_require.value;
+      if(name_require=="on"){
+    		var name_family = document.fm["data[name_family]"].value;
+    		strErr += requiredCheck(name_family,"お名前(姓)");
+    		var name_first = document.fm["data[name_first]"].value;
+    		strErr += requiredCheck(name_first,"お名前(名)");
+      }
+    }
+
+
+		//メールアドレスの入力チェック
+		var mail_add = document.fm["data[user_mail_add]"].value;
+		strErr += requiredCheck(mail_add,"メールアドレス");
+		strErr += mailCheck(mail_add,"メールアドレス");
+		
+		//パラメーター入力チェック
+		for(var i=1;i<=cnt;i++){
+		
+			var check = "";
+			//キー値を取得
+			var param_key = document.fm["data[param_key" + i + "]"].value;
+			//必須項目の取得
+			check = document.fm["data[check" + param_key + "]"].value;
+
+
+			if(check=="on"){
+				//入力値の取得
+				var name_value = document.fm["data[param" + param_key + "]"].value;
+				//パラメーター名取得
+				var param_name = document.fm["data[param_name" + param_key + "]"].value;
+				strErr += requiredCheck(name_value,param_name);
+			}
+			
+		}
+		
+		//エラーチェック
+		if(strErr!=""){
+			//エラー表示
+			alert(strErr);
+			return false;
+		}else{
+			return true;
+		}
+	}
+
+//-->
+</script>
+</head>
+<body  bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+				<form action="./confirmForm.php?u_id=<?php echo $user_id; ?>&f_id=<?php echo $f_id; ?>" method="post" name="fm" onSubmit="return checkVal()">
+					<?php
+						if($errorm!=""){
+							echo "<div align=\"center\">";
+							foreach($errorm as $key=>$value){
+								echo "<font class=\"textRed1\">$value</font><br />";
+							}
+							echo "</div>";
+						}
+					?>
+				<table width="650" border="0" cellpadding="0" align="center" cellspacing="0">
+				  <tr align="center">
+					<td colspan="2" bgcolor="#FFFFFF" class="textRed1">※印は必須項目になります</td>
+				  </tr>
+				  <tr>
+					<td colspan="2" bgcolor="#A6C4F9" class="text5" id="line3"><?php echo $form_name; ?></td>
+				  </tr>
+				  <tr>
+					<td colspan="2" class="text5" id="line3"><?php echo $form_header; ?></td>
+				  </tr>
+          <?php
+          if($name_check=="1"){
+            echo '<tr>';
+            echo '<td width="200" class="text5" id="line4">お名前(姓)(名)</td>';
+            echo '<td width="447" align="center" id="line3"><input type="text" size="27" maxlength="27"  name="data[name_family]" value="'.$name_family.'"/>　 <input type="text" size="27" maxlength="27" name="data[name_first]" value="'.$name_first,'"/></td>';
+            echo '</tr>';
+          }else if($name_check=="2"){
+            echo '<tr>';
+            echo '<td width="200" class="text5" id="line4">お名前(姓)(名)<span class="textRed2">※</span></td>';
+            echo '<td width="447" align="center" id="line3"><input type="text" size="27" maxlength="27"  name="data[name_family]" value="'.$name_family.'"/>　 <input type="text" size="27" maxlength="27" name="data[name_first]" value="'.$name_first,'"/></td>';
+            echo '</tr>';
+            echo '<input type="hidden" name="name_require" value="on">';
+          }
+          ?>
+				  <tr>
+					<td width="200" class="text5" id="line4">メールアドレス<span class="textRed2">※</span></td>
+					<td width="447" align="center" id="line3"><input type="text" size="60" maxlength="60" name="data[user_mail_add]" value="<?php echo $user_mail_add; ?>"/></td>
+				  </tr>
+				  <?php
+				  	if($param_name!=""){
+					  	foreach($param_name as $key2=>$value2){
+								$count++;
+							  	echo "<tr><td width=\"200\" class=\"text5\" id=\"line4\">$value2";
+								
+								if($cnt1[$key2]=="on"){
+									echo "<input type=\"hidden\" name=\"data[check$key2]\" value=\"on\"><span class=\"textRed2\">※</span>";
+								}else{
+									echo "<input type=\"hidden\" name=\"data[check$key2]\" value=\"off\">";
+								}
+								echo '&nbsp;</td>';
+								echo "<td width=\"447\" align=\"center\" id=\"line3\"><input type=\"text\" size=\"60\" maxlength=\"60\" name=\"data[param$key2]\" value=\"";
+								echo $param[$key2]."\"></td>
+							  </tr>
+								<input type=\"hidden\" name=\"data[param_name$key2]\" value=\"$value2\">
+								<input type=\"hidden\" name=\"data[param_key$count]\" value=\"$key2\" />";
+							}
+						}
+				  ?>
+				  <tr align="center">
+					<td colspan="2" class="text5" id="line1" bgcolor="#A6C4F9"><input type="submit" name="sub" value="確認" />　<input type="reset" name="reset" value="取消" /></td>
+				  </tr>
+				</table>
+				
+				<input type="hidden" name="cnt" value="<?php echo $count; ?>">
+				<input type="hidden" name="mode" value="check" />
+				</form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

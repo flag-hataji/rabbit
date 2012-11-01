@@ -1,0 +1,258 @@
+ <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="ja-JP">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-JP">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>ユーザーメニューTOP</title>
+<link href="../common/css/common.css" rel="stylesheet" type="text/css">
+<script language="JavaScript">
+<!--
+<?PHP require_once(_DIR_USER_HTML_._HTML_JS_); ?>
+//-->
+</script>
+</head>
+<body  bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<div align='center'> 
+  <table height="100%" width="900" border="0" cellspacing="0" cellpadding="0" bgcolor='#FFFFFF'>
+    <tr> 
+      <td width="10" background="/common/image/shadow_left.gif"><img src='/common/image/spacer.gif' width='1' height='1' ></td>
+      <td width='1' bgcolor='#FFFFFF'><img src='/common/image/spacer.gif' width='1' height='1' ></td>
+      <td valign="top" align='center' bgcolor='#FFFFFF'> 
+<?PHP require_once(_DIR_USER_HTML_._HTML_HEADER_); ?>
+        <table width="850" border="0" cellspacing="0" cellpadding="0" bgcolor="#948E8E">
+          <tr class="gray10"> 
+            <!-- --------LEFT AREA--------- -->
+            <td width="150" align="center" valign="top" bgcolor="#FFFFFF"> 
+<?PHP require_once(_DIR_USER_HTML_._HTML_LEFT_MENU_); ?>
+              <br> 
+            </td>
+            <td width="5" bgcolor="#FFFFFF"><img src="../common/image/spacer.gif" width="5" height="1" ></td>
+            <td width="1" bgcolor="#FFFFFF" background="../common/image/y_comma.gif"><img src="../common/image/spacer.gif" width="1" height="1" ></td>
+            <!-- --------CENTER AREA--------- -->
+            <td width="700" align="right" valign="top" bgcolor="#FFFFFF">
+
+              <table width="685" height="25" border="0" cellspacing="0" cellpadding="0" background="../../common/image/member/top/title.gif">
+                <tr> 
+                  <td width="25" height="25" align="left"><img src="../../common/image/mark.gif"></td>
+                  <td width="200" height="25" align="left" class="white12">　<strong>ユーザーメニューTOP</strong></td>
+                  <td width="460" height="25" align="right" colspan="2" class="link_top12">
+
+                  </td>
+                </tr>
+              </table>
+
+              <table width="685" height="25" border="0" cellspacing="0" cellpadding="0">
+                <tr> 
+                  <td width="685" height="25" align="left" colspan="2" class="black10"> 
+                    <a href="/">TOP</a> &gt; ユーザーメニューTOP &gt; </td>
+                </tr>
+              </table>
+
+              <table width="685" height="25" border="0" cellspacing="0" cellpadding="3" background="images/top/title_pm.gif">
+                <tr> 
+                  <td align="right" class="white12">現在ご利用のプラン：<strong><?PHP echo $_SESSION['user']['plan']; ?></strong></td>
+                </tr>
+              </table>
+			  <br>
+              <table width="685" border="0" cellspacing="0" cellpadding="0">
+                <tr> 
+                  <td align="center" bgcolor="#FFFF99" class="mazenda14">読者管理が可能なピクトメールの新バージョン<a href="/member/email/">「ピクトメールDB(ベータ版)」</a>を無料お試し中です。<br>
+                    <a href="pictmail-db/">ピクトメールDB（ベータ版）とは</a></td>
+                </tr>			  
+              </table>
+			  <br>
+              <table width="685" border="0" cellspacing="0" cellpadding="0">
+                <tr> 
+                  <td  width="1" height="2" bgcolor="#FFFFFF"><img src="../common/image/spacer.gif" width="1" height="2" ></td>
+                </tr>
+              </table>
+              <table width="685" height="42" border="0" cellspacing="0" cellpadding="0">
+                <tr> 
+                  <td width="405" align="left" class="black12">
+				    <a href="pictmail/">ピクトメールTOP</a>
+					| <a href="pictmail/mail/">メール配信の実行</a> 
+                    | <a href="pictmail/error/">エラーアドレス取得</a> 
+					<br>                    <a href="pictmail/log/">配信キャンセル・ログ閲覧</a>
+					| <a href="pictmail/form_create/">メアド収集フォーム</a>					<br>
+					<span class="red12">NEW!!</span>　<a href="pictmail/form_create2/">解除用メアド収集フォーム</a></td>
+                  <td width="280" rowspan="2" align="right"><a href="pictmail/plan/"><img src="images/top/plan_pm.gif"></a></td>
+                </tr>
+                <tr> 
+                  <td align="left" class="gray12">
+                    <strong>現在のご利用状況：<span class="indigo12"><?PHP echo ($_SESSION['user']['send_max']-$_SESSION['user']['send_now'])." 件送信済み ( 残り{$_SESSION['user']['send_now']} 件 )"; ?></span></strong>
+                  </td>
+                </tr>
+                <tr> 
+                </tr>
+              </table>
+              <table width="685" border="0" cellspacing="0" cellpadding="0">
+                <tr> 
+                  <td  width="1" height="30" bgcolor="#FFFFFF"><img src="../common/image/spacer.gif" width="1" height="30" ></td>
+                </tr>
+              </table>
+
+
+              <table width="685" height="25" border="0" cellspacing="0" cellpadding="3" background="images/top/title_cc.gif">
+                <tr> 
+                  <td align="right" class="white12">現在のご利用状況：<strong><?php echo ($_SESSION['user']['flag_cc'] == 't') ? "契約中" : "無料お試し" ; ?></strong></td>
+                </tr>
+              </table>
+              <table width="685" border="0" cellspacing="0" cellpadding="0">
+                <tr> 
+                  <td  width="1" height="2" bgcolor="#FFFFFF"><img src="../common/image/spacer.gif" width="1" height="2" ></td>
+                </tr>
+              </table>
+              <table width="685" height="42" border="0" cellspacing="0" cellpadding="0">
+                <tr> 
+                  <td width="405" align="left" class="black12">
+                    <a href="clickcounter/">クリックカウンターTOP</a> 
+                    | <a href="clickcounter/counter2/">本文丸ごと作成</a> 
+                    | <a href="clickcounter/analyze/viewer/index.php?inputs[submit][category-l]=1">アクセス閲覧</a> 
+                    | <a href="clickcounter/user/">基本設定編集</a>                  </td>
+                  <td width="280" rowspan="2" align="right"><a href="user/cc.php"><img src="images/top/plan_cc.gif"></a></td>
+                </tr>
+                <tr> 
+                  <td align="left" class="gray12">
+                    <strong>利用上限数 ：<span class="indigo12"><?php echo ($_SESSION['user']['flag_cc'] == 't') ? "10000" : "10" ; ?>まで</span></strong>
+                  </td>
+                </tr>
+                <tr> 
+                </tr>
+              </table>
+              <table width="685" border="0" cellspacing="0" cellpadding="0">
+                <tr> 
+                  <td  width="1" height="30" bgcolor="#FFFFFF"><img src="../common/image/spacer.gif" width="1" height="30" ></td>
+                </tr>
+              </table>
+
+
+              <table width="685" height="25" border="0" cellspacing="0" cellpadding="3" background="images/top/title_sm.gif">
+                <tr> 
+                  <td align="right" class="white12">現在のご利用状況：<strong><?php echo ($_SESSION['user']['flag_stepmail'] == 't') ? "契約中" : "無料お試し" ; ?></strong></td>
+                </tr>
+              </table>
+              <table width="685" border="0" cellspacing="0" cellpadding="0">
+                <tr> 
+                  <td  width="1" height="2" bgcolor="#FFFFFF"><img src="../common/image/spacer.gif" width="1" height="2" ></td>
+                </tr>
+              </table>
+              <table width="685" height="42" border="0" cellspacing="0" cellpadding="0">
+                <tr> 
+                  <td width="405" align="left" class="black12">
+                    <a href="stepmail/">ステップメールＴＯＰ</a> | 
+                    <a href="stepmail/user/">配信ユーザー管理（リスト管理）</a> |  <br>
+                    <a href="stepmail/scenario/">シナリオ、ステップ管理（メール管理）</a> |
+                    <a href="stepmail/form/">ユーザー登録フォーム管理</a> |
+                  </td>
+                  <td width="280" rowspan="2" align="right"><a href="user/sm.php"><img src="images/top/plan_sm.gif"></a></td>
+                </tr>
+                <tr> 
+                  <td align="left" class="gray12">
+                    
+                  </td>
+                </tr>
+                <tr> 
+                </tr>
+              </table>
+              <table width="685" border="0" cellspacing="0" cellpadding="0">
+                <tr> 
+                  <td  width="1" height="30" bgcolor="#FFFFFF"><img src="../common/image/spacer.gif" width="1" height="30" ></td>
+                </tr>
+              </table>
+
+
+              <table width="685" height="25" border="0" cellspacing="0" cellpadding="0" background="../common/image/member/top/in_title02.gif">
+                <tr> 
+                  <td width="30" height="25" align="left"></td>
+                  <td width="650" height="25" align="left" class="white12"><strong>ASPユーザーの皆様へお知らせ</strong></td>
+                </tr>
+              </table>
+              <table width="685" border="0" cellspacing="0" cellpadding="5" bgcolor="#FFFFFF">
+                <tr> 
+                  <td class="black12"><span class="red16"><strong>３月５日　ステップメールご利用者の皆様へ</strong></span><strong><br>
+                    <br>
+                    </strong>
+                    <p>3月10日より、ステップメールに下記の２つの仕様が追加される予定です。</p>
+                    <p>　<strong>１、１通目のメールを登録日当日に配信することが可能になります。</strong></p>
+                    <p>　<strong>２、無料お試しプランのステップ登録数が５つまでとなります。</strong><br>
+                    </p>
+                    <p><strong>◇１について。</strong></p>
+                    <p>　今まで１通目のメールは登録日の翌日から設定が可能でした。<br>
+                      このたびお客様からの要望により、登録日当日から1通目を配信することが出来ます。</p>
+                    <p>シナリオ、ステップ管理（メール管理）　＞　配信設定　のなかから　登録日に1通目を配信<br>
+                      を選択してください。</p>
+                    <p>　※１　フォームからの登録、CSVでの登録、配信ユーザー管理からの新規登録のどこで登録しても<br>
+                      　　　　
+                      １通目が送信されます。</p>
+                    <p>　※２　配信ユーザー管理で「配信済みステップ数」を０に設定した場合もすぐに配信されます。</p>
+                    <p><strong>◇２について。</strong></p>
+                    <p>今まで無料お試しプランのステップ数は無制限に追加できていましたが、<br>
+                      今回の変更で5つまでとなります。</p>
+                    <p>すでに無料お試しプランで５つ以上登録されてる方は、すでに登録されたステップはそのままに、<br>
+                      新規ステップの登録が出来なくなります。                    </p>
+                    <p>アイティマネジメントでは、今後もお客様のご意見を反映させていきたいと思っております。<br>
+                      今後ともどうぞよろしくお願い致します。</p>
+                    <strong> 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　ASPスタッフ一同 
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    メールアドレスをチェックするツールを作成しました</strong></span><br>
+                    メールリストの中から正しいメールアドレスと不正なメールリストを自動で分けてくれます。<br>
+                    <br>
+                    通常のメアドチェックツール　と、　ピクトメール用メアドチェックツール　の二つを作りましたので、<br>
+                    ぜひ状況に合わせてお使いください。<br>  
+                    <br>
+                    <span class="mazenda12">※通常のメアドチェックは　「test@itm.ne.jp,てすとさん」　の形式、　ピクトメール用は「てすとさん,test@itm.ne.jp」<br>
+                    の形式でチェックします。</span><br>
+                    <br>
+                    <a href="pictmail/convert-mail/" target="_blank">ピクトメール用メアドチェックツールはこちらから</a><br>
+                    <br>
+                    <a href="http://www.itm-asp.com/convert-mail/index.php" target="_blank">通常のメアドチェックツールはこちらから</a><br>
+                    </p>                  </td>
+                </tr>
+              </table>
+              <table width="685" border="0" cellspacing="0" cellpadding="0">
+                <tr> 
+                  <td  width="1" height="10" bgcolor="#FFFFFF"><img src="../common/image/spacer.gif" width="1" height="10" ></td>
+                </tr>
+                <tr> 
+                  <td  width="1" height="1" bgcolor="#20276B"><img src="../common/image/spacer.gif" width="1" height="1" ></td>
+                </tr>
+              </table>
+
+              <table width="685" border="0" cellspacing="0" cellpadding="5" bgcolor="#FFFFFF">
+                <tr> 
+                  <td class="black12">
+                    <strong>2007年1月9日　SEO検索エンジンランキング調査ツール『seo SERO（セロ）』完成！</strong></span><br>
+                    WEB戦略ツールの最新作『seo SERO（セロ）』がついに登場！<br>
+                    キーワードとURLの入力だけでサイトの検索ランキングが素早くチェックいただけます！！<span class="mazenda10">SEOSEOとほぼ同機能ですがYahoo対応です</span><br>
+                    <div align="center"><a href="/sero/"><img src="/images/top/banner_sero.gif" alt="SEO検索エンジンランキング調査ツール seoseo SERO セロ" border="0"></a></div><br>
+                    <div align="right"><a href="/sero/">早速、コチラよりSEROをお試しください</a></div>
+                  </td>
+                </tr>
+              </table>
+              <table width="685" border="0" cellspacing="0" cellpadding="0">
+                <tr> 
+                  <td  width="1" height="10" bgcolor="#FFFFFF"><img src="../common/image/spacer.gif" width="1" height="10" ></td>
+                </tr>
+                <tr> 
+                  <td  width="1" height="1" bgcolor="#20276B"><img src="../common/image/spacer.gif" width="1" height="1" ></td>
+                </tr>
+                <tr> 
+                  <td  width="1" height="10" bgcolor="#FFFFFF"><img src="../common/image/spacer.gif" width="1" height="10" ></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        <!-- FOOTER -->
+<?PHP require_once(_DIR_USER_HTML_._HTML_FOOTER_); ?>
+      </td>
+      <td width='1' bgcolor='#FFFFFF'><img src='../common/image/spacer.gif' width='1' height='1' ></td>
+      <td width="10" background="../common/image/shadow_right.gif"><img src='../common/image/spacer.gif' width='1' height='1' ></td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

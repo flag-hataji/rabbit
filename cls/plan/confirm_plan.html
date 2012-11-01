@@ -1,0 +1,37 @@
+  <form action='index.php' method='POST'>
+
+    <div align='center'>
+    <table width="600" height='15' border="0" cellpadding="5" cellspacing="1" bgcolor='#DDDDDD'>
+      <tr bgcolor='#FFFFFF' class="gray12"> 
+        <td align='center'>
+          下記のプランでよろしければ【登録する】ボタンをクリックしてください
+        </td> 
+      </tr>
+    </table> 
+    <br>
+
+    <table width="600" border="0" cellpadding="8" cellspacing="1" bgcolor='#DDDDDD'>
+      <tr class="black12" bgcolor='#FFFFFF'> 
+         <td align='left'>
+          プラン変更：<?PHP $this->shoePlan('confirm'); ?>
+        </td> 
+      </tr>
+
+    </table> 
+    <br>
+    <!--ボタン--> 
+    <table width="600" height='15' border="0" cellpadding="5" cellspacing="1" bgcolor='#DDDDDD'>
+
+      <tr bgcolor='#FFFFFF' class="black10"> 
+        <td align='center'>
+          <input type='submit' name='finish_plan' value=' 登録する '>　
+          <input type='submit' name='post[rewrite]' value=' やり直す '>
+        </td> 
+      </tr>
+    </table> 
+    <br>
+    <br>
+    </div>
+<?PHP $this->hidden('finish_plan'); ?>
+
+  </form>

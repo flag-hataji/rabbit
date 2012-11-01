@@ -1,0 +1,201 @@
+/*
+ + ¥¿¥°¶¦ÄÌÀßÄê
+------------------------------*/
+form { 
+    margin: 0px;
+    padding: 0px;
+}
+
+/*
+ + ¶¦ÄÌ
+------------------------------*/
+
+/* ÏÈ */
+#outline {
+/*
+    width: 900px;
+    height: 100%;
+*/
+    margin: 0px 0px 0px 0px ;
+    padding: 0px 0px 0px 0px ;
+    background-color: #FFFFFF;
+/*
+    border: 1px solid #10405F;
+*/
+    text-align: center; 
+}
+
+/* ¥Ø¥Ã¥À¡¼ */
+#outline .area-header { 
+    margin: 0px 0px 0px 0px; 
+    padding: 0px 0px 0px 0px ;
+}
+
+/*
+ ++ ³Ê¸À
+------------------------------
+*/
+
+#outline .kakugen { 
+    margin: 1px 0px 1px 0px; 
+    padding: 0px 0px 0px 0px;
+    color: #10405F;
+    font-size: 11px;
+}
+#outline .kakugen-date { 
+    width: 150px; 
+    margin: 0px; 
+    padding: 3px 0px 3px 0px;
+    background-color: #10405e;
+    text-align: center; 
+    color: #FFFFFF;
+    border-top: solid 1px #10405F; 
+    border-right: solid 1px #10405F; 
+    border-bottom: 1px solid #10405F;
+    float: left;
+}
+#outline .kakugen-word { 
+    /*width: 593px; */
+    width: 541px; 
+    margin: 0px; 
+    padding: 3px 0px 3px 5px;
+    background-color: #FFFFFF;
+    text-align: left; 
+    border-top: solid 1px #10405F; 
+    border-right: solid 1px #8D2D07; 
+    border-bottom: 1px solid #10405F;
+    float: left;
+}
+#outline .link-3232url { 
+    width: 150px; 
+    margin: 0px; 
+    padding: 3px 0px 3px 0px;
+    background-color: #FFFFFF;
+    text-align: center; 
+    border-top: solid 1px #10405F; 
+    border-bottom: 1px solid #10405F;
+    float: right;
+}
+
+
+/*
+ ++ ¥³¥ó¥Æ¥ó¥Ä
+------------------------------
+*/
+/*
+#outline .contents-menu-left { 
+    float: left;
+    font-size:0px;
+    width: 150px; 
+    background-color: #FFFFFF;
+    text-align: center; 
+    font-family: ¥Ò¥é¥®¥Î³Ñ¥´ Pro W3, sans-serif,£Í£Ó £Ð¥´¥·¥Ã¥¯, MS PGothic,  Osaka;
+    border-right: solid 1px #10405F; 
+    border-bottom: solid 1px #10405F; 
+}
+*/
+
+/*
+ ++ º¸¥á¥Ë¥å¡¼
+------------------------------
+*/
+#outline .sidemenu-box { 
+    margin: 0px 0px 15px 0px; 
+    padding: 0px 0px 0px 0px;
+    width: 148px; 
+    text-align: left; 
+}
+
+#outline img{ 
+    margin: 0px;
+    padding: 0px;
+    vertical-align: bottom;
+    border: none;
+    border-width: 0px;
+    font-size: 0px; 
+}
+
+#outline .sidemenu-word { 
+    margin: 0px 0px 0px 0px; 
+    padding: 0px 0px 0px 0px; 
+    font-size:12px;
+}
+
+#outline a.sidemenu-link { 
+    display: block;
+    margin: 0px 0px 0px 0px; 
+    padding: 3px 0px 3px 8px;
+    background-color: #FFFFFF;
+    color: #10405F;
+    font-size:12px;
+    text-decoration: none;
+    border-top: solid 1px #EEEEEE; 
+    background-image: url("/common/image/leftmenu/bg_link3.gif");
+}
+#outline a.sidemenu-link:hover{ 
+    color: #CC9900;
+    font-size:12px;
+    text-decoration: none;
+    background-image: url("/common/image/leftmenu/bg_link4.gif");
+}
+
+
+
+#outline .login-box { 
+    margin: 0px 0px 0px 0px; 
+    padding: 0px 0px 0px 0px;
+    width: 148px; 
+    text-align: left; 
+    border-right: solid 1px #CCCCCC; 
+    border-left: solid 1px #CCCCCC; 
+    border-bottom: solid 1px #CCCCCC; 
+}
+
+#outline .login-button { 
+    margin: 0px 3px 2px 0px; 
+    text-align: right; 
+}
+
+#outline input.login-button { 
+    font-size:11px;
+    font-family:Tahoma;
+}
+
+#outline img.asp-use { 
+    border-bottom: solid 1px #CCCCCC; 
+}
+
+#outline .usermenu-box { 
+    margin: 0px 0px 25px 0px; 
+    padding: 0px 0px 0px 0px;
+    width: 148px; 
+    text-align: left; 
+    border-right: solid 1px #CCCCCC; 
+    border-left: solid 1px #CCCCCC; 
+}
+
+#outline .usermenu-word { 
+    margin: 0px 0px 0px 0px; 
+    padding: 0px 0px 0px 0px; 
+    font-size:12px;
+}
+
+#outline a.usermenu-link { 
+    display: block;
+    margin: 0px 0px 0px 0px; 
+    padding: 3px 0px 3px 8px;
+    color: #10405F;
+    font-size:11px;
+    text-decoration: none;
+    border-top: solid 1px #FFFFFF; 
+    border-bottom: solid 1px #CCCCCC; 
+    background-image: url("/common/image/leftmenu/bg_link1.gif");
+}
+#outline a.usermenu-link:hover{ 
+    color: #CC9900;
+    font-size:11px;
+    text-decoration: none;
+    background-image: url("/common/image/leftmenu/bg_link2.gif");
+}
+
+

@@ -1,0 +1,31 @@
+<!-- +++ content-main -->
+<div id="content-main">
+  <div id="content-form">
+    <div align="left">
+      <p class="title">変換/チェックしたいcsvファイル</p>
+      <p class="inside">参照用csvファイルと削除用csvファイルを選択して「解析」ボタンをクリックしてください。</p>
+      <p class="red12">※処理に数分かかる恐れがございます。あらかじめご了承下さい。</p>
+      <form action="" method="POST" enctype="multipart/form-data">
+        <table class="black12">
+
+          <tr>
+            <td>参照用csv</td>
+            <td>
+              <p><?php echo $form->file('ParseCsv.csv1'); ?></p>
+            </td>
+          </tr>
+          <tr>
+            <td>削除用csv</td>
+            <td>
+              <p><?php echo $form->file('ParseCsv.csv2'); ?></p>
+            </td>
+          </tr>
+          </table>
+          </div> <!-- content-form -->
+        <?php echo $form->submit('解析', array('value' => '解析', 'name' => 'data[submit][upload]', 'div' => false)); ?>
+      </form>
+
+
+  </div> <!-- left -->
+</div> <!-- content-main -->
+<!-- /// content-main -->

@@ -1,0 +1,183 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="ja-JP">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-JP"> 
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>www.rabbit-mail.jp | メール配信ＡＳＰ</title>
+<link href="../../../css/common.css" rel="stylesheet" type="text/css">
+</head>
+<body bgcolor="#FFFFFF" >
+
+<div align="center">
+
+<?PHP require_once("../../program/html/master/header_user.html"); ?>
+
+
+
+<div id="pictmail-input-box">
+<form name="form2" method="post" action="index.php" style="margin: 0px;">
+<table>
+  <tr>
+    <td colspan="2" class="title_l">
+      ユーザー管理：検索
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="explain_l">
+      登録ユーザーの検索が行えます
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="title_m">
+      検索項目の入力
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="explain_m">
+      検索条件を指定してお客様の一覧を表示いたします
+    </td>
+  </tr>
+
+
+
+
+  <tr> 
+    <td class="input_title">プラン</td>
+    <td class="input_field">
+<?PHP $this->ViewerLib->showSelectPlanPictmail( 'seekS[plan_pictmail_id]', $_SESSION[_SESSION_MODE_][_SESSION_NAME_]['seekS']['plan_pictmail_id'] ); ?>
+    </td>
+  </tr>
+  <tr> 
+    <td class="input_title"><?PHP echo $this->Manager->nameS['name']; ?></td>
+    <td class="input_field">
+      姓 <input type='text' name='seekS[name_family]' value='<?PHP echo $_SESSION[_SESSION_MODE_][_SESSION_NAME_]['seekS']['name_family']; ?>' size='20'>
+      名 <input type='text' name='seekS[name_first]'  value='<?PHP echo $_SESSION[_SESSION_MODE_][_SESSION_NAME_]['seekS']['name_first']; ?>' size='20'>
+    </td>
+  </tr>
+  <tr> 
+    <td class="input_title"><?PHP echo $this->Manager->nameS['kana']; ?></td>
+    <td class="input_field">
+      姓 <input type='text' name='seekS[kana_family]' value='<?PHP echo $_SESSION[_SESSION_MODE_][_SESSION_NAME_]['seekS']['kana_family']; ?>' size='20'>
+      名 <input type='text' name='seekS[kana_first]'  value='<?PHP echo $_SESSION[_SESSION_MODE_][_SESSION_NAME_]['seekS']['kana_first']; ?>' size='20'>
+    </td>
+  </tr>
+  <tr> 
+    <td class="input_title"><?PHP echo $this->Manager->nameS['birthday']; ?></td>
+    <td class="input_field">
+      <?PHP $this->showSelect('seekS[birthday_y]',date('Y')-100,date('Y')-10,$_SESSION[_SESSION_MODE_][_SESSION_NAME_]['seekS']['birthday_y'],'----'); ?> 年 
+      <?PHP $this->showSelect('seekS[birthday_m]',1,12,$_SESSION[_SESSION_MODE_][_SESSION_NAME_]['seekS']['birthday_m'],'----'); ?> 月 
+      <?PHP $this->showSelect('seekS[birthday_d]',1,31,$_SESSION[_SESSION_MODE_][_SESSION_NAME_]['seekS']['birthday_d'],'----'); ?> 日 
+    </td>
+  </tr>
+<!--
+  <tr> 
+    <td class="input_title"><?PHP echo $this->Manager->nameS['date_insert']; ?></td>
+    <td class="input_field">
+      <?PHP $this->showSelect('seekS[date_insert_y1]', 2005, date('Y'), $_SESSION[_SESSION_MODE_][_SESSION_NAME_]['seekS']['date_insert_y1'], '----'); ?> 年 
+      <?PHP $this->showSelect('seekS[date_insert_m1]',    1,        12, $_SESSION[_SESSION_MODE_][_SESSION_NAME_]['seekS']['date_insert_m1'], '----'); ?> 月 
+      <?PHP $this->showSelect('seekS[date_insert_d1]',    1,        31, $_SESSION[_SESSION_MODE_][_SESSION_NAME_]['seekS']['date_insert_d1'], '----'); ?> 日 
+      〜
+      <?PHP $this->showSelect('seekS[date_insert_y2]', 2005, date('Y'), $_SESSION[_SESSION_MODE_][_SESSION_NAME_]['seekS']['date_insert_y2'], '----'); ?> 年 
+      <?PHP $this->showSelect('seekS[date_insert_m2]',    1,        12, $_SESSION[_SESSION_MODE_][_SESSION_NAME_]['seekS']['date_insert_m2'], '----'); ?> 月 
+      <?PHP $this->showSelect('seekS[date_insert_d2]',    1,        31, $_SESSION[_SESSION_MODE_][_SESSION_NAME_]['seekS']['date_insert_d2'], '----'); ?> 日 
+    </td>
+  </tr>
+-->
+  <tr> 
+    <td class="input_title"><?PHP echo $this->Manager->nameS['name_company']; ?></td>
+    <td class="input_field">
+      <input type='text' name='seekS[name_company]' value='<?PHP echo $_SESSION[_SESSION_MODE_][_SESSION_NAME_]['seekS']['name_company']; ?>' size='35'>
+    </td>
+  </tr>
+  <tr> 
+    <td class="input_title"><?PHP echo $this->Manager->nameS['kana_company']; ?></td>
+    <td class="input_field">
+      <input type='text' name='seekS[kana_company]' value='<?PHP echo $_SESSION[_SESSION_MODE_][_SESSION_NAME_]['seekS']['kana_company']; ?>' size='35'>
+    </td>
+  </tr>
+  <tr> 
+    <td class="input_title"><?PHP echo $this->Manager->nameS['mail']; ?></td>
+    <td class="input_field">
+      <input type='text' name='seekS[mail]' value='<?PHP echo $_SESSION[_SESSION_MODE_][_SESSION_NAME_]['seekS']['mail']; ?>' size='35'>
+    </td>
+  </tr>
+  <tr> 
+    <td class="input_title"><?PHP echo $this->Manager->nameS['tel']; ?></td>
+    <td class="input_field">
+      <input type='text' name='seekS[tel_1]' value='<?PHP echo $_SESSION[_SESSION_MODE_][_SESSION_NAME_]['seekS']['tel_1']; ?>' size='5'> -
+      <input type='text' name='seekS[tel_2]' value='<?PHP echo $_SESSION[_SESSION_MODE_][_SESSION_NAME_]['seekS']['tel_2']; ?>' size='5'> -
+      <input type='text' name='seekS[tel_3]' value='<?PHP echo $_SESSION[_SESSION_MODE_][_SESSION_NAME_]['seekS']['tel_3']; ?>' size='5'>
+    </td>
+ </tr>
+
+  <tr> 
+    <td class="input_title"><?PHP echo $this->Manager->nameS['user_id']; ?></td>
+    <td class="input_field">
+      <input type='text' name='seekS[user_id]' value='<?PHP echo $_SESSION[_SESSION_MODE_][_SESSION_NAME_]['seekS']['user_id']; ?>' size='35'>
+    </td>
+  </tr>
+
+  <tr> 
+    <td class="input_title"><?PHP echo $this->Manager->nameS['comment']; ?></td>
+    <td class="input_field">
+      <input type='text' name='seekS[comment]' value='<?PHP echo $_SESSION[_SESSION_MODE_][_SESSION_NAME_]['seekS']['comment']; ?>' size='50'>
+    </td>
+  </tr>
+<!--
+  <tr> 
+    <td class="input_title"><?PHP echo $this->Manager->nameS['ip']; ?></td>
+    <td class="input_field">
+      <input type='text' name='seekS[ip]' value='<?PHP echo $_SESSION[_SESSION_MODE_][_SESSION_NAME_]['seekS']['ip']; ?>' size='35'>
+    </td>
+  </tr>
+
+  <tr> 
+    <td class="input_title"><?PHP echo $this->Manager->nameS['host']; ?></td>
+    <td class="input_field">
+      <input type='text' name='seekS[host]' value='<?PHP echo $_SESSION[_SESSION_MODE_][_SESSION_NAME_]['seekS']['host']; ?>' size='35'>
+    </td>
+  </tr>
+-->
+
+  <tr> 
+    <td colspan="2" class="input_button">
+      <input type='submit' name='list' value=' 検 索 '>　
+      <input type='hidden' name='charaCode' value="もじこーどはんていようへんすう">
+      <input type='hidden' name='hidden'    value="list">
+      <input type='hidden' name='mode'      value="<?PHP echo $this->pageS['mode']; ?>">
+      <input type='hidden' name='page'      value="1">
+    </td>
+  </tr>
+
+</table>
+
+
+</form>
+
+</div>
+
+
+
+
+
+
+
+
+
+<div id="footer-box">
+<table border="0" width="100%">
+  <tr>
+    <td align="center">
+      rabbit-mail
+    </td>
+  </tr>
+</table >
+</div>
+
+
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,183 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-JP">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+<script language="JavaScript" src="https://secure.comodo.net/trustlogo/javascript/trustlogo.js" type="text/javascript"></script>
+<link href="../../../../common/css/common.css" rel="stylesheet" type="text/css">
+<title><?PHP echo $this->pageS['title']; ?></title>
+<script language="JavaScript">
+<!--
+<?PHP require_once(_DIR_USER_HTML_._HTML_JS_); ?>
+//-->
+</script>
+</head>
+
+<body  bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<div align='center'>
+	<table width="900" border="0" cellspacing="0" cellpadding="0" bgcolor='#FFFFFF'>
+		<tr> 
+			<td width="10" background="<?PHP echo _RELATIVE_; ?>common/image/shadow_left.gif"><img src='<?PHP echo _RELATIVE_; ?>common/image/spacer.gif' width='1' height='1' ></td>
+			<td width='1' bgcolor='#FFFFFF'><img src='<?PHP echo _RELATIVE_; ?>common/image/spacer.gif' width='1' height='1' ></td>
+			<td align='center' bgcolor='#FFFFFF'>
+<!-- HEADER -->
+				<?PHP require_once(_DIR_USER_HTML_._HTML_HEADER_); ?>
+<!-- BODY -->
+				<table width="850" border="0" cellspacing="0" cellpadding="0" bgcolor='#948E8E'>
+					<tr class='gray10'> 
+<!-- BODY LEFT -->
+						<td width='152' align='center' valign='top' bgcolor='#EEEEEE'> 
+							<?PHP require_once(_DIR_USER_HTML_._HTML_LEFT_MENU_); ?>
+							<br>
+							<script type="text/javascript">
+								TrustLogo("../../common/image/dt_106-118.gif", "DIGITR", "none");
+							</script>
+							<br />
+							<?PHP require_once(_DIR_USER_HTML_._HTML_RIGHT_MENU_); ?>
+						</td>
+						<td width='5' bgcolor='#FFFFFF'><img src='<?PHP echo _RELATIVE_; ?>common/image/spacer.gif' width='5' height='1' ></td>
+						<td width='1' bgcolor='#FFFFFF' background='<?PHP echo _RELATIVE_; ?>common/image/y_comma.gif'><img src='<?PHP echo _RELATIVE_; ?>common/image/spacer.gif' width='1' height='1' ></td>
+						<td width='5' bgcolor='#FFFFFF'><img src='<?PHP echo _RELATIVE_; ?>common/image/spacer.gif' width='5' height='1' ></td>
+<!-- BODY CENTER -->
+						<td width='100%' align='center' valign='top' bgcolor='#FFFFFF'> 
+<!-- write area start -->
+	<table  border="0" cellpadding='0' cellspacing='0' width="100%" >
+		<tr> 
+			<td class='indigo12' valign='top' align='left'><img src='<?PHP echo _RELATIVE_; ?>common/image/mark_square.gif'> 
+				<b>アクセス解析<b>　作成カウンター数　<?php echo $this->inputs['total_counter_num'] ?>/<?php echo CLICK_COUNTER_LIMIT ?>
+			</td>
+			<td class='indigo12' valign='top' align='right'></td>
+		</tr>
+		<tr>
+			<td width='1' height='5' bgcolor='#FFFFFF' colspan='2'><img src='<?PHP echo _RELATIVE_; ?>common/image/spacer.gif' width='1' height='5' ></td>
+		</tr>
+	</table>
+	<table width="100%" border="0" cellpadding='5' cellspacing='1' bgcolor='#666666'>
+		<tr>
+			<td colspan="3" align='left' class='black12'  bgcolor='#FFFFFF'>
+				<table  border="0" cellpadding='0' cellspacing='0' width="100%" >
+					<tr> 
+						<td width='1' height='10' bgcolor='#FFFFFF'><img src='<?PHP echo _RELATIVE_; ?>common/image/spacer.gif' width='1' height='10' ></td>
+					</tr>
+					<tr> 
+						<td class='braun12' valign='top' align='left'><img src='<?PHP echo _RELATIVE_; ?>common/image/mark_square_2.gif'> 
+							<b>アクセス解析 - <?php echo $this->html['title'] ?><b>
+						</td>
+					</tr>
+					<tr> 
+						<td height='1' bgcolor='#FFFFFF' background='<?PHP echo _RELATIVE_; ?>common/image/x_comma.gif'><img src='<?PHP echo _RELATIVE_; ?>common/image/spacer.gif' height='1' ></td>
+					</tr>
+					<tr> 
+						<td width='1' height='5' bgcolor='#FFFFFF'><img src='<?PHP echo _RELATIVE_; ?>common/image/spacer.gif' width='1' height='5' ></td>
+					</tr>
+					<tr> 
+						<td valign='top' align='center'>
+<form action="index.php" method="post">
+<table border="0" cellspacing='0'cellpadding='0' bgcolor="#aaaaaa" width="100%" >
+	<tr>
+		<td>
+			<table border="0" cellspacing='1' cellpadding='3' width="100%" >
+				<tr>
+					<td class='black12' bgcolor="#A4FFA4" align="center">
+						表示方法　
+					</td>
+					<td class='black12' bgcolor="#FFFFFF">
+							<a href="index.php?inputs[submit][category-l]=1">カテゴリー別に見る</a>｜
+							<input type="text" name="search[url]" size="30"><input type="submit" name="inputs[submit][counter-d]" value="このURLをみる">
+					</td>
+				</tr>
+				<tr bgcolor="#FFFFFF">
+					<td class='black12' colspan="2">
+						最終更新日時　：　<?php echo $this->analyze_date['date'] ?>
+						<table width="100%" cellspacing='0'cellpadding='0' >
+							<tr>
+								<td height='1' bgcolor='#FFFFFF' background='<?PHP echo _RELATIVE_; ?>common/image/x_comma.gif'><img src='<?PHP echo _RELATIVE_; ?>common/image/spacer.gif' height='1'></td>
+							</tr>
+							<tr> 
+								<td width='1' height='5' bgcolor='#FFFFFF'><img src='<?PHP echo _RELATIVE_; ?>common/image/spacer.gif' width='1' height='5' ></td>
+							</tr>
+						</table>
+						NAVI  &gt;&gt; 
+						<a href="../../index.php">[TOP]</a> &gt;&gt;
+						<strong>[カテゴリー一覧]</strong>
+						<table width="100%" cellspacing='0'cellpadding='0' >
+							<tr>
+								<td height='1' bgcolor='#FFFFFF' background='<?PHP echo _RELATIVE_; ?>common/image/x_comma.gif'><img src='<?PHP echo _RELATIVE_; ?>common/image/spacer.gif' height='1'></td>
+							</tr>
+							<tr> 
+								<td width='1' height='5' bgcolor='#FFFFFF'><img src='<?PHP echo _RELATIVE_; ?>common/image/spacer.gif' width='1' height='5' ></td>
+							</tr>
+						</table>
+<!-- メインコンテンツ -->
+
+						<table width="100%" cellspacing='0'cellpadding='0' bgcolor='#aaaaaa'>
+							<tr>
+								<td>
+						<table width="100%" cellspacing='1'cellpadding='3' >
+							<tr>
+								<td class="black12" align='center' bgcolor='#A4C6FF'>
+									<strong>カテゴリー名</strong>
+								</td>
+								<td class="black12" align='center' bgcolor='#A4C6FF'>
+									<strong>アクセス総数</strong>
+									, 日別ユニーク
+									, トータルユニーク<br>
+									(左から順に)</td>
+								<td class="black12" align='center' bgcolor='#A4C6FF'>
+									<strong>配信数</strong>
+								</td>
+								<td class="black10" align='center' bgcolor='#A4C6FF'>
+									<strong>配信数に対する<br>クリック率</strong>
+								</td>
+							</tr>
+							<?php $this->viewCategory()   ?>
+							<tr>
+								<td class="black12" colspan="2" bgcolor='#FFFFFF'>
+									<small>※カウンターの登録のないカテゴリーは表示されません。</small>
+								</td>
+							</tr>
+						</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</form>
+						</td>
+					</tr>
+					<tr> 
+						<td height='1' bgcolor='#FFFFFF' background='<?PHP echo _RELATIVE_; ?>common/image/x_comma.gif'><img src='<?PHP echo _RELATIVE_; ?>common/image/spacer.gif' height='1' ></td>
+					</tr>
+					<tr>
+						<td width='1' height='5' bgcolor='#FFFFFF'><img src='<?PHP echo _RELATIVE_; ?>common/image/spacer.gif' width='1' height='5' ></td>
+					</tr>
+					<tr>
+						<td  class='black12'>NAVI &gt;&gt; <a href="../index.php">[クリックカウンターTOP]<a> &gt; <strong>[解析閲覧<?php echo $this->html['title'] ?>]</strong></td>
+					</tr>
+
+				</table>
+			</td>
+		</tr>
+	</table>
+
+	<table  border="0" cellpadding='0' cellspacing='0' width="485" >
+		<tr>
+			<td width='1' height='10' bgcolor='#FFFFFF'><img src='<?PHP echo _RELATIVE_; ?>common/image/spacer.gif' width='1' height='10' ></td>
+		</tr>
+	</table>
+<!-- write area end -->
+					</tr>
+				</table>
+<!-- FOOTER -->
+				<?PHP require_once(_DIR_USER_HTML_._HTML_FOOTER_); ?>
+			</td>
+			<td width='1' bgcolor='#FFFFFF'><img src='<?PHP echo _RELATIVE_; ?>common/image/spacer.gif' width='1' height='1' ></td>
+			<td width="10" background="<?PHP echo _RELATIVE_; ?>common/image/shadow_right.gif"><img src='<?PHP echo _RELATIVE_; ?>common/image/spacer.gif' width='1' height='1' ></td>
+		</tr>
+	</table>
+</div>
+</body>
+</html>

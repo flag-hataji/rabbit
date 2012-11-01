@@ -1,0 +1,27 @@
+<div id="header-box">
+<table border="0" width="100%">
+  <tr>
+    <td align="left" colspan="2"><a href="/"><img src="/images/logo01.gif"></a></td>
+  </tr>
+  <tr>
+    <td colspan="2" class="condition">
+      <span class="plan_title">現在ご利用のプラン</span>
+      <span class="plan_name"><?PHP echo $_SESSION['user']['plan']; ?></span>
+      <span class="condition_title">現在のご利用状況</span>
+      <span class="condition_now"><?PHP echo ($_SESSION['user']['send_max']-$_SESSION['user']['send_now'])." 件送信済み ( 残り{$_SESSION['user']['send_now']} 件 )"; ?></span>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="link">
+      | <a href="/member/pictmail/">メール配信TOP</a>
+      | <a href="/member/pictmail/mail/">メール配信の実行</a> 
+      | <a href="/member/pictmail/error/">エラーアドレス取得</a> 
+      | <a href="/member/pictmail/log/">配信キャンセル・ログ閲覧</a>
+      | <a href="/member/pictmail/form_create/">メアド収集フォーム</a>
+      | <a href="/member/pictmail/form_create2/">解除用メアド収集フォーム</a>
+      |
+      | <a href="/member/logout.php?get=logout">ログアウト</a> |
+    </td>
+  </tr>
+</table >
+</div>

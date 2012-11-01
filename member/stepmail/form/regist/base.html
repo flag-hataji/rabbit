@@ -1,0 +1,103 @@
+<?PHP ini_set("display_errors",1); require_once("../../../../program/cls/define/Setup.php");?>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-JP">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+<link href="../../../../common/css/common.css" rel="stylesheet" type="text/css">
+<title>フォーム設定</title>
+<SCRIPT TYPE="text/javascript" SRC="../step.js"></SCRIPT>
+<SCRIPT type="text/javascript">
+<!--
+var count;
+function CheckboxChecked(obj){
+   if(obj.checked){ 
+      for(count = 0; count <  <?PHP echo count($searchData);?>; count++){
+        document.getElementById("ch1["+count+"]").checked = true;
+      }
+   }else{
+      for(count = 0; count <  <?PHP echo count($searchData);?>; count++){
+        document.getElementById("ch1["+count+"]").checked = false;
+      }
+   }
+    //タイムアウト処理
+    function timeoutCheck(){
+      timeout_sec --;
+      if(timeout_sec <= 0){
+        clearlnterval(timed);          //タイマーストップ
+        httpObj.abort();               //HTTPリクエスト中断 
+        alert('タイムアウトです。');
+        return false;
+      }
+    }
+
+}
+// -->
+</SCRIPT>
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<div align='center'>
+	<table width="900" border="0" cellspacing="0" cellpadding="0" bgcolor='#FFFFFF'>
+		<tr> 
+			<td width="10" background="<?PHP echo _RELATIVE_; ?>common/image/shadow_left.gif"><img src='<?PHP echo _RELATIVE_; ?>common/image/spacer.gif' width='1' height='1' ></td>
+			<td width='1' bgcolor='#FFFFFF'><img src='<?PHP echo _RELATIVE_; ?>common/image/spacer.gif' width='1' height='1' ></td>
+		  <td align='center' bgcolor='#FFFFFF'>
+<!-- HEADER -->
+<?PHP require_once(_DIR_USER_HTML_._HTML_HEADER_); ?>
+<!-- BODY -->
+				<table width="850" border="0" cellspacing="0" cellpadding="0" bgcolor='#948E8E'>
+					<tr class='gray10'> 
+<!-- BODY LEFT -->
+					  <td width='152' align='center' valign='top' bgcolor='#FFFFFF'><?PHP require_once(_DIR_USER_HTML_._HTML_LEFT_MENU_); ?>
+                        <br>
+                        <br>
+</td>
+						<td width='5' bgcolor='#FFFFFF'><img src='<?PHP echo _RELATIVE_; ?>common/image/spacer.gif' width='5' height='1' ></td>
+						<td width='1' bgcolor='#FFFFFF' background='<?PHP echo _RELATIVE_; ?>common/image/y_comma.gif'><img src='<?PHP echo _RELATIVE_; ?>common/image/spacer.gif' width='1' height='1' ></td>
+						<td width='5' bgcolor='#FFFFFF'><img src='<?PHP echo _RELATIVE_; ?>common/image/spacer.gif' width='5' height='1' ></td>
+<!-- BODY CENTER -->
+						<td width='100%' align='center' valign='top' bgcolor='#FFFFFF'> 
+<!-- write area start -->
+	<table  border="0" cellpadding='0' cellspacing='0' width="100%" >
+		<tr> 
+			<td class='indigo12' valign='top' align='left'><img src='<?PHP echo _RELATIVE_; ?>common/image/mark_square.gif'> 
+				<b>ステップメールメニュー
+			</td>
+			<td class='indigo12' valign='top' align='right'></td>
+		</tr>
+		<tr>
+			<td width='1' height='5' bgcolor='#FFFFFF' colspan='2'><img src='<?PHP echo _RELATIVE_; ?>common/image/spacer.gif' width='1' height='5' ></td>
+		</tr>
+	</table>
+	<table width="100%" border="0" cellpadding='5' cellspacing='1' bgcolor='#666666'>
+		<tr>
+			<td colspan="3" align='left' class='black12'  bgcolor='#FFFFFF'><form name="form1" method="post" action="">
+			 　
+			     <a href="/member/stepmail/">ステップメールTOP</a> &gt; <a href="/member/stepmail/form/">登録フォーム管理</a> &gt; フォーム登録、修正<br>
+		            <br>
+					<div align="center">
+			       <?PHP require_once($HTMLFILE); ?>
+				   </div>
+			       <br>
+			            
+			</form></td>
+		</tr>
+	</table>
+
+	<table  border="0" cellpadding='0' cellspacing='0' width="485" >
+		<tr>
+			<td width='1' height='10' bgcolor='#FFFFFF'><img src='<?PHP echo _RELATIVE_; ?>common/image/spacer.gif' width='1' height='10' ></td>
+		</tr>
+	</table>
+<!-- write area end -->
+					</tr>
+				</table>
+<!-- FOOTER -->
+<?PHP require_once(_DIR_USER_HTML_._HTML_FOOTER_); ?></td>
+			<td width='1' bgcolor='#FFFFFF'><img src='<?PHP echo _RELATIVE_; ?>common/image/spacer.gif' width='1' height='1' ></td>
+			<td width="10" background="<?PHP echo _RELATIVE_; ?>common/image/shadow_right.gif"><img src='<?PHP echo _RELATIVE_; ?>common/image/spacer.gif' width='1' height='1' ></td>
+		</tr>
+	</table>
+</div>
+</body>
+</html>

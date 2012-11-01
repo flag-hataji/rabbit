@@ -1,0 +1,189 @@
+<?php
+/* SVN FILE: $Id: acl.php 7945 2008-12-19 02:16:01Z gwoo $ */
+/**
+ * form behavior class.
+ *
+ * Enables objects to easily tie into an ACL system
+ *
+ * PHP versions 4 and 5
+ *
+ * CakePHP :  Rapid Development Framework (http://www.cakephp.org)
+ * Copyright 2006-2008, Cake Software Foundation, Inc.
+ *
+ * Licensed under The MIT License
+ * Redistributions of files must retain the above copyright notice.
+ *
+ * @filesource
+ * @copyright     Copyright 2006-2008, Cake Software Foundation, Inc.
+ * @link          http://www.cakefoundation.org/projects/info/cakephp CakePHP Project
+ * @package       cake
+ * @subpackage    cake.cake.libs.model.behaviors
+ * @since         CakePHP v 1.2.0.4487
+ * @version       $Revision: 7945 $
+ * @modifiedby    $LastChangedBy: gwoo $
+ * @lastmodified  $Date: 2008-12-18 18:16:01 -0800 (Thu, 18 Dec 2008) $
+ * @license       http://www.opensource.org/licenses/mit-license.php The MIT License
+ */
+/**
+ * Short description for file
+ *
+ * Long description for file
+ *
+ * @package       cake
+ * @subpackage    cake.cake.libs.model.behaviors
+ */
+class FormBehavior extends ModelBehavior {
+
+    /**
+     * ÅÔÆ»ÉÜ¸©ÇÛÎó
+     *
+     * @var array
+     * @access public
+     */
+    var $prefList;
+
+    /**
+     * ½é´üÀßÄê¥á¥½¥Ã¥É
+     *
+     * @access public
+     * @return void
+     * @param object $model
+     */
+    function setup(&$model){
+        $this->model = $model;
+        $this->_setPrefList();
+    }
+
+    /**
+     * ÅÔÆ»ÉÜ¸©¥ê¥¹¥È¼èÆÀÍÑ¥á¥½¥Ã¥É
+     *
+     * @param void
+     * @access public
+     * @return array $prefList
+     */
+    function getPrefList(){
+        return $this->prefList;
+    }
+
+    /**
+     * ¼õ¤±¼è¤Ã¤¿ID¤«¤éÅÔÆ»ÉÜ¸©Ì¾¤òÊÖ¤¹
+     *
+     * @return
+     * @param object $model
+     * @param string $id
+     */
+    function getPrefName(&$model,$id){
+        return $this->prefList[$id];
+    }
+
+    /**
+     * ÅÔÆ»ÉÜ¸©ÇÛÎó¤ò¥»¥Ã¥È
+     *
+     * @param void
+     * @access praivate
+     * @return void
+     */
+    function _setPrefList(){
+        $prefList = array(
+                      '1'=>'ËÌ³¤Æ»',
+                      '2'=>'ÀÄ¿¹¸©',
+                      '3'=>'´ä¼ê¸©',
+                      '4'=>'µÜ¾ë¸©',
+                      '5'=>'½©ÅÄ¸©',
+                      '6'=>'»³·Á¸©',
+                      '7'=>'Ê¡Åç¸©',
+                      '8'=>'°ñ¾ë¸©',
+                      '9'=>'ÆÊÌÚ¸©',
+                      '10'=>'·²ÇÏ¸©',
+                      '11'=>'ºë¶Ì¸©',
+                      '12'=>'ÀéÍÕ¸©',
+                      '13'=>'ÅìµþÅÔ',
+                      '14'=>'¿ÀÆàÀî¸©',
+                      '15'=>'¿·³ã¸©',
+                      '16'=>'ÉÙ»³¸©',
+                      '17'=>'ÀÐÀî¸©',
+                      '18'=>'Ê¡°æ¸©',
+                      '19'=>'»³Íü¸©',
+                      '20'=>'Ä¹Ìî¸©',
+                      '21'=>'´ôÉì¸©',
+                      '22'=>'ÀÅ²¬¸©',
+                      '23'=>'°¦ÃÎ¸©',
+                      '24'=>'»°½Å¸©',
+                      '25'=>'¼¢²ì¸©',
+                      '26'=>'µþÅÔÉÜ',
+                      '27'=>'ÂçºåÉÜ',
+                      '28'=>'Ê¼¸Ë¸©',
+                      '29'=>'ÆàÎÉ¸©',
+                      '30'=>'ÏÂ²Î»³¸©',
+                      '31'=>'Ä»¼è¸©',
+                      '32'=>'Åçº¬¸©',
+                      '33'=>'²¬»³¸©',
+                      '34'=>'¹­Åç¸©',
+                      '35'=>'»³¸ý¸©',
+                      '36'=>'ÆÁÅç¸©',
+                      '37'=>'¹áÀî¸©',
+                      '38'=>'°¦É²¸©',
+                      '39'=>'¹âÃÎ¸©',
+                      '40'=>'Ê¡²¬¸©',
+                      '41'=>'º´²ì¸©',
+                      '42'=>'Ä¹ºê¸©',
+                      '43'=>'·§ËÜ¸©',
+                      '44'=>'ÂçÊ¬¸©',
+                      '45'=>'µÜºê¸©',
+                      '46'=>'¼¯»ùÅç¸©',
+                      '47'=>'²­Æì¸©'
+                      );
+
+        $this->prefList = $prefList;
+    }
+
+    /**
+     * ¼õ¤±¼è¤Ã¤¿ÇÛÎó¤ÈCSV¤Î¥Ñ¥¹¤Ë¤ÆCSVÊÝÂ¸
+     *
+     * @return boolean Àµ¾ï¤ËÊÝÂ¸¤¹¤ì¤Ðtrue
+     * @param object $model
+     * @param array $arrData
+     * @param object $csvPath
+     * @param intger $date_flag ¥Õ¥¡¥¤¥ë¤ËÆüÉÕ¤òÆþ¤ì¤Æ·î¤´¤È¤Ë¥Õ¥¡¥¤¥ë¤òÊ¬¤±¤ë
+     * @param string $out_enc ½ÐÎÏ¤¹¤ëÊ¸»ú¥³¡¼¥É¡£¥Ç¥Õ¥©¥ë¥È¤ÏSJIS
+     */
+    function csvWriter(&$model,$arrData,$csvPath,$csvName="formdata",$date_flag="1",$out_enc="SJIS"){
+
+        $writer = "";
+        if($arrData!=""){
+
+            if($date_flag=="1"){
+                $csvPath = $csvPath."/".$csvName.date("ym").".csv";
+            }else{
+                $csvPath = $csvPath.$csvName.".csv";
+            }
+
+            if(@$fp = fopen($csvPath,"a")){
+
+                flock($fp,LOCK_EX);
+                $writer .= date("Y/m/d H:i:s").",";
+                foreach ($arrData as $key=>$value) {
+                    $value=str_replace(",","¡¤",$value);      //,ºï½ü
+                    $value=str_replace('"','¡É',$value);      //"ºï½ü
+                    $value=str_replace("'","¡Ç",$value);     //'ºï½ü
+                    $writer .= '"'.$value.'",';
+                }
+
+                $len    = mb_strlen($writer);
+                $writer = substr_replace($writer,'',-1,$len);
+                $writer.= "\n";
+                $writer = mb_convert_encoding($writer,$out_enc,Configure::read("App.encoding"));
+                fwrite($fp,$writer);
+                unset($writer);
+                flock($fp,LOCK_UN);
+                fclose($fp);
+            }else{
+                return false;
+            }
+        }
+
+        return true;
+
+    }
+}
+?>

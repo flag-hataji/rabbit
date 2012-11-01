@@ -1,0 +1,107 @@
+
+  <form action='index.php' method='POST'>
+
+    <!-- 入力テーブル--> 
+    <table width="535" border="0" cellspacing="0" cellpadding="0" bgcolor='#948E8E'>
+      <tr class='black10'> 
+        <td align='left' height='23' bgcolor="#FFFFFF" class='gold10'>
+          <b><img src='<?PHP echo _URL_COMMON_IMAGE_; ?>tri.gif'>　プラン変更申請：諸注意</b>
+        </td>
+      </tr>
+      <tr><td width='535' height='1' bgcolor='#948E8E'><img src='<?PHP echo _URL_COMMON_IMAGE_; ?>spacer.gif' width='1' height='1'></td></tr>
+    </table> 
+    <br>
+    <img src='<?PHP echo _URL_; ?>images/campaign_20050801.jpg' border='0' alt='itm-asp メール一括配信 初期設定費無料'><br>
+    <br>
+
+    <table width="535" height='' border="0" cellpadding="5" cellspacing="1" bgcolor='#948E8E'>
+      <tr bgcolor='#FFFFFF' class="black10"> 
+        <td align='left'>
+          ・料金は全て税込みです<br>
+          ・全て6か月分前払いとなります<br>
+          ・初回の費用のお支払いは銀行振込をお願いいたします。<br>
+          　（二回目以降は自動引き落としが可能です）<br>
+          <br>
+          <br>
+          ■サービス期間について<br>
+          申込日が10日以前の場合は当月からの請求になります。<br>
+          例）<br>
+          ７月１０日に申し込まれた場合は７月から１２月まで。<br>
+          ７月１１日に申し込まれた場合は８月から翌年１月まで。<br>
+          <br>
+          ■プランのアップグレードの場合<br>
+          「新プランの６ヶ月分の料金　−　旧プランの残りの月の使用料金」となります。<br>
+          但しこちらも申込日が10日以前の場合は当月を含みます。<br>
+          <br>
+          例）<br>
+          ７月１０日にライトプランからスタンダードプランに変更。<br>
+          ライトプランの契約９月まで残っていた場合。<br>
+          <br>
+          12600円　-　3150円（7,8,9月分の基本料金）＝　9450円<br>
+          サービス期間は７月から１２月まで。<br>
+          <br>
+          <br>
+          ■プランのダウングレードの場合<br>
+          「新プランの６ヶ月の料金」となります。<br>
+          旧プランの残りの月の使用料金はご返却できませんのでご了承ください。<br>
+          <br>
+          例）<br>
+          ７月１０日にスタンダードプランからライトプランに変更。<br>
+          スタンダードプランの契約９月まで残っていた場合。<br>
+          <br>
+          ライトプラン６ヶ月　＝　6300円（サービス期間は７月から１２月まで。）<br>
+          <br>
+          <br>
+          詳しくはスタッフまでお問合せください。
+        </td> 
+      </tr>
+    </table>
+    <br>
+
+    <table width="535" border="0" cellspacing="0" cellpadding="0" bgcolor='#948E8E'>
+      <tr class='black10'> 
+        <td align='left' height='23' bgcolor="#FFFFFF" class='gold10'>
+          <b><img src='<?PHP echo _URL_COMMON_IMAGE_; ?>tri.gif'>　プラン変更申請：入力</b>
+        </td>
+      </tr>
+      <tr><td width='535' height='1' bgcolor='#948E8E'><img src='<?PHP echo _URL_COMMON_IMAGE_; ?>spacer.gif' width='1' height='1'></td></tr>
+    </table> 
+    <br>
+
+
+<?PHP echo $error; ?>
+
+<?PHP $pOutput->showPlan('write',$plan_id); ?>
+
+    <table width="535" height='50' border="0" cellpadding="8" cellspacing="1" bgcolor='#948E8E'>
+      <tr bgcolor='#F4F3F1' class="gray12"> 
+        <td align='center'>
+          二回目以降のお支払いは銀行口座自動引落とし<br>
+          <input type='radio' name='inputS[auto_money]' value='t' <?PHP $libUtil->setMarked($auto_money, 't',0,True); ?>>する。　
+          <input type='radio' name='inputS[auto_money]' value='f' <?PHP $libUtil->setMarked($auto_money, 'f',0,True); ?>>しない。
+        </td> 
+      </tr>
+    </table> 
+
+    <table width="535" height='50' border="0" cellpadding="8" cellspacing="0" bgcolor='#948E8E'>
+      <tr bgcolor='#FFFFFF' class="black12"> 
+        <td align='center'>
+          その他、多用なニーズにお答えするカスタムプランもご用意できます。<br>
+          ご希望があれば<a href='<?PHP echo _URL_;?>inquiry/'>【お問合せ】</a>にてお気軽にご質問を下さい。
+        </td> 
+      </tr>
+    </table> 
+    <br>
+
+    <table width="535" height='50' border="0" cellpadding="8" cellspacing="1" bgcolor='#948E8E'>
+      <tr bgcolor='#F4F3F1' class="gray12"> 
+        <td align='center'>
+          <input type='hidden' name='inputS[user_id]' value='<?PHP echo $_SESSION['user']['user_id']; ?>'>
+          <input type='submit' name='next[confirm]' value=' 申請する '>　
+          <input type='reset'  name='reset' value=' リセット '><br>
+        </td> 
+      </tr>
+    </table> 
+
+
+  </form>

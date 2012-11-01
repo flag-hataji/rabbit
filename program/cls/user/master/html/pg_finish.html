@@ -1,0 +1,79 @@
+<?PHP $viewS = $this->getViewDataSConfirm(); ?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="ja-JP">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-JP"> 
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>www.rabbit-mail.jp | メール配信ＡＳＰ</title>
+<link href="../../../css/common.css" rel="stylesheet" type="text/css">
+</head>
+<body bgcolor="#FFFFFF" >
+
+<div align="center">
+
+<?PHP
+require_once("../../program/html/master/header_user.html");
+
+switch (REGIST_MODE) {
+
+    case "new":
+        $isWord1 = "新規登録";
+        $isForm  = "new";
+        break;
+
+
+    case "renew":
+        $isWord1 = "修正";
+        $isForm  = "renew";
+        break;
+
+
+}
+?>
+
+
+<div id="pictmail-input-box">
+<table>
+  <tr>
+    <td class="title_l">
+      ユーザー管理：<?php echo $isWord1;  ?>
+    </td>
+  </tr>
+  <tr>
+    <td class="explain_l">
+      <?php echo $isWord1;  ?>が完了いたしました
+    </td>
+  </tr>
+  <tr>
+    <td class="input_button">
+      <a href="index.php?get=list&mode=renew">[もどる]</a>
+    </td>
+  </tr>
+</table>
+</div>
+
+
+
+
+
+
+
+
+
+<div id="footer-box">
+<table border="0" width="100%">
+  <tr>
+    <td align="center">
+      rabbit-mail
+    </td>
+  </tr>
+</table >
+</div>
+
+
+
+</div>
+
+</body>
+</html>

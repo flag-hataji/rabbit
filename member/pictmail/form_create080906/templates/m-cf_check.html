@@ -1,0 +1,92 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="ja-JP">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_jis">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title><?php echo $form_name; ?></title>
+<link href="/common/css/common.css" rel="stylesheet" type="text/css">
+<link href="./css/formStyle.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body  bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+				<form action="./m-cf_completion.php?u_id=<?php echo $user_id; ?>&f_id=<?php echo $f_id; ?>" method="post" name="fm" onSubmit="changeSub();">
+<div align="center">
+<table border="0" cellpadding="0" cellspacing="0" align="center" width="200">
+  <tr>
+    <td align="left"><font size="2">内容を確認し、良ければ<br>登録を押して下さい</font><br /><br /></td>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" align="center" width="200">
+  <tr>
+    <td align="left"><font size="2">お名前:</font><br /></td>
+  </tr>
+  <tr>
+    <td align="left"><font size="2"><?php echo $s_name_family."　".$s_name_first; ?></font><br /></td>
+  </tr>
+  <tr>
+    <td align="left"><font size="2">メールアドレス:</font><br /></td>
+  </tr>
+  <tr>
+    <td align="left"><font size="2"><?php echo $s_user_mail_add; ?></font><br /><br /></td>
+  </tr>
+					  <?php
+					  	if($param_name!=""){
+							foreach($param_name as $key=>$value){
+                echo "<tr>";
+                echo "<td align=\"left\">";
+								echo "<font size=\"2\">$value</font>";
+								if($cnt1[$key]=="on"){
+									echo"<font color=\"#FF0000\" size=\"2\">※</font>";
+								}
+                echo "<br />";
+                echo "</td>";
+                echo "</tr>";
+                echo "<tr>";
+								echo "<td align=\"left\"><font size=\"2\">$s_param[$key]&nbsp;</font></td>";
+								echo "<td><input type=\"hidden\" name=\"data[param_name$key]\" value=\"$value\">
+								<input type=\"hidden\" name=\"data[param$key]\" value=\"$param[$key]\" />
+								<input type=\"hidden\" name=\"data[param_key$count]\" value=\"$key\" />
+	";
+               echo "<br /><br /></td>";
+               echo "</tr>";
+							}
+						}
+					  ?>
+            <tr>
+              <td align="center">
+                <br>
+    						<input type="submit" value="登録" name="submit[finish]" onClick="sendData();">  
+    						<input type="submit" value="戻る" name="submit[back]" />
+					    </td>
+            </tr>
+					  </table>
+
+					<input type="hidden" name="data[name_family]" value="<?php echo $name_family; ?>" />
+					<input type="hidden" name="data[name_first]" value="<?php echo $name_first; ?>" />
+					<input type="hidden" name="data[user_mail_add]" value="<?php echo $user_mail_add; ?>" />
+					<input type="hidden" name="data[paramAmount]" value="<?php echo $paramAmount; ?>" />
+					<input type="hidden" name="data[del_flag]" value="<?php echo $del_flag; ?>" />
+					<input type="hidden" name="data[thk_url]" value="<?php echo $thk_url; ?>" />
+					<input type="hidden" name="mode" value="input" />
+				</form>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

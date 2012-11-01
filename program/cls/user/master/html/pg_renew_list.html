@@ -1,0 +1,91 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="ja-JP">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-JP"> 
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>www.rabbit-mail.jp | メール配信ＡＳＰ</title>
+<link href="../../../css/common.css" rel="stylesheet" type="text/css">
+</head>
+<body bgcolor="#FFFFFF" >
+
+<div align="center">
+
+<?PHP require_once("../../program/html/master/header_user.html"); ?>
+
+
+        <?PHP $this->showPageLink(); ?>
+
+<div id="pictmail-top-box">
+<table>
+  <tr>
+    <td class="title_l">
+      ユーザー管理：リスト/修正
+    </td>
+  </tr>
+  <tr>
+    <td class="explain_l">
+      登録ユーザーのリストが表示されます。<br>
+      ユーザーのデータを修正ができます。
+      
+    </td>
+  </tr>
+  <tr> 
+    <td class="title_m">
+      検索条件
+    </td>
+  </tr>
+  <tr> 
+    <td class="explain_m">
+      <?PHP $this->showSeekCondition(); ?>
+    </td>
+  </tr>
+</table>
+</div>
+
+<div id="pictmail-list-box">
+<form name="form2" method="post" action="index.php" style="margin: 0px;">
+
+<table>
+  <tr>
+    <td colspan="5" class="title_l">
+      リスト
+    </td>
+  </tr>
+
+
+<?PHP $this->showListUser(); ?>
+
+
+
+</table>
+
+
+</form>
+
+</div>
+
+
+
+
+
+
+
+
+
+<div id="footer-box">
+<table border="0" width="100%">
+  <tr>
+    <td align="center">
+      rabbit-mail
+    </td>
+  </tr>
+</table >
+</div>
+
+
+
+</div>
+
+</body>
+</html>

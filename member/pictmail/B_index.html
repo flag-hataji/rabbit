@@ -1,0 +1,329 @@
+<?PHP require_once("../../program/cls/define/Setup.php");?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="ja-JP">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-JP">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>ユーザーメニューTOP</title>
+<link href="../../../common/css/common.css" rel="stylesheet" type="text/css">
+<script language="JavaScript">
+<!--
+<?PHP require_once(_DIR_USER_HTML_._HTML_JS_); ?>
+//-->
+</script>
+</head>
+<body  bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<div align='center'> 
+  <table height="100%" width="900" border="0" cellspacing="0" cellpadding="0" bgcolor='#FFFFFF'>
+    <tr> 
+      <td width="10" background="/common/image/shadow_left.gif"><img src='/common/image/spacer.gif' width='1' height='1' ></td>
+      <td width='1' bgcolor='#FFFFFF'><img src='/common/image/spacer.gif' width='1' height='1' ></td>
+      <td valign="top" align='center' bgcolor='#FFFFFF'> 
+<?PHP require_once(_DIR_USER_HTML_._HTML_HEADER_); ?>
+
+        <table width="850" border="0" cellspacing="0" cellpadding="0" bgcolor="#948E8E">
+          <tr class="gray10"> 
+            <!-- --------LEFT AREA--------- -->
+            <td width="150" align="center" valign="top" bgcolor="#FFFFFF"> 
+              <?PHP require_once(_DIR_USER_HTML_._HTML_LEFT_MENU_); ?>
+              <br>
+              <?PHP //require_once(_DIR_USER_HTML_._HTML_RIGHT_MENU_); ?>
+            </td>
+            <td width="5" bgcolor="#FFFFFF"><img src="../../../common/image/spacer.gif" width="5" height="1" ></td>
+            <td width="1" bgcolor="#FFFFFF" background="../../../common/image/y_comma.gif"><img src="../../../common/image/spacer.gif" width="1" height="1" ></td>
+            <!-- --------CENTER AREA--------- -->
+            <td width="700" align="right" valign="top" bgcolor="#FFFFFF">
+
+
+              <!-- Menu Header -->
+              <?PHP require_once(_DIR_MEMBER_HTML_._HTML_MEMBER_HEADER_PICTMAIL_); ?>
+
+              <table width="685" height="25" border="0" cellspacing="0" cellpadding="0" background="../../../common/image/member/pictmail/in_title03.gif">
+                <tr> 
+                  <td width="25" height="25" align="left">　</td>
+                  <td width="200" height="25" align="left" class="white12">　<strong>ピクトメール</strong></td>
+                  <td width="460" height="25" align="right" colspan="2" class="link_top12">
+
+                  </td>
+                </tr>
+              </table>
+
+
+
+              <table width="685" height="25" border="0" cellspacing="0" cellpadding="0">
+                <tr> 
+                  <td width="685" height="25" align="left" colspan="2" class="black10">
+                    <a href="/">TOP</a> &gt;
+                    <a href="/member/">ユーザーメニューTOP</a> &gt;
+                    ピクトメール
+                  </td>
+                </tr>
+              </table>
+
+              <table width="685" border="0" cellspacing="0" cellpadding="0">
+                <tr> 
+                  <td  width="1" height="10" bgcolor="#FFFFFF"><img src="../../../common/image/spacer.gif" width="1" height="10" ></td>
+                </tr>
+              </table>
+
+
+              <table width="685" height="25" border="0" cellspacing="0" cellpadding="0" background="../../../common/image/member/pictmail/in_title02.gif">
+                <tr> 
+                  <td width="30" height="25" align="left"></td>
+                  <td width="650" height="25" align="left" class="white12"><strong>機能の選択</strong></td>
+                </tr> 
+              </table>
+              <table width="685" border="0" cellspacing="0" cellpadding="5" bgcolor="#FFFFFF">
+                <tr> 
+                  <td height="30" align="left" class="black12">
+                    ご利用したいピクトメールの機能ををご選択ください。
+                  </td>
+                </tr> 
+                <tr> 
+                  <td align="right" class="white12">
+
+
+                    <table width="660" height="25" border="0" cellspacing="0" cellpadding="0" bgcolor="#EEEEFF">
+                      <tr> 
+                        <td width="15" align="center"><img src="../../../common/image/mark_square_4.gif"></td>
+                        <td width="645" align="left" class="black12"><a href="mail/"><b>メール配信の実行 </b></a></td>
+                      </tr> 
+                      <tr> 
+                        <td colspan="2" bgcolor="#FFFFFF" class="black12">
+                          <p>・メールの一括配信を行えます。<br>
+                            ・事前に配信するメールアドレスと名前が記載された宛先リストファイル（CSV形式）をご用意していただく必要があります。<br>
+                            詳しい配信方法は<a href="../../pictmail/mailsend/mailsend_help.html#">こちら</a>をご覧下さい。
+                            
+                            <br>
+                            ・<span class="red12">クリックカウンターを利用する場合は、まずメール本文のＵＲＬをカウンターＵＲＬに変換する必要があります。</span><br>
+                            <a href="/member/clickcounter/">こちら</a>から<strong>カウンターＵＲＬ一括作成　［新規登録］</strong>を選んでメール本文を変換してください。
+                            <br>
+                          </p>
+                          <div align="center">
+                            <table width="600" border="0" cellpadding="1" cellspacing="1">
+                              <tr>
+                                <td class="black12"><span class="red12"><strong>※　重要</strong></span><br>
+                                  弊社のサービスを使ってスパムメールの配信をされるケースが目立ってきました。<br>
+                                  すでに数件、苦情という形でサーバー会社に連絡が入っており、このままですと全てのサービスを<br>
+                                  停止せざるを得ない状況になってきております。<br>
+  <br>
+                                  不特定多数のお客様にメールを送信される場合は「<a href="特定電子メールの送信の適正化等に関する法律" target="_blank">特定電子メールの送信の適正化等に関する法律</a>」<br>
+                                  を守っていただくことが前提なのですが、なるべく<strong>メール配信の許可を得たお客様</strong>に、<br>
+                                  メールを配意していただけますよう、ご理解とご協力をよろしくお願い致します。<br>
+  <br>
+                                  「迷惑メール」「他のお客様に迷惑になると判断したメール」の送信を発見した場合、<br>
+                                「<a href="http://www.itm-asp.com/kiyaku.html" target="_blank">規約</a>」に基づいてアカウントの停止処置を行う場合がありますので、どうぞよろしくお願い致します。</td>
+                              </tr>
+                            </table>
+                          </div>                          <p align="center"><br>
+                        </p></td>
+                      </tr> 
+                    </table>
+                    <table width="660" border="0" cellspacing="0" cellpadding="0">
+                      <tr> 
+                        <td  width="1" height="10" bgcolor="#FFFFFF"><img src="../../../common/image/spacer.gif" width="1" height="10" ></td>
+                      </tr>
+                    </table>
+
+                    <table width="660" height="25" border="0" cellspacing="0" cellpadding="0" bgcolor="#EEEEFF">
+                      <tr> 
+                        <td width="15" align="center"><img src="../../../common/image/mark_square_4.gif"></td>
+                        <td width="645" height="20" align="left" class="black12"><a href="plan/"><b>配信プランの申請・変更</b></a></td>
+                      </tr> 
+                      <tr> 
+                        <td colspan="2" bgcolor="#FFFFFF" class="black12">
+                          ・無料お試しから大量配信が可能な有料プランへの申請。<br>
+                          ・現在ご利用のプランからのアップグレード申請。<br>
+                          などのメール配信の各種プランへの申請手続きを行えます。
+
+                        </td>
+                      </tr> 
+                    </table>
+                    <table width="660" border="0" cellspacing="0" cellpadding="0">
+                      <tr> 
+                        <td  width="1" height="10" bgcolor="#FFFFFF"><img src="../../../common/image/spacer.gif" width="1" height="10" ></td>
+                      </tr>
+                    </table>
+
+
+                    <table width="660" height="25" border="0" cellspacing="0" cellpadding="0" bgcolor="#EEEEFF">
+                      <tr> 
+                        <td width="15" align="center"><img src="../../../common/image/mark_square_4.gif"></td>
+                        <td width="645" height="20" align="left" class="black12"><a href="log/"><b>配信ログ管理・配信キャンセル</b></a></td>
+                      </tr> 
+                      <tr> 
+                        <td colspan="2" bgcolor="#FFFFFF" class="black12">
+                          ・以前、配信したメールの内容の閲覧・確認。（宛先は閲覧できません）<br>
+                          ・配信予約のキャンセル。<br>
+                          などが行えます。
+
+                        </td>
+                      </tr> 
+                    </table>
+                    <table width="660" border="0" cellspacing="0" cellpadding="0">
+                      <tr> 
+                        <td  width="1" height="10" bgcolor="#FFFFFF"><img src="../../../common/image/spacer.gif" width="1" height="10" ></td>
+                      </tr>
+                    </table>
+
+                    <table width="660" height="25" border="0" cellspacing="0" cellpadding="0" bgcolor="#EEEEFF">
+                      <tr> 
+                        <td width="15" align="center"><img src="../../../common/image/mark_square_4.gif"></td>
+                        <td width="645" height="20" align="left" class="black12"><a href="error/"><b>エラーメールアドレス一覧 </b></a></td>
+                      </tr> 
+                      <tr> 
+                        <td colspan="2" bgcolor="#FFFFFF" class="black12">
+                          エラーにより配信が出来なかったメールアドレスの確認・閲覧が行えます。<br>
+                          ※エラーログの取得は配信時に弊社指定の「エラーメール戻り先」を指定した場合のみです。<br>
+                          ※携帯への配信エラーは戻ってくる場合に時間がかかることがあります。<br>
+                          ※中には取得できないエラーもあります。ご了承ください。 <br>
+                        </td>
+                      </tr> 
+                    </table>
+					
+                    <table width="660" border="0" cellspacing="0" cellpadding="0">
+                      <tr> 
+                        <td  width="1" height="10" bgcolor="#FFFFFF"><img src="../../../common/image/spacer.gif" width="1" height="10" ></td>
+                      </tr>
+                    </table>
+					<table width="660" height="25" border="0" cellspacing="0" cellpadding="0">
+                      <tr bgcolor="#EEEEFF">
+                        <td width="15" align="center"><img src="../../../common/image/mark_square_4.gif"></td>
+                        <td width="645" height="20" align="left" class="black12"><a href="form_create/"><strong>メアド収集フォームの管理</strong></a></td>
+                      </tr>
+                      <tr>
+                        <td colspan="2" bgcolor="#FFFFFF" class="black12"><p>お待たせいたしました！メールアドレス収集用のフォームを作ることができます。<br>
+                          出来上がったフォームに、リンクをはるだけでごりよういただけます。<br>
+                          <br>
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+					<table width="660" border="0" cellspacing="0" cellpadding="0">
+                      <tr> 
+                        <td  width="1" height="10" bgcolor="#FFFFFF"><img src="../../../common/image/spacer.gif" width="1" height="10" ></td>
+                      </tr>
+                    </table>
+					
+					<table width="660" height="25" border="0" cellspacing="0" cellpadding="0">
+                      <tr bgcolor="#FFCC99">
+                        <td width="15" align="center"><img src="../../../common/image/mark_square_4.gif"></td>
+                        <td width="645" height="20" align="left" class="black12"><a href="form_create2/"><strong>解除用メアド収集フォームの管理</strong></a> <span class="red12">NEW!</span></td>
+                      </tr>
+                      <tr>
+                        <td colspan="2" bgcolor="#FFFFFF" class="black12"><p>ご要望にお答えして、解除用メアド収集フォームも作成できるようになりました。<br>
+                          作成したフォームのURLをメルマガ本文に貼り付けて、使用することが出来ます。<br>
+                          <br>
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+					<table width="660" border="0" cellspacing="0" cellpadding="0">
+                      <tr> 
+                        <td  width="1" height="10" bgcolor="#FFFFFF"><img src="../../../common/image/spacer.gif" width="1" height="10" ></td>
+                      </tr>
+                    </table>
+
+                    <table width="660" height="25" border="0" cellspacing="0" cellpadding="0" bgcolor="#EEEEFF">
+                      <tr> 
+                        <td width="15" align="center"><img src="../../../common/image/mark_square_4.gif"></td>
+                        <td width="645" height="20" align="left" class="black12"><a href="convert-mail/"><b>メールアドレスの変換/チェックツール </b></a></td>
+                      </tr> 
+                      <tr> 
+                        <td colspan="2" bgcolor="#FFFFFF" class="black12">
+                          メールリストの中から正しいメールアドレスと不正なメールリストを自動で分けてくれます。<br>
+                        </td>
+                      </tr> 
+                    </table>
+                    <table width="660" border="0" cellspacing="0" cellpadding="0">
+                      <tr> 
+                        <td  width="1" height="10" bgcolor="#FFFFFF"><img src="../../../common/image/spacer.gif" width="1" height="10" ></td>
+                      </tr>
+                    </table>
+
+                  </td>
+                </tr> 
+              </table>
+
+
+              <table width="685" border="0" cellspacing="0" cellpadding="0">
+                <tr> 
+                  <td  width="1" height="10" bgcolor="#FFFFFF"><img src="../../../common/image/spacer.gif" width="1" height="10" ></td>
+                </tr>
+              </table>
+
+              <table width="685" height="25" border="0" cellspacing="0" cellpadding="0" background="../../../common/image/member/pictmail/in_title02.gif">
+                <tr> 
+                  <td width="30" height="25" align="left"></td>
+                  <td width="650" height="25" align="left" class="white12"><strong>ASPユーザーの皆様へお知らせ</strong></td>
+                </tr>
+              </table>
+              <table width="685" border="0" cellspacing="0" cellpadding="5" bgcolor="#FFFFFF">
+                <tr> 
+                  <td class="black12"><strong><br>
+                    メールアドレスをチェックするツールを作成しました</strong></span><br>
+                    メールリストの中から正しいメールアドレスと不正なメールリストを自動で分けてくれます。<br>
+                    <br>
+                    通常のメアドチェックツール　と、　ピクトメール用メアドチェックツール　の二つを作りましたので、<br>
+                    ぜひ状況に合わせてお使いください。<br>  
+                    <br>
+                    <span class="mazenda12">※通常のメアドチェックは　「test@itm.ne.jp,てすとさん」　の形式、　ピクトメール用は「てすとさん,test@itm.ne.jp」<br>
+                    の形式でチェックします。</span><br>
+                    <br>
+                    <a href="convert-mail/" target="_blank">ピクトメール用メアドチェックツールはこちらから</a><br>
+                    <br>
+                    <a href="/convert-mail/index.php" target="_blank">通常のメアドチェックツールはこちらから</a><br>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+              <table width="685" border="0" cellspacing="0" cellpadding="0">
+                <tr> 
+                  <td  width="1" height="10" bgcolor="#FFFFFF"><img src="../../../common/image/spacer.gif" width="1" height="10" ></td>
+                </tr>
+                <tr> 
+                  <td  width="1" height="1" bgcolor="#20276B"><img src="../../../common/image/spacer.gif" width="1" height="1" ></td>
+                </tr>
+              </table>
+
+              <table width="685" border="0" cellspacing="0" cellpadding="5" bgcolor="#FFFFFF">
+                <tr> 
+                  <td class="black12">
+                    <strong>2007年1月9日　SEO検索エンジンランキング調査ツール『seo SERO（セロ）』完成！</strong></span><br>
+                    WEB戦略ツールの最新作『seo SERO（セロ）』がついに登場！<br>
+                    キーワードとURLの入力だけでサイトの検索ランキングが素早くチェックいただけます！！<span class="mazenda10">SEOSEOとほぼ同機能ですがYahoo対応です</span><br>
+                    <div align="center"><a href="/sero/"><img src="/images/top/banner_sero.gif" alt="SEO検索エンジンランキング調査ツール seoseo SERO セロ" border="0"></a></div><br>
+                    <div align="right"><a href="/sero/">早速、コチラよりSEROをお試しください</a></div>
+                  </td>
+                </tr>
+              </table>
+              <table width="685" border="0" cellspacing="0" cellpadding="0">
+                <tr> 
+                  <td  width="1" height="10" bgcolor="#FFFFFF"><img src="../../../common/image/spacer.gif" width="1" height="10" ></td>
+                </tr>
+                <tr> 
+                  <td  width="1" height="1" bgcolor="#20276B"><img src="../../../common/image/spacer.gif" width="1" height="1" ></td>
+                </tr>
+                <tr> 
+                  <td  width="1" height="10" bgcolor="#FFFFFF"><img src="../../../common/image/spacer.gif" width="1" height="10" ></td>
+                </tr>
+              </table>
+
+
+
+            </td>
+          </tr>
+        </table>
+<!-- FOOTER -->
+<?PHP require_once(_DIR_USER_HTML_._HTML_FOOTER_); ?>
+
+      </td>
+      <td width='1' bgcolor='#FFFFFF'><img src='../../common/image/spacer.gif' width='1' height='1' ></td>
+      <td width="10" background="../../../common/image/shadow_right.gif"><img src='../../common/image/spacer.gif' width='1' height='1' ></td>
+    </tr>
+  </table>
+
+  </div>
+</body>
+</html>
+

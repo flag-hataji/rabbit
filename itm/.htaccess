@@ -1,0 +1,8 @@
+AuthUserFile /var/www/vhosts/www.rabbit-mail.jp/html/itm/.htpasswd
+AuthGroupFile /dev/null
+AuthName "Input ID and Password."
+AuthType Basic
+require valid-user
+<Files ~ "^.(htpasswd|htaccess)$">
+  deny from all
+</Files>

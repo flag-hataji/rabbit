@@ -1,0 +1,6 @@
+    <tr bgcolor="#FFFFFF"> 
+      <td class="black12"><?PHP echo $value['step_no']; ?></td>
+      <td class="black12"><?PHP echo $value['step_name']; ?></td>
+      <td class="black12"><INPUT TYPE="submit" name="sort[<?PHP echo $Sort->sort; ?>][<?PHP echo $value['step_id']; ?>]" VALUE="<?PHP echo $value['step_name']; ?>" <?PHP printDisabled($value['step_id']); ?>></td>
+      <td class="black12"><?PHP printSort($i); ?></td>
+    </tr>

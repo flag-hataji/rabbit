@@ -1,0 +1,36 @@
+
+              <table width="685" border="0" cellspacing="0" cellpadding="0">
+                <tr> 
+                  <td bgcolor='#FFFFFF'><a href="/"><img src="/common/image/top/tab_top.gif" border="0" alt="itmMailServiceの総合トップページです。各種ASPの最新のお知らせ等をご案内いたします。"></a></td>
+                  <td bgcolor='#FFFFFF'><a href="/pictmail/mailsend/mailsend.html"><img src="/common/image/top/tab_pm.gif" border="0" alt="メルマガ配信、メール配信システムのピクトメールのページです。"></a></td>
+                  <td bgcolor='#FFFFFF'><a href="/clickcounter/"><img src="/common/image/top/tab_cc.gif" border="0" alt="メルマガ効果測定、クリックカウンターのページです。"></a></td>
+                  <td bgcolor='#FFFFFF'><a href="#"><img src="/common/image/top/tab_sm.gif" border="0" alt="ステップメールのページです。"></a></td>
+                </tr>
+                <tr> 
+                  <td bgcolor='#FFFFFF' colspan="4"><img src="/common/image/top/tab_bar.gif" border="0" alt="itmMailServiceの総合トップページです。各種ASPの最新のお知らせ等をご案内いたします。"></td>
+                </tr>
+              </table>
+              <table width="685" border="0" cellspacing="0" cellpadding="0" bgcolor='#4B558C'>
+                <tr> 
+                  <td background="/common/image/top/tab_left.gif" width='5' height='30'><img src='/common/image/spacer.gif' width='5' height='30' ></td>
+                  <td  align="left" height='30' class="link_top12">
+                    <form onSubmit="addstring()" action="http://www.google.com/search" style="margin: 0px;">
+                    <input type="hidden" name="hl" value="ja">
+                    <input type="hidden" name="ie" value="EUC-JP">
+                    <input type="hidden" name="q" value="site:www.itm-asp.com">
+                    <input type="text" name="q" size="27" maxlength="256" value="">　<input type="submit" name="btnG" value="検索[ Google ]">
+                    </form>  
+                  </td>
+                  <td  align="right" height='30' class="link_top12">
+                    | <a href='/index.html'>TOP</a> 
+                    | <a href='/sign_up/sign_up.php'>新規登録</a> 
+                    | <a href='/company.html'>会社概要</a> 
+                    | <a href='/inquiry/'>お問合せ</a> 
+                    | <a href='/sitemap.html'>サイトマップ</a> 
+                  </td>
+                  <td background="/common/image/top/tab_right.gif" width='5' height='30'><img src='/common/image/spacer.gif' width='5' height='30' ></td>
+                </tr>
+                <tr> 
+                  <td width='1' height='1' bgcolor="#000000" colspan="4"><img src='/common/image/spacer.gif' width='1' height='1' ></td>
+                </tr>
+              </table>

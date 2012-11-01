@@ -1,0 +1,96 @@
+  <div id="outline">
+    <div class="contents-menu-left">
+    <?PHP
+      if( isset($_SESSION['user']['id']) && isset($_SESSION['user']['password']) ){
+    ?>
+
+     <img src="/common/image/leftmenu/login/now_login.gif" alt="ASPメニュー" width="150" height="30"/>
+      <img src="/common/image/leftmenu/user/title.gif" alt="ASPメニュー" width="150" height="30"/>
+      <div class="usermenu-box">
+        <p class="usermenu-word"><a href="/member" class="usermenu-link">ユーザーメニューTOP</a></p>
+        <p class="usermenu-word"><a href="/member/user/index.php?get=write&mode=renew" class="usermenu-link">ユーザー情報変更</a></p>
+        <p class="usermenu-word"><a href="/member/logout.php?get=logout" class="usermenu-link">ログアウト</a></p>
+
+        <a href="/member/pictmail/"><img src="/common/image/leftmenu/intitle_use_pm.gif" />
+        <?PHP 
+            if(_DIR_IS_POSITION2_=="pictmail"){
+        ?>
+        <p class="usermenu-word"><a href="/member/pictmail/mail/" class="usermenu-link">配信実行</a></p>
+        <p class="usermenu-word"><a href="/member/pictmail/plan/" class="usermenu-link">配信プラン変更</a></p>
+        <p class="usermenu-word"><a href="/member/pictmail/log/" class="usermenu-link">配信ログの確認</a></p>
+        <p class="usermenu-word"><a href="/member/pictmail/error/" class="usermenu-link">エラーメールアドレス確認</a></p>
+        <p class="usermenu-word"><a href="/member/pictmail/form_create/" class="usermenu-link">メアド収集フォームの作成</a></p>
+        <p class="usermenu-word"><a href="/member/pictmail/convert-mail/" class="usermenu-link">メールアドレスの変換<br>チェックツール</a></p>
+
+        <?PHP 
+            }
+        ?>
+        <a href="/member/clickcounter/"><img src="/common/image/leftmenu/intitle_use_cc.gif" />
+        <?PHP 
+            if(_DIR_IS_POSITION2_=="clickcounter"){
+        ?>
+        <p class="usermenu-word"><a href="/member/clickcounter/counter2/" class="usermenu-link">URL一括作成</a></p>
+        <p class="usermenu-word"><a href="/member/clickcounter/analyze/viewer/index.php?inputs[submit][category-l]=1" class="usermenu-link">アクセス閲覧</a></p>
+        <p class="usermenu-word"><a href="/member/clickcounter/user/" class="usermenu-link">基本設定編集</a></p>
+        <p class="usermenu-word"><a href="/member/user/cc.php" class="usermenu-link">有料版お申し込み</a></p>
+        <?PHP 
+            }
+        ?>
+        <a href="/member/stepmail/"><img src="/common/image/leftmenu/intitle_use_sm.gif" />
+        <?PHP 
+            if(_DIR_IS_POSITION2_=="stepmail"){
+        ?>
+        <p class="usermenu-word"><a href="/member/stepmail/user/" class="usermenu-link">配信ユーザー管理<br>（リスト管理）</a></p>
+        <p class="usermenu-word"><a href="/member/stepmail/scenario/" class="usermenu-link">シナリオ、ステップ管理<br>（メール管理）</a></p>
+        <p class="usermenu-word"><a href="/member/stepmail/form/" class="usermenu-link">ユーザー登録フォーム管理 </a></p>
+        <?PHP 
+            }
+        ?>
+      </div>
+
+    <?PHP
+      }else{
+    ?>
+
+
+
+
+
+      <form action='/member/index.php' method='POST' style="margin: 0px;">
+
+
+              <table width="178" border="0" cellpadding="0" cellspacing="1" bgcolor="#999999">
+                <tr bgcolor="#EEEEEE">
+                  <td align="center"><table width="166" border="0" cellpadding="0" cellspacing="1" bgcolor="#EEEEEE">
+                    <tr>
+                      <td colspan="2" align="left"><img src="/images/top0806/login/login.jpg" alt="ユーザーログイン" width="166" height="25" /></td>
+                    </tr>
+                    <tr>
+                      <td width="14" align="left" ><img src="/images/top0806/login/line.gif" width="6" height="12" /></td>
+                      <td width="151" align="left" class="gray12">ログインID</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2" align="left" class="gray12"><input type="text" name="id" value="" size="20" class="login-button" /></td>
+                    </tr>
+                    <tr>
+                      <td align="left" ><img src="/images/top0806/login/line.gif" width="6" height="12" /></td>
+                      <td align="left" class="gray12">パスワード</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2" align="left" class="gray12"><input type="password" name="password" value="" size="20" class="login-button" /></td>
+                    </tr>
+                    <tr>
+                      <td colspan="2" align="left" class="gray12"><input name="image" type="image" src="/images/top0806/login/button.jpg" alt="ログインする" width="161" height="32" /></td>
+                    </tr>
+                    <tr>
+                      <td align="left" class="gray12"><a href="/forget/"><img src="/images/top0806/login/pass.gif" width="12" height="12" /></a></td>
+					  <td align="left" class="gray12"><a href="/forget/">ログイン情報を忘れた方</a></td>
+                    </tr>
+                  </table></td>
+                </tr>
+              </table>
+	<input type='hidden' name='hidden' value='login' class="user_login_hidden" />
+	</form>
+    <?PHP
+      }
+    ?>

@@ -1,0 +1,137 @@
+<?PHP require_once("../../../program/cls/define/Setup.php");?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="ja-JP">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-JP">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>ピクトメール：フォーム管理画面：メニュー</title>
+<link href="/common/css/common.css" rel="stylesheet" type="text/css">
+<link href="./css/formStyle.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript">
+<!--
+<?PHP require_once(_DIR_USER_HTML_._HTML_JS_); ?>
+//-->
+</script>
+</head>
+<body  bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<div align='center'> 
+  <table height="100%" width="900" border="0" cellspacing="0" cellpadding="0" bgcolor='#FFFFFF'>
+    <tr> 
+      <td width="10" background="/common/image/shadow_left.gif"><img src='/common/image/spacer.gif' width='1' height='1' ></td>
+      <td width='1' bgcolor='#FFFFFF'><img src='/common/image/spacer.gif' width='1' height='1' ></td>
+      <td valign="top" align='center' bgcolor='#FFFFFF'> 
+<?PHP require_once(_DIR_USER_HTML_._HTML_HEADER_); ?>
+
+        <table width="850" border="0" cellspacing="0" cellpadding="0" bgcolor="#948E8E">
+          <tr class="gray10"> 
+            <!-- --------LEFT AREA--------- -->
+            <td width="150" align="center" valign="top" bgcolor="#FFFFFF"> 
+              <?PHP require_once(_DIR_USER_HTML_._HTML_LEFT_MENU_); ?>
+              <br>
+              <?PHP //require_once(_DIR_USER_HTML_._HTML_RIGHT_MENU_); ?>
+            </td>
+            <td width="5" bgcolor="#FFFFFF"><img src="../../../common/image/spacer.gif" width="5" height="1" ></td>
+            <td width="1" bgcolor="#FFFFFF" background="../../../common/image/y_comma.gif"><img src="../../../common/image/spacer.gif" width="1" height="1" ></td>
+            <!-- --------CENTER AREA--------- -->
+            <td width="700" align="right" valign="top" bgcolor="#FFFFFF">
+			<table border="0" cellpadding="0" cellspacing="0" width="690" align="center" background="./images/in_title04.gif" id="marginLeft1">
+				<tr>
+					<td width="30" headers="25">&nbsp;</td>
+					<td class="textWhite" height="25" width="660">フォーム管理メニュー</td>
+				</tr>
+			</table>
+			<!--
+			<p align="center" class="text1">
+				<a href="./templates/explanation.html" target="_blank"><b>※初めて作成される方はこちらをご覧下さい</b></a>
+			</p>
+			-->
+			<img src="../images/spacer.gif" width="1" height="10">
+			<table border="0" cellpadding="0" cellspacing="0" width="690" align="center" class="outLine" id="marginLeft1">
+				<tr>
+				  <td id="padding1"><div class="underLine"><img src="./images/mark_square_2.gif" alt="フォーム編集"><a href="./correction.php"><span class="textBule">フォーム編集</span></a>　　<span class="mazenda12">まずはじめにご設定ください</span></div>				    </td>
+					</tr>
+					<tr>
+						<td id="padding1" class="text1">						  <br>
+						  ◆お客様専用のメールアドレス収集フォームを作成、修正できることができます。<br />
+						  ◆設定できる内容<br />
+　・フォーム名の設定<br />　・フォームヘッダー設定<br />　・パラーメーターの設定<br />　・サンキューメール戻り先URL</td>
+					</tr>
+					<tr>
+						<td id="padding1"><div class="underLine"><img src="./images/mark_square_2.gif" alt="サンキューメール設定"><a href="./settingMail.php"><span class="textBule">サンキューメール設定</span></a>　<span class="mazenda12">次にご設定ください。</span></div></td>
+					</tr>
+					<tr>
+					  <td id="padding1" class="text1"><br>
+				      ◆フォームに登録頂いたお客様へのサンキューメールの設定ができます<br />◆設定できる内容<br />　・送信者名<br />　・送信先アドレス<br />　・エラー時戻り先アドレス<br />　・件名<br />　・テキストメッセージ<br />　・HTMLメール送信の有無<br />					    　・HTMLメッセージ</td>
+					</tr>
+					<tr>
+						<td id="padding1"><div class="underLine"><img src="./images/mark_square_2.gif" alt="フォーム編集">
+						<?php
+									if($f_id==""){
+										echo '<span style="color:#CCCCCC">作成したフォームの確認</span>';
+									}else{
+										echo '<a href="./confirmForm.php?u_id='.$user_id.'&f_id='.$f_id.'" target="_blank"><span class="textBule">作成したフォームの確認</span></a>';
+									}
+						?>
+						<span class="mazenda12">フォームはここから確認できます。確認出来ない場合は『フォーム編集』を行ってください。</span></div></td>
+					</tr>
+					<tr>
+					  <td id="padding1" class="text1"><br>
+					    ◆フォーム編集にて作成したフォームを確認、使用することができます<br>
+					    （アドレスをコピーしてご利用ください。）<br />					    
+					    ◆登録された内容は、下記にあるCSVダウンロードにて確認できます						</td>
+					</tr>
+					<tr>
+						<td id="padding1"><div class="underLine"><img src="./images/mark_square_2.gif" alt="CSVダウンロード"><a href="./showUserData.php"><span class="textBule">登録されたデータを確認</span></a>　<span class="mazenda12">登録されたデータをこちらからダウンロードできます。</span></div></td>
+					</tr>
+					<tr>
+						<td id="padding1" class="text1"><br>
+						  ◆フォームに登録されたメールアドレスなどをダウンロードすることができます<br />						  
+						  ◆登録されたリストもこちらにてできます。<br />
+<span class="textRed3">※最新の情報を100件まで表示してあります。全件確認したい場合は、お手数ですがCSVファイルにて確認して下さい</span><br />
+◆登録された詳細情報、不要なデータの削除等もこちらでできますので、ぜひ活用してください						</td>
+					</tr>
+					<tr>
+					  <td id="padding1" class="text1"><div class="underLine"><img src="./images/mark_square_2.gif" alt="空メール登録"><span class="textBule">空メール登録（NEW）</span></div></td>
+			    </tr>
+				<tr>
+				  <td id="padding1" class="text1">◆フォームには空メールで登録することも可能です。<br>
+				    ◆お客様の登録メールアドレスは　<span class="mazenda16"><strong>pictmail-<?PHP echo $_SESSION['user'][user_id]; ?>@itm-asp.com</strong></span>　となります。<br>
+				    ◆QRコードはいずれ自社で作成できるように作りたいと思いますが、とりあえず下記のサイトで変換ください。<br>
+				    <a href="http://www.cman.jp/QRcode/" target="_blank">http://www.cman.jp/QRcode/</a></td>
+			    </tr></table>
+            QW
+            <table border="0" cellpadding="0" cellspacing="0" width="690" align="center" class="outLine"><tr></tr>
+				</table>
+            <!-- Menu Header --></td>
+          </tr>
+        </table>
+<!-- FOOTER -->
+<?PHP require_once(_DIR_USER_HTML_._HTML_FOOTER_); ?>
+
+      </td>
+      <td width='1' bgcolor='#FFFFFF'><img src='../../../common/image/spacer.gif' width='1' height='1' ></td>
+      <td width="10" background="../../../common/image/shadow_right.gif"><img src='../../../common/image/spacer.gif' width='1' height='1' ></td>
+    </tr>
+  </table>
+
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

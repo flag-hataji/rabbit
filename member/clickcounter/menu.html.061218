@@ -1,0 +1,441 @@
+<?PHP require_once("../../program/cls/define/Setup.php");?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="ja-JP">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=EUC-JP">
+	<meta http-equiv="Content-Style-Type" content="text/css">
+	<title>ユーザーメニューTOP</title>
+	<link href="/common/css/common.css" rel="stylesheet" type="text/css">
+	<script language="JavaScript">
+	<!--
+	<?PHP require_once(_DIR_USER_HTML_._HTML_JS_); ?>
+	//-->
+	</script>
+<STYLE TYPE="text/css">
+<!--
+#back_color{
+	background-color:#E5ECF3;
+}
+-->
+</STYLE>
+</head>
+<body  bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<div align='center'> 
+	<table height="100%" width="900" border="0" cellspacing="0" cellpadding="0" bgcolor='#FFFFFF'>
+		<tr>
+			<td width="10" background="/common/image/shadow_left.gif"><img src='/common/image/spacer.gif' width='1' height='1' ></td>
+			<td width='1' bgcolor='#FFFFFF'><img src='/common/image/spacer.gif' width='1' height='1' ></td>
+			<td valign="top" align='center' bgcolor='#FFFFFF'> 
+				<!-- Header -->
+				<?PHP require_once(_DIR_USER_HTML_._HTML_HEADER_); ?>
+				<table width="850" border="0" cellspacing="0" cellpadding="0" bgcolor="#948E8E">
+					<tr class="gray10"> 
+					<!-- --------LEFT AREA--------- -->
+						<td width="150" align="center" valign="top" bgcolor="#FFFFFF"> 
+							<?PHP require_once(_DIR_USER_HTML_._HTML_LEFT_MENU_); ?>
+							<br>
+							<?PHP //require_once(_DIR_USER_HTML_._HTML_RIGHT_MENU_); ?>
+						</td>
+						<td width="5" bgcolor="#FFFFFF"><img src="/common/image/spacer.gif" width="5" height="1" ></td>
+						<td width="1" bgcolor="#FFFFFF" background="/common/image/y_comma.gif"><img src="/common/image/spacer.gif" width="1" height="1" ></td>
+						<!-- --------CENTER AREA--------- -->
+						<td width="700" align="right" valign="top" bgcolor="#FFFFFF">
+							<!-- Menu Header -->
+							<?PHP require_once(_DIR_MEMBER_HTML_._HTML_MEMBER_HEADER_CC_); ?>
+<!-- ここから -->
+<!-- navi start-->
+							<table width="685" height="25" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td width="685" height="25" align="left" colspan="2" class="black10">
+										<a href="/">TOP</a> &gt;
+										<a href="/member/">ユーザーメニューTOP</a> &gt;
+										クリックカウンターTOP
+									</td>
+								</tr>
+							</table>
+							<table width="685" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td  width="1" height="10" bgcolor="#FFFFFF"><img src="../../../common/image/spacer.gif" width="1" height="10" ></td>
+								</tr>
+							</table>
+<!-- navi end-->
+							<table width="685" height="25" border="0" cellspacing="0" cellpadding="0" background="/common/image/member/cc/in_title01.gif">
+								<tr>
+									<td width="30" height="25" align="left"></td>
+									<td width="650" height="25" align="left" class="white12"><strong>今すぐ使用する</strong></td>
+								</tr>
+							</table>
+							<table width="685" border="0" cellpadding="5" cellspacing="1" bgcolor="#009933">
+								<tr>
+									<td align="center" bgcolor="#FFFFFF">
+										<table width="670" border="0" cellspacing="" cellpadding="0">
+											<tr class="black12">
+												<td width="20">
+													<img src="/common/image/arrow.gif"  height="20">
+												</td>
+												<td width="220" class="black12">
+													<strong>カウンターＵＲＬ一括作成</strong>
+												</td>
+												<td>
+													<a href="counter2/index.php?inputs[submit][insert]=1">[新規登録]</a> ｜ <a href="../../clickcounter/cc_help01.html" target="_blank" >[help]</a></td>
+											</tr>
+											<tr class="black12">
+												<td colspan="3">
+													<ul>
+														<li>メールマガジン発行向けの機能です。</li>
+														<li> メルマガ等の文章中のURLに対して、一括でカウンターを作成できます。</li>
+														<li>登録した内容は下の『カウンターＵＲＬグループ作成』の[修正登録]から見ることができます。</li>
+														<li>カテゴリーとの関連付けは、後で修正も可能です。</li>
+													</ul>
+												</td>
+											</tr>
+											<tr class="black12">
+												<td width="20">
+													<img src="/common/image/arrow.gif"  height="20"></td>
+												<td width="220" class="black12">
+													<strong>カウンターＵＲＬグループ作成</strong></td>
+												<td>
+													<a href="category/index.php?inputs[submit][insert]=1">[新規登録]</a> ｜ 
+													<a href="category/index.php?inputs[submit][update-list]=1">[修正登録]</a> ｜ 
+													<a href="category/index.php?inputs[submit][delete-list]=1">[削除登録]</a>
+												</td>
+											</tr>
+											<tr class="black12">
+												<td colspan="3">
+													<ul>
+														<li>カウンターＵＲＬの分類分け用のグループを登録します。</li>
+														<li>カウンターＵＲＬはここで登録されているどれかのグループに属している必要があります。</li>
+														<li>１つのメールマガジンで、一つのカテゴリーを登録する利用を推奨します。</li>
+													</ul>
+												</td>
+											</tr>
+											<tr class="black12">
+												<td width="20">
+													<img src="/common/image/arrow.gif"  height="20">
+												</td>
+												<td width="220" class="black12">
+													<strong>カウンターＵＲＬ個別作成</strong>
+												</td>
+												<td>
+													<a href="counter/index.php?inputs[submit][insert]=1">[新規登録]</a> ｜ 
+													<a href="counter/index.php?inputs[submit][update-list]=1">[修正登録]</a> ｜ 
+													<a href="counter/index.php?inputs[submit][delete-list]=1">[削除登録]</a>
+												</td>
+											</tr>
+											<tr class="black12">
+											  <td colspan="3"><ul>
+											    <li>カウンターＵＲＬをひとつだけ作成します。ただし、カテゴリを最低一つは先に登録しておく必要があります</li>
+											    </ul>
+											  </td>
+										  </tr>
+											<tr>
+												<td colspan="3">
+													<img src="/common/image/spacer.gif" width="5" height="10" >
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+							<br>
+							<table width="685" height="25" border="0" cellspacing="0" cellpadding="0" background="/common/image/member/cc/in_title01.gif">
+								<tr>
+									<td width="30" height="25" align="left"></td>
+									<td width="650" height="25" align="left" class="white12"><strong>結果を見る</strong></td>
+								</tr>
+							</table>
+							<table width="685" border="0" cellpadding="5" cellspacing="1" bgcolor="#009933">
+								<tr>
+									<td align="center" bgcolor="#FFFFFF">
+										<table width="670" border="0" cellspacing="0" cellpadding="0">
+											<tr class="black12">
+												<td width="20">
+													<img src="/common/image/arrow.gif"  height="20">
+												</td>
+												<td width="220" class="black12">
+													<strong>アクセス数閲覧</strong>
+												</td>
+												<td>
+													<a href="analyze/viewer/index.php?inputs[submit][category-l]=1">[アクセス数を閲覧]</a> ｜ 
+													[アクセスデータをＣＳＶ出力](近日完成予定) 
+												</td>
+											</tr>
+											<tr class="black12">
+												<td colspan="3">
+													<ul>
+														<li>アクセス結果を閲覧します。</li>
+														<li>通常1：00に、前日分までのアクセス解析を自動で行われています。</li>
+														<li>当日分を閲覧したい場合は、「本日のデータを生成」から [当日分を解析(差分解析)] をクリックしてください。</li>
+													</ul>
+												</td>
+											</tr>
+											<tr class="black12">
+												<td width="20">
+													<img src="/common/image/arrow.gif"  height="20">
+												</td>
+												<td width="220" class="black12">
+													<strong>本日のデータを生成</strong>
+												</td>
+												<td>
+													<a href="analyze/maker/index.php?inputs[submit][diff]=1">[当日分を解析(差分解析)]</a>
+												</td>
+											</tr>
+											<tr class="black12">
+												<td colspan="3">
+													<ul>
+														<li>現時刻までのアクセス数を解析します。</li>
+														<li>当日分のデータを知りたい場合にご利用ください。</li>
+													</ul>
+												</td>
+											</tr>
+											<tr class="black12">
+												<td width="20">
+													<img src="/common/image/arrow.gif"  height="20">
+												</td>
+												<td width="220" class="black12">
+													<strong>全期間のデータを生成</strong>
+												</td>
+												<td>
+<!--												<a href="analyze/maker/index.php?inputs[submit][all]=1">[すべてのデータを解析]</a>｜-->
+													<a href="analyze/maker/index.php?inputs[submit][all-ip]=1">[全期間のデータを解析]</a>
+												</td>
+											</tr>
+											<tr class="black12">
+												<td colspan="3">
+													<ul>
+														<li> 除外IPを増やした場合にご利用ください。</li>
+													</ul>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+							<br>
+							<table width="685" height="25" border="0" cellspacing="0" cellpadding="0" background="/common/image/member/cc/in_title01.gif">
+								<tr>
+									<td width="30" height="25" align="left"></td>
+									<td width="650" height="25" align="left" class="white12"><strong>設定項目</strong></td>
+								</tr>
+							</table>
+							<table width="685" border="0" cellpadding="5" cellspacing="1" bgcolor="#009933">
+								<tr>
+									<td align="center" bgcolor="#FFFFFF">
+										<table width="670" border="0" cellspacing="0" cellpadding="0">
+											<tr class="black12">
+												<td width="20">
+													<img src="/common/image/arrow.gif"  height="20">
+												</td>
+												<td width="220" class="black12">
+													<strong>解析結果をメールで送信</strong>
+												</td>
+												<td>
+													<a href="user_send_mail/index.php?inputs[submit][update]=1">[修正登録]</a>
+												</td>
+											</tr>
+											<tr class="black12">
+												<td colspan="3">
+													<ul>
+														<li>その日の解析結果をメールで送る設定をします。</li>
+													</ul>
+												</td>
+											</tr>
+											<tr class="black12">
+												<td width="20">
+													<img src="/common/image/arrow.gif"  height="20">
+												</td>
+												<td width="220" class="black12">
+													<strong>アクセス解析時の除外ＩＰアドレス登録</strong>
+												</td>
+												<td>
+													<a href="ip/index.php?inputs[submit][insert]=1">[新規登録]</a> ｜ 
+													<a href="ip/index.php?inputs[submit][update-list]=1">[修正登録]</a> ｜ 
+													<a href="ip/index.php?inputs[submit][delete-list]=1">[削除登録]</a>
+												</td>
+											</tr>
+											<tr class="black12">
+												<td colspan="3">
+													<ul>
+														<li>アクセスログの解析時に除外するＩＰリストを作成します。</li>
+														<li>自社のIPなどを指定すると、自社からのアクセスは解析から、無視されより正確なクリック数が取得できます。</li>
+													</ul>
+												</td>
+											</tr>
+											<tr class="black12">
+												<td width="20">
+													<img src="/common/image/arrow.gif"  height="20">
+												</td>
+												<td width="220" class="black12">
+													<strong>独自ドメインを利用する</strong>
+												</td>
+												<td>
+													<a href="user/index.php?inputs[submit][update]=1">[修正登録]</a>
+												</td>
+											</tr>
+											<tr class="black12">
+												<td colspan="3">
+													<ul>
+														<li>カウンターＵＲＬの生成にオリジナルドメインを利用する時の設定です。</li>
+													    <li>ここより先に、下記の</nobr><strong><a href="#domain">独自ドメインでの利用方法</a></strong>をお読みいただき、サーバーに.htaccessファイルを<br>
+													    作成していただく必要があります。</li>
+													</ul>
+											  </td>
+											</tr>
+											<tr class="black12">
+												<td width="20">
+													<img src="/common/image/arrow.gif"  height="20">
+												</td>
+												<td width="220" class="black12">
+													<strong>サブカテゴリーの関連付け</strong>
+												</td>
+												<td>
+													<a href="relation/index.php?inputs[submit][insert-list]=1">[サブカテゴリーの関連付け]</a>
+												</td>
+											</tr>
+											<tr class="black12">
+												<td colspan="3">
+													<ul>
+														<li>カテゴリーとカウンターの関連付けを増やす事ができます。</li>
+														<li>複数のカテゴリーに登録しておくと、異なったデータの見え方ができます。<br>
+															ex)同じリンク先に対して、メルマガ別でなく時系列で閲覧ができたりします。</li>
+														</ul>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+							<br>
+							<table width="685" height="25" border="0" cellspacing="0" cellpadding="0" background="/common/image/member/cc/in_title01.gif">
+								<tr>
+									<td width="30" height="25" align="left"><a name="domain"></a></td>
+									<td width="650" height="25" align="left" class="white12"><strong>独自ドメインでの利用方法</strong></td>
+								</tr>
+							</table>
+							<table width="685" border="0" cellpadding="5" cellspacing="1" bgcolor="#009933">
+								<tr>
+									<td align="center" bgcolor="#FFFFFF">
+										<table width="670" border="0" cellspacing="0" cellpadding="0">
+											<tr class="black12">
+												<td width="20">
+													<img src="/common/image/arrow.gif"  height="20">
+												</td>
+												<td width="220" class="black12">
+													<strong>独自ドメインで利用する場合の設定</strong>
+												</td>
+												<td>
+													　
+												</td>
+											</tr>
+											<tr class="black12">
+												<td colspan="3">
+<br>
+ドメインを設定されているサーバーに下記の.htaccessを設置します。<br>
+<br>
+　例）http://www.test.com/に設定する場合<br>
+<br>
+　１、ローカルパソコンに以下の青枠のテキストをコピーし、「htaccess.txt」というファイル名で保存します。<br>
+　２、サーバーに.htaccessファイルを設置するフォルダを作成します。ここでは「cc」というフォルダで説明します。<br>
+　３、http://www.test.com/cc/ に１で作成した「htaccess.txt」ファイルをアップロードします。<br>
+　４、「htaccess.txt」というファイル名を「.htaccess」と変更します。<br>
+　５、カウンターＵＲＬ作成で作成した短縮ＵＲＬをクリックし、設定したページへ飛ぶことを確認します。<br>
+<br>
+↓.htaccessの中身<br>
+<div id='back_color'>
+Options FollowSymLinks<br>
+RewriteEngine on<br>
+RewriteBase /cc<br>
+RewriteRule ^([0-9A-Za-z]+)/([0-9A-Za-z]+)$ http://itm-asp.com/cc/$1/$2 [L]<br>
+</div>
+<br>
+注意<br>
+RewriteBase /cc の /cc はそれぞれ設置するパスに合わせて変更してください。<br>
+例えば、http://itm-asp.com/test/ に .htaccess を設置する場合は /test になります。<br>
+<br>
+上記のが動かない場合下記の原因をチェックしてみてください。<br>
+１）.htaccessが動くかテストします。空(もしくは改行だけ)の.htaccessをアップして<br>
+アップしたフォルダにアクセスし、エラーがでないか確認してみる。<br>
+<br>
+２）options の設定ができるか。<br>
+<div id='back_color'>
+Options FollowSymLinks<br>
+</div>
+の設定だけを行った.htaccessをアップしてエラーが出ないか確認する。<br>
+<br>
+３）RewriteEngineが使えるかどうか。<br>
+<div id='back_color'>
+RewriteEngine on<br>
+</div>
+の設定だけを行った.htaccessをアップしてエラーが出ないか確認する。<br>
+<br>
+その他、動かない場合下記の原因が考えられます。<br>
+・そもそも .htaccess が設置できない -> サーバー会社にお問い合せの上、ご確認下さい。<br>
+・RewriteEngine が利用できない -> サーバー会社にお問い合せの上、ご確認下さい。<br>
+<br>
+ウインドウズでは、.(ドット)から始まるファイルが作成できません(.htaccess.txtなどとなる)ので、<br>
+.htaccess.txt でファイルを作成して、FTPでサーバーにアップ後、.htaccessへとファイル名を修正して
+ください。<br>
+<br>
+サーバーや、FTPの環境において、アップされた.htaccessが閲覧出来なくなる場合があります。<br>
+サーバー会社にお問い合せの上ご確認ください。<br>
+<br>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+
+							<br>
+							<table width="685" height="25" border="0" cellspacing="0" cellpadding="0" background="/common/image/member/cc/in_title02.gif">
+								<tr>
+									<td width="30" height="25" align="left"></td>
+									<td width="650" height="25" align="left" class="white12"><strong>その他</strong></td>
+								</tr>
+							</table>
+							<table width="685" border="0" cellpadding="5" cellspacing="1" bgcolor="#009933">
+								<tr>
+									<td align="center" bgcolor="#FFFFFF">
+										<table width="670" border="0" cellspacing="0" cellpadding="0">
+											<tr class="black12">
+												<td width="20">
+													<img src="/common/image/arrow.gif"  height="20">
+												</td>
+												<td width="470" class="black12">
+													<strong>実装予定(ロードマップ)</strong>
+												</td>
+											</tr>
+											<tr>
+												<td colspan="2" class="black12">
+今後の実装予定のロードマップは、<a href="http://www.itm-asp.com/wiki/index.php?BugTrack-ClickCounter" target="_blank">こちら</a>のURLで公開しています。<br>
+																改良要望などは、<a href="http://www.itm-asp.com/wiki/index.php?BugTrack-ClickCounter" target="_blank">http://www.itm-asp.com/wiki/index.php?BugTrack-ClickCounter</a><br>
+																へお願い致します。
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+							<br>
+							<table width="685" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td  width="1" height="10" bgcolor="#FFFFFF"><img src="/common/image/spacer.gif" width="1" height="10" ></td>
+								</tr>
+							</table>
+
+<!-- ここまで -->
+						</td>
+					</tr>
+				</table>
+<!-- FOOTER -->
+<?PHP require_once(_DIR_USER_HTML_._HTML_FOOTER_); ?>
+			</td>
+			<td width='1' bgcolor='#FFFFFF'><img src='/common/image/spacer.gif' width='1' height='1' ></td>
+			<td width="10" background="/common/image/shadow_right.gif"><img src='/common/image/spacer.gif' width='1' height='1' ></td>
+		</tr>
+	</table>
+</div>
+</body>
+</html>
+
+

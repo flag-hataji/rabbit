@@ -1,0 +1,9 @@
+    <tr bgcolor="#FFFFFF" class="black12"> 
+      <td> <input type="checkbox" id="ch1[<?PHP echo $ch1; ?>]" name="check[<?PHP echo $value['sform_ini_id']; ?>]" value="checkbox"></td>
+      <td><?PHP echo $value['sform_name']; ?></td>
+      <td><?PHP if($value['scenario_name']) { echo $value['scenario_name'];}else{ echo "<font color='#FF0000'>シナリオ未設定</font>"; } ?></td>
+      <td><a href="/stepmail/form/user_regist/index.php?id=<?PHP echo $value['sform_ini_id']; ?>&u_id=<?PHP echo $_SESSION['user']['user_id'] ;?>" target="_brank">フォームを確認する</a></td>
+      <td><a href="/member/stepmail/form/thank_mail/index.php?id=<?PHP echo $value['sform_ini_id']?>">設定する</a></td>
+      <td><a href="./regist/index.php?id=<?PHP echo $value['sform_ini_id']; ?>">修正</a></td>
+      <td><input type="submit" name="flag_send[delete][<?PHP echo $value['sform_ini_id']; ?>]" onclick="return confirm('以下のフォームを削除します。宜しいでしょうか？\n\フォーム名  ： <?PHP echo $value['sform_name'];?>');" value="削除"></td>
+    </tr>

@@ -1,0 +1,119 @@
+  <form action='index.php' method='POST'>
+    <div align='center'>
+    <?PHP $this->error(); ?>
+    <!-- 入力テーブル--> 
+    <table width="600" height='100' border="0" cellpadding="8" cellspacing="1" bgcolor='#DDDDDD'>
+      <tr bgcolor='#FFFFFF' class="gray12"> 
+        <td align='left'>
+          諸注意もろもろ。
+          メールを勝手に送るけど許してねん（はぁと）みたいな
+        </td> 
+      </tr>
+    </table> 
+    <br>
+
+
+    <table width="600" height='15' border="0" cellpadding="5" cellspacing="1" bgcolor='#DDDDDD'>
+      <tr bgcolor='#FFFFFF' class="black12"> 
+        <td align='center'>
+          プラン変更：<?PHP $this->shoePlan(); ?>　<input type='submit' name='post[confirm_plan]' value=' 変更 '>
+        </td> 
+      </tr>
+    </table> 
+    <br>
+
+
+
+
+
+
+    <table width="600" height='15' border="0" cellpadding="5" cellspacing="1" bgcolor='#DDDDDD'>
+      <tr bgcolor='#FFFFFF' class="gray12"> 
+        <td align='center'>
+          ↓プランの内容を自由にいじれます。
+        </td> 
+      </tr>
+    </table> 
+    <br>
+
+    <table width="600" border="0" cellpadding="8" cellspacing="1" bgcolor='#DDDDDD'>
+      <tr bgcolor='#FFFFFF' class="black10"> 
+        <td align='center'><b>必須</b></td> 
+        <td align='center'><b>項目</b></td> 
+        <td align='center'><b>入力</b></td> 
+      </tr>
+      <tr bgcolor='#FFFFFF' class="black12"> 
+        <td align='center'><span class="red10">※</span></td> 
+        <td align='left'><?PHP echo $pField->nameS['price_month']; ?></td> 
+        <td align='left'>
+          <input type='text' name='inputS[price_month]' value='<?PHP echo $pVariable->writeS['price_month']; ?>' size='10'> 
+        </td> 
+      </tr>
+      <tr bgcolor='#FFFFFF' class="black12"> 
+        <td align='center'><span class="red10">※</span></td> 
+        <td align='left'><?PHP echo $pField->nameS['price_month6']; ?></td> 
+        <td align='left'>
+          <input type='text' name='inputS[price_month6]' value='<?PHP echo $pVariable->writeS['price_month6']; ?>' size='10'> 
+        </td> 
+      </tr>
+      <tr bgcolor='#FFFFFF' class="black12"> 
+        <td align='center'><span class="red10">※</span></td> 
+        <td align='left'><?PHP echo $pField->nameS['price_year']; ?></td> 
+        <td align='left'>
+          <input type='text' name='inputS[price_year]' value='<?PHP echo $pVariable->writeS['price_year']; ?>' size='10'> 
+        </td> 
+      </tr>
+      <tr bgcolor='#FFFFFF' class="black12"> 
+        <td align='center'><span class="red10">※</span></td> 
+        <td align='left'><?PHP echo $pField->nameS['send_max']; ?></td> 
+        <td align='left'>
+          <input type='text' name='inputS[send_max]' value='<?PHP echo $pVariable->writeS['send_max']; ?>' size='10'> 
+        </td> 
+      </tr>
+      <tr bgcolor='#FFFFFF' class="black12"> 
+        <td align='center'><span class="red10">※</span></td> 
+        <td align='left'><?PHP echo $pField->nameS['send_now']; ?></td> 
+        <td align='left'>
+          <input type='text' name='inputS[send_now]' value='<?PHP echo $pVariable->writeS['send_now']; ?>' size='10'> 
+        </td> 
+      </tr>
+      <tr bgcolor='#FFFFFF' class="black12"> 
+        <td align='center'><span class="red10">※</span></td> 
+        <td align='leftter'><?PHP echo $pField->nameS['flag_permission']; ?></td> 
+        <td align='left'>
+          <input type='radio' name='inputS[flag_permission]' value='1' <?PHP $expUtil->marked( $pVariable->writeS['flag_permission'], 1, 'checked', True ); ?>>許可　
+          <input type='radio' name='inputS[flag_permission]' value='2' <?PHP $expUtil->marked( $pVariable->writeS['flag_permission'], 0, 'checked', True ); ?>>不許可
+        </td> 
+      </tr>
+      <tr bgcolor='#FFFFFF' class="black12"> 
+        <td align='center'><span class="red10">※</span></td> 
+        <td align='leftter'><?PHP echo $pField->nameS['flag_dm']; ?></td> 
+        <td align='left'>
+          <input type='radio' name='inputS[flag_dm]' value='1' <?PHP $expUtil->marked( $pVariable->writeS['flag_dm'], 1, 'checked', True ); ?>>要　
+          <input type='radio' name='inputS[flag_dm]' value='2' <?PHP $expUtil->marked( $pVariable->writeS['flag_dm'], 0, 'checked', True ); ?>>不要
+        </td> 
+      </tr>
+    </table> 
+    <br>
+
+
+    <!--ボタン--> 
+    <table width="600" height='15' border="0" cellpadding="5" cellspacing="1" bgcolor='#DDDDDD'>
+
+      <tr bgcolor='#FFFFFF' class="black10"> 
+        <td align='center'>
+          <input type='hidden' name='inputS[account]' value='<?PHP echo $pVariable->writeS['account']; ?>' >
+          <input type='hidden' name='inputS[month_max]' value='<?PHP echo $pVariable->writeS['month_max']; ?>' >
+          <input type='hidden' name='inputS[month_now]' value='<?PHP echo $pVariable->writeS['month_now']; ?>' >
+          <input type='submit' name='confirm' value=' 次 へ '>　
+          <input type='reset'  name='reset' value=' リセット '>
+        </td> 
+      </tr>
+    </table> 
+    <br>
+    <br>
+
+   </div>
+
+<?PHP $this->hidden('confirm'); ?>
+  </form>

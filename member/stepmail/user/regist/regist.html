@@ -1,0 +1,94 @@
+<table width="500" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td>
+        <form name="form" method="post" action="index.php">
+        <div align="center">
+          <font size ="2" color="#FF0000"><?PHP if(isset($errorMsg)){print_error($errorMsg);} ?></font>
+          <br>
+          <font size ="2" color="#FF0000">※は必須です。</font> </div>
+
+        <table width="500" border="0" cellpadding="4" cellspacing="1" bgcolor="#999999" align="center">
+          <tr> 
+            <td width="197" bgcolor="#CFCFE2" class="black12">お名前 (姓) <font color="#FF0000">※</font></td>
+            <td width="396" bgcolor="#FFFFFF" class="black12"> <input type="text" name="aData[name_family]" size="20" value="<?PHP if(isset($aData['name_family'])){ print $aData['name_family']; } ?>"> 
+            </td>
+          </tr>
+          <tr> 
+            <td width="197" bgcolor="#CFCFE2" class="black12">お名前（名）<font color="#FF0000">※</font></td>
+            <td width="396" bgcolor="#FFFFFF" class="black12"> <input type="text" name="aData[name_first]" size="20" value="<?PHP if(isset($aData['name_first'])){ print $aData['name_first']; } ?>"> 
+            </td>
+          </tr>
+          <tr> 
+            <td bgcolor="#CFCFE2" class="black12">メール<font color="#FF0000">※</font></td>
+            <td bgcolor="#FFFFFF" class="black12"> <input name="aData[email]" type="text" value="<?PHP if(isset($aData['email'])){ print $aData['email']; } ?>" size="25"></td>
+          </tr>
+          <tr> 
+            <td bgcolor="#CFCFE2" class="black12">会社名</td>
+            <td bgcolor="#FFFFFF" class="black12"><input name="aData[company]" type="text" value="<?PHP if(isset($aData['company'])){ print $aData['company']; } ?>" size="25"></td>
+          </tr>
+          <tr> 
+            <td bgcolor="#CFCFE2" class="black12">役職名</td>
+            <td bgcolor="#FFFFFF" class="black12"><input name="aData[post]" type="text" value="<?PHP if(isset($aData['post'])){ print $aData['post']; } ?>" size="25"></td>
+          </tr>
+          <tr> 
+            <td bgcolor="#CFCFE2" class="black12">パラメータ１</td>
+            <td bgcolor="#FFFFFF" class="black12"><input name="aData[param1]" type="text" size="40" value="<?PHP if(isset($aData['param1'])){ print $aData['param1']; } ?>"> 
+            </td>
+          </tr>
+          <tr> 
+            <td bgcolor="#CFCFE2" class="black12">パラメータ２</td>
+            <td bgcolor="#FFFFFF" class="black12"><input name="aData[param2]" type="text" size="40" value="<?PHP if(isset($aData['param2'])){ print $aData['param2']; } ?>"> 
+            </td>
+          </tr>
+          <tr> 
+            <td bgcolor="#CFCFE2" class="black12">パラメータ３</td>
+            <td bgcolor="#FFFFFF" class="black12"><input name="aData[param3]" type="text" size="40" value="<?PHP if(isset($aData['param3'])){ print $aData['param3']; } ?>"></td>
+          </tr>
+          <tr> 
+            <td bgcolor="#CFCFE2" class="black12">パラメータ４</td>
+            <td bgcolor="#FFFFFF" class="black12"><input name="aData[param4]" type="text" size="40" value="<?PHP if(isset($aData['param4'])){ print $aData['param4']; } ?>"></td>
+          </tr>
+          <tr> 
+            <td bgcolor="#CFCFE2" class="black12">パラメータ５</td>
+            <td bgcolor="#FFFFFF" class="black12"><input name="aData[param5]" type="text" size="40" value="<?PHP if(isset($aData['param5'])){ print $aData['param5']; } ?>"></td>
+          </tr>
+          <tr> 
+            <td bgcolor="#CFCFE2" class="black12">パラメータ６</td>
+            <td bgcolor="#FFFFFF" class="black12"><input name="aData[param6]" type="text" size="40" value="<?PHP if(isset($aData['param6'])){ print $aData['param6']; } ?>"></td>
+          </tr>
+          <tr> 
+            <td bgcolor="#CFCFE2" class="black12">パラメータ７</td>
+            <td bgcolor="#FFFFFF" class="black12"><input name="aData[param7]" type="text" size="40" value="<?PHP if(isset($aData['param7'])){ print $aData['param7']; } ?>"></td>
+          </tr>
+          <tr> 
+            <td bgcolor="#CFCFE2" class="black12">パラメータ８</td>
+            <td bgcolor="#FFFFFF" class="black12"><input name="aData[param8]" type="text" size="40" value="<?PHP if(isset($aData['param8'])){ print $aData['param8']; } ?>"></td>
+          </tr>
+          <tr> 
+            <td bgcolor="#CFCFE2" class="black12">パラメータ９</td>
+            <td bgcolor="#FFFFFF" class="black12"><input name="aData[param9]" type="text" size="40" value="<?PHP if(isset($aData['param9'])){ print $aData['param9']; } ?>"></td>
+          </tr>
+          <tr>
+            <td bgcolor="#CFCFE2" class="black12">パラメータ１０</td>
+            <td bgcolor="#FFFFFF" class="black12"><input name="aData[param10]" type="text" size="40" value="<?PHP if(isset($aData['param10'])){ print $aData['param10']; } ?>"></td>
+          </tr>
+          <tr> 
+            <td bgcolor="#CFCFE2" class="black12">追加するシナリオ名</td>
+            <td bgcolor="#FFFFFF" class="black12"> <?PHP if( !isset($_GET['id'])){ printScenarioSelect($aData); }else{ echo "シナリオの変更は、一覧画面から行ってください。";} ?> 
+            </td>
+          </tr>
+          <tr> 
+            <td colspan="2" bgcolor="#FFFFFF"> <div align="center"> 
+                <input type="submit" name="confirm_2" value="登録する">
+                <input name="aData[stepmail_member_id]" type="hidden" value="<?PHP if(isset($_GET['id'])){ print $_GET['id']; } ?>">
+                　 
+                <input type="submit" name="confirm" value="確認する">
+                　 
+                <input type="reset" name="reset" value="リセット">
+              </div></td>
+          </tr>
+        </table>
+      </form>
+    </td>
+  </tr>
+</table>

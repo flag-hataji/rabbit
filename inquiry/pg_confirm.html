@@ -1,0 +1,172 @@
+<?PHP $viewS = $this->getViewDataSConfirm(); ?>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="ja-JP">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-JP"> 
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>www.rabbit-mail.jp | メール配信ＡＳＰ</title>
+<link href="../css/common.css" rel="stylesheet" type="text/css">
+</head>
+<body bgcolor="#FFFFFF" >
+
+<div align="center">
+
+
+
+<div id="header-box">
+<table border="0" width="100%">
+  <tr>
+    <td align="left"><a href="/"><img src="../images/logo01.gif"></a></td>
+  </tr>
+  <tr>
+    <td align="right">
+      <hr size="1">
+      <A href="/forget/">ログインID・パスワードを忘れた方はこちら</A>
+    </td>
+  </tr>
+</table >
+</div>
+
+
+<div id="pictmail-input-box">
+<form action='index.php' method='POST' style="margin: 0px;">
+<table>
+  <tr>
+    <td colspan="2" class="title_l">
+      お問い合わせ
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="explain_l">
+      当サービスに関するお問い合わせはこちらで
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="title_l">
+      入力確認
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="explain_m">
+     下記の内容をご確認ください。
+    </td>
+  </tr>
+
+
+
+  <tr>
+    <td colspan="2" class="title_m">
+      お客様の情報
+    </td>
+  </tr>
+
+
+  <tr> 
+    <td class="input_title"><?PHP echo $this->Manager->nameS['name']; ?></td>
+    <td class="input_field">
+      <?PHP echo $viewS['name']; ?>
+    </td>
+  </tr>
+  <tr> 
+    <td class="input_title"><?PHP echo $this->Manager->nameS['kana']; ?></td>
+    <td class="input_field">
+      <?PHP echo $viewS['kana']; ?>
+    </td>
+  </tr>
+  <tr> 
+    <td class="input_title"><?PHP echo $this->Manager->nameS['name_company']; ?></td>
+    <td class="input_field">
+      <?PHP echo $viewS['name_company']; ?>
+    </td>
+  </tr>
+  <tr> 
+    <td class="input_title"><?PHP echo $this->Manager->nameS['kana_company']; ?></td>
+    <td class="input_field">
+      <?PHP echo $viewS['kana_company']; ?>
+    </td>
+  </tr>
+
+
+
+
+  <tr>
+    <td colspan="2" class="title_m">
+      ご連絡先
+    </td>
+  </tr>
+
+
+  <tr> 
+    <td class="input_title"><?PHP echo $this->Manager->nameS['mail']; ?></td>
+    <td class="input_field">
+      <?PHP echo $viewS['mail']; ?>
+    </td>
+  </tr>
+  <tr> 
+    <td class="input_title"><?PHP echo $this->Manager->nameS['tel']; ?></td>
+    <td class="input_field">
+      <?PHP echo $viewS['tel']; ?>
+    </td>
+  </tr>
+
+  <tr> 
+    <td class="input_title"><?PHP echo $this->Manager->nameS['mobile']; ?></td>
+    <td class="input_field">
+      <?PHP echo $viewS['mobile']; ?>
+    </td>
+  </tr>
+
+  <tr> 
+    <td class="input_title"><?PHP echo $this->Manager->nameS['fax']; ?></td>
+    <td class="input_field">
+      <?PHP echo $viewS['fax']; ?>
+    </td>
+  </tr>
+
+
+  <tr>
+    <td colspan="2" class="title_m">
+      <?PHP echo $this->Manager->nameS['inquiry']; ?>
+    </td>
+  </tr>
+ <tr> 
+    <td colspan="2" class="input_field">
+      <?PHP echo $viewS['inquiry']; ?>
+    </td>
+  </tr>
+
+  <tr> 
+    <td colspan="2" class="input_button">
+      <input type='submit' name='post[rewrite]' value=' キャンセル '>　
+      <input type='submit' name='finish' value=' 登録する '>
+      <input type='hidden' name='charaCode' value="もじこーどはんていようへんすう">
+      <input type='hidden' name='hidden'    value="finish">
+      <input type='hidden' name='mode'      value="<?PHP echo $this->pageS['mode']; ?>">
+  <?PHP $this->showHidden(); ?>
+    </td>
+  </tr>
+</table >
+</form>
+
+
+</div>
+
+
+<div id="footer-box">
+<table border="0" width="100%">
+  <tr>
+    <td align="center">
+      rabbit-mail
+    </td>
+  </tr>
+</table >
+</div>
+
+
+
+</div>
+
+</body>
+</html>

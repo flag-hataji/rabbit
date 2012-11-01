@@ -1,0 +1,49 @@
+From - Mon Mar 02 12:10:09 2009
+X-Account-Key: account2
+X-UIDL: 1235963398.39265.www.pictnotes.jp,S=2836
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+X-Mozilla-Keys: itm-1111@itm-asp.com                                                                                
+Return-Path: <yapoooooo+caf_=niki=itm.ne.jp@gmail.com>
+Delivered-To: niki@itm.ne.jp
+Received: (qmail 39262 invoked from network); 2 Mar 2009 12:09:58 +0900
+Received: from unknown (HELO rv-out-0506.google.com) (209.85.198.227)
+  by pictnotes.jp with SMTP; 2 Mar 2009 12:09:58 +0900
+Received: by rv-out-0506.google.com with SMTP id k40so1920301rvb.21
+        for <niki@itm.ne.jp>; Sun, 01 Mar 2009 19:09:57 -0800 (PST)
+Received: by 10.142.162.9 with SMTP id k9mr2742632wfe.282.1235963397854;
+        Sun, 01 Mar 2009 19:09:57 -0800 (PST)
+X-Forwarded-To: pictmail-3391@itm-asp.com
+X-ya-For: yapoooooo@gmail.com to pictmail-3391@itm-asp.com
+Delivered-To: yapoooooo@gmail.com
+Received: by 10.142.165.20 with SMTP id n20cs127989wfe;
+        Sun, 1 Mar 2009 19:09:57 -0800 (PST)
+Received: by 10.151.15.13 with SMTP id s13mr3348453ybi.75.1235963396987;
+        Sun, 01 Mar 2009 19:09:56 -0800 (PST)
+Return-Path: <aero-compact@hotmail.co.jp>
+Received: from col0-omc1-s16.col0.hotmail.com (col0-omc1-s16.col0.hotmail.com [65.55.34.26])
+        by mx.google.com with ESMTP id 24si30660908gxk.68.2009.03.01.19.09.56;
+        Sun, 01 Mar 2009 19:09:56 -0800 (PST)
+Received-SPF: pass (google.com: domain of aero-compact@hotmail.co.jp designates 65.55.34.26 as permitted sender) client-ip=65.55.34.26;
+Authentication-Results: mx.google.com; spf=pass (google.com: domain of aero-compact@hotmail.co.jp designates 65.55.34.26 as permitted sender) smtp.mail=aero-compact@hotmail.co.jp
+Received: from COL104-W33 ([65.55.34.9]) by col0-omc1-s16.col0.hotmail.com with Microsoft SMTPSVC(6.0.3790.3959);
+	 Sun, 1 Mar 2009 19:09:24 -0800
+Message-ID: <COL104-W33F65D8E82FBDAC5184B61C5A90@phx.gbl>
+Return-Path: aero-compact@hotmail.co.jp
+Content-Type: multipart/alternative;
+	boundary="_347609b4-1f90-4183-9011-5a9aad5be185_"
+X-Originating-IP: [221.246.192.14]
+From: =?iso-2022-jp?B?GyRCJCIkJCQmGyhCIBskQiQoJCobKEI=?=
+	<aero-compact@hotmail.co.jp>
+To: <yapoooooo@gmail.com>
+Subject: =?iso-2022-jp?B?GyRCRT5BdxsoQnRlc3R=?=
+Date: Mon, 2 Mar 2009 12:09:24 +0900
+Importance: Normal
+MIME-Version: 1.0
+X-OriginalArrivalTime: 02 Mar 2009 03:09:24.0821 (UTC) FILETIME=[4A665050:01C99AE4]
+
+--_347609b4-1f90-4183-9011-5a9aad5be185_
+Content-Type: text/plain; charset="iso-2022-jp"
+Content-Transfer-Encoding: 7bit
+
+“]‘—ƒeƒXƒg

@@ -1,0 +1,143 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="ja-JP">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=EUC-JP">
+	<meta http-equiv="Content-Style-Type" content="text/css">
+	<title>ユーザーメニュー : クリックカウンター : グループ作成作成</title>
+	<link href="/common/css/common.css" rel="stylesheet" type="text/css">
+	<script language="JavaScript">
+	<!--
+	<?PHP require_once(_DIR_USER_HTML_._HTML_JS_); ?>
+	//-->
+	</script>
+</head>
+<body  bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onLoad="showFields( <?php $this->viewInputHtml('category_type')?> )">
+<div align='center'> 
+	<table height="100%" width="900" border="0" cellspacing="0" cellpadding="0" bgcolor='#FFFFFF'>
+		<tr>
+			<td width="10" background="/common/image/shadow_left.gif"><img src='/common/image/spacer.gif' width='1' height='1' ></td>
+			<td width='1' bgcolor='#FFFFFF'><img src='/common/image/spacer.gif' width='1' height='1' ></td>
+			<td valign="top" align='center' bgcolor='#FFFFFF'> 
+				<!-- Header -->
+				<?PHP require_once(_DIR_USER_HTML_._HTML_HEADER_); ?>
+				<table width="850" border="0" cellspacing="0" cellpadding="0" bgcolor="#948E8E">
+					<tr class="gray10"> 
+					<!-- --------LEFT AREA--------- -->
+						<td width="150" align="center" valign="top" bgcolor="#FFFFFF"> 
+							<?PHP require_once(_DIR_USER_HTML_._HTML_LEFT_MENU_); ?>
+							<br>
+							<?PHP //require_once(_DIR_USER_HTML_._HTML_RIGHT_MENU_); ?>
+						</td>
+						<td width="5" bgcolor="#FFFFFF"><img src="/common/image/spacer.gif" width="5" height="1" ></td>
+						<td width="1" bgcolor="#FFFFFF" background="/common/image/y_comma.gif"><img src="/common/image/spacer.gif" width="1" height="1" ></td>
+						<!-- --------CENTER AREA--------- -->
+						<td width="700" align="right" valign="top" bgcolor="#FFFFFF">
+							<!-- Menu Header -->
+							<?PHP require_once(_DIR_MEMBER_HTML_._HTML_MEMBER_HEADER_CC_); ?>
+<!-- ここから -->
+<!-- navi start-->
+							<table width="685" height="25" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td width="685" height="25" align="left" colspan="2" class="black10">
+										<a href="/">TOP</a> &gt;
+										<a href="/member/">ユーザーメニューTOP</a> &gt;
+										<a href="/member/clickcounter/">クリックカウンターTOP</a> &gt;
+										<a href="/member/clickcounter/category/">グループ作成</a> &gt;
+										<?php echo $this->bean->getView('navi') ?><?php echo $this->bean->getView('title') ?>
+									</td>
+								</tr>
+							</table>
+							<table width="685" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td  width="1" height="10" bgcolor="#FFFFFF"><img src="../../../common/image/spacer.gif" width="1" height="10" ></td>
+								</tr>
+							</table>
+							<table width="685" height="25" border="0" cellspacing="0" cellpadding="0" background="/common/image/member/cc/in_title01.gif">
+<!-- navi end-->
+							<table width="685" height="25" border="0" cellspacing="0" cellpadding="0" background="/common/image/member/cc/in_title01.gif">
+								<tr>
+									<td width="30" height="25" align="left"></td>
+									<td width="650" height="25" align="left" class="white12"><strong>グループ作成</strong></td>
+								</tr>
+							</table>
+							<table width="685" border="0" cellpadding="5" cellspacing="1" bgcolor="#009933">
+								<tr>
+									<td align="center" bgcolor="#FFFFFF">
+										<table width="670" border="0" cellspacing="" cellpadding="0">
+											<tr class="black12">
+												<td width="20">
+													<img src="/common/image/arrow.gif"  height="20">
+												</td>
+												<td width="650" class="black12">
+													<strong>グループ作成 <?php echo $this->bean->getView('navi') ?><?php echo $this->bean->getView('title') ?></strong>
+												</td>
+											</tr>
+											<tr class="black12">
+												<td colspan="2" align="center">
+
+<br />
+<form action="index.php" method="post">
+<table border="0" cellspacing='0'cellpadding='0' bgcolor="#aaaaaa" width="650" >
+	<tr>
+		<td>
+			<table width="100%" cellspacing='1'cellpadding='3' >
+				<tr>
+					<td class="black12" bgcolor="#D0D2FA" width="150">グループ名：</td>
+					<td class="black12" bgcolor="#FFFFFF">
+						<?php $this->viewInputHtml('title') ?>
+					</td>
+				</tr>
+				<tr>
+					<td class="black12" bgcolor="#D0D2FA" width="150">配信数：</td>
+					<td class="black12" bgcolor="#FFFFFF">
+						<?php $this->viewInputHtml('delivery_num') ?>
+					</td>
+				</tr>
+				<tr>
+					<td class="black12" bgcolor="#D0D2FA" colspan="2" align="center">コメント(メルマガ本文)</td>
+				</tr>
+				<tr>
+					<td class="black12" bgcolor="#FFFFFF" colspan="2">
+						<?php $this->viewInputHtml('comment') ?>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+<br>
+<?php echo $this->bean->getView('next_button') ?>
+　　
+<?php echo $this->bean->getView('back_button') ?>
+</form>
+												</td>
+											</tr>
+											<tr>
+												<td colspan="3">
+													<img src="/common/image/spacer.gif" width="5" height="10" >
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+							<br>
+							<table width="685" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td  width="1" height="10" bgcolor="#FFFFFF"><img src="/common/image/spacer.gif" width="1" height="10" ></td>
+								</tr>
+							</table>
+<!-- ここまで -->
+						</td>
+					</tr>
+				</table>
+<!-- FOOTER -->
+<?PHP require_once(_DIR_USER_HTML_._HTML_FOOTER_); ?>
+			</td>
+			<td width='1' bgcolor='#FFFFFF'><img src='/common/image/spacer.gif' width='1' height='1' ></td>
+			<td width="10" background="/common/image/shadow_right.gif"><img src='/common/image/spacer.gif' width='1' height='1' ></td>
+		</tr>
+	</table>
+</div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+From - Fri Dec 21 10:34:38 2007
+X-Account-Key: account2
+X-UIDL: 1198200872.63223.www.pictnotes.jp,S=446
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+X-Mozilla-Keys:                                                                                 
+Return-Path: <monkichiro-1120@docomo.ne.jp>
+Delivered-To: niki@itm.ne.jp
+Received: (qmail 63220 invoked from network); 21 Dec 2007 10:34:32 +0900
+Received: from unknown (HELO docomo.ne.jp) (203.138.203.200)
+  by pictnotes.jp with SMTP; 21 Dec 2007 10:34:32 +0900
+Date: Fri, 21 Dec 2007 10:34:30 +0900 (JST)
+From: monkichiro-1120@docomo.ne.jp
+To: niki@itm.ne.jp
+Subject: 
+Message-ID: <IMTn2u2B0ef98a2403N3@docomo.ne.jp>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-2022-jp"
+Content-Transfer-Encoding: 7bit
+
+てすとおおおお

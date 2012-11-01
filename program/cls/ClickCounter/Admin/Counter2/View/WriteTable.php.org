@@ -1,0 +1,89 @@
+<?php
+class WriteTable extends Table
+{
+
+  var $db;
+  var $bean ;
+  var $html = null ;
+
+  function WriteTable(&$db, &$bean)
+  {
+    $this->db =& $db;
+    $this->inputs =& $bean;
+    $this->setOffset();
+    $this->html = null ;
+  }
+
+  function getWriteTable($mode)
+  {
+    // 改行コードを統一
+    $data = $this->nl2LF($this->bean->getInput("comment"));
+    $datas = explode("\n", $data);
+    $i = 0 ;
+    foreach($datas as $key => $str){
+      if( preg_match("/s?https?:\/\/[-_.!~*'()a-zA-Z0-9;\/?:@&=+$,%#]+/",$str) ){
+        $flag = $this->isSpecialUrl($str);
+        echo "<div id='url'>\n";
+        if( $flag ){
+          echo "<strong>このURLは、すでに登録されているカウンターの可能性があります。登録済みのカウンターを新たに登録すると、２重にアクセスがカウントされ、正確な数値が判別できません。</strong><br />";
+        }
+        echo "適応：<input type='checkbox' name='inputs[change][$i]' value='t' ".$this->getChecked($this->bean->getInput("change][$i"),'t').">";
+        echo "$str<br>\n";
+        echo "タイトル：<input type='text' name='inputs[title][$i]' value='" . $this->bean->getInput("title][$i"). "'><br />\n";
+        echo "</div>\n";
+        ++$i;
+      }else{
+        echo "$str<br>\n";
+      }
+    }
+  }
+
+  function getWriteConf($mode)
+  {
+    // 改行コードを統一
+    $data = $this->nl2LF($this->bean->getInput("comment"));
+    $datas = explode("\n", $data);
+    $i = 0 ;
+    foreach($datas as $key => $str){
+      if( preg_match("/s?https?:\/\/[-_.!~*'()a-zA-Z0-9;\/?:@&=+$,%#]+/",$str, $matches) ){
+        if( $this->inputs['change'][$i] =='t'){
+          $this->inputs["url_cd"][$i] = $this->mgr->getUrlCd();
+          $url = $this->getUrl($this->inputs["url_cd"][$i]);
+          $this->inputs["url"][$i] = $matches[0] ;
+          $str = str_replace($this->inputs["url"][$i], $url, $str)  ;
+          echo "<div id='url'>\n";
+          echo $str."<br />" ;
+          echo "タイトル：{$this->inputs['title'][$i]}<br />\n";
+          echo "</div>\n";
+        }else{
+          echo "$str<br>\n";
+        }
+        ++$i;
+      }else{
+        echo "$str<br>\n";
+      }
+      $this->inputs["comment1"] .= $str."\n" ;
+    }
+  }
+
+  function getUrl($url_cd)
+  {
+    $url = MY_URL.$_SESSION['user']['user_id']."/".$url_cd ;
+    return $url; 
+  }
+
+  /**
+   * 自分の設定しているドメインか,ITM-ASPかを判別する
+   * @param  string $url URL
+   * @return boolean true or false
+   */
+  function isSpecialUrl($url)
+  {
+    if(ereg('itm-asp.com/cc',$url) || ereg(MY_URL, $url)){
+      return true ;
+    }
+    return false ;
+  }
+
+}
+?>

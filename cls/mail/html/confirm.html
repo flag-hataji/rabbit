@@ -1,0 +1,101 @@
+
+  <form action='index.php' method='POST'>
+
+    <!-- 入力テーブル--> 
+    <table width="535" border="0" cellspacing="0" cellpadding="0" bgcolor='#948E8E'>
+      <tr class='black10'> 
+        <td align='left' height='23' bgcolor="#FFFFFF" class='gold10'>
+          <b><img src='<?PHP echo _URL_COMMON_IMAGE_; ?>tri.gif'>　各種メールアドレス入力確認</b>
+        </td>
+      </tr>
+    </table> 
+    <table width="535" height='130' border="0" cellpadding="2" cellspacing="1" bgcolor='#948E8E'>
+      <tr bgcolor='#FFFFFF' class="gray12"> 
+        <td align='center' width='180' bgcolor='#F4F3F1'><?PHP echo $pField->nameS['mail_from']; ?></td> 
+        <td align='center'>
+          <?PHP echo $pVariable->viewS['mail_from']; ?>
+        </td> 
+      </tr>
+      <tr bgcolor='#FFFFFF' class="gray12"> 
+        <td align='center' width='180' bgcolor='#F4F3F1'><?PHP echo $pField->nameS['mail_error']; ?></td> 
+        <td align='center'>
+          <?PHP echo $pVariable->viewS['mail_error']; ?>
+        </td> 
+      </tr>
+      <tr bgcolor='#FFFFFF' class="gray12"> 
+        <td align='center' width='180' bgcolor='#F4F3F1'><?PHP echo $pField->nameS['mail_test']; ?></td> 
+        <td align='center'>
+          <?PHP echo $pVariable->viewS['mail_test']; ?>
+        </td> 
+      </tr>
+      <tr bgcolor='#FFFFFF' class="gray12"> 
+        <td align='center' width='180' bgcolor='#F4F3F1'><?PHP echo $pField->nameS['send_date']; ?></td> 
+        <td align='center'>
+          <?PHP echo $pVariable->viewS['send_date']; ?>
+        </td> 
+      </tr>
+    </table> 
+    <br>
+
+
+
+    <table width="535" border="0" cellspacing="0" cellpadding="0" bgcolor='#948E8E'>
+      <tr class='black10'> 
+        <td align='left' height='23' bgcolor="#FFFFFF" class='gold10'>
+          <b><img src='<?PHP echo _URL_COMMON_IMAGE_; ?>tri.gif'>　送信情報入力確認</b>
+        </td>
+      </tr>
+    </table> 
+    <table width="535" border="0" cellpadding="2" cellspacing="1" bgcolor='#948E8E'>
+      <tr bgcolor='#FFFFFF' class="gray12"> 
+        <td align='center' width='150' bgcolor='#F4F3F1'><?PHP echo $pField->nameS['name_from']; ?></td> 
+        <td align='center'>
+          <?PHP echo $pVariable->viewS['name_from']; ?>
+          </td> 
+      </tr>
+      <tr bgcolor='#FFFFFF' class="gray12"> 
+        <td align='center' width='150' bgcolor='#F4F3F1'><?PHP echo $pField->nameS['subject']; ?></td> 
+        <td align='center'>
+          <?PHP echo $pVariable->viewS['subject']; ?>
+        </td> 
+      </tr>
+
+    </table> 
+    <br>
+
+
+
+    <table width="535" border="0" cellpadding="2" cellspacing="1" bgcolor='#948E8E'>
+      <tr bgcolor='#FFFFFF' class="gray12"> 
+        <td align='center' colspan='2' bgcolor='#F4F3F1'><?PHP echo $pField->nameS['message']; ?></td> 
+      </tr>
+      <tr bgcolor='#FFFFFF' class="gray12"> 
+        <td align='left' colspan='2'>
+          <?PHP echo $pVariable->viewS['message']; ?>
+        </td> 
+      </tr>
+
+
+<?PHP if( isset($pVariable->inputS['flag_html']) && $pVariable->inputS['flag_html']==1 ){ ?>
+      <tr bgcolor='#FFFFFF' class="gray12"> 
+        <td align='center' colspan='2' bgcolor='#F4F3F1'><?PHP echo $pField->nameS['message_html']; ?></td> 
+      </tr>
+      <tr bgcolor='#FFFFFF' > 
+        <td align='left' colspan='2'>
+          ※ テスト送信にてご確認をお願いいたします
+          <?PHP //echo $pVariable->viewS['message_html']; ?>
+        </td> 
+      </tr>
+<?PHP } ?>
+
+
+    </table> 
+    <br>
+
+
+    <!--ボタン--> 
+    <input type='submit' name='finish' value=' 送信する '>　　<input type='submit' name='post[rewrite]' value=' 戻る '><br>
+
+<?PHP $this->hidden('finish'); ?>
+
+  </form>

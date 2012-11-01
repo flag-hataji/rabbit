@@ -1,0 +1,49 @@
+
+  <div align='center'>
+  <form action='index.php' method='POST'>
+
+    <table width="535" border="0" cellspacing="0" cellpadding="0" bgcolor='#948E8E'>
+      <tr class='black10'> 
+        <td align='left' height='23' bgcolor="#FFFFFF" class='gold10'>
+          <b><img src='<?PHP echo _URL_COMMON_IMAGE_; ?>tri.gif'>　プラン変更申請：入力</b>
+        </td>
+      </tr>
+      <tr><td width='535' height='1' bgcolor='#948E8E'><img src='<?PHP echo _URL_COMMON_IMAGE_; ?>spacer.gif' width='1' height='1'></td></tr>
+    </table> 
+    <br>
+
+    <table width="535" height='50' border="0" cellpadding="8" cellspacing="0" bgcolor='#948E8E'>
+      <tr bgcolor='#FFFFFF' class="black12"> 
+        <td align='center'>
+          下記の内容で宜しければ【申請する】ボタンをクリックしてください。<br>
+        </td> 
+      </tr>
+    </table> 
+
+    <table width="535" height='50' border="0" cellpadding="8" cellspacing="0" bgcolor='#948E8E'>
+      <tr bgcolor='#FFFFFF' class="black12"> 
+        <td align='left'>
+          ■ 希望するプラン名　：
+          <?PHP $pOutput->showPlan('confirm',$plan_id); ?>
+        </td> 
+      </tr>
+    </table> 
+    <br>
+
+
+
+    <table width="535" height='50' border="0" cellpadding="8" cellspacing="1" bgcolor='#948E8E'>
+      <tr bgcolor='#F4F3F1' class="gray12"> 
+        <td align='center'>
+          <input type='hidden' name='inputS[user_id]' value='<?PHP echo $_SESSION['user']['user_id']; ?>'>
+          <input type='hidden' name='inputS[plan_id]' value='<?PHP echo $plan_id; ?>'>
+          <input type='hidden' name='inputS[auto_money]' value='<?PHP echo $auto_money; ?>'>
+          <input type='submit' name='next[finish]' value=' 申請する '>　
+          <input type='submit' name='next[rewrite]' value=' 戻る '><br>
+        </td> 
+      </tr>
+    </table> 
+
+  </form>
+
+  </div>

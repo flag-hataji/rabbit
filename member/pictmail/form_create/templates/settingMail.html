@@ -1,0 +1,243 @@
+<?PHP require_once("../../../program/cls/define/Setup.php");?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="ja-JP">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-JP"> 
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>www.rabbit-mail.jp | メール配信ＡＳＰ</title>
+<link href="../../../css/common.css" rel="stylesheet" type="text/css">
+<link href="./css/text.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="./js/CheckValue.js"></script>
+<script language="JavaScript">
+<!--
+<?PHP require_once(_DIR_USER_HTML_._HTML_JS_); ?>
+	
+	//JavaScript有無の場合の対処
+	function closeTextArea(obj,obj2){
+		document.getElementById(obj).style.display="none";
+		document.getElementById(obj2).style.display="none";
+		var check = document.theform["data[use_html]"].checked;
+		var check2 = document.theform["data[use_mobail]"][1].checked;
+		if(check){
+		document.getElementById(obj).style.display="inline";
+		}
+		if(check2){
+		document.getElementById(obj2).style.display="inline";
+		}
+	}
+	
+	//HTMLテキストエリアのチェック
+	function showHtmlText(){
+	   if(document.getElementById && document.createElement){
+	   		var check = document.theform["data[use_html]"].checked;
+	   		var check2 = document.theform["data[use_mobail]"][1].checked;
+		 if(check){ 
+			   document.getElementById('htmlTextArea').style.display="inline";
+		  }
+		  else{
+			   document.getElementById('htmlTextArea').style.display="none";
+		  }
+		 if(check2){ 
+			   document.getElementById('mobailTextArea').style.display="inline";
+		  }
+		  else{
+			   document.getElementById('mobailTextArea').style.display="none";
+		  }
+		  
+	   }			
+	}
+	
+	//入力チェック
+	function checkValue(){
+		//フォームのValue取得
+		var transmit_name    = document.theform["data[transmit_name]"].value;
+		var transmit_mailadd = document.theform["data[transmit_mailadd]"].value;
+		var return_err       = document.theform["data[return_err]"].value;
+		var subject          = document.theform["data[subject]"].value;
+		var text_mess        = document.theform["data[text_mess]"].value;
+		
+		//エラーチェック
+		strErr = "";
+		strErr += requiredCheck(transmit_name,"送信者名");
+//		strErr += zenCheck(transmit_name,"送信者名");
+		strErr += requiredCheck(transmit_mailadd,"送信元メールアドレス");
+		strErr += mailCheck(transmit_mailadd,"送信元メールアドレス");
+		strErr += requiredCheck(return_err,"エラー戻り先メールアドレス");
+		strErr += mailCheck(return_err,"エラー戻り先メールアドレス");
+		strErr += requiredCheck(subject,"件名");
+		strErr += requiredCheck(text_mess,"TEXTメッセージ");
+		if(strErr!=""){
+			alert(strErr);
+			return false;
+		}else{
+			return true;
+		}
+	}
+
+
+
+//-->
+</script>
+</head>
+<body bgcolor="#FFFFFF" onLoad="closeTextArea('htmlTextArea','mobailTextArea')">
+
+<div align="center">
+
+<?PHP require_once(_DIR_MEMBER_HTML_._HTML_MEMBER_HEADER_PICTMAIL_); ?>
+<div id="pictmail-top-box">
+      <table border="0" cellpadding="0" cellspacing="0">
+            <td valign="top" bgcolor="#FFFFFF">
+  <tr>
+    <td colspan="2" class="title_l">
+      メールアドレス収集フォーム
+    </td>
+  </tr>
+
+            			<form action="./settingMail.php" method="post" onSubmit="return checkValue()" name="theform">
+			  <table align="center" cellpadding="0" cellspacing="0">
+				  <tr>
+					<td></td>
+					<td class="title_m" bgcolor="#DDEEDD">■サンキューメール設定</td>
+				  </tr>
+			  </table>
+				<?php
+					if($errorm!=""){
+						echo "<div align=\"center\">";
+						foreach($errorm as $key=>$value){
+							echo "<font color=\"#FF0000\" size=\"2\">$value</font><br />";
+						}
+						echo "</div>";
+					}
+				?>
+			<p align="center">
+				<a href="../templates/tag.html" target="_blank" onClick="window.open('./tag.html','タグ一覧','Width=450,height=350');return false;">本文に挿入できるお客様情報タグはこちらからご確認ください</a>
+			</p>
+			<p align="center" class="red12">※印は必須になります</p>
+			<table width="600" border="0" align="center" cellpadding="5" cellspacing="3" bgcolor="#FFFFFF">
+			  <tr bgcolor="#FFFFFF">
+				<td class="explain_m" bgcolor="#DDEEDD">サンキューメールを送信</td>
+				<td >
+					<?php
+					if(($sendMail=="t")||($sendMail=="")){
+						echo "<input type=\"radio\" name=\"data[sendMail]\" checked=\"checked\" value=\"t\"/>する<input type=\"radio\" name=\"data[sendMail]\" value=\"f\" />しない";
+						}else if($sendMail=="f"){
+						echo "<input type=\"radio\" name=\"data[sendMail]\" value=\"t\"/>する<input type=\"radio\" name=\"data[sendMail]\" value=\"f\" checked=\"checked\"/>しない";
+					}
+					?>				</td>
+			  </tr>
+
+			  <tr bgcolor="#FFFFFF">
+				<td class="explain_m" bgcolor="#DDEEDD">送信者名<span class="red12">※</span></td>
+				<td ><input type="text" name="data[transmit_name]" size="50" maxlength="50" value="<?php echo $transmit_name; ?>"/></td>
+			  </tr>
+			  <tr bgcolor="#FFFFFF">
+				<td class="explain_m" bgcolor="#DDEEDD" >送信元メールアドレス<span class="red12">※</span></td>
+				<td ><input type="text" name="data[transmit_mailadd]" size="50" maxlength="50" value="<?php echo $transmit_mailadd; ?>"/></td>
+			  </tr>
+			  <tr bgcolor="#FFFFFF">
+				<td class="explain_m" bgcolor="#DDEEDD" >エラー戻り先メールアドレス<span class="red12">※</span></td>
+				<td ><input type="text" name="data[return_err]" size="50" maxlength="50" value="<?php echo $return_err ;?>"/></td>
+			  </tr>
+			  <tr bgcolor="#FFFFFF">
+				<td class="explain_m" bgcolor="#DDEEDD" >件名<span class="red12">※</span></td>
+				<td ><input type="text" name="data[subject]" size="50" maxlength="50" value="<?php echo $subject; ?>"/></td>
+			  </tr>
+			  <tr bgcolor="#FFFFFF">
+				<td colspan="2" >&nbsp;</td>
+			  </tr>
+			  <tr bgcolor="#FFFFFF" align="center">
+				<td colspan="2" class="explain_m" bgcolor="#DDEEDD" >TEXTメッセージ<span class="red12">※</span></td>
+				</tr>
+			  <tr bgcolor="#FFFFFF" align="center">
+				<td colspan="2" ><textarea name="data[text_mess]" cols="72" rows="20" ><?php echo $text_mess;?></textarea></td>
+				</tr>
+			  <tr bgcolor="#FFFFFF">
+				<td class="explain_m" bgcolor="#DDEEDD" >HTMLメール</td>
+				<td >
+				<?php
+					if($use_html=="t"){
+						echo "<input id=\"htmlText\" type=\"checkbox\" value=\"t\" name=\"data[use_html]\" onClick=\"showHtmlText();\" checked=\"checked\" />htmlメールを送信する";
+					}else{
+						echo "<input id=\"htmlText\" type=\"checkbox\" value=\"t\" name=\"data[use_html]\" onClick=\"showHtmlText();\" />htmlメールを送信する";
+					}
+				?>				</td>
+			  </tr>
+			  <tr bgcolor="#FFFFFF" align="center">
+					<td colspan="2" bgcolor="#DDEEDD"  class="explain_m" >HTMLメッセージ</td>
+			  </tr>
+			  <tr bgcolor="#FFFFFF" align="center">
+					<td colspan="2" ><textarea style="display:inline" id="htmlTextArea" name="data[html_mess]" cols="72" rows="20" ><?php echo $html_mess;?></textarea></td>
+			  </tr>
+			  <tr bgcolor="#FFFFFF">
+				<td class="explain_m" bgcolor="#DDEE99" >携帯電話へのメッセージ</td>
+				<td >
+				<?php
+					if($use_mobail=="1"){
+						echo "<input id=\"htmlText\" type=\"radio\" value=\"1\" name=\"data[use_mobail]\" onClick=\"showHtmlText();\" checked=\"checked\" />ＰＣのテキストメールを使う<br />";
+					}else{
+						echo "<input id=\"htmlText\" type=\"radio\" value=\"1\" name=\"data[use_mobail]\" onClick=\"showHtmlText();\" />ＰＣのテキストメールを使う<br />";
+					}
+					if($use_mobail=="2"){
+						echo "<input id=\"htmlText\" type=\"radio\" value=\"2\" name=\"data[use_mobail]\" onClick=\"showHtmlText();\" checked=\"checked\" />携帯用にサンキューメールを設定する";
+
+					}else{
+						echo "<input id=\"htmlText\" type=\"radio\" value=\"2\" name=\"data[use_mobail]\" onClick=\"showHtmlText();\" />携帯用にサンキューメールを設定する";
+					}
+				?>				</td>
+			  </tr>
+			  <tr bgcolor="#FFFFFF" align="center">
+					<td colspan="2" bgcolor="#DDEE99"  class="explain_m" >携帯電話用メッセージ</td>
+			  </tr>
+			  <tr bgcolor="#FFFFFF" align="center">
+					<td colspan="2" >
+						<textarea style="display:inline" id="mobailTextArea" name="data[mobail_mess]" cols="72" rows="20" ><?php echo $mobail_mess;?></textarea>					</td>
+			  </tr>
+
+			  <tr bgcolor="#DDEEDD" align="center">
+				<td colspan="2" bgcolor="#FFFFFF" >
+					<input type="submit" name="sub" value="確認" />　<input type="reset" name="res" value="取消" />				</td>
+			  </tr>
+			</table>
+			<input type="hidden" name="data[mode]" value="check" />
+			<input type="hidden" name="data[flag]" value="<?php echo $flag;?>" />
+			</form>
+
+
+            <!-- Menu Header --></td>
+          </tr>
+        </table>
+<div id="footer-box">
+<table border="0" width="100%">
+  <tr>
+    <td align="center">
+      TOSHIBA
+    </td>
+  </tr>
+</table >
+</div>
+
+
+
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

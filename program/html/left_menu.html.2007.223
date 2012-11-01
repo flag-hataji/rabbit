@@ -1,0 +1,424 @@
+<?PHP
+  if( isset($_SESSION['user']['id']) && isset($_SESSION['user']['password']) ){
+?>
+<!-- ▼メニュー：メンバー用▼ -->
+<table width="150" border="0" cellspacing="1" cellpadding="0" bgcolor='#000000'>
+  <tr> 
+    <td valign="bottom" align="right">
+      <table width="150" border="0" cellspacing="0" cellpadding="0" bgcolor='#FFFFFF'>
+        <tr> 
+          <td valign="bottom" align="right"><img src='/common/image/leftmenu/user/title.gif' alt='ユーザー用メニュー' border='0'></td>
+        </tr>
+        <tr> 
+          <td height="25" valign="bottom" align="right"><strong><a href="/member/"><img src='/common/image/leftmenu/user/top.gif' alt='ユーザー用トップページ' border='0'  onmouseover="RollOver(this, '/common/image/leftmenu/user/ov_top.gif');" onmouseout="RollOver(this, '/common/image/leftmenu/user/top.gif');" ></a></strong></td>
+        </tr>
+        <tr> 
+          <td height="25" valign="bottom" align="right"><strong><a href="/member/user/index.php?get=write&mode=renew"><img src='/common/image/leftmenu/user/renew.gif' alt='ユーザー登録情報の変更' border='0'  onmouseover="RollOver(this, '/common/image/leftmenu/user/ov_renew.gif');" onmouseout="RollOver(this, '/common/image/leftmenu/user/renew.gif');"></a></strong></td>
+        </tr>
+        <tr> 
+          <td height="25" valign="bottom" align="right"><strong><a href="/member/logout.php?get=logout"><img src='/common/image/leftmenu/user/logout.gif' alt='ログアウト' border='0'  onmouseover="RollOver(this, '/common/image/leftmenu/user/ov_logout.gif');" onmouseout="RollOver(this, '/common/image/leftmenu/user/logout.gif');" ></a></strong></td>
+        </tr>
+        <tr> 
+          <td height="20" valign="bottom" align="right"><strong><a href="/member/pictmail/"><img src='/common/image/leftmenu/user/pictmail.gif' alt='' border='0'  onmouseover="RollOver(this, '/common/image/leftmenu/user/ov_pictmail.gif');" onmouseout="RollOver(this, '/common/image/leftmenu/user/pictmail.gif');" ></a></strong></td>
+        </tr>
+      <?PHP 
+          if(_DIR_IS_POSITION2_=="pictmail"){
+      ?>
+        <tr> 
+          <td height="20" valign="bottom" align="right"><strong><a href="/member/pictmail/mail/"><img src='/common/image/leftmenu/user/pictmail/jikkou.gif' alt='' border='0'  onmouseover="RollOver(this, '/common/image/leftmenu/user/pictmail/ov_jikkou.gif');" onmouseout="RollOver(this, '/common/image/leftmenu/user/pictmail/jikkou.gif');" ></a></strong></td>
+        </tr>
+        <tr> 
+          <td height="20" valign="bottom" align="right"><strong><a href="/member/pictmail/plan/"><img src='/common/image/leftmenu/user/pictmail/plan.gif' alt='' border='0'  onmouseover="RollOver(this, '/common/image/leftmenu/user/pictmail/ov_plan.gif');" onmouseout="RollOver(this, '/common/image/leftmenu/user/pictmail/plan.gif');" ></a></strong></td>
+        </tr>
+        <tr> 
+          <td height="20" valign="bottom" align="right"><strong><a href="/member/pictmail/log/"><img src='/common/image/leftmenu/user/pictmail/log.gif' alt='' border='0'  onmouseover="RollOver(this, '/common/image/leftmenu/user/pictmail/ov_log.gif');" onmouseout="RollOver(this, '/common/image/leftmenu/user/pictmail/log.gif');" ></a></strong></td>
+        </tr>
+        <tr> 
+          <td height="20" valign="bottom" align="right"><strong><a href="/member/pictmail/error/"><img src='/common/image/leftmenu/user/pictmail/error.gif' alt='' border='0'  onmouseover="RollOver(this, '/common/image/leftmenu/user/pictmail/ov_error.gif');" onmouseout="RollOver(this, '/common/image/leftmenu/user/pictmail/error.gif');" ></a></strong></td>
+        </tr>
+<?PHP
+    }
+?>
+        <tr> 
+          <td height="25" valign="bottom" align="right"><strong><a href="/member/clickcounter/"><img src='/common/image/leftmenu/user/cc.gif' alt='' border='0'  onmouseover="RollOver(this, '/common/image/leftmenu/user/ov_cc.gif');" onmouseout="RollOver(this, '/common/image/leftmenu/user/cc.gif');" ></a></strong></td>
+        </tr>
+      <?PHP 
+          if(_DIR_IS_POSITION2_=="clickcounter"){
+      ?>
+        <tr> 
+          <td height="20" valign="bottom" align="right"><strong><a href="/member/clickcounter/counter2/"><img src='/common/image/leftmenu/user/cc/honbun.gif' alt='' border='0'  onmouseover="RollOver(this, '/common/image/leftmenu/user/cc/ov_honbun.gif');" onmouseout="RollOver(this, '/common/image/leftmenu/user/cc/honbun.gif');" ></a></strong></td>
+        </tr>
+        <tr> 
+          <td height="20" valign="bottom" align="right"><strong><a href="/member/clickcounter/analyze/viewer/index.php?inputs[submit][category-l]=1"><img src='/common/image/leftmenu/user/cc/access.gif' alt='' border='0'  onmouseover="RollOver(this, '/common/image/leftmenu/user/cc/ov_access.gif');" onmouseout="RollOver(this, '/common/image/leftmenu/user/cc/access.gif');" ></a></strong></td>
+        </tr>
+        <tr> 
+          <td height="20" valign="bottom" align="right"><strong><a href="/member/clickcounter/user/"><img src='/common/image/leftmenu/user/cc/kihon.gif' alt='' border='0'  onmouseover="RollOver(this, '/common/image/leftmenu/user/cc/ov_kihon.gif');" onmouseout="RollOver(this, '/common/image/leftmenu/user/cc/kihon.gif');" ></a></strong></td>
+        </tr>
+        <tr> 
+          <td height="20" valign="bottom" align="right"><strong><a href="/member/user/cc.php"><img src='/common/image/leftmenu/user/cc/yuuryo.gif' alt='有料版お申し込み' border='0'  onmouseover="RollOver(this, '/common/image/leftmenu/user/cc/ov_yuuryo.gif');" onmouseout="RollOver(this, '/common/image/leftmenu/user/cc/yuuryo.gif');" ></a></strong></td>
+        </tr>
+<?PHP
+    }
+?>
+        <tr> 
+          <td height="20" valign="bottom" align="right">　</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- ▲メニュー：メンバー用▲ -->
+
+
+<?PHP
+  }else{
+?>
+<!-- ▼メニュー：ログイン▼ -->
+<form action='/member/index.php' method='POST' style="margin: 0px;">
+<table width="152" border="0" cellspacing="0" cellpadding="0" bgcolor='#FFFFFF'>
+  <tr> 
+    <td><img src='/common/image/leftmenu/login/id.gif' alt='ID' border='0'></td>
+    <td align='center'><input type='text' name='id' value='' size='6' style="font-family:Tahoma"></td>
+  </tr>
+  <tr>
+    <td colspan='2' height="5" bgcolor="#FFFFFF"><img src='/common/image/spacer.gif' border='0' height="5"></td>
+  </tr>
+  <tr>
+    <td colspan='2' width='1' bgcolor='#FFFFFF' background='/common/image/x_comma.gif'><img src='/common/image/spacer.gif' width='1' height='1' ></td>
+  </tr>
+  <tr>
+    <td colspan='2' height="5" bgcolor="#FFFFFF"><img src='/common/image/spacer.gif' border='0' height="5"></td>
+  </tr>
+  <tr> 
+    <td><img src='/common/image/leftmenu/login/password.gif' alt='Password' border='0'></td>
+    <td align='center'><input type='password' name='password' value='' size='6' style="font-family:Tahoma"></td>
+  </tr>
+  <tr>
+    <td colspan='2' height="5" bgcolor="#FFFFFF"><img src='/common/image/spacer.gif' border='0' height="5"></td>
+  </tr>
+  <tr> 
+    <td colspan='2'><input type='image' src='/common/image/leftmenu/login/button_login1.gif' alt='ログイン' name='login' value='ログイン' onmouseover="RollOver(this, '/common/image/leftmenu/login/button_login2.gif');" onmouseout="RollOver(this, '/common/image/leftmenu/login/button_login1.gif');" >
+      <input type='hidden' name='hidden' value='login'></td>
+  </tr>
+  <tr>
+    <td colspan='2' height="5" bgcolor="#FFFFFF"><img src='/common/image/spacer.gif'  border='0' height="5"></td>
+  </tr>
+  <tr> 
+    <td colspan='2'><a href="/forget/"><img src='/common/image/leftmenu/login/forget1.gif' alt='パスワードを忘れた' name='login' value='ログイン' border="0" onmouseover="RollOver(this, '/common/image/leftmenu/login/forget2.gif');" onmouseout="RollOver(this, '/common/image/leftmenu/login/forget1.gif');" ></a></td>
+  </tr>
+  <tr>
+    <td colspan='2' height="5" bgcolor="#FFFFFF"><img src='/common/image/spacer.gif' border='0' height="5"></td>
+  </tr>
+  <tr>
+    <td colspan='2' width='1' bgcolor='#FFFFFF' background='/common/image/x_comma.gif'><img src='/common/image/spacer.gif' width='1' height='1' ></td>
+  </tr>
+  <tr>
+    <td colspan='2' height="5" bgcolor="#FFFFFF"><img src='/common/image/spacer.gif' border='0' height="5"></td>
+  </tr>
+  <tr> 
+    <td colspan='2'><a href="/sign_up/sign_up.php"><img src='/common/image/leftmenu/login/signup1.gif' alt='新規登録、無料体験' name='login' value='ログイン' border="0" onmouseover="RollOver(this, '/common/image/leftmenu/login/signup2.gif');" onmouseout="RollOver(this, '/common/image/leftmenu/login/signup1.gif');" ></a></td>
+  </tr>
+  <tr>
+    <td colspan='2' height="5" bgcolor="#FFFFFF"><img src='/common/image/spacer.gif' border='0' height="5"></td>
+  </tr>
+  <tr>
+    <td colspan='2' width='1' bgcolor='#FFFFFF' background='/common/image/x_comma.gif'><img src='/common/image/spacer.gif' width='1' height='1' ></td>
+  </tr>
+  <tr>
+    <td colspan='2' height="5" bgcolor="#FFFFFF"><img src='/common/image/spacer.gif' border='0' height="5"></td>
+  </tr>
+</table>
+</form>
+<!-- ▲メニュー：ログイン用▲ -->
+<?PHP
+  }
+?>
+<table width="150" border="0" cellspacing="0" cellpadding="0" bgcolor='#FFFFFF'>
+  <tr>
+    <td height="15" bgcolor="#FFFFFF"><img src='/common/image/spacer.gif' alt='' border='0' height="15"></td>
+  </tr>
+</table>
+<table width="150" border="0" cellspacing="0" cellpadding="0" bgcolor='#FFFFFF'>
+  <tr> 
+    <td><img src='/common/image/leftmenu/asp/title.gif' alt='サービス一覧' border='0'></td>
+  </tr>
+</table>
+<table width="150" border="0" cellspacing="0" cellpadding="0" bgcolor='#FFFFFF'>
+  <tr>
+    <td height="5" bgcolor="#FFFFFF"><img src='/common/image/spacer.gif' alt='' border='0' height="5"></td>
+  </tr>
+</table>
+<!-- ▼メニュー：ピクトメール▼ -->
+<?PHP 
+  if(_DIR_IS_POSITION1_!="pictmail"){
+?>
+<div align="right" id="close_pictmail" style="display:block"> 
+<table width="130" border="0" cellspacing="0" cellpadding="0" bgcolor='#FFFFFF'>
+  <tr> 
+    <td><a href="#"><span onClick="hydeAndSeek('open_pictmail','close_pictmail')" ><img src='/common/image/leftmenu/pictmail/title1.gif' onmouseover="RollOver(this, '/common/image/leftmenu/pictmail/ov_title1.gif');" onmouseout="RollOver(this, '/common/image/leftmenu/pictmail/title1.gif');"  alt='メルマガ配信、メール配信のピクトメール　サービスご紹介' border='0'></span></a></td>
+  </tr>
+</table>
+</div>
+<div align="right" id="open_pictmail" style="display:none">
+<?PHP 
+  }else{
+?>
+<div align="right" id="close_pictmail" style="display:none"> 
+<table width="130" border="0" cellspacing="0" cellpadding="0" bgcolor='#FFFFFF'>
+  <tr> 
+    <td><a href="#"><span onClick="hydeAndSeek('open_pictmail','close_pictmail')" ><img src='/common/image/leftmenu/pictmail/title1.gif' onmouseover="RollOver(this, '/common/image/leftmenu/pictmail/ov_title1.gif');" onmouseout="RollOver(this, '/common/image/leftmenu/pictmail/title1.gif');"  alt='メール配信、メルマガ配信のピクトメール　サービスご紹介' border='0'></span></a></td>
+  </tr>
+</table>
+</div>
+<div align="right" id="open_pictmail" style="display:block"> 
+<?PHP 
+  }
+?>
+<table width="130" border="0" cellspacing="0" cellpadding="0" bgcolor='#FFFFFF'>
+  <tr> 
+    <td><a href="#"><span onClick="hydeAndSeek('open_pictmail','close_pictmail')" ><img src='/common/image/leftmenu/pictmail/title2.gif' onmouseover="RollOver(this, '/common/image/leftmenu/pictmail/ov_title2.gif');" onmouseout="RollOver(this, '/common/image/leftmenu/pictmail/title2.gif');"  alt='メール配信、メルマガ配信のピクトメール　サービスご紹介' border='0'></span></a></td>
+  </tr>
+</table>
+<table align="center" width="140" border="0" cellspacing="0" cellpadding="0" bgcolor='#FFFFFF'>
+  <tr> 
+    <td height="25" align="right"><strong><a href="/pictmail/mailsend/mailsend01.html"><img src='/common/image/leftmenu/pictmail/first.gif' alt='メール配信について' border='0' onmouseover="RollOver(this, '/common/image/leftmenu/pictmail/ov_first.gif');" onmouseout="RollOver(this, '/common/image/leftmenu/pictmail/first.gif');"></a></strong></td>
+  </tr>
+  <tr> 
+    <td height="25" align="right"><strong><a href="/pictmail/mailsend/mailsend.html"><img src='/common/image/leftmenu/pictmail/what.gif' alt='メール配信、メルマガ配信のピクトメールとは' border='0'  onmouseover="RollOver(this, '/common/image/leftmenu/pictmail/ov_what.gif');" onmouseout="RollOver(this, '/common/image/leftmenu/pictmail/what.gif');" ></a></strong></td>
+  </tr>
+  <tr> 
+    <td height="25" align="right"><strong><a href="/pictmail/mailsend/mailsend_regist.html"><img src='/common/image/leftmenu/pictmail/nagare.gif' alt='ピクトメールご登録までの流れ' border='0'  onmouseover="RollOver(this, '/common/image/leftmenu/pictmail/ov_nagare.gif');" onmouseout="RollOver(this, '/common/image/leftmenu/pictmail/nagare.gif');" 
+></a></strong></td>
+  </tr>
+  <tr> 
+    <td height="25" align="right"><strong><a href="/pictmail/mailsend/mailsend_help.html"><img src='/common/image/leftmenu/pictmail/help1.gif' alt='メール配信、メルマガ配信、配信方法' border='0'  onmouseover="RollOver(this, '/common/image/leftmenu/pictmail/ov_help1.gif');" onmouseout="RollOver(this, '/common/image/leftmenu/pictmail/help1.gif');" 
+></a></strong></td>
+  </tr>
+  <tr> 
+    <td height="25" align="right"><strong><a href="/pictmail/mailsend/mailsend_help2.html"><img src='/common/image/leftmenu/pictmail/help2.gif' alt='メルマガ配信、メール配信 少し高度な配信方法' border='0'  onmouseover="RollOver(this, '/common/image/leftmenu/pictmail/ov_help2.gif');" onmouseout="RollOver(this, '/common/image/leftmenu/pictmail/help2.gif');" 
+></a></strong></td>
+  </tr>
+  <tr> 
+    <td height="25" align="right"><strong><a href="/pictmail/mailsend/mailsend_maillist.html"><img src='/common/image/leftmenu/pictmail/maillist.gif' alt='メール配信、メルマガ配信 メールリストについて' border='0'  onmouseover="RollOver(this, '/common/image/leftmenu/pictmail/ov_maillist.gif');" onmouseout="RollOver(this, '/common/image/leftmenu/pictmail/maillist.gif');" 
+></a></strong></td>
+  </tr>
+  <tr> 
+    <td height="25" align="right"><strong><a href="/pictmail/mailsend/mailsend_oshirase.html"><img src='/common/image/leftmenu/pictmail/mobile.gif' alt='メルマガ配信、メール配信 携帯配信について' border='0'  onmouseover="RollOver(this, '/common/image/leftmenu/pictmail/ov_mobile.gif');" onmouseout="RollOver(this, '/common/image/leftmenu/pictmail/mobile.gif');" 
+></a></strong></td>
+  </tr>
+  <tr> 
+    <td height="25" align="right"><strong><a href="/pictmail/mailsend/mailsend_ryoukin.html"><img src='/common/image/leftmenu/pictmail/plan.gif' alt='メール配信、メルマガ配信 プラン・料金一覧' border='0'  onmouseover="RollOver(this, '/common/image/leftmenu/pictmail/ov_plan.gif');" onmouseout="RollOver(this, '/common/image/leftmenu/pictmail/plan.gif');" 
+></a></strong></td>
+  </tr>
+  <tr> 
+    <td height="25" align="right"><strong><a href="/pictmail/mailsend/mailsend_faq.html"><img src='/common/image/leftmenu/pictmail/faq.gif' alt='メール配信システム よくあるご質問' border='0'  onmouseover="RollOver(this, '/common/image/leftmenu/pictmail/ov_faq.gif');" onmouseout="RollOver(this, '/common/image/leftmenu/pictmail/faq.gif');" 
+></a></strong></td>
+  </tr>
+  <tr> 
+    <td height="25" align="right"><strong><a href="/pictmail/mailsend/mailsend_shiryo.html"><img src='/common/image/leftmenu/pictmail/download.gif' alt='ピクトメール 資料ダウンロード' border='0'  onmouseover="RollOver(this, '/common/image/leftmenu/pictmail/ov_download.gif');" onmouseout="RollOver(this, '/common/image/leftmenu/pictmail/download.gif');" 
+></a></strong></td>
+  </tr>
+  <tr> 
+    <td height="25" align="right"><strong><a href="/pictmail/mailsend/mailsend_kinou.html"><img src='/common/image/leftmenu/pictmail/kinou.gif' alt='ピクトメール 機能一覧' border='0'  onmouseover="RollOver(this, '/common/image/leftmenu/pictmail/ov_kinou.gif');" onmouseout="RollOver(this, '/common/image/leftmenu/pictmail/kinou.gif');" 
+></a></strong></td>
+  </tr>
+  <tr> 
+    <td height="25" align="right"><strong><a href="/pictmail/mailsend/mailsend_member.html"><img src='/common/image/leftmenu/pictmail/link.gif' alt='メール配信、メルマガ配信 お客様一覧・リンク' border='0'  onmouseover="RollOver(this, '/common/image/leftmenu/pictmail/ov_link.gif');" onmouseout="RollOver(this, '/common/image/leftmenu/pictmail/link.gif');" 
+></a></strong></td>
+  </tr>
+  <tr> 
+    <td height="25" align="right"><strong><a href="/pictmail/mailsend/mailsend_koe.html"><img src='/common/image/leftmenu/pictmail/omake.gif' alt='メルマガ配信やメール配信 おまけ話' border='0'  onmouseover="RollOver(this, '/common/image/leftmenu/pictmail/ov_omake.gif');" onmouseout="RollOver(this, '/common/image/leftmenu/pictmail/omake.gif');" 
+></a></strong></td>
+  </tr>
+</table>
+</div>
+<table width="150" border="0" cellspacing="0" cellpadding="0" bgcolor='#FFFFFF'>
+  <tr>
+    <td height="5" bgcolor="#FFFFFF"><img src='/common/image/spacer.gif' alt='' border='0' height="5"></td>
+  </tr>
+</table>
+<!-- ▲メニュー：ピクトメール▲ -->
+<!-- ▼メニュー：クリックカウンター▼ -->
+<?PHP 
+  if(_DIR_IS_POSITION1_!="clickcounter"){
+?>
+<div align="right" id="close_clickcounter" style="display:block"> 
+<table width="130" border="0" cellspacing="0" cellpadding="0" bgcolor='#FFFFFF'>
+  <tr> 
+    <td><a href="#"><span onClick="hydeAndSeek('open_clickcounter','close_clickcounter')" ><img src='/common/image/leftmenu/clickcounter/title1.gif' onmouseover="RollOver(this, '/common/image/leftmenu/clickcounter/ov_title1.gif');" onmouseout="RollOver(this, '/common/image/leftmenu/clickcounter/title1.gif');"  alt='クリックカウンター　サービスご紹介' border='0'></span></a></td>
+  </tr>
+</table>
+</div>
+<div align="right" id="open_clickcounter" style="display:none">
+<?PHP 
+}else{
+?>
+<div align="right" id="close_clickcounter" style="display:none"> 
+<table width="130" border="0" cellspacing="0" cellpadding="0" bgcolor='#FFFFFF'>
+  <tr> 
+    <td><a href="#"><span onClick="hydeAndSeek('open_clickcounter','close_clickcounter')" ><img src='/common/image/leftmenu/clickcounter/title1.gif' onmouseover="RollOver(this, '/common/image/leftmenu/clickcounter/ov_title1.gif');" onmouseout="RollOver(this, '/common/image/leftmenu/clickcounter/title1.gif');"  alt='メルマガ効果測定、クリックカウンター　サービスご紹介' border='0'></span></a></td>
+  </tr>
+</table>
+</div>
+<div align="right" id="open_clickcounter" style="display:block"> 
+<?PHP 
+  }
+?>
+  <table width="130" border="0" cellspacing="0" cellpadding="0" bgcolor='#FFFFFF'>
+    <tr> 
+      <td><a href="#"><span onClick="hydeAndSeek('open_clickcounter','close_clickcounter')" ><img src='/common/image/leftmenu/clickcounter/title2.gif' onmouseover="RollOver(this, '/common/image/leftmenu/clickcounter/ov_title2.gif');" onmouseout="RollOver(this, '/common/image/leftmenu/clickcounter/title2.gif');"  alt='メルマガ効果測定、クリックカウンター　サービスご紹介' border='0'></span></a></td>
+    </tr>
+  </table>
+  <table align="center" width="140" border="0" cellspacing="0" cellpadding="0" bgcolor='#FFFFFF'>
+    <tr> 
+      <td height="25" align="right"><strong><a href="/clickcounter/"><img src='/common/image/leftmenu/clickcounter/cc_toha.gif' alt='クリックカウンターとは' border='0' onmouseover="RollOver(this, '/common/image/leftmenu/clickcounter/ov_cc_toha.gif');" onmouseout="RollOver(this, '/common/image/leftmenu/clickcounter/cc_toha.gif');"></a></strong></td>
+    </tr>
+  </table>
+  <table align="center" width="140" border="0" cellspacing="0" cellpadding="0" bgcolor='#FFFFFF'>
+    <tr> 
+      <td height="25" align="right"><strong><a href="/clickcounter/cc_help01.html"><img src='/common/image/leftmenu/clickcounter/help.gif' alt='クリックカウンター　ご利用方法' border='0' onmouseover="RollOver(this, '/common/image/leftmenu/clickcounter/ov_help.gif');" onmouseout="RollOver(this, '/common/image/leftmenu/clickcounter/help.gif');"></a></strong></td>
+    </tr>
+  </table>
+  <table align="center" width="140" border="0" cellspacing="0" cellpadding="0" bgcolor='#FFFFFF'>
+    <tr> 
+      <td height="25" align="right"><strong><a href="/clickcounter/ryokin.html"><img src='/common/image/leftmenu/clickcounter/ryokin.gif' alt='クリックカウンター料金表' border='0' onmouseover="RollOver(this, '/common/image/leftmenu/clickcounter/ov_ryokin.gif');" onmouseout="RollOver(this, '/common/image/leftmenu/clickcounter/ryokin.gif');"></a></strong></td>
+    </tr>
+  </table>
+  <table align="center" width="140" border="0" cellspacing="0" cellpadding="0" bgcolor='#FFFFFF'>
+    <tr> 
+      <td height="25" align="right"><strong><a href="/clickcounter/nagare.html"><img src='/common/image/leftmenu/clickcounter/nagare.gif' alt='ご登録までの流れ' border='0' onmouseover="RollOver(this, '/common/image/leftmenu/clickcounter/ov_nagare.gif');" onmouseout="RollOver(this, '/common/image/leftmenu/clickcounter/nagare.gif');"></a></strong></td>
+    </tr>
+  </table>
+  <table align="center" width="140" border="0" cellspacing="0" cellpadding="0" bgcolor='#FFFFFF'>
+    <tr> 
+      <td height="25" align="right"><strong><a href="/clickcounter/cc_faq.html"><img src='/common/image/leftmenu/clickcounter/faq.gif' alt='よくあるご質問' border='0' onmouseover="RollOver(this, '/common/image/leftmenu/clickcounter/ov_faq.gif');" onmouseout="RollOver(this, '/common/image/leftmenu/clickcounter/faq.gif');"></a></strong></td>
+    </tr>
+  </table>
+</div>
+<table width="150" border="0" cellspacing="0" cellpadding="0" bgcolor='#FFFFFF'>
+  <tr>
+    <td height="5" bgcolor="#FFFFFF"><img src='/common/image/spacer.gif' alt='' border='0' height="5"></td>
+  </tr>
+</table>
+<!-- ▲メニュー：クリックカウンター▲ -->
+
+
+<table width="150" border="0" cellspacing="0" cellpadding="0" bgcolor='#FFFFFF'>
+  <tr>
+    <td height="15" bgcolor="#FFFFFF"><img src='/common/image/spacer.gif' alt='' border='0' height="15"></td>
+  </tr>
+</table>
+<table width="150" border="0" cellspacing="0" cellpadding="0" bgcolor='#FFFFFF'>
+  <tr> 
+    <td><img src='/common/image/leftmenu/information/title.gif' alt='インフォメーション' border='0'></td>
+  </tr>
+</table>
+<table align="center" width="140" border="0" cellspacing="0" cellpadding="0" bgcolor='#FFFFFF'>
+  <tr> 
+    <td height="25" align="right"><strong><a href="/inquiry/"><img src='/common/image/leftmenu/information/inquiry.gif' alt='お問合せ' border='0'  onmouseover="RollOver(this, '/common/image/leftmenu/information/ov_inquiry.gif');" onmouseout="RollOver(this, '/common/image/leftmenu/information/inquiry.gif');" ></a></strong></td>
+  </tr>
+  <tr> 
+    <td height="25" align="right"><strong><a href="http://jbbs.livedoor.jp/computer/32416/" target="_blank"><img src='/common/image/leftmenu/information/bbs.gif' alt='質問、要望掲示板' border='0'  onmouseover="RollOver(this, '/common/image/leftmenu/information/ov_bbs.gif');" onmouseout="RollOver(this, '/common/image/leftmenu/information/bbs.gif');" ></a></strong>
+    </td>
+  </tr>
+  <tr> 
+    <td height="25" align="right"><strong><a href="/company.html"><img src='/common/image/leftmenu/information/company.gif' alt='会社概要' border='0'  onmouseover="RollOver(this, '/common/image/leftmenu/information/ov_company.gif');" onmouseout="RollOver(this, '/common/image/leftmenu/information/company.gif');" ></a></strong>
+    </td>
+  </tr>
+  <tr> 
+    <td height="25" align="right"><strong><a href="/kiyaku.html"><img src='/common/image/leftmenu/information/kiyaku.gif' alt='ご利用規約' border='0'  onmouseover="RollOver(this, '/common/image/leftmenu/information/ov_kiyaku.gif');" onmouseout="RollOver(this, '/common/image/leftmenu/information/kiyaku.gif');" ></a></strong></td>
+  </tr>
+</table>
+<table width="150" border="0" cellspacing="0" cellpadding="0" bgcolor='#FFFFFF'>
+  <tr>
+    <td height="15" bgcolor="#FFFFFF"><img src='/common/image/spacer.gif' alt='メールマーケティング　戦略　ツール　ASP' border='0' height="15"></td>
+  </tr>
+</table>
+<table width="150" border="0" cellspacing="0" cellpadding="0" bgcolor='#FFFFFF'>
+  <tr> 
+    <td><img src='/common/image/leftmenu/tool/title.gif' alt='メールマーケティング　戦略　ツール　ASP' border='0'></td>
+  </tr>
+</table>
+<table align="center" width="140" border="0" cellspacing="0" cellpadding="0" bgcolor='#FFFFFF'>
+  <tr> 
+    <td height="25" align="right"><strong><a href="/tool/seo/"><img src='/common/image/leftmenu/tool/seo.gif' alt='SEO支援とは？　メールマーケティング　戦略　ツール' border='0'  onmouseover="RollOver(this, '/common/image/leftmenu/tool/ov_seo.gif');" onmouseout="RollOver(this, '/common/image/leftmenu/tool/seo.gif');"  ></a></strong></td></tr>
+  <tr> 
+    <td height="25" align="right"><strong><a href="/tool/seo-kakugen/"><img src='/common/image/leftmenu/tool/kakugen.gif' alt='格言システム　SEO対策　メールマーケティング　戦略　ツール' border='0'  onmouseover="RollOver(this, '/common/image/leftmenu/tool/ov_kakugen.gif');" onmouseout="RollOver(this, '/common/image/leftmenu/tool/kakugen.gif');"  ></a></strong></td>
+  </tr>
+  <tr> 
+    <td height="25" align="right"><strong><a href="/tool/3232/"><img src='/common/image/leftmenu/tool/3232.gif' alt='ミニミニURL　メールマーケティング　戦略　ツール' border='0'  onmouseover="RollOver(this, '/common/image/leftmenu/tool/ov_3232.gif');" onmouseout="RollOver(this, '/common/image/leftmenu/tool/3232.gif');"  ></a></strong></td>
+  </tr>
+  <tr> 
+    <td height="25" align="right"><strong><a href="/tool/merumaga/"><img src='/common/image/leftmenu/tool/merumaga.gif' alt='ミニミニURL　メルマガ一括ＵＲＬ作成' border='0'  onmouseover="RollOver(this,'/common/image/leftmenu/tool/ov_merumaga.gif');" onmouseout="RollOver(this, '/common/image/leftmenu/tool/merumaga.gif');"  ></a></strong></td>
+  </tr>
+  <tr> 
+    <td height="25" align="right" class="left_link"><strong><a href="/sero/">SEO検索エンジン<br>ランキング調査ツール</a></strong></td>
+  </tr>
+  <tr>
+    <td colspan='1' width='1' bgcolor='#FFFFFF' background='/common/image/x_comma.gif'><img src='/common/image/spacer.gif' width='1' height='1' ></td>
+  </tr>
+</table>
+
+<table width="150" border="0" cellspacing="0" cellpadding="0" bgcolor='#FFFFFF'>
+  <tr>
+    <td height="15" bgcolor="#FFFFFF"><img src='/common/image/spacer.gif' alt='メールマーケティング　戦略　ツール　ASP' border='0' height="15"></td>
+  </tr>
+</table>
+<table width="150" border="0" cellspacing="0" cellpadding="0" bgcolor='#FFFFFF'>
+  <tr> 
+    <td><img src='/common/image/leftmenu/link/title.gif' alt='メールマーケティング　戦略　ツール　ASP' border='0'></td>
+  </tr>
+</table>
+<table align="center" width="140" border="0" cellspacing="0" cellpadding="0" bgcolor='#FFFFFF'>
+  <tr> 
+    <td height="25" align="right"><strong><a href="http://www.it1616.com/" target="_blank"><img src='/common/image/leftmenu/link/it1616.gif' alt='モチベーションシート　売れるしくみはこうつくれ　通販セミナーの岡崎太郎のオフィシャルサイト' border='0'  onmouit1616ver="RollOver(this, '/common/image/leftmenu/link/ov_it1616.gif');" onmouit1616ut="RollOver(this, '/common/image/leftmenu/link/it1616.gif');"  ></td></a></strong>
+  </tr>
+  <tr> 
+    <td height="25" align="right"><strong><a href="http://www.itm.ne.jp/" target="_blank"><img src='/common/image/leftmenu/link/itm.gif' alt='等サービスをご提供いたします、株式会社アイティマネジメントのコーポレートサイト' border='0'  onmouseover="RollOver(this, '/common/image/leftmenu/link/ov_itm.gif');" onmouseout="RollOver(this, '/common/image/leftmenu/link/itm.gif');"  ></a></strong></td>
+  </tr>
+  <tr> 
+    <td height="25" align="right"><strong><a href="/link.html"><img src='/common/image/leftmenu/link/other.gif' alt='関連サイト、お役立ちサイトのご紹介' border='0'  onmouseover="RollOver(this, '/common/image/leftmenu/link/ov_other.gif');" onmouseout="RollOver(this, '/common/image/leftmenu/link/other.gif');"  ></a></strong></td>
+  </tr>
+</table>
+
+</div></div>
+
+<br>
+<table align="center" width="140" border="0" cellspacing="0" cellpadding="0" bgcolor='#FFFFFF'>
+  <tr>
+    <td colspan='1' height="1" bgcolor="#5555FF"><img src='/common/image/spacer.gif' border='0' height="1"></td>
+  </tr>
+  <tr class="indigo12"> 
+    <td height="25" align="center">itm-aspご利用のお客様</td>
+  </tr>
+  <tr>
+    <td colspan='1' height="1" bgcolor="#5555FF"><img src='/common/image/spacer.gif' border='0' height="1"></td>
+  </tr>
+  <tr>
+    <td colspan='2' height="5" bgcolor="#FFFFFF"><img src='/common/image/spacer.gif' border='0' height="5"></td>
+  </tr>
+  </tr>
+  <tr class="left_link"> 
+    <td align="left" height="25">・<strong><a href="http://www.hotelnikko-fukuoka.com/" target="_blank">ホテル日航福岡</a></strong></td>
+  </tr>
+  <tr>
+    <td colspan='1' width='1' bgcolor='#FFFFFF' background='/common/image/x_comma.gif'><img src='/common/image/spacer.gif' width='1' height='1' ></td>
+  <tr>
+  <tr class="left_link"> 
+    <td align="left" height="25">・<strong><a href="http://www.2912103.co.jp/" target="_blank">福一不動産</a></strong></td>
+  </tr>
+  <tr>
+    <td colspan='1' width='1' bgcolor='#FFFFFF' background='/common/image/x_comma.gif'><img src='/common/image/spacer.gif' width='1' height='1' ></td>
+  </tr>
+  <tr class="left_link"> 
+    <td  align="left" height="25">・<strong><a href="http://www.chinaflower.jp" target="_blank">チャイナドレスFlower</a></strong></td>
+  </tr>
+    <td colspan='1' width='1' bgcolor='#FFFFFF' background='/common/image/x_comma.gif'><img src='/common/image/spacer.gif' width='1' height='1' ></td>
+  </tr>
+  <tr class="left_link"> 
+    <td align="right" height="25"><a href="/pictmail/mailsend/mailsend_member.html" >→他のお客様はこちら</a></td>
+  </tr>
+  <tr>
+    <td colspan='1' width='1' bgcolor='#FFFFFF' background='/common/image/x_comma.gif'><img src='/common/image/spacer.gif' width='1' height='1' ></td>
+  </tr>
+</table>

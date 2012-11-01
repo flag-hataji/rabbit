@@ -1,0 +1,34 @@
+<?php
+
+//PEARライブラリのmimeDecodeを読み込み
+require_once("/usr/local/lib/php/Mail/mimeDecode.php");
+require_once("/usr/local/lib/php/Mail.php");
+require_once("SqlData.php");
+
+//SqlDataクラスのインスタンス生成
+$sql = new SqlData();
+
+//mailの文字列取得
+$source = file_get_contents("php://stdin");
+if($source===false){
+    echo "読み込みエラー";
+}
+
+//mimeDecodeのインスタンス生成
+$decoder = new Mail_mimeDecode($source); // MIME分解
+$parts = $decoder->getSendArray();  // それぞれのパーツを格納
+list($recipients,$headers,$body) = $parts; // 各パーツを配列に格納
+
+
+//送信側メールアドレスの取得
+$from = $headers['From'];
+
+/**本番
+$to   = $headers['To']; 
+*/
+
+//受信側メールアドレスの取得
+$user_id = "55";
+
+//DBへ値を保存
+$sql->setMobailMailAdd($name,$from,$user_id);

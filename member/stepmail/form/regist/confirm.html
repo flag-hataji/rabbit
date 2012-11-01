@@ -1,0 +1,17 @@
+  <form name="form" method="post" action="index.php">
+  <table width="700" border="0" cellpadding="4" cellspacing="1" bgcolor="#999999">
+    <tr bgcolor="#FFFFFF"> 
+      <td width="35%" class='black12'>フォーム名</td>
+      <td width="65%" class='black12'><?PHP print $viewData['sform_name']; ?></td>
+    </tr>
+    <tr bgcolor="#FFFFFF"> 
+      <td colspan="2" class='black12'><div align="center"> 
+          <input type="submit" name="finish" value="登録変更する">
+          　 
+          <input type="submit" name="back"   value="書き直す">
+        </div></td>
+    </tr>
+  </table>
+<br>
+<?PHP outPutHidden ($aData); ?>
+</form>

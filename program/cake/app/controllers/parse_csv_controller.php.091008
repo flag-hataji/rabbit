@@ -1,0 +1,250 @@
+<?php
+    class ParseCsvController extends AppController {
+        /*
+        SSLの使用・不使用
+        使用時 $sslflag = true;
+        */
+        var $sslflag = false;
+
+        /*
+        controller名
+
+        @var string
+        @access public
+        */
+        var $name = "ParseCsv";
+
+        /**
+         * 使用するモデル。複数モデルを使用する場合は、配列で渡す
+         * 不使用時はfalse
+         * var $uses = array("model1","model2");
+         *
+         * @var mixed
+         * @access public
+         */
+        var $uses = array('TempParseCsv', 'TempDisusedParseCsv');
+
+        /**
+         * 使用するヘルパー
+         * Html, Form, Session ヘルパーは、デフォルトで利用することが可能。
+         * 不使用時はfalse
+         * $helpers = array('helpers1','helpers2');
+         *
+         * @var mixed
+         * @access public
+         */
+        var $helpers = array('Form','Javascript','AppForm');
+
+        /**
+         * 使用するコンポーネント
+         * 不使用時はfalse
+         * $components = array('components1','components2');
+         *
+         * @var mixed
+         * @access public
+         */
+        var $components = false;
+
+        /**
+         * 使用するレイアウト。
+         * app/views/layouts/の中に設置するレイアウト名を設定する。
+         * 定義していない場合は、app/view/layouts/default.ctpを表示(render)する。
+         * $layout = "itm.ctp";
+         * app/view/layouts/itm.ctp
+         *
+         * @var string
+         * @access public
+         */
+        var $layout = "default";
+
+        /*
+        ページのタイトル
+        layoutの中に、$titlie_for_layoutとして使用可能
+        */
+        var $pageTitle = "csv解析";
+
+
+
+
+        /**
+         * constructメソッド
+         *
+         * @param void
+         * @access public
+         * @return void
+         */
+        function __contrust() {
+            parent::__construct();
+        }
+
+        /*
+        デフォルトで呼び出されるメソッド
+        */
+        function index() {
+            //submitkeyをセット
+            $submit = $this->data['submit'];
+            $this->sub_key = @key($submit);
+
+            switch($this->sub_key){
+                case 'upload' :
+                    $this->_upload();
+                    break;
+                default :
+                    $this->_setCsvfile();
+            }
+        }
+
+        /**
+         * 入力画面の処理
+         *
+         * @param void
+         * @access praivate
+         * @return void
+         */
+        function _setCsvfile() {
+            $this->render('set_csv_file');
+        }
+
+        /**
+         * 参照用csvと削除用csvの登録処理
+         *
+         * @param void
+         * @access praivate
+         * @return void
+         */
+        function _upload() {
+            // errorフラグ
+            $errorflag = false;        // true=errorがあった
+            // ユーザIDの取得
+            $userSessionId = $this->_getSessionId();
+
+            // 参照用csvと削除用csvが選択されていたら
+            if (!empty($this->data['ParseCsv']['csv1']) && !empty($this->data['ParseCsv']['csv2'])) {
+                // 参照用csvの拡張子がcsvだったら
+                if ('csv' === ($extension = pathinfo($this->data['ParseCsv']['csv1']['name'], PATHINFO_EXTENSION))) {
+                    // アップロードされたファイルだったら
+                    if (is_uploaded_file($this->data['ParseCsv']['csv1']['tmp_name'])) {
+                        //モデルにデータを渡す
+                        $this->TempParseCsv->create($this->data);
+                        // 参照用csvをデータベースに登録する
+                        $saveCsv = $this->TempParseCsv->TempParseCsv->saveTempParseCsvDb($this->data['ParseCsv']['csv1']['tmp_name'], $userSessionId);
+
+                        // データベース登録中にエラーが発生しなかったら
+                        if ($saveCsv) {
+                            foreach ($saveCsv as $key => $value) {
+                                $this->TempParseCsv->create($value);
+                                $this->TempParseCsv->save($value);
+                            }
+                        } else {
+                            $err_msg = $e->getMessage()."\n".$e->getFile()." on line ".$e->getLine()."\n";
+                            $params = array(array('err_msg'=>$err_msg,'mail_flag'=>ERROR_EMAIL_FLAG));
+                            $this->cakeError("error",$params);
+                            exit;
+                        }
+                    } else {
+                        $this->TempParseCsv->invalidate('disused','<span style="color:#FF0000;">csvファイルが不正です</span>');
+                        $errorflag = true;
+                    }
+                    // 削除用csvの拡張子がcsvだったら
+                    if ('csv' === ($extension = pathinfo($this->data['ParseCsv']['csv2']['name'], PATHINFO_EXTENSION))) {
+                        // アップロードされたファイルだったら
+                        if (is_uploaded_file($this->data['ParseCsv']['csv2']['tmp_name'])) {
+                            //モデルにデータを渡す
+                            $this->TempDisusedParseCsv->create($this->data);
+                            // 削除用csvをデータベースに登録する
+                            $disusedCsv = $this->TempDisusedParseCsv->saveTempDisusedParseCsvDb($this->data['ParseCsv']['csv2']['tmp_name'], $userSessionId);
+
+                            // データベース登録中にエラーが発生しなかったら
+                            if ($disusedCsv) {
+                                foreach ($disusedCsv as $key => $value) {
+                                    $this->TempDisusedParseCsv->create($value);
+                                    $this->TempDisusedParseCsv->save($value);
+                                }
+
+                            } else {
+                                $err_msg = $e->getMessage()."\n".$e->getFile()." on line ".$e->getLine()."\n";
+                                $params = array(array('err_msg'=>$err_msg,'mail_flag'=>ERROR_EMAIL_FLAG));
+                                $this->cakeError("error",$params);
+                                exit;
+                            }
+                        } else {
+                            $this->TempParseCsv->invalidate('disused','<span style="color:#FF0000;">csvファイルが不正です</span>');
+                            $errorflag = true;
+                        }
+                    } else {
+                        $this->TempParseCsv->invalidate('disused','<span style="color:#FF0000;">csvファイルを選択してください</span>');
+                        $errorflag = true;
+                    }
+                } else {
+                    $this->TempParseCsv->invalidate('disused','<span style="color:#FF0000;">csvファイルを選択してください</span>');
+                    $errorflag = true;
+                }
+            } else {
+                $this->TempParseCsv->invalidate('disused','<span style="color:#FF0000;">ファイルを選択してください</span>');
+                $errorflag = true;
+            }
+
+            // falseエラーがなかったら
+            if (!$errorflag) {
+                // ファイルを解析する
+                $downloadCsv = $this->TempParseCsv->getqueryData();
+
+                // 不要になったデータを削除する
+                $this->deleteParseCsvDb($userSessionId);
+
+                //配列を文字列へ
+                $newCsvData = $this->TempParseCsv->convertQueryArray($downloadCsv);
+                $this->_download($userSessionId, $newCsvData);
+            } else {
+                $this->set("errorMsgs",$errorMsgs);
+                $this->render('error');
+            }
+
+        }
+
+         /**
+         * ユーザIDの取得
+         *
+         * @param void
+         * @access praivate
+         * @return $user_ran
+         */
+        function _getSessionId() {
+            // 乱数の発行
+            $user_ran = rand(0, 10000);
+
+            return $user_ran;
+        }
+
+
+
+        /**
+        * 不要なデータをデータベースから削除する
+        * @param object $userSessionId
+        * @return void
+        */
+        function deleteParseCsvDb($userSessionId) {
+            $this->TempParseCsv->deleteAll(array("user_id" => $userSessionId));
+            $this->TempDisusedParseCsv->deleteAll(array("user_id" => $userSessionId));
+        }
+
+        /**
+         * ファイルのダウンロード
+         *
+         * @param $userSessionId
+         * @access praivate
+         * @return void
+         */
+        function _download($userSessionId, $newCsvData) {
+            $this->autoRender = false; // Viewを使わないように
+            $csv_file = sprintf("%s_%s.csv", $userSessionId, date("Ymd-hi"));
+            header('Content-Disposition: attachment; filename='.$csv_file);
+            header('Content-Type: application/octet-stream');
+            header('Content-Transfer-Encoding: binary');
+            header('Content-Length: '.strlen($newCsvData));
+            print $newCsvData;
+         //   $this->render('get_csv_file');
+            return;
+        }
+    }
+?>

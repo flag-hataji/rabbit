@@ -1,0 +1,138 @@
+<?PHP require_once("../../../program/cls/define/Setup.php");?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="ja-JP">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-JP"> 
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>www.rabbit-mail.jp | メール配信ＡＳＰ</title>
+<link href="../../../css/common.css" rel="stylesheet" type="text/css">
+<link href="./css/text.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="./js/CheckValue.js"></script>
+<script language="JavaScript">
+<!--
+<?PHP require_once(_DIR_USER_HTML_._HTML_JS_); ?>
+  
+  var flag;
+  
+  function changeSub(){
+    document.fm.action = "./userdata/getcsv.php";
+  }
+  
+  function sendData(url){
+    document.fm.action = url;
+    document.fm.submit();
+  }
+  
+  function delCheck(mess,d_url){
+    if(!isNaN(mess)){
+      mess = "登録ID：" + mess + "を削除します\nよろしいですか？" 
+    }
+    
+    flag = window.confirm(mess);
+    if(flag==true){
+      sendData(d_url);
+    }
+  }
+
+
+//-->
+</script>
+</head>
+<body bgcolor="#FFFFFF" >
+
+<div align="center">
+
+<?PHP require_once(_DIR_MEMBER_HTML_._HTML_MEMBER_HEADER_PICTMAIL_); ?>
+<div id="pictmail-top-box">
+      <table border="0" cellpadding="0" cellspacing="0">
+            <td valign="top" bgcolor="#FFFFFF">
+  <tr>
+    <td colspan="2" class="title_l">
+      メールアドレス収集フォーム
+    </td>
+  </tr>
+<tr><td>
+        <form action="./userdata/getcsv.php" method="post" name="fm" onSubmit="changeSub();">
+          <table width="640" border="0" align="center" cellpadding="0" cellspacing="0">
+            <tr>
+            <td></td>
+            <td class="title_m">■CSVファイルダウンロード</td>
+            </tr>
+          </table>
+          <table width="640" border="0" align="center" cellpadding="6" cellspacing="3" bgcolor="#FFFFFF">
+            <tr>
+              <td colspan="2" class="explain_m" align="center">
+              <strong>CSVファイルにてフォームで登録されたデータをダウンロードすることができます。</strong>
+              </td>
+            </tr>
+            <tr align="center">
+              <td>
+                <input type="submit" name="sub" value=" ダウンロード" onClick="changeSub();"/>　　
+              </td>
+            </tr>
+          </table>
+          <table width="680" border="0" align="center" cellpadding="0" cellspacing="3">
+          <tr>
+            <td width="450" colspan="2">
+              <input type="button" name="alldel_butn" value="全データ削除" onClick="delCheck('全データ削除します、よろしいですか？','./delUserAllData.php');"/>
+            </td>
+            <td class="explain_m" colspan="2" align="right" width="223">※最新１００件のみを表示</td>
+          </tr>
+          <tr align="center">
+<!--
+            <td bgcolor="#DDEEDD" class="explain_m">名前(姓)</td>
+            <td bgcolor="#DDEEDD" class="explain_m">名前(名)</td>
+-->
+            <td bgcolor="#DDEEDD" class="explain_m" width="300">メールアドレス</td>
+            <td bgcolor="#DDEEDD" class="explain_m" width="160">登録日</td>
+            <td bgcolor="#DDEEDD" class="explain_m" width="130">詳細</td>
+            <td bgcolor="#DDEEDD" class="explain_m"width="83">削除</td>
+          </tr>
+            <?php
+              foreach($user_list as $key=>$value){
+                echo "<tr>";
+                foreach($value as $key2=>$value2){
+                  if($key2!="applicant_id"){
+                    echo "<td bgcolor=\"#FFFFFF\" class=\"explain_m\">&nbsp;$value2</td>\n";
+                  }else if($key2=="applicant_id"){
+                    $app_id = $value2;
+                    echo "<td bgcolor=\"#FFFFFF\" class=\"explain_m\" align=\"center\">\n";
+                    echo "<a href=\"./detailed.php?app_id=$value2\" target=\"_blank\" onClick=\"window.open('./detailed.php?app_id=$value2','詳細画面','width=650,height=500');return false;\">詳細</a>\n";
+                    echo "</td>\n";
+                    echo "<td bgcolor=\"#FFFFFF\" class=\"explain_m\" align=\"center\">\n";
+                    echo "<input type=\"button\" name=\"del_butn[$value2]\" value=\"削除\" onClick=\"delCheck('$value2','./delUserData.php?app_id=$value2');\" />";
+                    echo "</td>";
+                  }
+                }
+                echo "</tr>";
+              }
+            ?>
+          <tr>
+            <td bgcolor="#DDEEDD"  colspan="6">&nbsp;</td>
+          </tr>
+          </table>
+        </form>
+            <!-- Menu Header --></td>
+          </tr>
+        </table>
+        </td>
+        </tr>
+        </table>
+</div>
+<div id="footer-box">
+<table border="0" width="100%">
+  <tr>
+    <td align="center">
+      rabbit-mail
+    </td>
+  </tr>
+</table >
+</div>
+
+
+
+</div>
+
+</body>
+</html>

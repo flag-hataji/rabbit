@@ -1,0 +1,256 @@
+
+
+
+          <table width="400">
+            <tr>
+              <td colspan="2" class="main_title_in">
+                検索リモコン
+              </td>
+            </tr>
+
+            <tr>
+              <td colspan="2" class="search_title2">
+                <b>1.グループを選ぶ</b>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2" class="search_field_group_1">
+                <input type='radio' name='searchS[no_td_email_group_id]' value='all' <?php $this->viewChecked("all",$isSearchS['no_td_email_group_id']); ?>>
+                すべて 【<?php echo $isConditionS['count_regist'];?>】
+
+                <hr size="1">
+
+                <input type='radio' name='searchS[no_td_email_group_id]' value='no' <?php $this->viewChecked("no",$isSearchS['no_td_email_group_id']); ?>>
+                グループ未所属【<?php echo $isConditionS['count_no_group'];?>】
+
+                <hr size="1">
+
+                <input type='radio' name='searchS[no_td_email_group_id]' value='select' <?php $this->viewChecked("select",$isSearchS['no_td_email_group_id']); ?>>
+                チェックしたグループ
+                <select name="searchS[group_mode]" id='group_mode' onClick="groupCheckSelect('','group_mode')">
+                  <option value='one' <?php $this->viewSelected("one",$isSearchS['group_mode']); ?>>に所属</option>
+                  <option value='all' <?php $this->viewSelected("all",$isSearchS['group_mode']); ?>>以下、全てのグループ</option>
+                </select>
+                <br>
+
+
+                <input type="hidden" name="searchS[td_email_group_id_type]" value="OR">
+<?php
+
+$isFormat1 = "                <span class='group_name1'><input type='checkbox' name='searchS[td_email_group_id][#data_id#]' id='pid_#depth_id#' onClick=\"groupCheck('',#data_id#,'pid_#depth_id#','group_mode')\">#name#</span>【#groupCount#】<br>\n";
+
+$isFormat2 = "                <span class='group_name2'><input type='checkbox' name='searchS[td_email_group_id][#data_id#]' id='pid_#depth_id#' onClick=\"groupCheck('',#data_id#,'pid_#depth_id#','group_mode')\" checked>#name#</span>【#groupCount#】<br>\n";
+
+    if (count($this->__Bean->__EmailGroup->_groupIdAray) != 1) {
+        $this->__Bean->__EmailGroup->viewGroupFirst($isFormat1,$isFormat2,"search");
+    } else {
+?>
+                <br>
+                グループはまだ登録されていません。<a href="../group/?clear=true">[グループの登録]</a>
+
+<?php
+    }
+?>
+
+              </td>
+            </tr>            
+            <tr>
+              <td colspan="2" class="search_title2">
+                <b>2.さらに、以下の条件を含む</b>
+              </td>
+            </tr>
+            <tr>
+              <td width="150" class="search_title2">
+                <?PHP echo $isNameS['email1']; ?>
+              </td>
+              <td <?php $this->viewFormErrorBgcolor("email1","class='search_field1'","class='search_field_error'"); ?>>
+                <?php $this->viewFormError("email1",$errorFormat); ?>
+                <input type="text" name="searchS[email1]" value="<?php echo $isSearchS['email1']; ?>" size="30">　
+              </td>
+            </tr>
+            <tr>
+              <td width="150" class="search_title2">
+                <?PHP echo $isNameS['email2']; ?>
+              </td>
+              <td <?php $this->viewFormErrorBgcolor("email2","class='search_field1'","class='search_field_error'"); ?>>
+                <?php $this->viewFormError("email",$errorFormat); ?>
+                <?php $this->viewFormError("email2",$errorFormat); ?>
+                <input type="text" name="searchS[email2]" value="<?php echo $isSearchS['email2']; ?>" size="30">　
+              </td>
+            </tr>
+            <tr>
+              <td width="150" class="search_title2">
+                <?PHP echo $isNameS['name_sei_mei']; ?>　</span>
+              </td>
+              <td <?php $this->viewFormErrorBgcolor("name_sei_mei","class='search_field1'","class='search_field_error'"); ?>>
+                <?php $this->viewFormError("option2",$errorFormat); ?>
+                <?php $this->viewFormError("option3",$errorFormat); ?>
+                姓<input type="text" name="searchS[option2]" value="<?php echo $isSearchS['option2']; ?>" size="10">　
+                名<input type="text" name="searchS[option3]" value="<?php echo $isSearchS['option3']; ?>" size="10">
+              </td>
+            </tr>
+          </table>
+
+
+
+          <table width="400">
+            <tr>
+              <td class="search_title2">
+                 <?php
+                     if ($isSearchS['open_detail'] == "t") {
+                        $open_detail = "none";
+                     } else {
+                        $open_detail = "block";
+                     }
+                 ?> 
+                <b>3.さらに条件を指定する</b><br>
+                （<input type="checkbox"  name="searchS[open_detail]" value="t"  id="open_detail" <?php $this->viewChecked("t",$isSearchS['open_detail']); ?> onClick="showOpenClose('open_detail','detail_search1','<?php echo $open_detail; ?>');">詳細検索を開く）
+              </td>
+            </tr>
+          </table>
+
+
+          <div id="detail_search1" style="display:none">
+
+          <table width="400">
+            <tr>
+              <td width="150" class="search_title2">
+                <?PHP echo $isNameS['option4']; ?>　</span>
+              </td>
+              <td <?php $this->viewFormErrorBgcolor("option4","class='search_field1'","class='search_field_error'"); ?>>
+                <?php $this->viewFormError("option4",$errorFormat); ?>
+                <input type="text" name="searchS[option4]" value="<?php echo $isSearchS['option4']; ?>" size="30">
+              </td>
+            </tr>
+
+            <tr>
+              <td width="150" class="search_title2">
+                <?PHP echo $isNameS['option5']; ?>　</span>
+              </td>
+              <td <?php $this->viewFormErrorBgcolor("option5","class='search_field1'","class='search_field_error'"); ?>>
+                <?php $this->viewFormError("option5",$errorFormat); ?>
+                <select name="searchS[option5]">
+                  <option value="" >--</option>
+                  <option value="不明" <?php $this->viewSelected("不明",$isSearchS['option5']); ?>>不明</option>
+                  <option value="男性" <?php $this->viewSelected("男性",$isSearchS['option5']); ?>>男性</option>
+                  <option value="女性" <?php $this->viewSelected("女性",$isSearchS['option5']); ?>>女性</option>
+                </select>
+              </td>
+            </tr>
+
+
+            <tr>
+              <td width="150" class="search_title2">
+                <?PHP echo $isNameS['option6']; ?>　</span>
+              </td>
+              <td <?php $this->viewFormErrorBgcolor("option6","class='search_field1'","class='search_field_error'"); ?>>
+                <?php $this->viewFormError("option6",$errorFormat); ?>
+                <input type="text" name="searchS[option6]" value="<?php echo $isSearchS['option6']; ?>" size="25">
+              </td>
+            </tr>
+
+
+            <tr>
+              <td width="150" class="search_title2">
+                <?PHP echo $isNameS['option7']; ?>　</span>
+              </td>
+              <td <?php $this->viewFormErrorBgcolor("option7","class='search_field1'","class='search_field_error'"); ?>>
+                <?php $this->viewFormError("option7",$errorFormat); ?>
+                <input type="text" name="searchS[option7]" value="<?php echo $isSearchS['option7']; ?>" size="25">
+              </td>
+            </tr>
+
+            <tr>
+              <td width="150" class="search_title2">
+                <?PHP echo $isNameS['option8']; ?>　</span>
+              </td>
+              <td <?php $this->viewFormErrorBgcolor("option8","class='search_field1'","class='search_field_error'"); ?>>
+                <?php $this->viewFormError("option8",$errorFormat); ?>
+                <input type="text" name="searchS[option8]" value="<?php echo $isSearchS['option8']; ?>" size="25">
+              </td>
+            </tr>
+
+            <tr>
+              <td width="150" class="search_title2">
+                <?PHP echo $isNameS['option9']; ?>　</span>
+              </td>
+              <td <?php $this->viewFormErrorBgcolor("option9","class='search_field1'","class='search_field_error'"); ?>>
+                <?php $this->viewFormError("option9",$errorFormat); ?>
+                <input type="text" name="searchS[option9]" value="<?php echo $isSearchS['option9']; ?>" size="25">
+              </td>
+            </tr>
+
+
+            <tr>
+              <td width="150" class="search_title2">
+                <?PHP echo $isNameS['option10']; ?>　</span>
+              </td>
+              <td <?php $this->viewFormErrorBgcolor("option10","class='search_field1'","class='search_field_error'"); ?> >
+                <?php $this->viewFormError("option10",$errorFormat); ?>
+                <input type="text" name="searchS[option10]" value="<?php echo $isSearchS['option10']; ?>" size="25">
+              </td>
+            </tr>
+
+            <tr>
+              <td width="150" class="search_title2">
+                <?PHP echo $isNameS['option11']; ?>　</span>
+              </td>
+              <td <?php $this->viewFormErrorBgcolor("option11","class='search_field1'","class='search_field_error'"); ?>>
+                <?php $this->viewFormError("option11",$errorFormat); ?>
+                <input type="text" name="searchS[option11]" value="<?php echo $isSearchS['option11']; ?>" size="25">
+
+<!--
+                <select name="searchS[option11]">
+                  <option value="">選択する</option>
+                  <?php $this->viewFormSelectDb("                        <option value='#id#' #selected#>#name#</option>\n", "tm_pref2", $isSearchS['option11'],"","name"); ?>　
+                </select>
+-->
+              </td>
+            </tr>
+
+            <tr>
+              <td width="150" class="search_title2">
+                <?PHP echo $isNameS['option12']; ?>　</span>
+              </td>
+              <td <?php $this->viewFormErrorBgcolor("option12","class='search_field1'","class='search_field_error'"); ?>>
+                <?php $this->viewFormError("option12",$errorFormat); ?>
+                <input type="text" name="searchS[option12]" value="<?php echo $isSearchS['option12']; ?>" size="35">
+              </td>
+            </tr>
+
+            <tr>
+              <td width="150" class="search_title2">
+                <?PHP echo $isNameS['option13']; ?>　</span>
+              </td>
+              <td <?php $this->viewFormErrorBgcolor("option13","class='search_field1'","class='search_field_error'"); ?>>
+                <?php $this->viewFormError("option13",$errorFormat); ?>
+                <input type="text" name="searchS[option13]" value="<?php echo $isSearchS['option13']; ?>" size="35">
+              </td>
+            </tr>
+
+            <tr>
+              <td width="150" class="search_title2">
+                <?PHP echo $isNameS['option14']; ?>　</span>
+              </td>
+              <td <?php $this->viewFormErrorBgcolor("option14","class='search_field1'","class='search_field_error'"); ?>>
+                <?php $this->viewFormError("option14",$errorFormat); ?>
+                <input type="text" name="searchS[option14]" value="<?php echo $isSearchS['option14']; ?>" size="35">
+              </td>
+            </tr>
+
+          </table>
+
+          </div>
+
+          <table width="400">
+            <tr>
+              <td class="search_button" colspan="2">
+                上記で指定した条件のメールアドレスを<br>
+                <input type="submit" name="modeS[search]" value="検索する" class='button1'>　
+                <input type="submit" name="modeS[search_clear]" value="検索クリア" class='button1'>
+                <input type="hidden" name="searchS[search_type]" value="AND">
+
+              </td>
+            </tr>
+          </table>
+

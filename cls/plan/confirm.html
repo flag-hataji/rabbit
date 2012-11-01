@@ -1,0 +1,81 @@
+  <form action='index.php' method='POST'>
+
+    <div align='center'>
+    <table width="600" height='15' border="0" cellpadding="5" cellspacing="1" bgcolor='#DDDDDD'>
+      <tr bgcolor='#FFFFFF' class="gray12"> 
+        <td align='center'>
+          下記のご入力内容でよろしければ【登録する】ボタンをクリックしてください
+        </td> 
+      </tr>
+    </table> 
+    <br>
+
+    <table width="600" border="0" cellpadding="8" cellspacing="1" bgcolor='#DDDDDD'>
+
+      <tr class="black12" bgcolor='#FFFFFF'> 
+         <td align='left' width='150'><?PHP echo $pField->nameS['price_month']; ?></td> 
+         <td align='left'>
+          <?PHP echo $pVariable->viewS['price_month']; ?>
+        </td> 
+      </tr>
+
+      <tr class="black12" bgcolor='#FFFFFF'> 
+         <td align='left' width='150'><?PHP echo $pField->nameS['price_month6']; ?></td> 
+         <td align='left'>
+          <?PHP echo $pVariable->viewS['price_month6']; ?>
+        </td> 
+      </tr>
+
+      <tr class="black12" bgcolor='#FFFFFF'> 
+         <td align='left' width='150'><?PHP echo $pField->nameS['price_year']; ?></td> 
+         <td align='left'>
+          <?PHP echo $pVariable->viewS['price_year']; ?>
+        </td> 
+      </tr>
+
+      <tr class="black12" bgcolor='#FFFFFF'> 
+         <td align='left' width='150'><?PHP echo $pField->nameS['send_max']; ?></td> 
+         <td align='left'>
+          <?PHP echo $pVariable->viewS['send_max']; ?>
+        </td> 
+      </tr>
+
+      <tr class="black12" bgcolor='#FFFFFF'> 
+         <td align='left' width='150'><?PHP echo $pField->nameS['send_now']; ?></td> 
+         <td align='left'>
+          <?PHP echo $pVariable->viewS['send_now']; ?>
+        </td> 
+      </tr>
+
+      <tr class="black12" bgcolor='#FFFFFF'> 
+         <td align='left' width='150'><?PHP echo $pField->nameS['flag_permission']; ?></td> 
+         <td align='left'>
+          <?PHP echo $pVariable->viewS['flag_permission']; ?>
+        </td> 
+      </tr>
+
+      <tr class="black12" bgcolor='#FFFFFF'> 
+         <td align='left' width='150'><?PHP echo $pField->nameS['flag_dm']; ?></td> 
+         <td align='left'>
+          <?PHP echo $pVariable->viewS['flag_dm']; ?>
+        </td> 
+      </tr>
+
+    </table> 
+    <br>
+    <!--ボタン--> 
+    <table width="600" height='15' border="0" cellpadding="5" cellspacing="1" bgcolor='#DDDDDD'>
+
+      <tr bgcolor='#FFFFFF' class="black10"> 
+        <td align='center'>
+          <input type='submit' name='finish' value=' 登録する '>　
+          <input type='submit' name='post[rewrite]' value=' やり直す '>
+        </td> 
+      </tr>
+    </table> 
+    <br>
+    <br>
+    </div>
+<?PHP $this->hidden('finish'); ?>
+
+  </form>

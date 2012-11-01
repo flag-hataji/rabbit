@@ -1,0 +1,235 @@
+
+  /*-------------------------------*/
+  .email_table{
+
+      width:100%;
+
+      margin:0px 0px 0px 0px;
+
+
+  }
+
+
+  .email_table_header_td{
+
+      height:40px;
+
+      background-color: #4D66A6;
+
+      margin:0px 0px 0px 0px;
+      padding:0px 0px 0px 10px;
+
+      color: #FFFFFF;
+
+      font-weight: bold; 
+      font-size: 13px;
+
+
+      border:    1px solid #99AAAA;
+
+  }
+
+
+  .email_table_main_td{
+
+
+      margin:0px 0px 0px 0px;
+      padding:0px 0px 0px 0px;
+
+      vertical-align:top;
+
+  }
+
+
+  /*-------------------------------*/
+  .email_title_table{
+
+      background-color: #4D66A6;
+
+      width:100%;
+
+      height:25px;
+
+      margin:0px 0px 3px 0px;
+
+      border:    1px solid #4D66A6;
+
+  }
+
+  .email_title_table_td{
+
+      margin:0px 0px 0px 0px;
+      padding:0px 0px 0px 10px;
+
+      color: #FFFFFF;
+      font-weight: bold; 
+      font-size: 12px;
+
+      white-space: nowrap;
+
+
+  }
+
+
+
+
+  /*-------------------------------*/
+  .email_input_table{
+
+      width:100%;
+
+      margin:0px 0px 0px 0px;
+      padding:0px 0px 0px 0px;
+
+      vertical-align:middle;
+
+  }
+
+  .email_input_table_td_title{
+
+      background-color: #66A6DF;
+
+      width:100%;
+
+      height:20px;
+
+      padding:0px 0px 0px 10px;
+
+
+      color: #FFFFFF;
+
+      border:    1px solid #4D66A6;
+
+  }
+
+
+  .email_input_table_td1{
+
+      background-color: #EEEEFF;
+
+      margin:0px 0px 0px 0px;
+      padding:10px 10px 10px 10px;
+
+      white-space: nowrap;
+
+      border:  1px solid #99AAAA;
+
+  }
+
+
+  .email_input_table_td2{
+
+      margin:0px 0px 0px 0px;
+      padding:0px 15px 0px 10px;
+
+      white-space: nowrap;
+
+      border:  1px solid #99AAAA;
+
+  }
+
+  .email_input_table_td3{
+
+      background-color: #FFEEEE;
+
+      margin:0px 0px 0px 0px;
+      padding:0px 20px 0px 10px;
+
+      white-space: nowrap;
+
+      border:  1px solid #99AAAA;
+
+  }
+
+
+  .email_input_table_td4{
+
+      height:30px;
+
+      margin:0px 0px 0px 0px;
+      padding:0px 0px 0px 10px;
+
+      white-space: nowrap;
+
+      text-align: center;
+
+      border:  1px solid #99AAAA;
+
+  }
+
+
+
+  /*-------------------------------*/
+  .email_list_table{
+
+      width:100%;
+
+      margin:0px 0px 0px 0px;
+      padding:0px 0px 0px 0px;
+
+
+
+
+  }
+
+  .email_list_table_td_title{
+
+      background-color: #66A6DF;
+
+      width:100%;
+
+      height:20px;
+
+      padding:0px 5px 0px 5px;
+
+      white-space: nowrap;
+
+      text-align: center;
+
+      color: #FFFFFF;
+
+      border:    1px solid #4D66A6;
+
+  }
+
+
+  .email_list_table_td1{
+
+      margin:0px 0px 0px 0px;
+      padding:5px;
+
+      white-space: nowrap;
+
+      font-size: 11px;
+
+      text-align: left;
+
+      border:  1px solid #99AAAA;
+
+  }
+
+  .email_list_table_td2{
+
+      margin:0px 0px 0px 0px;
+      padding:10px 5px 10px 5px;
+
+      white-space: nowrap;
+
+      text-align: center;
+
+      border:  1px solid #99AAAA;
+
+  }
+
+
+  .email_list_table_td4{
+
+      margin:0px 0px 0px 0px;
+      padding:10px 5px 10px 5px;
+
+      white-space: nowrap;
+
+      text-align: center;
+
+  }
+

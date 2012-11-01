@@ -1,0 +1,91 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="ja-JP">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-JP"> 
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>www.rabbit-mail.jp | メール配信ＡＳＰ</title>
+<link href="../css/common.css" rel="stylesheet" type="text/css">
+</head>
+<body bgcolor="#FFFFFF" >
+
+<div align="center">
+
+
+
+<div id="header-box">
+<table border="0" width="100%">
+  <tr>
+    <td align="left"><a href="/"><img src="../images/logo01.gif"></a></td>
+  </tr>
+  <tr>
+    <td align="right">
+      <hr size="1">
+      <A href="/forget/">ログインID・パスワードを忘れた方はこちら</A>
+    </td>
+  </tr>
+</table >
+</div>
+
+
+<div id="pictmail-input-box">
+<form action='index.php' method='POST' style="margin: 0px;">
+<table>
+  <tr>
+    <td colspan="2" class="title_l">
+      ログインID・パスワードを忘れた方へ
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="explain_l">
+      こちらから確認することができます。
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="title_l">
+      入力
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="explain_m">
+     ご登録されたメールアドレスをご入力ください
+    </td>
+  </tr>
+  <tr>
+    <td class="input_title">
+      メールアドレス
+    </td>
+    <td class="input_field">
+      <input type='text' name='mail' value='' size='40'><br>
+      <span class="red12"><?PHP if(isset($errorWord)){ echo $errorWord; } ?></span>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="input_button">
+      <input type='submit' name='finish' value=' メールを送る '>
+    </td>
+  </tr>
+</table >
+</form>
+
+
+</div>
+
+
+<div id="footer-box">
+<table border="0" width="100%">
+  <tr>
+    <td align="center">
+      rabbit-mail
+    </td>
+  </tr>
+</table >
+</div>
+
+
+
+</div>
+
+</body>
+</html>

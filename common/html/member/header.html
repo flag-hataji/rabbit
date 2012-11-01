@@ -1,0 +1,61 @@
+<?php
+    $isConditionS = $this->__Bean->getSPG(EX_SESSION_PATH_MEMBER_CONDITION,"SESSION");
+?>
+
+    <table width="100%" >
+      <tr class="header_dirA">
+        <td class="header_dirA_image"><a href="/member/"><img src="/images/top0806/rogo.gif"></a></td>
+        <td class="header_dirB_menu2">
+
+          <table width="100%" >
+            <tr>
+              <td class="user_title1">
+                ユーザー
+              </td>
+              <td class="user_field1">
+                <?php echo $isConditionS['name']; ?>　
+              </td>
+              <td class="user_title1">
+                プラン
+              </td>
+              <td class="user_field1">
+                <?php echo $isConditionS['plan']; ?>　
+              </td>
+            </tr>
+            <tr>
+              <td class="user_title1">
+                今月の残り配信可能数
+              </td>
+              <td class="user_field1">
+                <b><?php echo $isConditionS['send_now']; ?></b>件
+              </td>
+              <td class="user_title1">
+                登録メールアドレス件数
+              </td>
+              <td class="user_field1">
+                <b><?php echo $isConditionS['count_regist']; ?></b>件　
+              </td>
+            </tr>
+            <tr>
+              <td class="user_title1">
+                現在の配信カート内容 
+              </td>
+              <td class="user_field1" colspan="3">
+                <b><?php echo $isConditionS['count_in_cart']; ?></b>件
+                （うち、主なアドレス等：<b><?php echo $isConditionS['count_in_cart1']; ?></b>件、携帯/サブアドレス：<b><?php echo $isConditionS['count_in_cart2']; ?></b>件）
+                <?php if ($isConditionS['flag_count_over'] == true) { ?>
+                <br>
+                <font color="#FF3333">カート内容の件数が<b>配信可能数をオーバー</b>しています</font>
+
+                <?php } ?>
+                　<a href="/member/email/cart/">&gt;&gt;配信カート内容を見る</a>
+              </td>
+            </tr>
+          </table>
+
+        </td>
+      </tr>
+      <tr class="header_dirB">
+        <td class="header_dirB_menu1" colspan="2"><a class="header_menu_link2" href="/member/email/regist_first/?clear=true">メールアドレス管理</a><a class="header_menu_link2" href="/member/email/group/?clear=true">グループ追加/修正/削除</a><a class="header_menu_link2" href="/member/email/in/?clear=true">メール配信</a><a class="header_menu_link2" href="/member/email/history/">配信履歴</a></td>
+      </tr>
+    </table>

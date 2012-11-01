@@ -1,0 +1,274 @@
+/*
+ + タグ共通設定
+------------------------------*/
+body { 
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    font-size: 12px;
+}
+
+form {
+    margin:0px;
+    padding:0px;
+}
+
+h1 {
+    font-size: 12px;
+    margin:0px;
+    padding:0px;
+}
+h2 {
+    font-size: 12px;
+    margin:0px;
+    padding:0px;
+}
+h3 {
+    font-size: 12px;
+    margin:0px;
+    padding:0px;
+}
+
+p {
+    line-height: 1.5em;
+}
+
+img {
+    border: 0px;
+}
+
+/*
+ + 共通
+------------------------------*/
+#wrapper {
+    color: #000000;
+    width: 750px; 
+}
+
+#content-body {
+    width: 750px; 
+    margin:3px 0px 0px 0px;
+    padding:3px 0px 0px 0px;
+    clear: both;
+}
+
+#header { 
+}
+
+#sidebar { 
+    width: 100px;
+    float: left;
+}
+
+#content-main { 
+    width: 639px;
+    float: right;
+    margin:0px 0px 0px 3px;
+    padding:3px 3px 3px 3px;
+}
+
+#footer { 
+    width: 750spx; 
+    margin:5px 0px 0px 0px;
+    padding:5px 0px 5px 0px;
+    border-top: 1px solid #666666;
+    border-bottom: 1px solid #666666;
+    clear: both;
+}
+
+
+
+/*
+ + グローバルメニュー
+------------------------------*/
+#menu-global { 
+    margin:3px 0px 0px 0px;
+    padding:0px 0px 0px 0px;
+    background-color: #FFEEDD;
+    list-style-type: none;
+    border-top: 1px solid #666666;
+    border-right: 1px solid #666666;
+    border-bottom: 1px solid #666666;
+    width: 750px; 
+    float: left;
+}
+#menu-global a{ 
+    display: block;
+    padding: 0px 0px 0px 0px;
+    background-color: #B63B0B;
+    border-left: 1px solid #666666;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-align: center;
+    font-family: ヒラギノ角ゴ Pro W3, sans-serif,ＭＳ Ｐゴシック, MS PGothic,  Osaka;
+    font-size: 11px;
+}
+#menu-global a:hover{ 
+    background-color: #FFCC33;
+    text-decoration: underline;
+}
+#menu-global li{ 
+    float: left;
+    width: 150px; 
+}
+
+
+/*
+ + サイドメニュー
+------------------------------*/
+#menu-sidebar { 
+    margin:0px;
+    padding:0px;
+    background-color: #FFEEDD;
+    list-style-type: none;
+    border-top: 1px solid #666666;
+    width: 100px; 
+    font-size: 12px;
+}
+#menu-sidebar a{ 
+    display: block;
+    padding: 3px 0px 3px 5px;
+    background-color: #B63B0B;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+#menu-sidebar a:hover{ 
+    background-color: #FFCC33;
+    text-decoration: underline;
+}
+#menu-sidebar li{ 
+    border-right: 1px solid #666666;
+    border-bottom: 1px solid #666666;
+    border-left: 1px solid #666666;
+}
+
+
+/*
+ + フッターメニュー
+------------------------------*/
+#menu-footer { 
+    margin:0px;
+    padding:0px;
+    list-style-type: none;
+    text-align:center;
+}
+#menu-footer a{ 
+    color: #553333;
+    text-decoration: none;
+}
+#menu-footer a:hover{ 
+    color: #0000FF;
+    text-decoration: underline;
+}
+#menu-footer li{ 
+    display: inline;
+    padding:0px 1em 0px 1em;
+}
+
+
+
+/*
+ + コンテンツ部分
+------------------------------*/
+
+/* リスト */
+#content-list { 
+    width: 640px;
+    margin:0px 0px 0px 0px;
+    padding:0px;
+}
+
+#content-list p{ 
+    margin:0px;
+    padding:0px;
+}
+
+#content-list p.rei{ 
+    text-indent: 2em;
+    font-size: 10px;
+    color:#0000FF;
+}
+
+#content-list table{ 
+    width: 640px;
+    margin:5px 0px 0px 0px;
+    padding:0px;
+    border-top: solid 1px #8D2D07; 
+    border-right: solid 1px #8D2D07; 
+    border-left: solid 1px #8D2D07; 
+    border-collapse: collapse;
+}
+#content-list td{ 
+    margin:0px;
+    padding:0px 0px 0px 0px;
+    border-bottom: solid 1px #8D2D07; 
+}
+
+
+#content-list td.title{ 
+    padding:5px 0px 5px 5px;
+    border-right: solid 1px #B68572; 
+    background-color: #8D2D07;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: bold; 
+}
+
+#content-list td.inside{ 
+    padding:5px 0px 5px 5px;
+    border-right: solid 1px #8D2D07 ; 
+    line-height: 1.5em;
+    text-align: left;
+    font-size: 12px;
+    vertical-align:top;
+}
+
+#content-list a{ 
+    color:#000000;
+    text-decoration: none;
+}
+#content-list a:hover{ 
+    background-color: #B63B0B;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+#content-form { 
+    width: 640px;
+    margin:0px 0px 0px 0px;
+    padding:0px;
+    text-align: center;
+}
+
+#content-form textarea{ 
+    margin:5px 0px 0px 0px;
+    background-color: #FFEEEE;
+}
+
+#content-form p{ 
+    margin: 0px;
+    padding: 0px;
+    text-align: left;
+}
+
+#content-form p.title{ 
+    margin:5px 0px 0px 0px;
+    padding:2px 0px 2px 3px;
+    background-color: #8D2D07;
+    color: #FFFFFF;
+}
+
+#content-form p.inside{ 
+    margin:3px 0px 3px 0px;
+}
+
+#content-form input{ 
+    margin:5px 0px 5px 0px;
+    padding:2px 0px 2px 0px;
+
+}
+
+#content-form input.convert{ 
+    background-color: #FCE4CD;
+}
+
