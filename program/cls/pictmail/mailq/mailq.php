@@ -71,7 +71,7 @@ class Mailq {
 
 //		$sql .= ( $where != "" ) ? " AND {$where} " : "";
 
-		$sql .= " Order By tdq.ins_date, tdq.mailq_id ";
+		$sql .= " Order By tdm.count,tdq.ins_date, tdq.mailq_id ";
 		$sql .= " LIMIT "._READ_COUNT_." OFFSET 0";
 
 		if ( _DEBUG_ ) { print "SearchSQL = {$sql} <br>\n"; }
