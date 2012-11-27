@@ -176,11 +176,13 @@
         while( !feof($fp) ){
           $oneData = fgets($fp);
           if($oneData!=""){
-            $registQuery = $this->convertTdMailq($oneData);
-            if( !$this->dbRegist($registQuery) ){
-              $this->sendMailError(2,$registQuery);
-              $this->dbRollback();
-              $this->ExPostgres->close();
+            if (!$this->checkBlackList($oneData)) {
+                $registQuery = $this->convertTdMailq($oneData);
+                if( !$this->dbRegist($registQuery) ){
+                  $this->sendMailError(2,$registQuery);
+                  $this->dbRollback();
+                  $this->ExPostgres->close();
+                }
             }
           }
         }
@@ -393,7 +395,26 @@
       return;
     }
 
+    /*
+     * ブラックリストチェック
+     */
+    function checkBlackList ($oneData="")
+    {
+        list( $name, $mail, $dust ) = explode(",",$oneData);
+
+        if ($mail != "") {
+            $blacklistCount = "SELECT count(mail) FROM td_mail_blacklist WHERE mail='" . $mail . "'";
+            $isResult = pg_query($blacklistCount);
+            $rows  = pg_fetch_row($isResult);
+//mb_send_mail('hataji@itm.ne.jp', $mail, $rows[0].$blacklistCount);
+        }
+
+        if ($rows[0] > 0) {
+            return true;
+        }else{
+            return false;
+        }
+        
+    }
 
   }
-
-?>

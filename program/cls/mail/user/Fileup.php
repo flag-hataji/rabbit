@@ -73,7 +73,7 @@ class Fileup extends Html {
       $flagType    = 0;
       foreach( $dataS as $oneData ){
        if( $oneData ){
-            echo $this->sendMax;
+//            echo $this->sendMax;
           if(0 > $this->sendMax){
             $this->errorNum = 2;
             break;
